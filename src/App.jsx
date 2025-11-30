@@ -8,22 +8,117 @@ import Header from './components/Header';
 import ItemCard from './components/ItemCard';
 import OptionsGrid from './components/OptionsGrid';
 import GameOver from './components/GameOver';
+import AuthModal from './components/AuthModal';
 
 function App() {
+  // États Jeu
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
   const [currentItem, setCurrentItem] = useState(null);
   const [options, setOptions] = useState([]);
   const [userGuess, setUserGuess] = useState(null); // Stocke le tag cliqué par le joueur
   const [correctAnswer, setCorrectAnswer] = useState(null);
-  const [highScore, setHighScore] = useState(() => {
+  /* const [highScore, setHighScore] = useState(() => {
     return parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
-  });
+  }); */
 
-  // Initialisation au chargement
+  // États Utilisateur & Data
+  const [session, setSession] = useState(null);
+  const [username, setUsername] = useState(null);
+  const [highScore, setHighScore] = useState(0); // On commence à 0 par défaut
+  const [showAuthModal, setShowAuthModal] = useState(false);
+  const [loadingProfile, setLoadingProfile] = useState(true);
+
+  // 1. Initialisation Auth & Jeu
   useEffect(() => {
+    // Vérifier la session active au chargement
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      if (session) fetchProfile(session.user.id);
+      else loadLocalHighScore(); // Si pas connecté, on prend le localStorage
+    });
+
+    // Écouter les changements de connexion (Login/Logout)
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+      if (session) fetchProfile(session.user.id);
+      else {
+        setUsername(null);
+        loadLocalHighScore();
+      }
+    });
+
     nextRound();
-  }, []);
+    return () => subscription.unsubscribe();
+  }, []);// Charge le score local (mode invité)
+  const loadLocalHighScore = () => {
+    const local = parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
+    setHighScore(local);
+    setLoadingProfile(false);
+  };
+
+  // Charge le profil depuis Supabase
+  const fetchProfile = async (userId) => {
+    try {
+      setLoadingProfile(true);
+      const { data, error } = await supabase
+        .from('profiles')
+        .select('username, best_score')
+        .eq('id', userId)
+        .single();
+
+      if (error && error.code !== 'PGRST116') { // PGRST116 = Aucun résultat trouvé
+        console.error('Erreur fetch profile:', error);
+      }
+
+      if (data) {
+        setUsername(data.username);
+        // On prend le meilleur score entre le local (si le joueur a joué avant de se co) et la DB
+        const local = parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
+        const dbScore = data.best_score || 0;
+        
+        // Si le local est meilleur, on met à jour la DB tout de suite
+        if (local > dbScore) {
+          setHighScore(local);
+          updateProfileScore(userId, local);
+        } else {
+          setHighScore(dbScore);
+          // On synchronise le local pour être cohérent
+          localStorage.setItem('lol-quiz-highscore', dbScore);
+        }
+      } else {
+        // Premier login : on crée le profil vide
+        await supabase.from('profiles').insert([{ id: userId, best_score: 0 }]);
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoadingProfile(false);
+    }
+  };
+
+  // Met à jour le score dans la DB
+  const updateProfileScore = async (userId, newScore) => {
+    await supabase
+      .from('profiles')
+      .update({ best_score: newScore, updated_at: new Date() })
+      .eq('id', userId);
+  };
+
+  // Demander un pseudo si manquant
+  const handleSetUsername = async (newUsername) => {
+    if (!session) return;
+    const { error } = await supabase
+      .from('profiles')
+      .update({ username: newUsername })
+      .eq('id', session.user.id);
+    
+    if (!error) setUsername(newUsername);
+  };
+
+  // --- LOGIQUE JEU ---
 
   const getRandomItem = () => {
     // Filtrage de sécurité pour ne prendre que les items qui ont des tags valides
@@ -63,26 +158,38 @@ function App() {
   };
 
   const handleGuess = (tag) => {
-    if (userGuess) return; // Empêche le double clic
+    if (userGuess) return;
+    setUserGuess(tag);
 
-    setUserGuess(tag); // On enregistre ce que le joueur a cliqué
-
-    const isCorrect = currentItem.tags.includes(tag);
-
-    if (isCorrect) {
+    if (currentItem.tags.includes(tag)) {
       const newScore = score + 1;
       setScore(newScore);
-      // Mise à jour du High Score si nécessaire
+      
+      // Gestion du High Score (Local + DB)
       if (newScore > highScore) {
         setHighScore(newScore);
         localStorage.setItem('lol-quiz-highscore', newScore);
+        // Si connecté, on sauvegarde en base
+        if (session) {
+            updateProfileScore(session.user.id, newScore);
+        }
       }
     } else {
       setLives(lives - 1);
     }
   };
 
+  // Déconnexion
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    setScore(0);
+    setLives(3);
+    window.location.reload(); // Simple refresh pour nettoyer l'état
+  };
+
   if (!currentItem) return <div className="text-white">Chargement de la Faille...</div>;
+
+  // --- RENDER ---
 
   // Écran Game Over
   // On vérifie : 
@@ -94,7 +201,37 @@ function App() {
   }
 
   return (
-    <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen">
+    <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative">
+
+      {/* Bouton Login / Pseudo en haut */}
+      <div className="w-full flex justify-end mb-2">
+        {!session ? (
+          <button 
+            onClick={() => setShowAuthModal(true)}
+            className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition"
+          >
+            SE CONNECTER (Sauvegarder rang)
+          </button>
+        ) : (
+            <div className="flex items-center gap-2">
+                {/* Si pas de pseudo, input simple */}
+                {!username ? (
+                    <input 
+                        type="text" 
+                        placeholder="Choisis un pseudo..."
+                        className="bg-transparent border-b border-lol-gold text-lol-gold text-xs outline-none w-32"
+                        onKeyDown={(e) => {
+                            if(e.key === 'Enter') handleSetUsername(e.target.value)
+                        }}
+                    />
+                ) : (
+                    <span className="text-xs text-lol-blue">Invocateur : {username}</span>
+                )}
+                <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2">X</button>
+            </div>
+        )}
+      </div>
+
       {/* HEADER */}
       <Header score={score} lives={lives} highScore={highScore} />
 
@@ -119,6 +256,9 @@ function App() {
           {currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant'}
         </button>
       )}
+
+      {/* Modale de Connexion */}
+      {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4">
         League of Legends Guess the Attribute

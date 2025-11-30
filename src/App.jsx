@@ -211,7 +211,7 @@ function App() {
             onClick={() => setShowAuthModal(true)}
             className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition"
           >
-            SE CONNECTER (Sauvegarder rang)
+            SE CONNECTER
           </button>
         ) : (
             <div className="flex items-center gap-2">

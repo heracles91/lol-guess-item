@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 // Import JSON formatté avec le script python
 import itemsDataRaw from './data/items.json';
 import { VALID_TAGS } from './utils/constants';
+import { supabase } from './utils/supabaseClient';
 
 // Import des nouveaux composants
 import Header from './components/Header';

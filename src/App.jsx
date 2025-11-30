@@ -10,6 +10,7 @@ import ItemCard from './components/ItemCard';
 import OptionsGrid from './components/OptionsGrid';
 import GameOver from './components/GameOver';
 import AuthModal from './components/AuthModal';
+import Leaderboard from './components/Leaderboard';
 
 function App() {
   // États Jeu
@@ -20,6 +21,7 @@ function App() {
   const [userGuess, setUserGuess] = useState(null); // Stocke le tag cliqué par le joueur
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [usernameError, setUsernameError] = useState('');
+  const [showLeaderboard, setShowLeaderboard] = useState(false)
   /* const [highScore, setHighScore] = useState(() => {
     return parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
   }); */
@@ -229,8 +231,17 @@ function App() {
   return (
     <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative">
 
-      {/* Bouton Login / Pseudo en haut */}
-      <div className="w-full flex justify-end mb-2">
+      {/* BARRE DU HAUT : Classement à gauche, Login à droite */}
+      <div className="w-full flex justify-between items-center mb-4">
+        
+        {/* BOUTON CLASSEMENT */}
+        <button 
+            onClick={() => setShowLeaderboard(true)}
+            className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
+        >
+            <span className="text-lg">🏆</span> Classement
+        </button>
+        {/* SECTION LOGIN */}
         {!session ? (
           <button 
             onClick={() => setShowAuthModal(true)}
@@ -297,6 +308,7 @@ function App() {
 
       {/* Modale de Connexion */}
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+      {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4">
         League of Legends Guess the Attribute

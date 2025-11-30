@@ -6,7 +6,7 @@ function AuthModal({ onClose }) {
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
 
-  const handleLogin = async (e) => {
+  const handleMagicLink = async (e) => {
     e.preventDefault();
     setLoading(true);
     

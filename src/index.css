@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Configuration du thème LoL directement en CSS (Nouveauté v4) */
+@theme {
+  --color-lol-dark: #091428;
+  --color-lol-gold: #C8AA6E;
+  --color-lol-card: #0A0A0C;
+  --color-lol-blue: #CDFAFA;
+}
+
+/* Styles globaux */
+body {
+  background-color: var(--color-lol-dark);
+  color: var(--color-lol-gold);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

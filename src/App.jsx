@@ -19,6 +19,7 @@ function App() {
   const [options, setOptions] = useState([]);
   const [userGuess, setUserGuess] = useState(null); // Stocke le tag cliqué par le joueur
   const [correctAnswer, setCorrectAnswer] = useState(null);
+  const [usernameError, setUsernameError] = useState('');
   /* const [highScore, setHighScore] = useState(() => {
     return parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
   }); */
@@ -110,14 +111,38 @@ function App() {
 
   // Demander un pseudo si manquant
   const handleSetUsername = async (newUsername) => {
-    if (!session) return;
-    const { error } = await supabase
-      .from('profiles')
-      .update({ username: newUsername })
-      .eq('id', session.user.id);
-    
-    if (!error) setUsername(newUsername);
-  };
+      if (!session) return;
+      
+      // 1. Petit nettoyage (enlever les espaces avant/après)
+      const cleanUsername = newUsername.trim();
+      if (cleanUsername.length < 3) {
+          setUsernameError("3 caractères minimum !");
+          return;
+      }
+
+      setUsernameError(''); // On efface les anciennes erreurs
+
+      // 2. Tentative de mise à jour
+      const { error } = await supabase
+        .from('profiles')
+        .update({ username: cleanUsername })
+        .eq('id', session.user.id);
+      
+      // 3. Gestion des erreurs
+      if (error) {
+          // Le code '23505' est le code PostgreSQL pour "Unique violation"
+          if (error.code === '23505') {
+              setUsernameError("Ce pseudo est déjà pris, désolé !");
+          } else {
+              console.error(error);
+              setUsernameError("Erreur lors de la sauvegarde.");
+          }
+      } else {
+          // Succès
+          setUsername(cleanUsername);
+          setUsernameError('');
+      }
+    };
 
   // --- LOGIQUE JEU ---
 
@@ -214,20 +239,32 @@ function App() {
             SE CONNECTER
           </button>
         ) : (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 relative">
                 {/* Si pas de pseudo, input simple */}
                 {!username ? (
-                    <input 
-                        type="text" 
-                        placeholder="Choisis un pseudo..."
-                        className="bg-transparent border-b border-lol-gold text-lol-gold text-xs outline-none w-32"
-                        onKeyDown={(e) => {
-                            if(e.key === 'Enter') handleSetUsername(e.target.value)
-                        }}
-                    />
+                    <div className="flex flex-col items-end">
+                        <input 
+                            type="text" 
+                            placeholder="Choisis un pseudo..."
+                            className={`bg-transparent border-b text-xs outline-none w-32 transition-colors
+                                ${usernameError ? 'border-red-500 text-red-400 placeholder-red-400' : 'border-lol-gold text-lol-gold'}
+                            `}
+                            onKeyDown={(e) => {
+                                if(e.key === 'Enter') handleSetUsername(e.target.value)
+                            }}
+                        />
+                        {/* Affichage de l'erreur juste en dessous */}
+                        {usernameError && (
+                            <span className="text-[10px] text-red-500 absolute top-full right-0 mt-1 whitespace-nowrap font-bold animate-pulse">
+                                {usernameError}
+                            </span>
+                        )}
+                    </div>
                 ) : (
                     <span className="text-xs text-lol-blue">Invocateur : {username}</span>
                 )}
+                
+                {/* Bouton de déconnexion */}
                 <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2">X</button>
             </div>
         )}

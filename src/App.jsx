@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import confetti from 'canvas-confetti';
 // Import JSON formatté avec le script python
 import itemsDataRaw from './data/items.json';
 import { VALID_TAGS } from './utils/constants';
@@ -22,9 +23,10 @@ function App() {
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [usernameError, setUsernameError] = useState('');
   const [showLeaderboard, setShowLeaderboard] = useState(false)
-  /* const [highScore, setHighScore] = useState(() => {
-    return parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
-  }); */
+
+  // États Audio & FX
+  const [isMuted, setIsMuted] = useState(false); // État du son
+  const [shake, setShake] = useState(false);     // État tremblement
 
   // États Utilisateur & Data
   const [session, setSession] = useState(null);
@@ -32,6 +34,14 @@ function App() {
   const [highScore, setHighScore] = useState(0); // On commence à 0 par défaut
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [loadingProfile, setLoadingProfile] = useState(true);
+
+  // NOUVEAU : Gestionnaire de sons
+  const playSound = (type) => {
+    if (isMuted) return;
+    const audio = new Audio(type === 'success' ? '/sounds/success.mp3' : '/sounds/error.mp3');
+    audio.volume = 0.5; // 50% volume
+    audio.play().catch(e => console.log("Audio play error", e));
+  };
 
   // 1. Initialisation Auth & Jeu
   useEffect(() => {
@@ -165,6 +175,7 @@ function App() {
     
     setUserGuess(null);
     setCorrectAnswer(null);
+    setShake(false);
 
     const item = getRandomItem();
     setCurrentItem(item);
@@ -190,6 +201,15 @@ function App() {
     setUserGuess(tag);
 
     if (currentItem.tags.includes(tag)) {
+      // --- SUCCESS ---
+      playSound('success');
+      // Confettis
+      confetti({
+        particleCount: 100,
+        spread: 70,
+        origin: { y: 0.6 },
+        colors: ['#C8AA6E', '#091428', '#CDFAFA']
+      });
       const newScore = score + 1;
       setScore(newScore);
       
@@ -203,6 +223,10 @@ function App() {
         }
       }
     } else {
+      // --- ECHEC ---
+      playSound('error');
+      setShake(true); // Active l'animation
+      setTimeout(() => setShake(false), 500); // Désactive après 0.5s
       setLives(lives - 1);
     }
   };
@@ -229,25 +253,33 @@ function App() {
   }
 
   return (
-    <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative">
+    <div className={"max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}"}>
 
       {/* BARRE DU HAUT : Classement à gauche, Login à droite */}
       <div className="w-full flex justify-between items-center mb-4">
-        
-        {/* BOUTON CLASSEMENT */}
-        <button 
-            onClick={() => setShowLeaderboard(true)}
-            className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
-        >
-            <span className="text-lg">🏆</span> Classement
-        </button>
+        <div className='flex gap-3'>
+          {/* BOUTON CLASSEMENT */}
+          <button 
+              onClick={() => setShowLeaderboard(true)}
+              className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
+          >
+              <span className="text-lg">🏆</span>
+          </button>
+            {/* BOUTON MUTE */}
+          <button 
+              onClick={() => setIsMuted(!isMuted)}
+              className="text-xl text-gray-400 hover:text-white transition"
+          >
+              {isMuted ? '🔇' : '🔊'}
+          </button>
+        </div>
         {/* SECTION LOGIN */}
         {!session ? (
           <button 
             onClick={() => setShowAuthModal(true)}
-            className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition"
+            className="text-xs text-lol-gold border border-lol-gold px-3 py-1.5 rounded hover:bg-lol-gold hover:text-black transition font-bold"
           >
-            SE CONNECTER
+            CONNEXION
           </button>
         ) : (
             <div className="flex items-center gap-2 relative">
@@ -256,7 +288,7 @@ function App() {
                     <div className="flex flex-col items-end">
                         <input 
                             type="text" 
-                            placeholder="Choisis un pseudo..."
+                            placeholder="Pseudo..."
                             className={`bg-transparent border-b text-xs outline-none w-32 transition-colors
                                 ${usernameError ? 'border-red-500 text-red-400 placeholder-red-400' : 'border-lol-gold text-lol-gold'}
                             `}
@@ -272,11 +304,11 @@ function App() {
                         )}
                     </div>
                 ) : (
-                    <span className="text-xs text-lol-blue">Invocateur : {username}</span>
+                    <span className="text-xs text-lol-blue font-bold">Invocateur : {username}</span>
                 )}
                 
                 {/* Bouton de déconnexion */}
-                <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2">X</button>
+                <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2 font-bold px-1">✕</button>
             </div>
         )}
       </div>

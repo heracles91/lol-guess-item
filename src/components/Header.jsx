@@ -30,7 +30,7 @@ function Header({ score, lives, highScore }) {
           </span>
           <span className="text-xs text-lol-gold">{highScore} LP</span>
         </div>
-        
+
         {/* L'image de l'emblème */}
         <div className="w-12 h-12 flex items-center justify-center overflow-hidden relative">
           <img 

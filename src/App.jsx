@@ -270,20 +270,20 @@ function App() {
   };
 
   const generatePriceOptions = (correctPrice) => {
-  // On crée des variations (ex: -200, +100, -50...)
-  const variations = [-200, -100, -50, 50, 100, 150, 200, 300, 400];
-  const wrongPrices = new Set();
-  
-  while (wrongPrices.size < 3) {
-    const randomVar = variations[Math.floor(Math.random() * variations.length)];
-    const price = correctPrice + randomVar;
-    // On s'assure que le prix est positif et différent du vrai
-    if (price > 0 && price !== correctPrice) {
-      wrongPrices.add(price);
+    // On crée des variations (ex: -200, +100, -50...)
+    const variations = [-200, -100, -50, 50, 100, 150, 200, 300, 400];
+    const wrongPrices = new Set();
+    
+    while (wrongPrices.size < 3) {
+      const randomVar = variations[Math.floor(Math.random() * variations.length)];
+      const price = correctPrice + randomVar;
+      // On s'assure que le prix est positif et différent du vrai
+      if (price > 0 && price !== correctPrice) {
+        wrongPrices.add(price);
+      }
     }
-  }
-  return [correctPrice, ...Array.from(wrongPrices)].sort(() => 0.5 - Math.random());
-};
+    return [correctPrice, ...Array.from(wrongPrices)].sort(() => 0.5 - Math.random());
+  };
 
   // Déconnexion
   const handleLogout = async () => {

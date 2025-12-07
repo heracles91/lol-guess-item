@@ -180,7 +180,14 @@ function App() {
     let item;
     if (gameMode === 'price') {
        // On ne prend que les items qui ont un prix > 0
-       const pricedItems = itemsDataRaw.filter(i => i.gold && i.gold.total > 0);
+       const pricedItems = itemsDataRaw.filter(i => i.gold && i.gold > 0);
+       
+       // Sécurité : si aucun item n'est trouvé (bug JSON), on prend un item au hasard pour éviter le crash
+       if (pricedItems.length === 0) {
+           console.error("Aucun item avec un prix > 0 trouvé ! Vérifie ton JSON.");
+           return; 
+       }
+
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
     } else {
        item = getRandomItem(); // Ta fonction actuelle
@@ -203,7 +210,7 @@ function App() {
 
     } else if (gameMode === 'price') {
         // --- LOGIQUE PRIX (Nouveau) ---
-        const price = item.gold.total;
+        const price = item.gold;
         setCorrectAnswer(price); // La bonne réponse est un nombre (ex: 3000)
         
         // Générer les options
@@ -221,7 +228,7 @@ function App() {
     if (gameMode === 'attribute') {
       isCorrect = currentItem.tags.includes(guess);
     } else if (gameMode === 'price') {
-      isCorrect = (guess === currentItem.gold.total);
+      isCorrect = (guess === currentItem.gold);
     }
 
     if (isCorrect) {
@@ -408,7 +415,7 @@ function App() {
         userGuess={userGuess} 
         correctAnswer={correctAnswer} 
         onGuess={handleGuess} 
-        gameMode={gameMode} // <--- Très important de le passer ici
+        gameMode={gameMode}
       />
 
       {userGuess && (

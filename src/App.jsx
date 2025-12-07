@@ -12,9 +12,11 @@ import OptionsGrid from './components/OptionsGrid';
 import GameOver from './components/GameOver';
 import AuthModal from './components/AuthModal';
 import Leaderboard from './components/Leaderboard';
+import HomeMenu from './components/HomeMenu';
 
 function App() {
   // États Jeu
+  const [gameMode, setGameMode] = useState('menu');
   const [score, setScore] = useState(0);
   const [lives, setLives] = useState(3);
   const [currentItem, setCurrentItem] = useState(null);
@@ -168,39 +170,61 @@ function App() {
   };
 
   const nextRound = () => {
-    if (lives <= 0) {
-      setScore(0);
-      setLives(3);
-    }
-    
+    // Gestion des Vies / Score (inchangé)
+    if (lives <= 0) { setScore(0); setLives(3); }
     setUserGuess(null);
     setCorrectAnswer(null);
     setShake(false);
 
-    const item = getRandomItem();
+    // 1. Choisir un item (on filtre ceux qui ont un prix si mode prix)
+    let item;
+    if (gameMode === 'price') {
+       // On ne prend que les items qui ont un prix > 0
+       const pricedItems = itemsDataRaw.filter(i => i.gold && i.gold.total > 0);
+       item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
+    } else {
+       item = getRandomItem(); // Ta fonction actuelle
+    }
     setCurrentItem(item);
 
-    // 1. Identifier les tags valides de cet objet
-    const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
-    // Choisir une "vraie" réponse au hasard
-    const goodTag = itemTags[Math.floor(Math.random() * itemTags.length)];
-    setCorrectAnswer(goodTag);
+    // 2. Générer les questions selon le mode
+    if (gameMode === 'attribute') {
+        // --- LOGIQUE ATTRIBUTS (Ton code actuel) ---
+        const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
+        // (Sécurité si l'item n'a pas de tags valides, on relance)
+        if (itemTags.length === 0) return nextRound();
 
-    // 2. Générer les mauvaises réponses
-    const badTagsPool = VALID_TAGS.filter(t => !item.tags.includes(t));
-    // Mélanger et prendre 3 mauvaises réponses
-    const badTags = badTagsPool.sort(() => 0.5 - Math.random()).slice(0, 3);
+        const goodTag = itemTags[Math.floor(Math.random() * itemTags.length)];
+        setCorrectAnswer(goodTag);
+        
+        const badTagsPool = VALID_TAGS.filter(t => !item.tags.includes(t));
+        const badTags = badTagsPool.sort(() => 0.5 - Math.random()).slice(0, 3);
+        setOptions([goodTag, ...badTags].sort(() => 0.5 - Math.random()));
 
-    // 3. Mélanger le tout
-    const allOptions = [goodTag, ...badTags].sort(() => 0.5 - Math.random());
-    setOptions(allOptions);
+    } else if (gameMode === 'price') {
+        // --- LOGIQUE PRIX (Nouveau) ---
+        const price = item.gold.total;
+        setCorrectAnswer(price); // La bonne réponse est un nombre (ex: 3000)
+        
+        // Générer les options
+        const priceOptions = generatePriceOptions(price);
+        setOptions(priceOptions);
+    }
   };
 
-  const handleGuess = (tag) => {
+  const handleGuess = (guess) => {
     if (userGuess) return;
-    setUserGuess(tag);
+    setUserGuess(guess);
 
-    if (currentItem.tags.includes(tag)) {
+    let isCorrect = false;
+
+    if (gameMode === 'attribute') {
+      isCorrect = currentItem.tags.includes(guess);
+    } else if (gameMode === 'price') {
+      isCorrect = (guess === currentItem.gold.total);
+    }
+
+    if (isCorrect) {
       // --- SUCCESS ---
       playSound('success');
       // Confettis
@@ -231,6 +255,22 @@ function App() {
     }
   };
 
+  const generatePriceOptions = (correctPrice) => {
+  // On crée des variations (ex: -200, +100, -50...)
+  const variations = [-200, -100, -50, 50, 100, 150, 200, 300, 400];
+  const wrongPrices = new Set();
+  
+  while (wrongPrices.size < 3) {
+    const randomVar = variations[Math.floor(Math.random() * variations.length)];
+    const price = correctPrice + randomVar;
+    // On s'assure que le prix est positif et différent du vrai
+    if (price > 0 && price !== correctPrice) {
+      wrongPrices.add(price);
+    }
+  }
+  return [correctPrice, ...Array.from(wrongPrices)].sort(() => 0.5 - Math.random());
+};
+
   // Déconnexion
   const handleLogout = async () => {
     await supabase.auth.signOut();
@@ -252,98 +292,143 @@ function App() {
     return <GameOver score={score} onRestart={nextRound} />
   }
 
-  return (
-    <div className={"max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}"}>
+  // --- RENDER ---
 
-      {/* BARRE DU HAUT : Classement à gauche, Login à droite */}
+  // 1. ÉCRAN MENU
+  if (gameMode === 'menu') {
+    return (
+      <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative">
+         {/* Barre du haut (Login/Leaderboard) accessible depuis le menu */}
+         <div className="w-full flex justify-between items-center mb-8">
+            <button 
+                onClick={() => setShowLeaderboard(true)}
+                className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
+            >
+                <span className="text-lg">🏆</span> Classement
+            </button>
+
+            {!session ? (
+              <button 
+                onClick={() => setShowAuthModal(true)}
+                className="text-xs text-lol-gold border border-lol-gold px-3 py-1.5 rounded hover:bg-lol-gold hover:text-black transition font-bold"
+              >
+                CONNEXION
+              </button>
+            ) : (
+                <div className="flex items-center gap-2">
+                    {!username ? (
+                        <span className="text-xs text-lol-blue animate-pulse">Profil incomplet...</span>
+                    ) : (
+                        <span className="text-xs text-lol-blue font-bold">{username}</span>
+                    )}
+                    <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2 font-bold">✕</button>
+                </div>
+            )}
+         </div>
+
+         {/* Le Menu Principal */}
+         <HomeMenu onSelectMode={(mode) => {
+             setGameMode(mode);
+             // On force un petit délai pour que l'état se mette à jour avant de lancer le round
+             setTimeout(() => {
+                 // Important : Assure-toi que ta fonction nextRound gère bien le mode ici
+                 // (comme vu dans l'étape précédente)
+                 nextRound(); 
+             }, 0);
+         }} />
+
+         {/* Modales accessibles depuis le menu */}
+         {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
+         {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
+         
+         <div className="mt-auto text-xs text-gray-500 py-4">Version 1.2 - PWA Ready</div>
+      </div>
+    );
+  }
+
+  // 2. ÉCRAN DE JEU (Attribute ou Price)
+  return (
+    <div className={`max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}`}>
+      
+      {/* Barre Header Jeu */}
       <div className="w-full flex justify-between items-center mb-4">
-        <div className='flex gap-3'>
-          {/* BOUTON CLASSEMENT */}
-          <button 
-              onClick={() => setShowLeaderboard(true)}
-              className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
-          >
-              <span className="text-lg">🏆</span>
-          </button>
-            {/* BOUTON MUTE */}
-          <button 
-              onClick={() => setIsMuted(!isMuted)}
-              className="text-xl text-gray-400 hover:text-white transition"
-          >
-              {isMuted ? '🔇' : '🔊'}
-          </button>
+        <div className="flex gap-3 items-center">
+             {/* Bouton Retour Menu */}
+             <button 
+                onClick={() => {
+                    setGameMode('menu');
+                    setScore(0); // Optionnel : Reset le score quand on quitte ?
+                    setLives(3);
+                }}
+                className="text-xs text-gray-400 hover:text-white font-bold flex items-center gap-1 border border-gray-700 px-2 py-1 rounded"
+            >
+                ← MENU
+            </button>
+
+            {/* Bouton Mute */}
+            <button 
+                onClick={() => setIsMuted(!isMuted)}
+                className="text-xl text-gray-400 hover:text-white transition ml-2"
+            >
+                {isMuted ? '🔇' : '🔊'}
+            </button>
         </div>
-        {/* SECTION LOGIN */}
+
+        {/* Partie Droite (User) */}
         {!session ? (
           <button 
             onClick={() => setShowAuthModal(true)}
-            className="text-xs text-lol-gold border border-lol-gold px-3 py-1.5 rounded hover:bg-lol-gold hover:text-black transition font-bold"
+            className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition"
           >
             CONNEXION
           </button>
         ) : (
-            <div className="flex items-center gap-2 relative">
-                {/* Si pas de pseudo, input simple */}
+            <div className="flex items-center gap-2">
                 {!username ? (
-                    <div className="flex flex-col items-end">
-                        <input 
-                            type="text" 
-                            placeholder="Pseudo..."
-                            className={`bg-transparent border-b text-xs outline-none w-32 transition-colors
-                                ${usernameError ? 'border-red-500 text-red-400 placeholder-red-400' : 'border-lol-gold text-lol-gold'}
-                            `}
-                            onKeyDown={(e) => {
-                                if(e.key === 'Enter') handleSetUsername(e.target.value)
-                            }}
-                        />
-                        {/* Affichage de l'erreur juste en dessous */}
-                        {usernameError && (
-                            <span className="text-[10px] text-red-500 absolute top-full right-0 mt-1 whitespace-nowrap font-bold animate-pulse">
-                                {usernameError}
-                            </span>
-                        )}
-                    </div>
+                    <input 
+                        type="text" 
+                        placeholder="Pseudo..."
+                        className="bg-transparent border-b border-lol-gold text-lol-gold text-xs outline-none w-20 text-right"
+                        onKeyDown={(e) => { if(e.key === 'Enter') handleSetUsername(e.target.value) }}
+                    />
                 ) : (
-                    <span className="text-xs text-lol-blue font-bold">Invocateur : {username}</span>
+                    <span className="text-xs text-lol-blue font-bold">{username}</span>
                 )}
-                
-                {/* Bouton de déconnexion */}
-                <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2 font-bold px-1">✕</button>
             </div>
         )}
       </div>
 
-      {/* HEADER */}
       <Header score={score} lives={lives} highScore={highScore} />
-
-      {/* ITEM CARD */}
+      
       <ItemCard item={currentItem} />
-
-      {/* OPTIONS GRID */}
-      <OptionsGrid
-        options={options}
-        userGuess={userGuess}
-        correctAnswer={correctAnswer}
-        onGuess={handleGuess}
+      
+      {/* GRILLE D'OPTIONS (Avec le GameMode) */}
+      <OptionsGrid 
+        options={options} 
+        userGuess={userGuess} 
+        correctAnswer={correctAnswer} 
+        onGuess={handleGuess} 
+        gameMode={gameMode} // <--- Très important de le passer ici
       />
 
-      {/* BOUTON NEXT */}
       {userGuess && (
         <button 
           onClick={nextRound}
           className="w-full py-4 bg-lol-gold text-lol-dark font-bold text-lg rounded uppercase tracking-wider hover:brightness-110 transition animate-bounce"
         >
-          {/* On compare la réponse du joueur avec la bonne réponse pour changer le texte */}
-          {currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant'}
+          {/* Texte dynamique selon la réponse */}
+          {gameMode === 'price' 
+            ? (userGuess === correctAnswer ? 'Continuer' : 'Suivant')
+            : (currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant')
+          }
         </button>
       )}
 
-      {/* Modale de Connexion */}
+      {/* Modales (aussi accessibles en jeu) */}
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-      {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4">
-        League of Legends Guess the Attribute
+        Mode: {gameMode === 'price' ? 'Devine le Prix' : 'Devine les Stats'}
       </div>
     </div>
   );

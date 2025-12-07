@@ -1,16 +1,30 @@
 import { TAG_DICT } from '../utils/constants';
 
-function OptionsGrid({ options, userGuess, correctAnswer, onGuess }) {
+function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
+
+  // Fonction utilitaire pour formater le texte du bouton
+  const getLabel = (option) => {
+    if (gameMode === 'attribute') {
+      // Traduction (ex: "AttackSpeed" -> "Vitesse d'attaque")
+      return TAG_DICT[option] || option;
+    }
+    if (gameMode === 'price') {
+      // Formatage Prix (ex: 3300 -> "3300 PO")
+      return `${option} PO`;
+    }
+    return option; // Par défaut
+  };
+
   return (
     <div className="grid grid-cols-2 gap-3 w-full mb-8">
-      {options.map((tag) => {
+      {options.map((option, index) => {
         let btnClass = "bg-lol-card border border-lol-gold/50 text-lol-blue hover:bg-gray-800";
         
-        // Logique de couleur
+        // Logique de coloration (Vert/Rouge)
         if (userGuess) {
-          if (tag === correctAnswer) {
+          if (option === correctAnswer) {
             btnClass = "bg-green-700 border-green-500 text-white shadow-[0_0_15px_rgba(34,197,94,0.5)]";
-          } else if (tag === userGuess) {
+          } else if (option === userGuess) {
             btnClass = "bg-red-900 border-red-500 text-white shake-animation"; 
           } else {
             btnClass = "opacity-40 border-gray-700 text-gray-500";
@@ -19,8 +33,8 @@ function OptionsGrid({ options, userGuess, correctAnswer, onGuess }) {
 
         return (
           <button
-            key={tag}
-            onClick={() => onGuess(tag)}
+            key={index} // On utilise index car pour les prix, les nombres n'ont pas d'ID unique
+            onClick={() => onGuess(option)}
             disabled={userGuess !== null}
             className={`
               p-4 rounded shadow-lg font-medium text-sm transition-all duration-200 transform
@@ -28,7 +42,7 @@ function OptionsGrid({ options, userGuess, correctAnswer, onGuess }) {
               ${!userGuess ? 'hover:-translate-y-1 active:scale-95' : ''}
             `}
           >
-            {TAG_DICT[tag] || tag}
+            {getLabel(option)}
           </button>
         );
       })}

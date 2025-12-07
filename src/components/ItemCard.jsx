@@ -6,7 +6,7 @@ function ItemCard({ item }) {
       <div className="relative group">
         <div className="absolute -inset-1 bg-gradient-to-r from-yellow-600 to-yellow-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
         <img 
-          src={`https://ddragon.leagueoflegends.com/cdn/15.23.1/img/item/${item.id}.png`} 
+          src={`https://ddragon.leagueoflegends.com/cdn/15.24.1/img/item/${item.id}.png`} 
           alt={item.name}
           className="relative w-24 h-24 border-2 border-lol-gold rounded-md shadow-2xl"
         />

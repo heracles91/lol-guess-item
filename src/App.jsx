@@ -169,7 +169,12 @@ function App() {
     return validItems[randomIndex];
   };
 
-  const nextRound = () => {
+  const nextRound = (specificMode = null) => {
+    // 1. On détermine quel mode utiliser (celui forcé OU celui de l'état actuel)
+    const effectiveMode = specificMode || gameMode;
+    
+    console.log("Mode actif pour ce round :", effectiveMode); // DEBUG
+
     // Gestion des Vies / Score (inchangé)
     if (lives <= 0) { setScore(0); setLives(3); }
     setUserGuess(null);
@@ -184,7 +189,7 @@ function App() {
        
        // Sécurité : si aucun item n'est trouvé (bug JSON), on prend un item au hasard pour éviter le crash
        if (pricedItems.length === 0) {
-           console.error("Aucun item avec un prix > 0 trouvé ! Vérifie ton JSON.");
+           console.error("ERREUR JSON : Aucun item avec un prix > 0 trouvé ! Vérifie ton JSON.");
            return; 
        }
 
@@ -193,6 +198,7 @@ function App() {
        item = getRandomItem(); // Ta fonction actuelle
     }
     setCurrentItem(item);
+    console.log("Item choisi :", item.name); // DEBUG
 
     // 2. Générer les questions selon le mode
     if (gameMode === 'attribute') {
@@ -216,6 +222,7 @@ function App() {
         // Générer les options
         const priceOptions = generatePriceOptions(price);
         setOptions(priceOptions);
+        console.log("Options générées :", priceOptions); // DEBUG
     }
   };
 
@@ -340,7 +347,7 @@ function App() {
              setTimeout(() => {
                  // Important : Assure-toi que ta fonction nextRound gère bien le mode ici
                  // (comme vu dans l'étape précédente)
-                 nextRound(); 
+                 nextRound(mode); 
              }, 0);
          }} />
 

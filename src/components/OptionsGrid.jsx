@@ -48,7 +48,7 @@ function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
             {isRecipeMode ? (
                 // AFFICHAGE IMAGE (Mode Recette)
                 <img 
-                    src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}/img/item/${option.image.full}`}
+                    src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}.1/img/item/${option.id}.png`}
                     alt={option.name}
                     className="h-full object-contain drop-shadow-md"
                 />

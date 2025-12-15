@@ -12,41 +12,30 @@ import AuthModal from './components/AuthModal';
 import Leaderboard from './components/Leaderboard';
 import HomeMenu from './components/HomeMenu';
 
-// --- FONCTIONS UTILITAIRES (En dehors du composant pour éviter les erreurs de scope) ---
+// --- FONCTIONS UTILITAIRES ---
 
 const generatePriceOptions = (correctPrice) => {
-  // Sécurité : si le prix n'est pas un nombre, on renvoie des options par défaut pour ne pas planter
-  if (typeof correctPrice !== 'number') {
-      console.error("ERREUR CRITIQUE : correctPrice n'est pas un nombre !", correctPrice);
-      return [0, 0, 0, 0];
-  }
+  if (typeof correctPrice !== 'number') return [0, 0, 0, 0];
 
   const variations = [-200, -100, -50, 50, 100, 150, 200, 300, 400];
   const wrongPrices = new Set();
-  let safetyCounter = 0; // Sécurité anti boucle infinie
+  let safetyCounter = 0;
   
   while (wrongPrices.size < 3 && safetyCounter < 100) {
     const randomVar = variations[Math.floor(Math.random() * variations.length)];
     const price = correctPrice + randomVar;
-    
-    if (price > 0 && price !== correctPrice) {
-      wrongPrices.add(price);
-    }
+    if (price > 0 && price !== correctPrice) wrongPrices.add(price);
     safetyCounter++;
   }
-
-  // Mélange final
   return [correctPrice, ...Array.from(wrongPrices)].sort(() => 0.5 - Math.random());
 };
 
 const getRandomItem = () => {
-    // Filtrage standard pour le mode attributs
     const validItems = itemsDataRaw.filter(item => item.tags && item.tags.some(tag => VALID_TAGS.includes(tag)));
     return validItems[Math.floor(Math.random() * validItems.length)];
 };
 
-
-// --- COMPOSANT PRINCIPAL ---
+// --- APP ---
 
 function App() {
   // États Jeu
@@ -56,16 +45,19 @@ function App() {
   const [options, setOptions] = useState([]);
   const [userGuess, setUserGuess] = useState(null);
   const [correctAnswer, setCorrectAnswer] = useState(null);
-  const [gameMode, setGameMode] = useState('menu'); // 'menu', 'attribute', 'price'
+  const [gameMode, setGameMode] = useState('menu');
   
-  // États Audio & FX
-  const [isMuted, setIsMuted] = useState(false);
-  const [shake, setShake] = useState(false);
-
-  // États Utilisateur
+  // États Scores & Data
+  const [highScore, setHighScore] = useState(0); // Score affiché actuellement
+  // FIX 1 : On stocke TOUS les records dans un objet pour ne pas les mélanger
+  const [allHighScores, setAllHighScores] = useState({ attribute: 0, price: 0 });
+  
   const [session, setSession] = useState(null);
   const [username, setUsername] = useState(null);
-  const [highScore, setHighScore] = useState(0);
+  
+  // États UI / FX
+  const [isMuted, setIsMuted] = useState(false);
+  const [shake, setShake] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   
@@ -76,11 +68,15 @@ function App() {
     audio.play().catch(e => console.log("Audio play error", e));
   };
 
+  // --- INITIALISATION ---
+
   useEffect(() => {
+    // Charge les scores locaux au démarrage (pour avoir quelque chose si pas de co)
+    loadLocalHighScores();
+
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       if (session) fetchProfile(session.user.id);
-      else loadLocalHighScore();
     });
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
@@ -88,21 +84,26 @@ function App() {
       if (session) fetchProfile(session.user.id);
       else {
         setUsername(null);
-        loadLocalHighScore();
+        loadLocalHighScores();
       }
     });
 
-    // Au démarrage, on initialise juste le menu, pas besoin de lancer un round
     return () => subscription.unsubscribe();
   }, []);
 
-  const loadLocalHighScore = (mode = 'attribute') => {
-    const local = parseInt(localStorage.getItem(`lol-quiz-highscore-${mode}`)) || 0;
-    setHighScore(local);
+  // FIX 2 : Chargement intelligent des scores locaux
+  const loadLocalHighScores = () => {
+    const attrScore = parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0;
+    const priceScore = parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0;
+    
+    setAllHighScores({
+        attribute: attrScore,
+        price: priceScore
+    });
   };
 
+  // FIX 3 : Chargement des scores depuis la DB
   const fetchProfile = async (userId) => {
-    // On récupère score_attribute et score_price
     const { data } = await supabase
         .from('profiles')
         .select('username, score_attribute, score_price')
@@ -111,24 +112,31 @@ function App() {
         
     if (data) {
       setUsername(data.username);
-      // On sauvegarde tout dans un état global ou on met à jour le highScore courant selon le mode
-      // Pour faire simple : on stocke les scores dans un objet state caché, ou on recharge le highScore quand on change de mode.
-      // -> Option simple : On recharge juste le highScore local du mode 'attribute' par défaut au début
-      const modeScore = gameMode === 'price' ? (data.score_price || 0) : (data.score_attribute || 0);
-      setHighScore(modeScore);
       
-      // Note: Le localStorage devient plus complexe à gérer avec plusieurs modes. 
-      // Pour l'instant, on se fie surtout à la DB si connecté.
+      // On compare DB vs Local pour garder le meilleur
+      const localAttr = parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0;
+      const localPrice = parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0;
+      
+      const bestAttr = Math.max(localAttr, data.score_attribute || 0);
+      const bestPrice = Math.max(localPrice, data.score_price || 0);
+
+      // Mise à jour de l'état global
+      setAllHighScores({
+          attribute: bestAttr,
+          price: bestPrice
+      });
+
+      // Si le local était meilleur, on sync avec la DB
+      if (localAttr > (data.score_attribute || 0)) updateProfileScore(userId, 'attribute', localAttr);
+      if (localPrice > (data.score_price || 0)) updateProfileScore(userId, 'price', localPrice);
+
     } else {
         await supabase.from('profiles').insert([{ id: userId, score_attribute: 0, score_price: 0 }]);
     }
   };
 
-  const updateProfileScore = async (userId, newScore) => {
-    // On détermine dynamiquement le nom de la colonne : 'score_attribute', 'score_price', 'score_recipe'
-    const column = `score_${gameMode}`; 
-    
-    // La syntaxe [column] permet d'utiliser une variable comme clé
+  const updateProfileScore = async (userId, mode, newScore) => {
+    const column = `score_${mode}`; // 'score_attribute' ou 'score_price'
     await supabase.from('profiles').update({ [column]: newScore, updated_at: new Date() }).eq('id', userId);
   };
 
@@ -138,20 +146,15 @@ function App() {
       if (!error) setUsername(newUsername);
   };
 
-  // --- COEUR DU JEU ---
+  // --- LOGIQUE JEU ---
 
   const nextRound = (specificMode = null) => {
     const effectiveMode = specificMode || gameMode;
-
-    // Si le mode a changé, on recharge le bon High Score
-    if (specificMode && specificMode !== gameMode) {
-        if (session) {
-            // Si connecté, on refait un fetch rapide (ou mieux: on stocke les scores en cache, mais fetch est plus simple)
-            fetchProfile(session.user.id);
-        } else {
-            loadLocalHighScore(effectiveMode);
-        }
-    }
+    
+    // FIX 4 : Quand on lance un round, on met à jour le HighScore affiché
+    // On va chercher dans notre "sac à dos" allHighScores la valeur du mode actuel
+    const currentModeHighScore = allHighScores[effectiveMode] || 0;
+    setHighScore(currentModeHighScore);
 
     if (lives <= 0) {
       setScore(0);
@@ -161,34 +164,22 @@ function App() {
     setCorrectAnswer(null);
     setShake(false);
 
-    // 1. CHOIX DE L'ITEM
+    // Choix Item
     let item;
     if (effectiveMode === 'price') {
-       // On vérifie que gold est bien un nombre
        const pricedItems = itemsDataRaw.filter(i => typeof i.gold === 'number' && i.gold > 0);
-       
-       if (pricedItems.length === 0) {
-           console.error("ERREUR JSON : Aucun item avec 'gold' valide trouvé !");
-           return;
-       }
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
-
     } else {
-       // Mode Attributs (ou défaut)
        item = getRandomItem();
     }
     
-    if (!item) {
-        console.error("Impossible de trouver un item !");
-        return;
-    }
-    
+    if (!item) return;
     setCurrentItem(item);
 
-    // 2. GÉNÉRATION DES OPTIONS
+    // Options
     if (effectiveMode === 'attribute') {
         const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
-        if (itemTags.length === 0) return nextRound(effectiveMode); // Retry
+        if (itemTags.length === 0) return nextRound(effectiveMode);
 
         const goodTag = itemTags[Math.floor(Math.random() * itemTags.length)];
         setCorrectAnswer(goodTag);
@@ -199,13 +190,8 @@ function App() {
 
     } else if (effectiveMode === 'price') {
         const price = item.gold;
-
         setCorrectAnswer(price);
-        
-        // On appelle la fonction externe
-        const priceOptions = generatePriceOptions(price);
-        
-        setOptions(priceOptions);
+        setOptions(generatePriceOptions(price));
     }
   };
 
@@ -214,33 +200,35 @@ function App() {
     setUserGuess(guess);
 
     let isCorrect = false;
-
-    if (gameMode === 'attribute') {
-        isCorrect = currentItem.tags.includes(guess);
-    } else if (gameMode === 'price') {
-        isCorrect = (guess === currentItem.gold);
-    }
+    if (gameMode === 'attribute') isCorrect = currentItem.tags.includes(guess);
+    else if (gameMode === 'price') isCorrect = (guess === currentItem.gold);
 
     if (isCorrect) {
       playSound('success');
-      confetti({
-        particleCount: 100,
-        spread: 70,
-        origin: { y: 0.6 },
-        colors: ['#C8AA6E', '#091428', '#CDFAFA']
-      });
+      confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#C8AA6E', '#091428', '#CDFAFA'] });
 
-      // Dans le bloc "if (isCorrect)"
       const newScore = score + 1;
       setScore(newScore);
-      
-      if (newScore > highScore) {
+
+      // FIX 5 : La correction critique est ici !
+      // On compare le nouveau score avec le record DU MODE ACTUEL (dans allHighScores), pas le highScore affiché
+      const currentRecord = allHighScores[gameMode] || 0;
+
+      if (newScore > currentRecord) {
+        // 1. On met à jour l'affichage
         setHighScore(newScore);
-        // On utilise une clé localStorage différente par mode pour éviter les conflits
+        
+        // 2. On met à jour le "sac à dos"
+        const newAllHighScores = { ...allHighScores, [gameMode]: newScore };
+        setAllHighScores(newAllHighScores);
+        
+        // 3. Sauvegarde Locale
         localStorage.setItem(`lol-quiz-highscore-${gameMode}`, newScore);
         
-        if (session) updateProfileScore(session.user.id, newScore);
+        // 4. Sauvegarde DB
+        if (session) updateProfileScore(session.user.id, gameMode, newScore);
       }
+
     } else {
       playSound('error');
       setShake(true);
@@ -270,19 +258,12 @@ function App() {
             </button>
 
             {!session ? (
-              <button 
-                onClick={() => setShowAuthModal(true)}
-                className="text-xs text-lol-gold border border-lol-gold px-3 py-1.5 rounded hover:bg-lol-gold hover:text-black transition font-bold"
-              >
+              <button onClick={() => setShowAuthModal(true)} className="text-xs text-lol-gold border border-lol-gold px-3 py-1.5 rounded hover:bg-lol-gold hover:text-black transition font-bold">
                 CONNEXION
               </button>
             ) : (
                 <div className="flex items-center gap-2">
-                    {!username ? (
-                        <span className="text-xs text-lol-blue animate-pulse">Profil...</span>
-                    ) : (
-                        <span className="text-xs text-lol-blue font-bold">{username}</span>
-                    )}
+                    {!username ? <span className="text-xs text-lol-blue animate-pulse">Profil...</span> : <span className="text-xs text-lol-blue font-bold">{username}</span>}
                     <button onClick={handleLogout} className="text-xs text-red-400 hover:text-white ml-2 font-bold">✕</button>
                 </div>
             )}
@@ -290,33 +271,26 @@ function App() {
 
          <HomeMenu onSelectMode={(selectedMode) => {
              setGameMode(selectedMode);
-             // On passe directement le mode sélectionné
              setTimeout(() => nextRound(selectedMode), 0);
          }} />
 
          {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
          {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
          
-         <div className="mt-auto text-xs text-gray-500 py-4">Version 1.3 - Multi-Modes</div>
+         <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">Compatible Patch {PATCH_VERSION}</div>
       </div>
     );
   }
 
-  // ÉCRAN DE JEU
   if (!currentItem) return <div className="text-white p-10 flex justify-center">Chargement...</div>;
 
   return (
     <div className={`max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}`}>
       
-      {/* HEADER JEU */}
       <div className="w-full flex justify-between items-center mb-4">
         <div className="flex gap-3 items-center">
              <button 
-                onClick={() => {
-                    setGameMode('menu');
-                    setScore(0);
-                    setLives(3);
-                }}
+                onClick={() => { setGameMode('menu'); setScore(0); setLives(3); }}
                 className="text-xs text-gray-400 hover:text-white font-bold flex items-center gap-1 border border-gray-700 px-2 py-1 rounded"
             >
                 ← MENU
@@ -327,21 +301,13 @@ function App() {
         </div>
 
         {!session ? (
-          <button 
-            onClick={() => setShowAuthModal(true)}
-            className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition"
-          >
+          <button onClick={() => setShowAuthModal(true)} className="text-xs text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition">
             CONNEXION
           </button>
         ) : (
             <div className="flex items-center gap-2">
                 {!username ? (
-                     <input 
-                        type="text" 
-                        placeholder="Pseudo..."
-                        className="bg-transparent border-b border-lol-gold text-lol-gold text-xs outline-none w-20 text-right"
-                        onKeyDown={(e) => { if(e.key === 'Enter') handleSetUsername(e.target.value) }}
-                    />
+                     <input type="text" placeholder="Pseudo..." className="bg-transparent border-b border-lol-gold text-lol-gold text-xs outline-none w-20 text-right" onKeyDown={(e) => { if(e.key === 'Enter') handleSetUsername(e.target.value) }} />
                 ) : (
                     <span className="text-xs text-lol-blue font-bold">{username}</span>
                 )}
@@ -353,30 +319,21 @@ function App() {
       
       <ItemCard item={currentItem} />
       
-      <OptionsGrid 
-        options={options} 
-        userGuess={userGuess} 
-        correctAnswer={correctAnswer} 
-        onGuess={handleGuess} 
-        gameMode={gameMode} 
-      />
+      <OptionsGrid options={options} userGuess={userGuess} correctAnswer={correctAnswer} onGuess={handleGuess} gameMode={gameMode} />
 
       {userGuess && (
         <button 
-          onClick={() => nextRound()} // Pas besoin d'argument ici, il prendra le gameMode actuel
+          onClick={() => nextRound()} 
           className="w-full py-4 bg-lol-gold text-lol-dark font-bold text-lg rounded uppercase tracking-wider hover:brightness-110 transition animate-bounce"
         >
-          {gameMode === 'price' 
-            ? (userGuess === correctAnswer ? 'Continuer' : 'Suivant')
-            : (currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant')
-          }
+          {gameMode === 'price' ? (userGuess === correctAnswer ? 'Continuer' : 'Suivant') : (currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant')}
         </button>
       )}
 
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
       
-      <div className="mt-auto text-xs text-gray-500 py-4" opacity-50>
-        Mode: {gameMode === 'price' ? 'Devine le Prix' : 'Devine les Stats'} | Compatible Patch {PATCH_VERSION}
+      <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">
+        Compatible Patch {PATCH_VERSION}
       </div>
     </div>
   );

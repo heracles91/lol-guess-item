@@ -371,7 +371,7 @@ function App() {
 
       <Header score={score} lives={lives} highScore={highScore} />
       
-      <ItemCard item={currentItem} />
+      <ItemCard item={currentItem} revealed={userGuess !== null} />
       
       <OptionsGrid options={options} userGuess={userGuess} correctAnswer={correctAnswer} onGuess={handleGuess} gameMode={gameMode} />
 

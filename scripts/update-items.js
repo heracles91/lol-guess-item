@@ -24,7 +24,9 @@ async function updateData() {
     
     const rawItems = itemsData.data;
     const cleanItems = [];
-    const processedIds = new Set(); // Pour garantir l'unicité absolue
+    // Pour garantir l'unicité absolue
+    const processedIds = new Set();
+    const processedNames = new Set();
 
     for (const [id, item] of Object.entries(rawItems)) {
         
@@ -48,6 +50,7 @@ async function updateData() {
 
         // Règle : Suppression des doublons (Sécurité supplémentaire)
         if (processedIds.has(id)) continue;
+        if (processedNames.has(item.name)) continue;
 
         
         // --- 2. NETTOYAGE DES DONNÉES ---
@@ -96,6 +99,7 @@ async function updateData() {
         });
 
         processedIds.add(id);
+        processedNames.add(item.name);
     }
 
     // Écriture du fichier JSON

@@ -3,7 +3,7 @@ import confetti from 'canvas-confetti';
 import itemsDataRaw from './data/items.json';
 import { VALID_TAGS, PATCH_VERSION } from './utils/constants';
 import { supabase } from './utils/supabaseClient';
-import { getDailyItemIndex, saveDailyResult } from './utils/dailyRandom';
+import { getDailyItemIndex, saveDailyResult, getYesterdayDate } from './utils/dailyRandom';
 
 // Composants
 import Header from './components/Header';
@@ -379,6 +379,15 @@ function App() {
   // 3. ÉCRAN JEU
   if (!currentItem) return <div className="text-white p-10 flex justify-center animate-pulse">Chargement de la Faille...</div>;
 
+  // On calcule l'objet d'hier uniquement si on est en mode daily pour optimiser
+  let yesterdayItem = null;
+  if (gameMode === 'daily') {
+      const validItems = itemsDataRaw.filter(i => i.tags && i.tags.some(t => VALID_TAGS.includes(t)));
+      const yesterdayDate = getYesterdayDate();
+      const yesterdayIndex = getDailyItemIndex(validItems.length, yesterdayDate);
+      yesterdayItem = validItems[yesterdayIndex];
+  }
+
   return (
     <div className={`max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}`}>
       
@@ -410,6 +419,20 @@ function App() {
       {gameMode === 'daily' ? (
         // Mode Daily : Barre de recherche
         <div className="w-full flex flex-col items-center gap-4 mb-8 max-w-md">
+            
+            {/* NOUVEAU : Affichage de la réponse d'hier */}
+            {yesterdayItem && (
+                <div className="w-full bg-lol-dark/50 border border-gray-700 rounded p-2 flex items-center justify-center gap-3 mb-2 animate-fade-in opacity-80">
+                    <span className="text-xs text-gray-400 uppercase tracking-wider">Hier c'était :</span>
+                    <img 
+                        src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}/img/item/${yesterdayItem.image.full}`}
+                        alt={yesterdayItem.name}
+                        className="w-6 h-6 rounded border border-gray-600"
+                    />
+                    <span className="text-xs text-lol-gold font-bold">{yesterdayItem.name}</span>
+                </div>
+            )}
+
             {!userGuess ? (
                 <>
                     <SearchBar items={itemsDataRaw} onSelect={(item) => setDailySelection(item)} />
@@ -422,8 +445,16 @@ function App() {
                     </button>
                 </>
             ) : (
-                <button onClick={() => nextRound()} className="w-full py-4 bg-lol-blue border border-lol-gold text-white font-bold text-lg rounded uppercase tracking-wider hover:bg-gray-800 transition">
-                  Voir le résultat →
+                // MODIFIÉ : Bouton Retour au Menu
+                <button 
+                  onClick={() => {
+                      setGameMode('menu');
+                      setScore(0);
+                      setLives(3);
+                  }} 
+                  className="w-full py-4 bg-gray-800 border border-gray-600 text-gray-300 font-bold text-lg rounded uppercase tracking-wider hover:bg-gray-700 hover:text-white transition"
+                >
+                  Retour au Menu
                 </button>
             )}
         </div>

@@ -557,63 +557,6 @@
     "from": []
   },
   {
-    "id": "1105",
-    "name": "Bébé Ixamandre",
-    "gold": 450,
-    "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#1CA935'>Ixamandre</font> qui vous assistera contre les monstres.<br><passive>Courage d'Ixamandre</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il vous octroie un <shield>bouclier</shield> qui se régénère quand vous tuez des grands monstres ou en dehors des combats.</mainText>",
-    "tags": [
-      "Jungle"
-    ],
-    "image": {
-      "full": "1105.png",
-      "sprite": "item0.png",
-      "group": "item",
-      "x": 96,
-      "y": 144,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
-  },
-  {
-    "id": "1106",
-    "name": "Bébé Saute-nuages",
-    "gold": 450,
-    "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#38A8E8'>Saute-nuages</font> qui vous assistera contre les monstres.<br><passive>Cadence de Saute-nuages</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, vous gagnez de la <speed>vitesse de déplacement</speed> quand vous entrez dans des hautes herbes. Ce bonus augmente quand vous tuez des grands monstres.</mainText>",
-    "tags": [
-      "Jungle"
-    ],
-    "image": {
-      "full": "1106.png",
-      "sprite": "item0.png",
-      "group": "item",
-      "x": 144,
-      "y": 144,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
-  },
-  {
-    "id": "1107",
-    "name": "Bébé Chardent",
-    "gold": 450,
-    "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#DD2E2E'>Chardent</font> qui vous assistera contre les monstres.<br><passive>Griffure de Chardent</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il renforce périodiquement votre prochaine attaque ou compétence pour qu'elle brûle les ennemis et les <status>ralentisse</status>. Tuer un grand monstre prépare immédiatement cet effet.</mainText>",
-    "tags": [
-      "Jungle"
-    ],
-    "image": {
-      "full": "1107.png",
-      "sprite": "item0.png",
-      "group": "item",
-      "x": 192,
-      "y": 144,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
-  },
-  {
     "id": "2003",
     "name": "Potion de soin",
     "gold": 50,

@@ -1,4 +1,4 @@
-// Fonction de hachage simple (cyrb53) pour générer un nombre depuis une chaîne (la date)
+// Fonction de hachage (inchangée)
 const cyrb53 = (str, seed = 0) => {
     let h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
     for (let i = 0, ch; i < str.length; i++) {
@@ -11,30 +11,28 @@ const cyrb53 = (str, seed = 0) => {
     return 4294967296 * (2097151 & h2) + (h1 >>> 0);
 };
 
-// Fonction principale pour récupérer l'item du jour
-export const getDailyItemIndex = (itemsLength) => {
-    // 1. Récupérer la date format YYYY-MM-DD (ex: 2025-12-15)
-    const today = new Date().toISOString().split('T')[0];
+// MODIFIÉ : Accepte une date optionnelle
+export const getDailyItemIndex = (itemsLength, specificDate = null) => {
+    // Si pas de date fournie, on prend aujourd'hui
+    const dateToUse = specificDate || new Date().toISOString().split('T')[0];
     
-    // 2. Générer un nombre unique basé sur cette date
-    const seed = cyrb53(today);
-    
-    // 3. Retourner un index valide (modulo la taille de la liste)
+    const seed = cyrb53(dateToUse);
     return seed % itemsLength;
 };
 
-// Vérifie si le joueur a déjà joué aujourd'hui
+// NOUVEAU : Récupère la date d'hier format YYYY-MM-DD
+export const getYesterdayDate = () => {
+    const date = new Date();
+    date.setDate(date.getDate() - 1);
+    return date.toISOString().split('T')[0];
+};
+
 export const hasPlayedDailyToday = () => {
     const today = new Date().toISOString().split('T')[0];
     const stored = JSON.parse(localStorage.getItem('lol-quiz-daily-status'));
-    
-    if (stored && stored.date === today && stored.finished) {
-        return true;
-    }
-    return false;
+    return (stored && stored.date === today && stored.finished);
 };
 
-// Sauvegarde le résultat du daily
 export const saveDailyResult = (score) => {
     const today = new Date().toISOString().split('T')[0];
     localStorage.setItem('lol-quiz-daily-status', JSON.stringify({

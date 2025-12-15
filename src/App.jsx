@@ -164,11 +164,47 @@ function App() {
     if (effectiveMode === 'price') {
        const pricedItems = itemsDataRaw.filter(i => typeof i.gold === 'number' && i.gold > 0);
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
-    } 
-    else if (effectiveMode === 'recipe') {
-       // On ne veut que les items qui ont une recette (clé "from" non vide)
-       const complexItems = itemsDataRaw.filter(i => i.from && i.from.length > 0);
-       item = complexItems[Math.floor(Math.random() * complexItems.length)];
+    } else if (effectiveMode === 'recipe') {
+        // A. Trouver la bonne réponse
+        const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
+        const correctComponent = itemsDataRaw.find(i => i.id === correctComponentId);
+
+        // B. Trouver les mauvaises réponses INTELLIGENTES
+        // Critères :
+        // 1. Pas l'objet lui-même ni un autre ingrédient de la recette
+        // 2. Doit partager au moins UN tag avec l'objet final (ex: "Damage") pour être crédible
+        // 3. Doit être dans la même fourchette de prix (+/- 300 PO) pour éviter les sous-composants trop petits
+        
+        const targetPrice = correctComponent.gold; // ex: 1100
+        const targetTags = item.tags || [];
+
+        let smartFakes = itemsDataRaw.filter(i => {
+            // Exclusion de base (pas le bon, pas dans la recette, pas l'objet final)
+            if (i.id === correctComponentId || item.from.includes(i.id) || i.id === item.id) return false;
+            
+            // Vérification du prix (C'est ça qui élimine les sous-composants comme épée longue vs phage)
+            const isPriceSimilar = Math.abs(i.gold - targetPrice) <= 400; // Marge de 400 PO
+            if (!isPriceSimilar) return false;
+
+            // Vérification des tags (Contextuel)
+            const hasSharedTag = i.tags && i.tags.some(tag => targetTags.includes(tag));
+            
+            return hasSharedTag;
+        });
+
+        // C. Sécurité : Si on n'a pas trouvé assez de "Smart Fakes" (cas rare), on élargit la recherche
+        if (smartFakes.length < 3) {
+            smartFakes = itemsDataRaw.filter(i => 
+                i.id !== correctComponentId && 
+                !item.from.includes(i.id) &&
+                i.gold < 3000 // Juste pas des items complets
+            );
+        }
+
+        const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+        setCorrectAnswer(correctComponent);
+        setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
     }
     else {
        item = getRandomItem();

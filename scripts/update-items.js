@@ -87,6 +87,14 @@ async function updateData() {
             }
         }
 
+        // C. Remplacer SpellBlock par MagicResist
+        if (newTags.includes('SpellBlock')) {
+            newTags = newTags.filter(t => t !== 'SpellBlock'); // On enlève l'ancien
+            if (!newTags.includes('MagicResist')) {
+                newTags.push('MagicResist'); // On met le nouveau s'il n'y est pas déjà
+            }
+        }
+
 
         // --- 3. AJOUT À LA LISTE FINALE ---
         

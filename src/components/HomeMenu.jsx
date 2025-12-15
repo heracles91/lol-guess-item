@@ -11,7 +11,7 @@ function HomeMenu({ onSelectMode }) {
           className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group"
         >
           <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔮 Guess the Attribute</div>
-          <div className="text-xs text-gray-400 group-hover:text-gray-800">Devine les stats (AD, AP, HP...)</div>
+          <div className="text-xs text-gray-400 group-hover:text-gray-800">Devine les attributs</div>
         </button>
 
         <button 
@@ -23,11 +23,11 @@ function HomeMenu({ onSelectMode }) {
         </button>
 
         <button 
-          onClick={() => onSelectMode('recipe')}
-          className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group opacity-70"
+          onClick={() => onSelectMode('recipe')} // <--- On active le mode 'recipe'
+          className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group"
         >
-          <div className="text-xl font-bold mb-1">🔨 Guess the Recipe</div>
-          <div className="text-xs text-gray-400">(Bientôt disponible)</div>
+          <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔨 Guess the Recipe</div>
+          <div className="text-xs text-gray-400 group-hover:text-gray-800">Trouve le composant manquant</div>
         </button>
       </div>
     </div>

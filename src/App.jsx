@@ -150,33 +150,35 @@ function App() {
 
   const nextRound = (specificMode = null) => {
     const effectiveMode = specificMode || gameMode;
-    
-    // FIX 4 : Quand on lance un round, on met à jour le HighScore affiché
-    // On va chercher dans notre "sac à dos" allHighScores la valeur du mode actuel
     const currentModeHighScore = allHighScores[effectiveMode] || 0;
     setHighScore(currentModeHighScore);
 
-    if (lives <= 0) {
-      setScore(0);
-      setLives(3);
-    }
+    if (lives <= 0) { setScore(0); setLives(3); }
     setUserGuess(null);
     setCorrectAnswer(null);
     setShake(false);
 
-    // Choix Item
     let item;
+
+    // --- 1. SÉLECTION DE L'ITEM PRINCIPAL ---
     if (effectiveMode === 'price') {
        const pricedItems = itemsDataRaw.filter(i => typeof i.gold === 'number' && i.gold > 0);
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
-    } else {
+    } 
+    else if (effectiveMode === 'recipe') {
+       // On ne veut que les items qui ont une recette (clé "from" non vide)
+       const complexItems = itemsDataRaw.filter(i => i.from && i.from.length > 0);
+       item = complexItems[Math.floor(Math.random() * complexItems.length)];
+    }
+    else {
        item = getRandomItem();
     }
     
     if (!item) return;
     setCurrentItem(item);
 
-    // Options
+    // --- 2. GÉNÉRATION DES OPTIONS ---
+    
     if (effectiveMode === 'attribute') {
         const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
         if (itemTags.length === 0) return nextRound(effectiveMode);
@@ -192,6 +194,27 @@ function App() {
         const price = item.gold;
         setCorrectAnswer(price);
         setOptions(generatePriceOptions(price));
+
+    } else if (effectiveMode === 'recipe') {
+        // A. Trouver la bonne réponse (un ID présent dans "from")
+        const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
+        // On cherche l'objet complet correspondant à cet ID
+        const correctComponent = itemsDataRaw.find(i => i.id === correctComponentId);
+
+        // B. Trouver les mauvaises réponses
+        // On cherche des items "basiques" (prix < 1300 ou qui n'ont pas de recette) pour que ce soit crédible
+        // Et on s'assure qu'ils ne sont PAS dans la recette de l'item actuel
+        const potentialFakes = itemsDataRaw.filter(i => 
+            i.gold < 1300 && 
+            i.id !== correctComponentId && 
+            !item.from.includes(i.id)
+        );
+        
+        const wrongComponents = potentialFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
+
+        // La bonne réponse est l'objet complet, pas juste l'ID
+        setCorrectAnswer(correctComponent);
+        setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
     }
   };
 
@@ -202,6 +225,7 @@ function App() {
     let isCorrect = false;
     if (gameMode === 'attribute') isCorrect = currentItem.tags.includes(guess);
     else if (gameMode === 'price') isCorrect = (guess === currentItem.gold);
+    else if (gameMode === 'recipe') isCorrect = (guess.id === correctAnswer.id)
 
     if (isCorrect) {
       playSound('success');
@@ -333,7 +357,7 @@ function App() {
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">
-        Compatible Patch {PATCH_VERSION}
+        {gameMode === 'recipe' ? 'Trouve le composant manquant' : `Compatible Patch ${PATCH_VERSION}`}
       </div>
     </div>
   );

@@ -1,48 +1,61 @@
-import { TAG_DICT } from '../utils/constants';
+import { TAG_DICT, PATCH_VERSION } from '../utils/constants';
 
 function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
 
-  // Fonction utilitaire pour formater le texte du bouton
   const getLabel = (option) => {
-    if (gameMode === 'attribute') {
-      // Traduction (ex: "AttackSpeed" -> "Vitesse d'attaque")
-      return TAG_DICT[option] || option;
-    }
-    if (gameMode === 'price') {
-      // Formatage Prix (ex: 3300 -> "3300 PO")
-      return `${option} PO`;
-    }
-    return option; // Par défaut
+    if (gameMode === 'attribute') return TAG_DICT[option] || option;
+    if (gameMode === 'price') return `${option} PO`;
+    return option.name; // Fallback
   };
 
   return (
     <div className="grid grid-cols-2 gap-3 w-full mb-8">
       {options.map((option, index) => {
+        // Pour le mode recette, 'option' est un OBJET item complet.
+        // Pour les autres modes, 'option' est une string ou un nombre.
+        const isRecipeMode = gameMode === 'recipe';
+        const valueToTest = isRecipeMode ? option.id : option;
+        const correctVal = isRecipeMode ? correctAnswer.id : correctAnswer;
+
         let btnClass = "bg-lol-card border border-lol-gold/50 text-lol-blue hover:bg-gray-800";
         
-        // Logique de coloration (Vert/Rouge)
+        // Logique Couleur
         if (userGuess) {
-          if (option === correctAnswer) {
-            btnClass = "bg-green-700 border-green-500 text-white shadow-[0_0_15px_rgba(34,197,94,0.5)]";
-          } else if (option === userGuess) {
-            btnClass = "bg-red-900 border-red-500 text-white shake-animation"; 
-          } else {
-            btnClass = "opacity-40 border-gray-700 text-gray-500";
-          }
+           // On compare les IDs en mode recette, sinon les valeurs directes
+           const userGuessVal = isRecipeMode ? userGuess.id : userGuess;
+           
+           if (valueToTest === correctVal) {
+             btnClass = "bg-green-700 border-green-500 text-white shadow-[0_0_15px_rgba(34,197,94,0.5)]";
+           } else if (valueToTest === userGuessVal) {
+             btnClass = "bg-red-900 border-red-500 text-white shake-animation"; 
+           } else {
+             btnClass = "opacity-40 border-gray-700 text-gray-500";
+           }
         }
 
         return (
           <button
-            key={index} // On utilise index car pour les prix, les nombres n'ont pas d'ID unique
+            key={index}
             onClick={() => onGuess(option)}
             disabled={userGuess !== null}
             className={`
-              p-4 rounded shadow-lg font-medium text-sm transition-all duration-200 transform
+              rounded shadow-lg font-medium transition-all duration-200 transform
               ${btnClass}
               ${!userGuess ? 'hover:-translate-y-1 active:scale-95' : ''}
+              ${isRecipeMode ? 'p-2 flex justify-center items-center h-24' : 'p-4 text-sm'} 
             `}
           >
-            {getLabel(option)}
+            {isRecipeMode ? (
+                // AFFICHAGE IMAGE (Mode Recette)
+                <img 
+                    src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}/img/item/${option.image.full}`}
+                    alt={option.name}
+                    className="h-full object-contain drop-shadow-md"
+                />
+            ) : (
+                // AFFICHAGE TEXTE (Autres modes)
+                getLabel(option)
+            )}
           </button>
         );
       })}

@@ -25,7 +25,7 @@ async function updateData() {
     const rawItems = itemsData.data;
     const cleanItems = [];
     // Pour garantir l'unicité absolue
-    const processedIds = new Set();
+    const processedIds = new Set(["3867", "3869", "3870", "3871", "3876", "3877"]);
     const processedNames = new Set();
 
     for (const [id, item] of Object.entries(rawItems)) {
@@ -55,10 +55,12 @@ async function updateData() {
         
         // --- 2. NETTOYAGE DES DONNÉES ---
 
-        // Règle : Remplacer <br><br> par <br> dans la description
+        // Règle : Nettoyage de la description
         let cleanDescription = "";
         if (item.description) {
-            cleanDescription = item.description.replace(/<br><br>/g, '<br>');
+            cleanDescription = item.description
+                .replace(/<br><br>/g, '<br>') // Enlève les doubles sauts de ligne
+                .replace(/\u00A0/g, ' ');     // REMPLACE l'espace insécable (U+00A0) par un espace normal
         }
 
         // Règle : Gestion intelligente des Tags

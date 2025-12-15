@@ -3,26 +3,38 @@ import { TAG_DICT, PATCH_VERSION } from '../utils/constants';
 function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
 
   const getLabel = (option) => {
+    // --- SÉCURITÉ ANTI-CRASH ---
+    // Si on reçoit un Objet alors qu'on n'est pas en mode Recipe, 
+    // c'est qu'on est en train de changer de mode. On renvoie le nom pour éviter l'erreur #31.
+    if (typeof option === 'object' && option !== null) {
+        return option.name || "Chargement...";
+    }
+    // ---------------------------
+
     if (gameMode === 'attribute') return TAG_DICT[option] || option;
     if (gameMode === 'price') return `${option} PO`;
-    return option.name; // Fallback
+    return option; // Fallback
   };
 
   return (
     <div className="grid grid-cols-2 gap-3 w-full mb-8">
       {options.map((option, index) => {
-        // Pour le mode recette, 'option' est un OBJET item complet.
-        // Pour les autres modes, 'option' est une string ou un nombre.
-        const isRecipeMode = gameMode === 'recipe';
+        // On vérifie le mode, mais on s'assure aussi que l'option est bien un objet avant de demander une image
+        // pour éviter des bugs si gameMode est 'recipe' mais que options contient encore des strings
+        const isRecipeMode = gameMode === 'recipe' && typeof option === 'object';
+        
         const valueToTest = isRecipeMode ? option.id : option;
-        const correctVal = isRecipeMode ? correctAnswer.id : correctAnswer;
+        
+        // Sécurité pour correctAnswer qui peut aussi être en décalage lors du switch
+        let correctVal = correctAnswer;
+        if (isRecipeMode && correctAnswer && typeof correctAnswer === 'object') {
+            correctVal = correctAnswer.id;
+        }
 
         let btnClass = "bg-lol-card border border-lol-gold/50 text-lol-blue hover:bg-gray-800";
         
-        // Logique Couleur
         if (userGuess) {
-           // On compare les IDs en mode recette, sinon les valeurs directes
-           const userGuessVal = isRecipeMode ? userGuess.id : userGuess;
+           const userGuessVal = (isRecipeMode && userGuess.id) ? userGuess.id : userGuess;
            
            if (valueToTest === correctVal) {
              btnClass = "bg-green-700 border-green-500 text-white shadow-[0_0_15px_rgba(34,197,94,0.5)]";
@@ -46,14 +58,12 @@ function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
             `}
           >
             {isRecipeMode ? (
-                // AFFICHAGE IMAGE (Mode Recette)
                 <img 
                     src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}/img/item/${option.image.full}`}
                     alt={option.name}
                     className="h-full object-contain drop-shadow-md"
                 />
             ) : (
-                // AFFICHAGE TEXTE (Autres modes)
                 getLabel(option)
             )}
           </button>

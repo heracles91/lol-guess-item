@@ -1432,7 +1432,7 @@
     },
     {
         "id": "3109",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 12% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 10%</healing> des dégâts qu'il inflige aux champions.<active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 12% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 10%</healing> des dégâts qu'il inflige aux champions.<br><active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
         "plaintext": "Désignez un partenaire et protégez-vous l'un l'autre.",
         "name": "Vœu du chevalier",
         "gold": 2300,

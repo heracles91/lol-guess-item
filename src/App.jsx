@@ -150,6 +150,8 @@ function App() {
 
   const nextRound = (specificMode = null) => {
     const effectiveMode = specificMode || gameMode;
+
+    // Gestion du HighScore affiché
     const currentModeHighScore = allHighScores[effectiveMode] || 0;
     setHighScore(currentModeHighScore);
 
@@ -158,6 +160,9 @@ function App() {
     setCorrectAnswer(null);
     setShake(false);
 
+    // ====================================================
+    // ÉTAPE 1 : SÉLECTION DE L'ITEM
+    // ====================================================
     let item;
 
     // --- 1. SÉLECTION DE L'ITEM PRINCIPAL ---
@@ -165,55 +170,27 @@ function App() {
        const pricedItems = itemsDataRaw.filter(i => typeof i.gold === 'number' && i.gold > 0);
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
     } else if (effectiveMode === 'recipe') {
-        // A. Trouver la bonne réponse
-        const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
-        const correctComponent = itemsDataRaw.find(i => i.id === correctComponentId);
-
-        // B. Trouver les mauvaises réponses INTELLIGENTES
-        // Critères :
-        // 1. Pas l'objet lui-même ni un autre ingrédient de la recette
-        // 2. Doit partager au moins UN tag avec l'objet final (ex: "Damage") pour être crédible
-        // 3. Doit être dans la même fourchette de prix (+/- 300 PO) pour éviter les sous-composants trop petits
-        
-        const targetPrice = correctComponent.gold; // ex: 1100
-        const targetTags = item.tags || [];
-
-        let smartFakes = itemsDataRaw.filter(i => {
-            // Exclusion de base (pas le bon, pas dans la recette, pas l'objet final)
-            if (i.id === correctComponentId || item.from.includes(i.id) || i.id === item.id) return false;
-            
-            // Vérification du prix (C'est ça qui élimine les sous-composants comme épée longue vs phage)
-            const isPriceSimilar = Math.abs(i.gold - targetPrice) <= 400; // Marge de 400 PO
-            if (!isPriceSimilar) return false;
-
-            // Vérification des tags (Contextuel)
-            const hasSharedTag = i.tags && i.tags.some(tag => targetTags.includes(tag));
-            
-            return hasSharedTag;
-        });
-
-        // C. Sécurité : Si on n'a pas trouvé assez de "Smart Fakes" (cas rare), on élargit la recherche
-        if (smartFakes.length < 3) {
-            smartFakes = itemsDataRaw.filter(i => 
-                i.id !== correctComponentId && 
-                !item.from.includes(i.id) &&
-                i.gold < 3000 // Juste pas des items complets
-            );
-        }
-
-        const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
-
-        setCorrectAnswer(correctComponent);
-        setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
+       // Pour la recette, on ne veut QUE des items qui ont des composants (from)
+       const complexItems = itemsDataRaw.filter(i => i.from && i.from.length > 0);
+       item = complexItems[Math.floor(Math.random() * complexItems.length)];
     }
     else {
+      // Par défaut (Attribute)
        item = getRandomItem();
     }
     
-    if (!item) return;
+    if (!item) {
+      console.error("Aucun item trouvé pour le mode :", effectiveMode);
+      return;
+    } else {
+      console.log(item);
+    }
+
     setCurrentItem(item);
 
-    // --- 2. GÉNÉRATION DES OPTIONS ---
+    // ====================================================
+    // ÉTAPE 2 : GÉNÉRATION DES OPTIONS (Maintenant item existe !)
+    // ====================================================
     
     if (effectiveMode === 'attribute') {
         const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
@@ -232,23 +209,40 @@ function App() {
         setOptions(generatePriceOptions(price));
 
     } else if (effectiveMode === 'recipe') {
-        // A. Trouver la bonne réponse (un ID présent dans "from")
+        // --- LOGIQUE INTELLIGENTE (Smart Fakes) ---
+        
+        // A. La bonne réponse
         const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
-        // On cherche l'objet complet correspondant à cet ID
         const correctComponent = itemsDataRaw.find(i => i.id === correctComponentId);
 
-        // B. Trouver les mauvaises réponses
-        // On cherche des items "basiques" (prix < 1300 ou qui n'ont pas de recette) pour que ce soit crédible
-        // Et on s'assure qu'ils ne sont PAS dans la recette de l'item actuel
-        const potentialFakes = itemsDataRaw.filter(i => 
-            i.gold < 1300 && 
-            i.id !== correctComponentId && 
-            !item.from.includes(i.id)
-        );
-        
-        const wrongComponents = potentialFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
+        // B. Les mauvaises réponses
+        const targetPrice = correctComponent.gold; 
+        const targetTags = item.tags || [];
 
-        // La bonne réponse est l'objet complet, pas juste l'ID
+        let smartFakes = itemsDataRaw.filter(i => {
+            // 1. Pas l'objet lui-même, pas le bon composant, pas dans la recette
+            if (i.id === correctComponentId || item.from.includes(i.id) || i.id === item.id) return false;
+            
+            // 2. Prix similaire (+/- 400 PO) pour éviter les écarts trop flagrants
+            const isPriceSimilar = Math.abs(i.gold - targetPrice) <= 400;
+            if (!isPriceSimilar) return false;
+
+            // 3. Contexte similaire (partage au moins un tag)
+            const hasSharedTag = i.tags && i.tags.some(tag => targetTags.includes(tag));
+            return hasSharedTag;
+        });
+
+        // Sécurité : si on manque de fakes intelligents, on élargit
+        if (smartFakes.length < 3) {
+            smartFakes = itemsDataRaw.filter(i => 
+                i.id !== correctComponentId && 
+                !item.from.includes(i.id) &&
+                i.gold < 3000 
+            );
+        }
+
+        const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
+
         setCorrectAnswer(correctComponent);
         setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
     }

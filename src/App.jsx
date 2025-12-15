@@ -172,7 +172,7 @@ function App() {
     const currentModeHighScore = allHighScores[effectiveMode] || 0;
     setHighScore(currentModeHighScore);
 
-    if (lives <= 0) { setScore(0); setLives(3); }
+    //if (lives <= 0) { setScore(0); setLives(3); }
     setUserGuess(null);
     setCorrectAnswer(null);
     setShake(false);
@@ -267,6 +267,13 @@ function App() {
     }
   };
 
+  const restartGame = () => {
+    setScore(0);
+    setLives(3);
+    // On relance un round immédiatement
+    nextRound();
+  };
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
     setScore(0);
@@ -326,6 +333,17 @@ function App() {
          
          <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">Compatible Patch {PATCH_VERSION}</div>
       </div>
+    );
+  }
+
+  // GESTION DU GAME OVER
+  if (lives <= 0) {
+    return (
+        <GameOver 
+            score={score} 
+            onRestart={restartGame} 
+            gameMode={gameMode} 
+        />
     );
   }
 

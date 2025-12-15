@@ -24,4 +24,4 @@ export const TAG_DICT = {
   
 export const VALID_TAGS = Object.keys(TAG_DICT);
 
-export const PATCH_VERSION = "15.24";
+export const PATCH_VERSION = "15.24.1";

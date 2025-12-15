@@ -10,7 +10,7 @@ function GameOver({ score, onRestart, gameMode }) {
     const modeLabel = gameMode === 'price' ? 'Prix' : (gameMode === 'recipe' ? 'Recette' : 'Stats');
     
     // Le texte stylé à copier
-    const text = `🛡️ LoL Quiz | Mode : ${modeLabel}\n🏆 Score : ${score} (${rank.name})\n🔗 Joue ici : https://lol-guess-item.vercel.app`; // Mets ton URL Vercel ici
+    const text = `🛡️ LoL Quiz | Mode : ${modeLabel}\n🏆 Score : ${score} (${rank.name})\n🔗 Joue ici : https://lol-guess-item.kameni.fr`; // Mets ton URL Vercel ici
 
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true);

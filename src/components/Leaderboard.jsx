@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
 import { getRankData, getRankImage } from '../utils/ranks';
 
-function Leaderboard({ onClose }) {
+function Leaderboard({ onClose, gameMode }) {
   const [players, setPlayers] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -11,12 +11,14 @@ function Leaderboard({ onClose }) {
   }, []);
 
   const fetchLeaderboard = async () => {
+    const column = `score_${gameMode}`; // ex: score_price
+
     // On récupère les 50 meilleurs scores qui ont un pseudo
     const { data, error } = await supabase
       .from('profiles')
-      .select('username, best_score')
+      .select(`username, ${column}`)
       .not('username', 'is', null) // On ignore ceux qui n'ont pas mis de pseudo
-      .order('best_score', { ascending: false })
+      .order(column, { ascending: false })
       .limit(50);
 
     if (error) console.error('Erreur leaderboard:', error);
@@ -51,7 +53,7 @@ function Leaderboard({ onClose }) {
                     </thead>
                     <tbody>
                         {players.map((player, index) => {
-                            const rank = getRankData(player.best_score);
+                            const rank = getRankData(player[`score_${gameMode}`]);
                             // Top 3 en couleur
                             let rowClass = "border-b border-gray-800 hover:bg-white/5 transition";
                             let textClass = "text-gray-300";

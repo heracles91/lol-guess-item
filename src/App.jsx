@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import itemsDataRaw from './data/items.json';
-import { VALID_TAGS } from './utils/constants';
+import { VALID_TAGS, PATCH_VERSION } from './utils/constants';
 import { supabase } from './utils/supabaseClient';
 
 import Header from './components/Header';
@@ -96,30 +96,40 @@ function App() {
     return () => subscription.unsubscribe();
   }, []);
 
-  const loadLocalHighScore = () => {
-    const local = parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
+  const loadLocalHighScore = (mode = 'attribute') => {
+    const local = parseInt(localStorage.getItem(`lol-quiz-highscore-${mode}`)) || 0;
     setHighScore(local);
   };
 
   const fetchProfile = async (userId) => {
-    const { data } = await supabase.from('profiles').select('username, best_score').eq('id', userId).single();
+    // On récupère score_attribute et score_price
+    const { data } = await supabase
+        .from('profiles')
+        .select('username, score_attribute, score_price')
+        .eq('id', userId)
+        .single();
+        
     if (data) {
       setUsername(data.username);
-      const local = parseInt(localStorage.getItem('lol-quiz-highscore')) || 0;
-      if (local > (data.best_score || 0)) {
-        setHighScore(local);
-        updateProfileScore(userId, local);
-      } else {
-        setHighScore(data.best_score || 0);
-        localStorage.setItem('lol-quiz-highscore', data.best_score || 0);
-      }
+      // On sauvegarde tout dans un état global ou on met à jour le highScore courant selon le mode
+      // Pour faire simple : on stocke les scores dans un objet state caché, ou on recharge le highScore quand on change de mode.
+      // -> Option simple : On recharge juste le highScore local du mode 'attribute' par défaut au début
+      const modeScore = gameMode === 'price' ? (data.score_price || 0) : (data.score_attribute || 0);
+      setHighScore(modeScore);
+      
+      // Note: Le localStorage devient plus complexe à gérer avec plusieurs modes. 
+      // Pour l'instant, on se fie surtout à la DB si connecté.
     } else {
-        await supabase.from('profiles').insert([{ id: userId, best_score: 0 }]);
+        await supabase.from('profiles').insert([{ id: userId, score_attribute: 0, score_price: 0 }]);
     }
   };
 
   const updateProfileScore = async (userId, newScore) => {
-    await supabase.from('profiles').update({ best_score: newScore, updated_at: new Date() }).eq('id', userId);
+    // On détermine dynamiquement le nom de la colonne : 'score_attribute', 'score_price', 'score_recipe'
+    const column = `score_${gameMode}`; 
+    
+    // La syntaxe [column] permet d'utiliser une variable comme clé
+    await supabase.from('profiles').update({ [column]: newScore, updated_at: new Date() }).eq('id', userId);
   };
 
   const handleSetUsername = async (newUsername) => {
@@ -132,7 +142,16 @@ function App() {
 
   const nextRound = (specificMode = null) => {
     const effectiveMode = specificMode || gameMode;
-    console.log("Mode actif :", effectiveMode);
+
+    // Si le mode a changé, on recharge le bon High Score
+    if (specificMode && specificMode !== gameMode) {
+        if (session) {
+            // Si connecté, on refait un fetch rapide (ou mieux: on stocke les scores en cache, mais fetch est plus simple)
+            fetchProfile(session.user.id);
+        } else {
+            loadLocalHighScore(effectiveMode);
+        }
+    }
 
     if (lives <= 0) {
       setScore(0);
@@ -181,13 +200,11 @@ function App() {
 
     } else if (effectiveMode === 'price') {
         const price = item.gold;
-        console.log("Prix détecté :", price, "Type:", typeof price); // <--- LOG IMPORTANT
 
         setCorrectAnswer(price);
         
         // On appelle la fonction externe
         const priceOptions = generatePriceOptions(price);
-        console.log("Options générées :", priceOptions);
         
         setOptions(priceOptions);
     }
@@ -214,11 +231,15 @@ function App() {
         colors: ['#C8AA6E', '#091428', '#CDFAFA']
       });
 
+      // Dans le bloc "if (isCorrect)"
       const newScore = score + 1;
       setScore(newScore);
+      
       if (newScore > highScore) {
         setHighScore(newScore);
-        localStorage.setItem('lol-quiz-highscore', newScore);
+        // On utilise une clé localStorage différente par mode pour éviter les conflits
+        localStorage.setItem(`lol-quiz-highscore-${gameMode}`, newScore);
+        
         if (session) updateProfileScore(session.user.id, newScore);
       }
     } else {
@@ -275,7 +296,7 @@ function App() {
          }} />
 
          {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-         {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
+         {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} gameMode={gameMode === 'menu' ? 'attribute' : gameMode} />}
          
          <div className="mt-auto text-xs text-gray-500 py-4">Version 1.3 - Multi-Modes</div>
       </div>
@@ -357,6 +378,9 @@ function App() {
       
       <div className="mt-auto text-xs text-gray-500 py-4">
         Mode: {gameMode === 'price' ? 'Devine le Prix' : 'Devine les Stats'}
+      </div>
+      <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">
+        Compatible Patch {PATCH_VERSION}
       </div>
     </div>
   );

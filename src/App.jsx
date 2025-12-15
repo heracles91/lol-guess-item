@@ -184,7 +184,6 @@ function App() {
     }
     
     setCurrentItem(item);
-    console.log("Item choisi :", item.name);
 
     // 2. GÉNÉRATION DES OPTIONS
     if (effectiveMode === 'attribute') {
@@ -296,7 +295,7 @@ function App() {
          }} />
 
          {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-         {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} gameMode={gameMode === 'menu' ? 'attribute' : gameMode} />}
+         {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
          
          <div className="mt-auto text-xs text-gray-500 py-4">Version 1.3 - Multi-Modes</div>
       </div>
@@ -376,11 +375,8 @@ function App() {
 
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
       
-      <div className="mt-auto text-xs text-gray-500 py-4">
-        Mode: {gameMode === 'price' ? 'Devine le Prix' : 'Devine les Stats'}
-      </div>
-      <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">
-        Compatible Patch {PATCH_VERSION}
+      <div className="mt-auto text-xs text-gray-500 py-4" opacity-50>
+        Mode: {gameMode === 'price' ? 'Devine le Prix' : 'Devine les Stats'} | Compatible Patch {PATCH_VERSION}
       </div>
     </div>
   );

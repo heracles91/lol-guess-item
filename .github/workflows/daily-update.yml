@@ -1,0 +1,48 @@
+name: Update LoL Data
+
+# Se lance tous les jours à 8h00 du matin
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  # Permet aussi de le lancer manuellement depuis l'interface GitHub pour tester
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-items:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Récupérer le code
+      uses: actions/checkout@v4
+
+    - name: Installer Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Installer les dépendances (nécessaire pour le script)
+      run: npm ci
+
+    - name: Lancer le script de mise à jour
+      run: npm run update-data
+
+    - name: Vérifier s'il y a des changements
+      id: check_changes
+      run: |
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "changes=true" >> $GITHUB_OUTPUT
+        else
+          echo "changes=false" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Commit et Push si changements
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git config --global user.name 'LoL Quiz Bot'
+        git config --global user.email 'bot@noreply.github.com'
+        git add src/data/items.json src/utils/constants.js
+        git commit -m "🤖 Mise à jour automatique des items (Patch)"
+        git push

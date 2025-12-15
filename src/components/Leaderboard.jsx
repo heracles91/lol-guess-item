@@ -62,16 +62,14 @@ function Leaderboard({ onClose }) {
             >
                 💰 Prix
             </button>
-             {/* Tu pourras décommenter ça plus tard pour le mode recette */}
-             {/* <button 
-                onClick={() => setCurrentView('recipe')}
-                className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider transition-colors border-l border-lol-gold/30
-                    ${currentView === 'recipe' ? 'bg-lol-gold text-black' : 'bg-[#091428] text-gray-500 hover:bg-gray-800'}
-                `}
-            >
-                🔨 Recette
-            </button> 
-            */}
+            <button 
+              onClick={() => setCurrentView('recipe')}
+              className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider transition-colors border-l border-lol-gold/30
+                  ${currentView === 'recipe' ? 'bg-lol-gold text-black' : 'bg-[#091428] text-gray-500 hover:bg-gray-800'}
+              `}
+          >
+              🔨 Recette
+          </button> 
         </div>
 
         {/* Liste Scrollable */}

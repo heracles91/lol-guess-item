@@ -476,7 +476,6 @@
             "SpellDamage",
             "ManaRegen",
             "Active",
-            "AbilityHaste",
             "NonMovementSpeedMovement",
             "AbilityHaste"
         ],
@@ -593,7 +592,6 @@
             "Health",
             "SpellBlock",
             "Armor",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -610,7 +608,6 @@
         "tags": [
             "SpellDamage",
             "Mana",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -689,7 +686,6 @@
         "tags": [
             "Damage",
             "Mana",
-            "AbilityHaste",
             "OnHit",
             "AbilityHaste"
         ],
@@ -764,7 +760,6 @@
         "tags": [
             "Armor",
             "Mana",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1007,7 +1002,6 @@
             "Health",
             "SpellBlock",
             "HealthRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1037,7 +1031,6 @@
         "gold": 800,
         "tags": [
             "Health",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1083,7 +1076,6 @@
         "tags": [
             "Health",
             "Damage",
-            "AbilityHaste",
             "OnHit",
             "NonMovementSpeedMovement",
             "ArmorPenetration",
@@ -1121,7 +1113,6 @@
             "Health",
             "Damage",
             "AttackSpeed",
-            "AbilityHaste",
             "NonMovementSpeedMovement",
             "AbilityHaste"
         ],
@@ -1140,7 +1131,6 @@
         "tags": [
             "Damage",
             "LifeSteal",
-            "AbilityHaste",
             "OnHit",
             "AbilityHaste"
         ],
@@ -1205,7 +1195,6 @@
             "Health",
             "Damage",
             "AttackSpeed",
-            "AbilityHaste",
             "OnHit",
             "NonMovementSpeedMovement",
             "AbilityHaste"
@@ -1403,7 +1392,6 @@
         "tags": [
             "SpellBlock",
             "Armor",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1420,7 +1408,6 @@
         "tags": [
             "Health",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1436,7 +1423,6 @@
         "gold": 850,
         "tags": [
             "SpellDamage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1456,7 +1442,6 @@
             "Armor",
             "Aura",
             "Active",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1475,7 +1460,6 @@
             "Armor",
             "Mana",
             "Aura",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1633,7 +1617,6 @@
         "gold": 1050,
         "tags": [
             "Damage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -1811,7 +1794,6 @@
             "Health",
             "SpellDamage",
             "Active",
-            "AbilityHaste",
             "NonMovementSpeedMovement",
             "AbilityHaste"
         ],
@@ -1931,7 +1913,6 @@
         "tags": [
             "Health",
             "SpellDamage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2047,7 +2028,6 @@
         "tags": [
             "Damage",
             "Vision",
-            "AbilityHaste",
             "ArmorPenetration",
             "AbilityHaste"
         ],
@@ -2121,7 +2101,6 @@
             "Health",
             "ManaRegen",
             "Active",
-            "AbilityHaste",
             "Tenacity",
             "AbilityHaste"
         ],
@@ -2231,7 +2210,6 @@
             "Damage",
             "CriticalStrike",
             "ManaRegen",
-            "AbilityHaste",
             "OnHit",
             "AbilityHaste"
         ],
@@ -2324,7 +2302,6 @@
             "SpellDamage",
             "Mana",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2495,7 +2472,6 @@
         "tags": [
             "SpellDamage",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2613,7 +2589,6 @@
             "Armor",
             "Vision",
             "Active",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": []
@@ -2627,7 +2602,6 @@
         "tags": [
             "SpellDamage",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2648,7 +2622,6 @@
             "Armor",
             "Vision",
             "Active",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2713,7 +2686,6 @@
         "tags": [
             "Health",
             "Damage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2731,7 +2703,6 @@
         "tags": [
             "Health",
             "Damage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2749,7 +2720,6 @@
         "tags": [
             "SpellDamage",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2767,7 +2737,6 @@
             "Health",
             "SpellDamage",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2785,7 +2754,6 @@
             "Health",
             "SpellDamage",
             "ManaRegen",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2851,7 +2819,6 @@
         "tags": [
             "SpellDamage",
             "Mana",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -2901,7 +2868,6 @@
         "tags": [
             "Health",
             "Armor",
-            "AbilityHaste",
             "Slow",
             "OnHit",
             "AbilityHaste"
@@ -3053,7 +3019,6 @@
         "gold": 2900,
         "tags": [
             "Damage",
-            "AbilityHaste",
             "AbilityHaste"
         ],
         "from": [
@@ -3070,7 +3035,6 @@
         "gold": 3000,
         "tags": [
             "Damage",
-            "AbilityHaste",
             "ArmorPenetration",
             "AbilityHaste"
         ],
@@ -3119,7 +3083,6 @@
         "tags": [
             "Damage",
             "Active",
-            "AbilityHaste",
             "ArmorPenetration",
             "AbilityHaste"
         ],
@@ -3137,7 +3100,6 @@
         "tags": [
             "Damage",
             "Active",
-            "AbilityHaste",
             "ArmorPenetration",
             "AbilityHaste"
         ],
@@ -3155,7 +3117,6 @@
         "tags": [
             "Damage",
             "Active",
-            "AbilityHaste",
             "ArmorPenetration",
             "AbilityHaste"
         ],
@@ -3209,7 +3170,6 @@
         "tags": [
             "Health",
             "SpellBlock",
-            "AbilityHaste",
             "MagicResist",
             "AbilityHaste"
         ],

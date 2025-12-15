@@ -29,3 +29,39 @@ body {
 .animate-shake {
   animation: shake 0.4s cubic-bezier(.36,.07,.19,.97) both;
 }
+
+/* Styles spécifiques pour les descriptions Riot Games */
+.riot-description attention {
+  color: #fff; /* Les chiffres importants en blanc */
+  font-weight: bold;
+}
+
+.riot-description passive {
+  color: #ffd700; /* Passifs en doré */
+  font-weight: bold;
+  display: block; /* Force le retour à la ligne pour les titres de passifs */
+  margin-top: 4px;
+}
+
+.riot-description active {
+  color: #cdfafa; /* Actifs en bleu clair */
+  font-weight: bold;
+  display: block;
+  margin-top: 4px;
+}
+
+.riot-description stats {
+  color: #9aa4af;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.riot-description rules {
+  color: #888;
+  font-style: italic;
+}
+
+/* On cache les balises de structure inutiles visuellement */
+.riot-description mainText {
+  display: block;
+}

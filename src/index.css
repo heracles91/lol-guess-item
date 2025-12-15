@@ -39,14 +39,12 @@ body {
 .riot-description passive {
   color: #ffd700; /* Passifs en doré */
   font-weight: bold;
-  display: block; /* Force le retour à la ligne pour les titres de passifs */
   margin-top: 4px;
 }
 
 .riot-description active {
   color: #cdfafa; /* Actifs en bleu clair */
   font-weight: bold;
-  display: block;
   margin-top: 4px;
 }
 
@@ -64,4 +62,175 @@ body {
 /* On cache les balises de structure inutiles visuellement */
 .riot-description mainText {
   display: block;
+}
+
+.riot-description onhit {
+  color: #F59E0B;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description attackspeed {
+  color: #FACC15;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description gold {
+  color: #FBBF24;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description healing {
+  color: #22C55E;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description keyword {
+  color: #FB923C;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.riot-description keywordmajor {
+  color: #EF4444;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.riot-description keywordstealth {
+  color: #A855F7;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.riot-description lifesteal {
+  color: #DC2626;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description magicdamage {
+  color: #3B82F6;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description omnivamp {
+  color: #EC4899;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description physicaldamage {
+  color: #F97316;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description trueDamage,
+.riot-description truedamage {
+  color: #F8FAFC;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(248, 250, 252, 0.22);
+  white-space: nowrap;
+}
+
+/* Scaling values */
+.riot-description scalead {
+  color: #F97316;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scaleap {
+  color: #3B82F6;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scalearmor {
+  color: #94A3B8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scalehealth {
+  color: #22C55E;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scalelethality {
+  color: #991B1B;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.riot-description scalelevel {
+  color: #60A5FA;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scalemr {
+  color: #A78BFA;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description scalemana {
+  color: #06B6D4;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Defensive / utility */
+.riot-description shield {
+  color: #38BDF8;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description speed {
+  color: #14B8A6;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description spellname {
+  color: #F472B6;
+  font-weight: 800;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.riot-description status {
+  color: #A3E635;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+/* Rarity */
+.riot-description raritygeneric {
+  color: #9CA3AF;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.riot-description raritylegendary {
+  color: #F59E0B;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.18);
+  white-space: nowrap;
 }

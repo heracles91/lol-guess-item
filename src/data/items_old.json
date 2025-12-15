@@ -1,7 +1,7 @@
 [
     {
         "id": "1001",
-        "description": "<mainText><stats><attention>+25</attention> vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> vitesse de déplacement</stats><br></mainText>",
         "name": "Bottes",
         "gold": 300,
         "tags": [
@@ -10,7 +10,7 @@
     },
     {
         "id": "1004",
-        "description": "<mainText><stats><attention>+50%</attention> de régénération de base du mana</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+50%</attention> de régénération de base du mana</stats><br></mainText>",
         "name": "Charme féérique",
         "gold": 200,
         "tags": [
@@ -19,7 +19,7 @@
     },
     {
         "id": "1006",
-        "description": "<mainText><stats><attention>+100%</attention> de régénération de base des PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+100%</attention> de régénération de base des PV</stats><br></mainText>",
         "name": "Collier rafraîchissant",
         "gold": 300,
         "tags": [
@@ -28,7 +28,7 @@
     },
     {
         "id": "1011",
-        "description": "<mainText><stats><attention>+350</attention> PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+350</attention> PV</stats><br></mainText>",
         "name": "Ceinture du géant",
         "gold": 900,
         "tags": [
@@ -37,7 +37,7 @@
     },
     {
         "id": "1018",
-        "description": "<mainText><stats><attention>+15%</attention> de chances de coup critique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15%</attention> de chances de coup critique</stats><br></mainText>",
         "name": "Cape d'agilité",
         "gold": 600,
         "tags": [
@@ -46,7 +46,7 @@
     },
     {
         "id": "1026",
-        "description": "<mainText><stats><attention>+45</attention> puissance</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+45</attention> puissance</stats><br></mainText>",
         "name": "Baguette explosive",
         "gold": 850,
         "tags": [
@@ -55,7 +55,7 @@
     },
     {
         "id": "1027",
-        "description": "<mainText><stats><attention>+300</attention> mana</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+300</attention> mana</stats><br></mainText>",
         "name": "Cristal de saphir",
         "gold": 300,
         "tags": [
@@ -64,7 +64,7 @@
     },
     {
         "id": "1028",
-        "description": "<mainText><stats><attention>+150</attention> PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+150</attention> PV</stats><br></mainText>",
         "name": "Cristal de rubis",
         "gold": 400,
         "tags": [
@@ -73,7 +73,7 @@
     },
     {
         "id": "1029",
-        "description": "<mainText><stats><attention>+15</attention> armure</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> armure</stats><br></mainText>",
         "name": "Armure d'étoffe",
         "gold": 300,
         "tags": [
@@ -82,7 +82,7 @@
     },
     {
         "id": "1031",
-        "description": "<mainText><stats><attention>+40</attention> armure</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+40</attention> armure</stats><br></mainText>",
         "name": "Cotte de mailles",
         "gold": 800,
         "tags": [
@@ -91,7 +91,7 @@
     },
     {
         "id": "1033",
-        "description": "<mainText><stats><attention>+20</attention> résistance magique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> résistance magique</stats><br></mainText>",
         "name": "Cape de néant",
         "gold": 400,
         "tags": [
@@ -100,7 +100,7 @@
     },
     {
         "id": "1036",
-        "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque</stats><br></mainText>",
         "name": "Épée longue",
         "gold": 350,
         "tags": [
@@ -110,7 +110,7 @@
     },
     {
         "id": "1037",
-        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque</stats><br></mainText>",
         "name": "Pioche",
         "gold": 875,
         "tags": [
@@ -119,7 +119,7 @@
     },
     {
         "id": "1038",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque</stats><br></mainText>",
         "name": "BF Glaive",
         "gold": 1300,
         "tags": [
@@ -128,7 +128,7 @@
     },
     {
         "id": "1042",
-        "description": "<mainText><stats><attention>+10%</attention> de vitesse d'attaque</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+10%</attention> de vitesse d'attaque</stats><br></mainText>",
         "name": "Dague",
         "gold": 250,
         "tags": [
@@ -137,7 +137,7 @@
     },
     {
         "id": "1043",
-        "description": "<mainText><stats><attention>+15%</attention> de vitesse d'attaque</stats><br><br><passive>Dard</passive><br>Les attaques infligent <physicalDamage>15 pts de dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+15%</attention> de vitesse d'attaque</stats><br><passive>Dard</passive><br>Les attaques infligent <physicalDamage>15 pts de dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Arc courbe",
         "gold": 700,
         "tags": [
@@ -147,7 +147,7 @@
     },
     {
         "id": "1052",
-        "description": "<mainText><stats><attention>+20</attention> puissance</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> puissance</stats><br></mainText>",
         "name": "Tome d'amplification",
         "gold": 400,
         "tags": [
@@ -156,7 +156,7 @@
     },
     {
         "id": "1053",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+7%</attention> de vol de vie</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+7%</attention> de vol de vie</stats><br></mainText>",
         "name": "Sceptre vampirique",
         "gold": 900,
         "tags": [
@@ -166,7 +166,7 @@
     },
     {
         "id": "1054",
-        "description": "<mainText><stats><attention>+110</attention> PV</stats><br><br><passive>Focalisation cicatrisante</passive><br>Vous récupérez <healing>4 PV</healing> toutes les 5 sec. <br>Après avoir subi des dégâts d'un champion ennemi, vous récupérez des <healing>PV</healing> en 8 sec.<br><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
+        "description": "<mainText><stats><attention>+110</attention> PV</stats><br><passive>Focalisation cicatrisante</passive><br>Vous récupérez <healing>4 PV</healing> toutes les 5 sec. <br>Après avoir subi des dégâts d'un champion ennemi, vous récupérez des <healing>PV</healing> en 8 sec.<br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
         "name": "Bouclier de Doran",
         "gold": 450,
         "tags": [
@@ -177,7 +177,7 @@
     },
     {
         "id": "1055",
-        "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque<br><attention>+80</attention> PV</stats><br><br><passive>Drain vital</passive><br>Vous récupérez 2.5% des dégâts infligés en <healing>PV</healing>. La zone d'efficacité des compétences et dégâts des compagnons est réduite de 33.3%.</mainText>",
+        "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque<br><attention>+80</attention> PV</stats><br><passive>Drain vital</passive><br>Vous récupérez 2.5% des dégâts infligés en <healing>PV</healing>. La zone d'efficacité des compétences et dégâts des compagnons est réduite de 33.3%.</mainText>",
         "name": "Lame de Doran",
         "gold": 450,
         "tags": [
@@ -189,7 +189,7 @@
     },
     {
         "id": "1056",
-        "description": "<mainText><stats><attention>+18</attention> puissance<br><attention>+90</attention> PV</stats><br><br><passive>Drain</passive><br>Restaure <scaleMana>1 mana</scaleMana> toutes les secondes, ce bonus passe à <scaleMana>2 mana</scaleMana> par seconde pendant 5 sec après avoir infligé des dégâts à un champion ennemi. Si vous ne pouvez pas récupérer de mana, vous <healing>récupérez 45% de cette valeur en PV</healing> à la place.<br><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
+        "description": "<mainText><stats><attention>+18</attention> puissance<br><attention>+90</attention> PV</stats><br><passive>Drain</passive><br>Restaure <scaleMana>1 mana</scaleMana> toutes les secondes, ce bonus passe à <scaleMana>2 mana</scaleMana> par seconde pendant 5 sec après avoir infligé des dégâts à un champion ennemi. Si vous ne pouvez pas récupérer de mana, vous <healing>récupérez 45% de cette valeur en PV</healing> à la place.<br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
         "name": "Anneau de Doran",
         "gold": 400,
         "tags": [
@@ -201,7 +201,7 @@
     },
     {
         "id": "1057",
-        "description": "<mainText><stats><attention>+45</attention> résistance magique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+45</attention> résistance magique</stats><br></mainText>",
         "name": "Manteau de Négatron",
         "gold": 850,
         "tags": [
@@ -210,7 +210,7 @@
     },
     {
         "id": "1058",
-        "description": "<mainText><stats><attention>+65</attention> puissance</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+65</attention> puissance</stats><br></mainText>",
         "name": "Baguette trop grosse",
         "gold": 1200,
         "tags": [
@@ -219,7 +219,7 @@
     },
     {
         "id": "1082",
-        "description": "<mainText><stats><attention>+15</attention> puissance<br><attention>+50</attention> PV</stats><br><br><passive>Gloire</passive><br>Participer à une <keyword>élimination</keyword> vous fait gagner des effets <passive>Gloire</passive> (10 effets cumulés max). Vous perdez 5 <passive>effets Gloire</passive> en cas de mort.<br>Vous gagnez <scaleAP>+4 puissance</scaleAP> par effet <passive>Gloire</passive>.</mainText>",
+        "description": "<mainText><stats><attention>+15</attention> puissance<br><attention>+50</attention> PV</stats><br><passive>Gloire</passive><br>Participer à une <keyword>élimination</keyword> vous fait gagner des effets <passive>Gloire</passive> (10 effets cumulés max). Vous perdez 5 <passive>effets Gloire</passive> en cas de mort.<br>Vous gagnez <scaleAP>+4 puissance</scaleAP> par effet <passive>Gloire</passive>.</mainText>",
         "name": "Sceau noir",
         "gold": 350,
         "tags": [
@@ -230,7 +230,7 @@
     },
     {
         "id": "1083",
-        "description": "<mainText><stats><attention>+7</attention> dégâts d'attaque</stats><br><br><passive>Fauchaison</passive><br>Vos attaques vous rendent <healing>3 PV</healing> <OnHit>à l'impact</OnHit>.<br>Tuer des sbires vous rapporte <gold>1 PO</gold> (jusqu'à <gold>100 PO</gold> max). Atteindre la limite vous rapporte <gold>350 PO</gold> bonus.<br></mainText>",
+        "description": "<mainText><stats><attention>+7</attention> dégâts d'attaque</stats><br><passive>Fauchaison</passive><br>Vos attaques vous rendent <healing>3 PV</healing> <OnHit>à l'impact</OnHit>.<br>Tuer des sbires vous rapporte <gold>1 PO</gold> (jusqu'à <gold>100 PO</gold> max). Atteindre la limite vous rapporte <gold>350 PO</gold> bonus.<br></mainText>",
         "name": "Abatteur",
         "gold": 450,
         "tags": [
@@ -241,7 +241,7 @@
     },
     {
         "id": "1101",
-        "description": "<mainText><stats></stats><br><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#DD2E2E'>Chardent</font> qui vous assistera contre les monstres.<br><br><passive>Griffure de Chardent</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il renforce périodiquement votre prochaine attaque ou compétence pour qu'elle brûle les ennemis et les <status>ralentisse</status>. Tuer un grand monstre prépare immédiatement cet effet.</mainText>",
+        "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#DD2E2E'>Chardent</font> qui vous assistera contre les monstres.<br><passive>Griffure de Chardent</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il renforce périodiquement votre prochaine attaque ou compétence pour qu'elle brûle les ennemis et les <status>ralentisse</status>. Tuer un grand monstre prépare immédiatement cet effet.</mainText>",
         "name": "Bébé Chardent",
         "gold": 450,
         "tags": [
@@ -250,7 +250,7 @@
     },
     {
         "id": "1102",
-        "description": "<mainText><stats></stats><br><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#38A8E8'>Saute-nuages</font> qui vous assistera contre les monstres.<br><br><passive>Cadence de Saute-nuages</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, vous gagnez de la <speed>vitesse de déplacement</speed> quand vous entrez dans des hautes herbes. Ce bonus augmente quand vous tuez des grands monstres.</mainText>",
+        "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#38A8E8'>Saute-nuages</font> qui vous assistera contre les monstres.<br><passive>Cadence de Saute-nuages</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, vous gagnez de la <speed>vitesse de déplacement</speed> quand vous entrez dans des hautes herbes. Ce bonus augmente quand vous tuez des grands monstres.</mainText>",
         "name": "Bébé Saute-nuages",
         "gold": 450,
         "tags": [
@@ -259,7 +259,7 @@
     },
     {
         "id": "1103",
-        "description": "<mainText><stats></stats><br><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#1CA935'>Ixamandre</font> qui vous assistera contre les monstres.<br><br><passive>Courage d'Ixamandre</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il vous octroie un <shield>bouclier</shield> qui se régénère quand vous tuez des grands monstres ou en dehors des combats.</mainText>",
+        "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#1CA935'>Ixamandre</font> qui vous assistera contre les monstres.<br><passive>Courage d'Ixamandre</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il vous octroie un <shield>bouclier</shield> qui se régénère quand vous tuez des grands monstres ou en dehors des combats.</mainText>",
         "name": "Bébé Ixamandre",
         "gold": 450,
         "tags": [
@@ -268,7 +268,7 @@
     },
     {
         "id": "2003",
-        "description": "<mainText><stats></stats><br><br><active>Consommation</active><br>Rend <healing>120 PV</healing> en 15 sec.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Consommation</active><br>Rend <healing>120 PV</healing> en 15 sec.</mainText>",
         "name": "Potion de soin",
         "gold": 50,
         "tags": [
@@ -280,7 +280,7 @@
     },
     {
         "id": "2019",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+30</attention> armure</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+30</attention> armure</stats><br></mainText>",
         "name": "Sceau d'acier",
         "gold": 1100,
         "tags": [
@@ -290,7 +290,7 @@
     },
     {
         "id": "2020",
-        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence<br><attention>+5</attention> létalité</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence<br><attention>+5</attention> létalité</stats><br></mainText>",
         "name": "Brutaliseur",
         "gold": 1337,
         "tags": [
@@ -301,7 +301,7 @@
     },
     {
         "id": "2021",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+250</attention> PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+250</attention> PV</stats><br></mainText>",
         "name": "Foreuse",
         "gold": 1150,
         "tags": [
@@ -311,7 +311,7 @@
     },
     {
         "id": "2022",
-        "description": "<mainText><stats><attention>+5</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+5</attention> accélération de compétence</stats><br></mainText>",
         "name": "Poussière luisante",
         "gold": 250,
         "tags": [
@@ -320,7 +320,7 @@
     },
     {
         "id": "2031",
-        "description": "<mainText><stats></stats><br><br><active>Propriété active</active> (2 charges)<br>Rend <healing>100 PV</healing> en 12 sec. <br>Se recharge en passant à la boutique.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Propriété active</active> (2 charges)<br>Rend <healing>100 PV</healing> en 12 sec. <br>Se recharge en passant à la boutique.</mainText>",
         "name": "Potion rechargeable",
         "gold": 150,
         "tags": [
@@ -333,7 +333,7 @@
     },
     {
         "id": "2055",
-        "description": "<mainText><stats></stats><br><br><active>Consommation</active><br>Place une Balise de contrôle qui octroie la vision et révèle les Balises camouflées ennemies, les pièges et les ennemis <keywordStealth>camouflés</keywordStealth>.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Consommation</active><br>Place une Balise de contrôle qui octroie la vision et révèle les Balises camouflées ennemies, les pièges et les ennemis <keywordStealth>camouflés</keywordStealth>.</mainText>",
         "name": "Balise de contrôle",
         "gold": 75,
         "tags": [
@@ -345,7 +345,7 @@
     },
     {
         "id": "2065",
-        "description": "<mainText><stats><attention>+50</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+4%</attention> de vitesse de déplacement<br><attention>+125%</attention> de régénération de base du mana</stats><br><br><active>Discours exaltant</active><br>Vous octroyez <speed>+30% de vitesse de déplacement</speed> pendant 4 sec aux alliés proches.</mainText>",
+        "description": "<mainText><stats><attention>+50</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+4%</attention> de vitesse de déplacement<br><attention>+125%</attention> de régénération de base du mana</stats><br><active>Discours exaltant</active><br>Vous octroyez <speed>+30% de vitesse de déplacement</speed> pendant 4 sec aux alliés proches.</mainText>",
         "name": "Chant de guerre de Shurelya",
         "gold": 2200,
         "tags": [
@@ -358,7 +358,7 @@
     },
     {
         "id": "2138",
-        "description": "<mainText><stats></stats><br><br><active>Consommation</active><br>Octroie <scaleHealth>+300 PV</scaleHealth> et +25% de ténacité, et augmente votre taille pendant 3 minutes. Pendant la durée de l'effet, vos déplacements tracent un chemin qui augmente de <speed>15% la vitesse de déplacement</speed> des champions alliés.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Consommation</active><br>Octroie <scaleHealth>+300 PV</scaleHealth> et +25% de ténacité, et augmente votre taille pendant 3 minutes. Pendant la durée de l'effet, vos déplacements tracent un chemin qui augmente de <speed>15% la vitesse de déplacement</speed> des champions alliés.</mainText>",
         "name": "Élixir de fer",
         "gold": 500,
         "tags": [
@@ -370,7 +370,7 @@
     },
     {
         "id": "2139",
-        "description": "<mainText><stats></stats><br><br><active>Consommation</active><br>Octroie <scaleAP>+50 puissance</scaleAP> et <scaleMana>+15% de régénération du mana</scaleMana> pendant 3 minutes. Pendant la durée de l'effet, infliger des dégâts à un champion ou à une tourelle inflige <trueDamage>25 pts de dégâts bruts bonus</trueDamage> (5 sec de récupération contre les champions).</mainText>",
+        "description": "<mainText><stats></stats><br><active>Consommation</active><br>Octroie <scaleAP>+50 puissance</scaleAP> et <scaleMana>+15% de régénération du mana</scaleMana> pendant 3 minutes. Pendant la durée de l'effet, infliger des dégâts à un champion ou à une tourelle inflige <trueDamage>25 pts de dégâts bruts bonus</trueDamage> (5 sec de récupération contre les champions).</mainText>",
         "name": "Élixir de sorcellerie",
         "gold": 500,
         "tags": [
@@ -381,7 +381,7 @@
     },
     {
         "id": "2140",
-        "description": "<mainText><stats></stats><br><br><active>Consommation</active><br>Octroie <scaleAD>+30 dégâts d'attaque</scaleAD> et <lifeSteal>+12% de vampirisme physique</lifeSteal> (contre les champions) pendant 3 minutes.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Consommation</active><br>Octroie <scaleAD>+30 dégâts d'attaque</scaleAD> et <lifeSteal>+12% de vampirisme physique</lifeSteal> (contre les champions) pendant 3 minutes.</mainText>",
         "name": "Élixir de rage",
         "gold": 500,
         "tags": [
@@ -393,7 +393,7 @@
     },
     {
         "id": "2141",
-        "description": "<mainText><stats></stats><br><br><rules>Il est toujours important de se protéger de la chaleur.</rules><active>Propriété active - Consommation :</active> ce jus n'a aucun effet.<br></mainText>",
+        "description": "<mainText><stats></stats><br><rules>Il est toujours important de se protéger de la chaleur.</rules><active>Propriété active - Consommation :</active> ce jus n'a aucun effet.<br></mainText>",
         "name": "Jus chapi-chapo",
         "gold": 300,
         "tags": [
@@ -403,7 +403,7 @@
     },
     {
         "id": "2420",
-        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> armure</stats><br><br><active>Pause temporelle</active> (usage unique)<br>Vous entrez en <keyword>stase</keyword> pendant 2.5 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> armure</stats><br><active>Pause temporelle</active> (usage unique)<br>Vous entrez en <keyword>stase</keyword> pendant 2.5 sec.</mainText>",
         "name": "Protège-bras du savant",
         "gold": 1600,
         "tags": [
@@ -414,14 +414,14 @@
     },
     {
         "id": "2421",
-        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> armure</stats><br><br><passive>Fracture du temps</passive><br>Le Protège-bras est brisé, mais peut être amélioré.<br><br><rules>Après que vous avez brisé un Protège-bras, le marchand ne vous vend plus que des <rarityGeneric>Protège-bras pulvérisés</rarityGeneric>.</rules><br><br></mainText>",
+        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> armure</stats><br><passive>Fracture du temps</passive><br>Le Protège-bras est brisé, mais peut être amélioré.<br><rules>Après que vous avez brisé un Protège-bras, le marchand ne vous vend plus que des <rarityGeneric>Protège-bras pulvérisés</rarityGeneric>.</rules><br></mainText>",
         "name": "Protège-bras pulvérisé",
         "gold": 1600,
         "tags": []
     },
     {
         "id": "2501",
-        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+550</attention> PV</stats><br><br><passive>Tyrannie</passive><br>Vous gagnez des <scaleAD>dégâts d'attaque</scaleAD> équivalents à 2.5% de vos <healing>PV bonus</healing>. <br><br><passive>Représailles</passive><br>Vous gagnez jusqu'à +12% de <scaleAD>dégâts d'attaque</scaleAD> selon un pourcentage de vos PV manquants. </mainText>",
+        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+550</attention> PV</stats><br><passive>Tyrannie</passive><br>Vous gagnez des <scaleAD>dégâts d'attaque</scaleAD> équivalents à 2.5% de vos <healing>PV bonus</healing>. <br><passive>Représailles</passive><br>Vous gagnez jusqu'à +12% de <scaleAD>dégâts d'attaque</scaleAD> selon un pourcentage de vos PV manquants. </mainText>",
         "name": "Armure sanguine",
         "gold": 3300,
         "tags": [
@@ -431,7 +431,7 @@
     },
     {
         "id": "2502",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Affliction</passive><br>Toutes les 4 sec de combat contre un champion, vous infligez des <magicDamage>dégâts magiques</magicDamage> aux champions ennemis proches et vous <healing>récupérez des PV équivalents à 250%</healing> des dégâts infligés.</mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><passive>Affliction</passive><br>Toutes les 4 sec de combat contre un champion, vous infligez des <magicDamage>dégâts magiques</magicDamage> aux champions ennemis proches et vous <healing>récupérez des PV équivalents à 250%</healing> des dégâts infligés.</mainText>",
         "name": "Désespoir infini",
         "gold": 2800,
         "tags": [
@@ -443,7 +443,7 @@
     },
     {
         "id": "2503",
-        "description": "<mainText><stats><attention>+80</attention> puissance<br><attention>+600</attention> mana<br><attention>+20</attention> accélération de compétence</stats><br><br><passive>Flamme funèbre</passive><br>Les compétences blessantes infligent des <magicDamage>dégâts magiques bonus</magicDamage> pendant 3 sec.<br><br><passive>Feu noir</passive><br>Vous gagnez <scaleAP>+4% de puissance</scaleAP> par champion ennemi, monstre épique ou grand monstre affecté par votre <passive>Flamme funèbre.</passive> </mainText>",
+        "description": "<mainText><stats><attention>+80</attention> puissance<br><attention>+600</attention> mana<br><attention>+20</attention> accélération de compétence</stats><br><passive>Flamme funèbre</passive><br>Les compétences blessantes infligent des <magicDamage>dégâts magiques bonus</magicDamage> pendant 3 sec.<br><passive>Feu noir</passive><br>Vous gagnez <scaleAP>+4% de puissance</scaleAP> par champion ennemi, monstre épique ou grand monstre affecté par votre <passive>Flamme funèbre.</passive> </mainText>",
         "name": "Torche noire",
         "gold": 2800,
         "tags": [
@@ -454,7 +454,7 @@
     },
     {
         "id": "2504",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+80</attention> résistance magique<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Fléau des mages</passive><br>Après n'avoir subi aucun dégât magique pendant 15 sec, vous gagnez un <shield>bouclier anti-dégâts magiques</shield>.  </mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+80</attention> résistance magique<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Fléau des mages</passive><br>Après n'avoir subi aucun dégât magique pendant 15 sec, vous gagnez un <shield>bouclier anti-dégâts magiques</shield>.  </mainText>",
         "name": "Rookern kaénique",
         "gold": 2900,
         "tags": [
@@ -465,7 +465,7 @@
     },
     {
         "id": "2508",
-        "description": "<mainText><stats><attention>+30</attention> puissance</stats><br><br><passive>Ignition</passive><br>Les compétences blessantes infligent <magicDamage>15 pts de dégâts magiques bonus</magicDamage> en 3 sec.<br>Inflige <magicDamage>45 pts de dégâts magiques</magicDamage> bonus aux monstres.</mainText>",
+        "description": "<mainText><stats><attention>+30</attention> puissance</stats><br><passive>Ignition</passive><br>Les compétences blessantes infligent <magicDamage>15 pts de dégâts magiques bonus</magicDamage> en 3 sec.<br>Inflige <magicDamage>45 pts de dégâts magiques</magicDamage> bonus aux monstres.</mainText>",
         "name": "Cendres fatidiques",
         "gold": 900,
         "tags": [
@@ -474,7 +474,7 @@
     },
     {
         "id": "3002",
-        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+40</attention> armure<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Meneur</passive><br>Vos déplacements vous octroient jusqu'à +<speed>20 vitesse de déplacement bonus</speed>. <br>À la vitesse max :<li>vous laissez une traînée derrière vous qui octroie aux champions alliés un bonus en <speed>vitesse de déplacement équivalent à 15%</speed> de la vôtre. <li>Si vous êtes un champion de mêlée, votre prochaine attaque <keyword>ralentit</keyword> également la cible de 50% pendant 1 sec.<br><br></mainText>",
+        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+40</attention> armure<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Meneur</passive><br>Vos déplacements vous octroient jusqu'à +<speed>20 vitesse de déplacement bonus</speed>. <br>À la vitesse max :<li>vous laissez une traînée derrière vous qui octroie aux champions alliés un bonus en <speed>vitesse de déplacement équivalent à 15%</speed> de la vôtre. <li>Si vous êtes un champion de mêlée, votre prochaine attaque <keyword>ralentit</keyword> également la cible de 50% pendant 1 sec.<br></mainText>",
         "name": "Sac de l'explorateur",
         "gold": 2400,
         "tags": [
@@ -485,7 +485,7 @@
     },
     {
         "id": "3003",
-        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+600</attention> mana<br><attention>+25</attention> accélération de compétence</stats><br><br><passive>Effroi</passive><br>Vous gagnez de la puissance équivalente à <scaleMana>1% de votre mana bonus</scaleMana>.<br><br><passive>Flux de mana</passive> (8 sec, max 5 charges)<br>Quand vous touchez une cible avec une compétence, vous gagnez <scaleMana>+5 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Étreinte du séraphin</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
+        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+600</attention> mana<br><attention>+25</attention> accélération de compétence</stats><br><passive>Effroi</passive><br>Vous gagnez de la puissance équivalente à <scaleMana>1% de votre mana bonus</scaleMana>.<br><passive>Flux de mana</passive> (8 sec, max 5 charges)<br>Quand vous touchez une cible avec une compétence, vous gagnez <scaleMana>+5 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Étreinte du séraphin</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
         "name": "Bâton de l'archange",
         "gold": 2900,
         "tags": [
@@ -496,7 +496,7 @@
     },
     {
         "id": "3004",
-        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+500</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Effroi</passive><br>Vous gagnez <scaleAD>+0 dégâts d'attaque bonus</scaleAD>.<br><br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une attaque ou une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Muramana</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
+        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+500</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><passive>Effroi</passive><br>Vous gagnez <scaleAD>+0 dégâts d'attaque bonus</scaleAD>.<br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une attaque ou une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Muramana</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
         "name": "Manamune",
         "gold": 2900,
         "tags": [
@@ -508,7 +508,7 @@
     },
     {
         "id": "3006",
-        "description": "<mainText><stats><attention>+25%</attention> de vitesse d'attaque<br><attention>+45</attention> vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25%</attention> de vitesse d'attaque<br><attention>+45</attention> vitesse de déplacement</stats><br></mainText>",
         "name": "Jambières du berzerker",
         "gold": 1100,
         "tags": [
@@ -518,7 +518,7 @@
     },
     {
         "id": "3009",
-        "description": "<mainText><stats><attention>+55</attention> vitesse de déplacement</stats><br><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.</mainText>",
         "name": "Bottes de célérité",
         "gold": 1000,
         "tags": [
@@ -527,7 +527,7 @@
     },
     {
         "id": "3010",
-        "description": "<mainText><stats><attention>+40</attention> vitesse de déplacement</stats><br><br><passive>Synchronie</passive><br>Vous gagnez <speed>+10 vitesse de déplacement</speed> en dehors des combats.<br><br><passive>Symbiose</passive><br>Après que vous avez parcouru 150000 unités de distance, cet objet se transforme en <rarityLegendary>Âmes synchronisées</rarityLegendary>.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> vitesse de déplacement</stats><br><passive>Synchronie</passive><br>Vous gagnez <speed>+10 vitesse de déplacement</speed> en dehors des combats.<br><passive>Symbiose</passive><br>Après que vous avez parcouru 150000 unités de distance, cet objet se transforme en <rarityLegendary>Âmes synchronisées</rarityLegendary>.</mainText>",
         "name": "Semelles symbiotiques",
         "gold": 900,
         "tags": [
@@ -536,7 +536,7 @@
     },
     {
         "id": "3020",
-        "description": "<mainText><stats><attention>+12</attention> pénétration magique<br><attention>+45</attention> vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+12</attention> pénétration magique<br><attention>+45</attention> vitesse de déplacement</stats><br></mainText>",
         "name": "Chaussures de sorcier",
         "gold": 1100,
         "tags": [
@@ -546,7 +546,7 @@
     },
     {
         "id": "3024",
-        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+300</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+300</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Bouclier glacial",
         "gold": 900,
         "tags": [
@@ -557,7 +557,7 @@
     },
     {
         "id": "3026",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+45</attention> armure</stats><br><br><passive>Renaissance</passive><br>En cas de coup fatal, vous revenez à la vie avec <healing>50% de vos PV de base</healing> et <scaleMana>100% de votre mana max</scaleMana> après 4 sec de <keyword>stase</keyword>.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+45</attention> armure</stats><br><passive>Renaissance</passive><br>En cas de coup fatal, vous revenez à la vie avec <healing>50% de vos PV de base</healing> et <scaleMana>100% de votre mana max</scaleMana> après 4 sec de <keyword>stase</keyword>.</mainText>",
         "name": "Ange gardien",
         "gold": 3200,
         "tags": [
@@ -567,7 +567,7 @@
     },
     {
         "id": "3031",
-        "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+40%</attention> de dégâts de coup critique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+40%</attention> de dégâts de coup critique</stats><br></mainText>",
         "name": "Lame d'infini",
         "gold": 3450,
         "tags": [
@@ -577,7 +577,7 @@
     },
     {
         "id": "3032",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
         "name": "Flèches des Yun Tal",
         "gold": 3000,
         "tags": [
@@ -588,7 +588,7 @@
     },
     {
         "id": "3033",
-        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
         "name": "Rappel mortel",
         "gold": 3300,
         "tags": [
@@ -599,7 +599,7 @@
     },
     {
         "id": "3035",
-        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+18%</attention> de pénétration d'armure</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+18%</attention> de pénétration d'armure</stats><br></mainText>",
         "name": "Dernier souffle",
         "gold": 1450,
         "tags": [
@@ -609,7 +609,7 @@
     },
     {
         "id": "3036",
-        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+40%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+40%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br></mainText>",
         "name": "Salutations de Dominik",
         "gold": 3100,
         "tags": [
@@ -620,7 +620,7 @@
     },
     {
         "id": "3041",
-        "description": "<mainText><stats><attention>+20</attention> puissance<br><attention>+100</attention> PV</stats><br><br><passive>Gloire</passive><br>Participer à une <keyword>élimination</keyword> vous fait gagner des effets <passive>Gloire</passive> (25 effets cumulés max). Vous perdez 10 <passive>effets Gloire</passive> en cas de mort.<br>Vous gagnez <scaleAP>+5 puissance</scaleAP> par effet <passive>Gloire</passive> et <speed>+10% en vitesse de déplacement</speed> si vous avez 10 <passive>effets Gloire</passive> ou plus.</mainText>",
+        "description": "<mainText><stats><attention>+20</attention> puissance<br><attention>+100</attention> PV</stats><br><passive>Gloire</passive><br>Participer à une <keyword>élimination</keyword> vous fait gagner des effets <passive>Gloire</passive> (25 effets cumulés max). Vous perdez 10 <passive>effets Gloire</passive> en cas de mort.<br>Vous gagnez <scaleAP>+5 puissance</scaleAP> par effet <passive>Gloire</passive> et <speed>+10% en vitesse de déplacement</speed> si vous avez 10 <passive>effets Gloire</passive> ou plus.</mainText>",
         "name": "Voleur d'âmes de Mejai",
         "gold": 1500,
         "tags": [
@@ -631,7 +631,7 @@
     },
     {
         "id": "3044",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+200</attention> PV</stats><br><br><passive>Rage</passive><br>Vos attaques vous octroient de la <speed>vitesse de déplacement</speed> pendant 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+200</attention> PV</stats><br><passive>Rage</passive><br>Vos attaques vous octroient de la <speed>vitesse de déplacement</speed> pendant 2 sec.</mainText>",
         "name": "Phage",
         "gold": 1100,
         "tags": [
@@ -642,7 +642,7 @@
     },
     {
         "id": "3046",
-        "description": "<mainText><stats><attention>+65%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+10%</attention> de vitesse de déplacement</stats><br><br><passive>Valse spectrale</passive><br>Vous devenez <keyword>fantomatique</keyword>.</mainText>",
+        "description": "<mainText><stats><attention>+65%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+10%</attention> de vitesse de déplacement</stats><br><passive>Valse spectrale</passive><br>Vous devenez <keyword>fantomatique</keyword>.</mainText>",
         "name": "Danseur fantôme",
         "gold": 2650,
         "tags": [
@@ -653,7 +653,7 @@
     },
     {
         "id": "3047",
-        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+45</attention> vitesse de déplacement</stats><br><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.</mainText>",
+        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+45</attention> vitesse de déplacement</stats><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.</mainText>",
         "name": "Coques en acier",
         "gold": 1200,
         "tags": [
@@ -663,7 +663,7 @@
     },
     {
         "id": "3050",
-        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Tempête cryopyrique</passive><br>Lancer votre ultime invoque une tempête autour de vous pendant 5 sec. La tempête inflige <magicDamage>30 pts de dégâts magiques</magicDamage> par seconde aux champions ennemis et les <keyword>ralentit</keyword> de 30%.</mainText>",
+        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><passive>Tempête cryopyrique</passive><br>Lancer votre ultime invoque une tempête autour de vous pendant 5 sec. La tempête inflige <magicDamage>30 pts de dégâts magiques</magicDamage> par seconde aux champions ennemis et les <keyword>ralentit</keyword> de 30%.</mainText>",
         "name": "Convergence de Zeke",
         "gold": 2200,
         "tags": [
@@ -675,7 +675,7 @@
     },
     {
         "id": "3051",
-        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque</stats><br></mainText>",
         "name": "Hache d'Âtrinsèque",
         "gold": 1200,
         "tags": [
@@ -685,7 +685,7 @@
     },
     {
         "id": "3053",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+20%</attention> de ténacité</stats><br><br><passive>Griffes qui happent</passive><br>Vous gagnez des <scaleAD>dégâts d'attaque bonus</scaleAD>.<br><br><passive>Lien vital</passive><br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier qui se désagrège progressivement</shield> pendant 4.5 sec.</mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+20%</attention> de ténacité</stats><br><passive>Griffes qui happent</passive><br>Vous gagnez des <scaleAD>dégâts d'attaque bonus</scaleAD>.<br><passive>Lien vital</passive><br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier qui se désagrège progressivement</shield> pendant 4.5 sec.</mainText>",
         "name": "Gage de Sterak",
         "gold": 3200,
         "tags": [
@@ -696,7 +696,7 @@
     },
     {
         "id": "3057",
-        "description": "<mainText><stats><attention>+10</attention> accélération de compétence</stats><br><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.<br></mainText>",
+        "description": "<mainText><stats><attention>+10</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.<br></mainText>",
         "name": "Brillance",
         "gold": 900,
         "tags": [
@@ -706,7 +706,7 @@
     },
     {
         "id": "3065",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+50</attention> résistance magique<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Vitalité intarissable</passive><br>Les soins et les boucliers que vous recevez sont augmentés de 25%.</mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+50</attention> résistance magique<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Vitalité intarissable</passive><br>Les soins et les boucliers que vous recevez sont augmentés de 25%.</mainText>",
         "name": "Visage spirituel",
         "gold": 2700,
         "tags": [
@@ -718,7 +718,7 @@
     },
     {
         "id": "3066",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+4%</attention> de vitesse de déplacement</stats><br></mainText>",
         "name": "Plaque de lune ailée",
         "gold": 800,
         "tags": [
@@ -728,7 +728,7 @@
     },
     {
         "id": "3067",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Gemme exaltante",
         "gold": 800,
         "tags": [
@@ -738,7 +738,7 @@
     },
     {
         "id": "3068",
-        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+50</attention> armure<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger chaque seconde des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec. </mainText>",
+        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+50</attention> armure<br><attention>+10</attention> accélération de compétence</stats><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger chaque seconde des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec. </mainText>",
         "name": "Égide solaire",
         "gold": 2700,
         "tags": [
@@ -750,7 +750,7 @@
     },
     {
         "id": "3070",
-        "description": "<mainText><stats><attention>+240</attention> mana</stats><br><br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions, max. <scaleMana>+360</scaleMana>).<br><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques</physicalDamage> bonus aux sbires.</mainText>",
+        "description": "<mainText><stats><attention>+240</attention> mana</stats><br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions, max. <scaleMana>+360</scaleMana>).<br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques</physicalDamage> bonus aux sbires.</mainText>",
         "name": "Larme de la déesse",
         "gold": 400,
         "tags": [
@@ -760,7 +760,7 @@
     },
     {
         "id": "3071",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><br><passive>Découpage</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> à un champion réduit son armure de <scaleArmor>6%</scaleArmor> pendant 6 sec (effet cumulable 5 fois).<br><br><passive>Ferveur</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> vous octroie <speed>+20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><passive>Découpage</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> à un champion réduit son armure de <scaleArmor>6%</scaleArmor> pendant 6 sec (effet cumulable 5 fois).<br><passive>Ferveur</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> vous octroie <speed>+20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
         "name": "Couperet noir",
         "gold": 3000,
         "tags": [
@@ -775,7 +775,7 @@
     },
     {
         "id": "3072",
-        "description": "<mainText><stats><attention>+80</attention> dégâts d'attaque<br><attention>+15%</attention> de vol de vie</stats><br><br><passive>Bouclier d'ichor</passive><br>Convertit les soins excédentaires reçus grâce à votre vol de vie en un <shield>bouclier</shield>.</mainText>",
+        "description": "<mainText><stats><attention>+80</attention> dégâts d'attaque<br><attention>+15%</attention> de vol de vie</stats><br><passive>Bouclier d'ichor</passive><br>Convertit les soins excédentaires reçus grâce à votre vol de vie en un <shield>bouclier</shield>.</mainText>",
         "name": "Soif-de-sang",
         "gold": 3400,
         "tags": [
@@ -785,7 +785,7 @@
     },
     {
         "id": "3073",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><br><passive>Charge Hextech</passive><br>Vous gagnez +30 accélération d'ultime.<br><br><passive>Surcharge</passive><br>Après avoir lancé votre compétence ultime, vous gagnez <attackSpeed>+50% de vitesse d'attaque</attackSpeed> et <speed>+20% de vitesse de déplacement</speed> pendant 8 sec. </mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><passive>Charge Hextech</passive><br>Vous gagnez +30 accélération d'ultime.<br><passive>Surcharge</passive><br>Après avoir lancé votre compétence ultime, vous gagnez <attackSpeed>+50% de vitesse d'attaque</attackSpeed> et <speed>+20% de vitesse de déplacement</speed> pendant 8 sec. </mainText>",
         "name": "Hexplaque expérimentale",
         "gold": 3000,
         "tags": [
@@ -799,7 +799,7 @@
     },
     {
         "id": "3074",
-        "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+12%</attention> de vol de vie</stats><br><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><br><active>Croissant vorace</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis autour de vous. <br>Le vol de vie s'applique à ces dégâts.</mainText>",
+        "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+12%</attention> de vol de vie</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Croissant vorace</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis autour de vous. <br>Le vol de vie s'applique à ces dégâts.</mainText>",
         "name": "Hydre vorace",
         "gold": 3300,
         "tags": [
@@ -812,7 +812,7 @@
     },
     {
         "id": "3075",
-        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+75</attention> armure</stats><br><br><passive>Épines</passive><br>Quand vous êtes touché par une attaque, vous infligez des <magicDamage>dégâts magiques</magicDamage> à l'attaquant, ainsi que 40% d'<keyword>Hémorragie</keyword> pendant 3 sec si c'est un champion.</mainText>",
+        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+75</attention> armure</stats><br><passive>Épines</passive><br>Quand vous êtes touché par une attaque, vous infligez des <magicDamage>dégâts magiques</magicDamage> à l'attaquant, ainsi que 40% d'<keyword>Hémorragie</keyword> pendant 3 sec si c'est un champion.</mainText>",
         "name": "Cotte épineuse",
         "gold": 2450,
         "tags": [
@@ -822,7 +822,7 @@
     },
     {
         "id": "3076",
-        "description": "<mainText><stats><attention>+30</attention> armure</stats><br><br><passive>Épines</passive><br>Quand vous êtes touché par une attaque, vous infligez <magicDamage>0 pts de dégâts magiques</magicDamage> à l'attaquant, ainsi que <keyword>40% d'Hémorragie</keyword> pendant 3 sec si c'est un champion.</mainText>",
+        "description": "<mainText><stats><attention>+30</attention> armure</stats><br><passive>Épines</passive><br>Quand vous êtes touché par une attaque, vous infligez <magicDamage>0 pts de dégâts magiques</magicDamage> à l'attaquant, ainsi que <keyword>40% d'Hémorragie</keyword> pendant 3 sec si c'est un champion.</mainText>",
         "name": "Armure roncière",
         "gold": 800,
         "tags": [
@@ -831,7 +831,7 @@
     },
     {
         "id": "3077",
-        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque</stats><br><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><br><active>Croissant</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis autour de vous.</mainText>",
+        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Croissant</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis autour de vous.</mainText>",
         "name": "Tiamat",
         "gold": 1200,
         "tags": [
@@ -841,7 +841,7 @@
     },
     {
         "id": "3078",
-        "description": "<mainText><stats><attention>+36</attention> dégâts d'attaque<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+333</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.<br> <br><passive>Accélération</passive><br>Vos attaques vous octroient <speed>+20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+36</attention> dégâts d'attaque<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+333</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>.<br> <br><passive>Accélération</passive><br>Vos attaques vous octroient <speed>+20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
         "name": "Force de la trinité",
         "gold": 3333,
         "tags": [
@@ -856,7 +856,7 @@
     },
     {
         "id": "3082",
-        "description": "<mainText><stats><attention>+40</attention> armure</stats><br><br><passive>Dur comme fer</passive><br>Les dégâts que vous infligent les attaques sont réduits.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> armure</stats><br><passive>Dur comme fer</passive><br>Les dégâts que vous infligent les attaques sont réduits.</mainText>",
         "name": "Mailles du gardien",
         "gold": 1000,
         "tags": [
@@ -865,7 +865,7 @@
     },
     {
         "id": "3083",
-        "description": "<mainText><stats><attention>+1000</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Cœur de Warmog</passive> <br>Si vous avez 2000 PV bonus et n'avez pas subi de dégâts pendant 8 sec, vous récupérez <healing>0</healing> PV par seconde.<br><br><passive>Vitalité de Warmog</passive><br>Vous gagnez des PV bonus équivalents à 12% de vos PV d'objets (<healing>0</healing>).</mainText>",
+        "description": "<mainText><stats><attention>+1000</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Cœur de Warmog</passive> <br>Si vous avez 2000 PV bonus et n'avez pas subi de dégâts pendant 8 sec, vous récupérez <healing>0</healing> PV par seconde.<br><passive>Vitalité de Warmog</passive><br>Vous gagnez des PV bonus équivalents à 12% de vos PV d'objets (<healing>0</healing>).</mainText>",
         "name": "Armure de Warmog",
         "gold": 3100,
         "tags": [
@@ -875,7 +875,7 @@
     },
     {
         "id": "3084",
-        "description": "<mainText><stats><attention>+900</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Consommation colossale</passive> (0 sec) par cible<br>Si un champion ennemi reste proche pendant quelques sec, votre prochaine attaque contre lui inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> équivalents à <physicalDamage>70 + 6%</physicalDamage> de vos PV max et vous octroie des <scaleHealth>PV max</scaleHealth> équivalents à <scaleHealth>8% des dégâts</scaleHealth>.<br><br><passive>Goliath</passive><br>Tous les <scaleHealth>1000 PV max</scaleHealth>, votre taille augmente de 3% (jusqu'à 30%). </mainText>",
+        "description": "<mainText><stats><attention>+900</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Consommation colossale</passive> (0 sec) par cible<br>Si un champion ennemi reste proche pendant quelques sec, votre prochaine attaque contre lui inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> équivalents à <physicalDamage>70 + 6%</physicalDamage> de vos PV max et vous octroie des <scaleHealth>PV max</scaleHealth> équivalents à <scaleHealth>8% des dégâts</scaleHealth>.<br><passive>Goliath</passive><br>Tous les <scaleHealth>1000 PV max</scaleHealth>, votre taille augmente de 3% (jusqu'à 30%). </mainText>",
         "name": "Cœuracier",
         "gold": 3000,
         "tags": [
@@ -885,7 +885,7 @@
     },
     {
         "id": "3085",
-        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Fureur du vent</passive><br>Vos attaques tirent des projectiles sur 2 ennemis bonus près de la cible.<br>Chaque projectile inflige des <physicalDamage>dégâts physiques</physicalDamage> et applique vos effets <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Fureur du vent</passive><br>Vos attaques tirent des projectiles sur 2 ennemis bonus près de la cible.<br>Chaque projectile inflige des <physicalDamage>dégâts physiques</physicalDamage> et applique vos effets <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Ouragan de Runaan",
         "gold": 2650,
         "tags": [
@@ -897,7 +897,7 @@
     },
     {
         "id": "3086",
-        "description": "<mainText><stats><attention>+15%</attention> de vitesse d'attaque<br><attention>+15%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15%</attention> de vitesse d'attaque<br><attention>+15%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br></mainText>",
         "name": "Zèle",
         "gold": 1200,
         "tags": [
@@ -908,7 +908,7 @@
     },
     {
         "id": "3087",
-        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Étincelle électrique</passive><br>Vos attaques déclenchent une chaîne d'éclairs <OnHit>à l'impact</OnHit>, infligeant des <magicDamage>dégâts magiques</magicDamage> (effet affecté par un délai de récupération).<br><br><passive>Électrochoc</passive> <br>Les éliminations dans les 3 sec après avoir blessé la cible réinitialisent le délai de récupération d'Étincelle électrique.</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Étincelle électrique</passive><br>Vos attaques déclenchent une chaîne d'éclairs <OnHit>à l'impact</OnHit>, infligeant des <magicDamage>dégâts magiques</magicDamage> (effet affecté par un délai de récupération).<br><passive>Électrochoc</passive> <br>Les éliminations dans les 3 sec après avoir blessé la cible réinitialisent le délai de récupération d'Étincelle électrique.</mainText>",
         "name": "Poignard de Statikk",
         "gold": 2700,
         "tags": [
@@ -920,7 +920,7 @@
     },
     {
         "id": "3089",
-        "description": "<mainText><stats><attention>+130</attention> puissance</stats><br><br><passive>Opus magique</passive><br>Vous augmentez votre <scaleAP>puissance totale de 30%</scaleAP>.</mainText>",
+        "description": "<mainText><stats><attention>+130</attention> puissance</stats><br><passive>Opus magique</passive><br>Vous augmentez votre <scaleAP>puissance totale de 30%</scaleAP>.</mainText>",
         "name": "Coiffe de Rabadon",
         "gold": 3500,
         "tags": [
@@ -929,7 +929,7 @@
     },
     {
         "id": "3091",
-        "description": "<mainText><stats><attention>+50%</attention> de vitesse d'attaque<br><attention>+45</attention> résistance magique<br><attention>+20%</attention> de ténacité</stats><br><br><passive>Conflit</passive><br>Vos attaques infligent des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+50%</attention> de vitesse d'attaque<br><attention>+45</attention> résistance magique<br><attention>+20%</attention> de ténacité</stats><br><passive>Conflit</passive><br>Vos attaques infligent des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Au bout du rouleau",
         "gold": 2800,
         "tags": [
@@ -941,7 +941,7 @@
     },
     {
         "id": "3094",
-        "description": "<mainText><stats><attention>+35%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Sniper</passive><br>Vos <keyword>attaques énergisées</keyword> infligent <magicDamage>40 pts de dégâts magiques bonus</magicDamage> et gagnent +35% de portée d'attaque bonus.</mainText>",
+        "description": "<mainText><stats><attention>+35%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Sniper</passive><br>Vos <keyword>attaques énergisées</keyword> infligent <magicDamage>40 pts de dégâts magiques bonus</magicDamage> et gagnent +35% de portée d'attaque bonus.</mainText>",
         "name": "Canon ultrarapide",
         "gold": 2650,
         "tags": [
@@ -952,7 +952,7 @@
     },
     {
         "id": "3100",
-        "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+4%</attention> de vitesse de déplacement<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+4%</attention> de vitesse de déplacement<br><attention>+10</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Fléau de liche",
         "gold": 2900,
         "tags": [
@@ -964,7 +964,7 @@
     },
     {
         "id": "3102",
-        "description": "<mainText><stats><attention>+105</attention> puissance<br><attention>+40</attention> résistance magique</stats><br><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
+        "description": "<mainText><stats><attention>+105</attention> puissance<br><attention>+40</attention> résistance magique</stats><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
         "name": "Voile de la banshee",
         "gold": 3000,
         "tags": [
@@ -975,7 +975,7 @@
     },
     {
         "id": "3105",
-        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Égide de la légion",
         "gold": 1100,
         "tags": [
@@ -986,7 +986,7 @@
     },
     {
         "id": "3107",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+15</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10%</attention> d'efficacité des soins et boucliers</stats><br><br><active>Intervention</active><br>Au bout de 2.5 sec, vous rendez <healing>150 - 350 PV</healing> aux unités alliées et infligez <trueDamage>10% des PV max en dégâts bruts</trueDamage> aux champions ennemis.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+15</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10%</attention> d'efficacité des soins et boucliers</stats><br><active>Intervention</active><br>Au bout de 2.5 sec, vous rendez <healing>150 - 350 PV</healing> aux unités alliées et infligez <trueDamage>10% des PV max en dégâts bruts</trueDamage> aux champions ennemis.</mainText>",
         "name": "Rédemption",
         "gold": 2300,
         "tags": [
@@ -997,7 +997,7 @@
     },
     {
         "id": "3108",
-        "description": "<mainText><stats><attention>+25</attention> puissance<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> puissance<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Codex méphitique",
         "gold": 850,
         "tags": [
@@ -1007,7 +1007,7 @@
     },
     {
         "id": "3109",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 12% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 10%</healing> des dégâts qu'il inflige aux champions.<active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 12% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 10%</healing> des dégâts qu'il inflige aux champions.<active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
         "name": "Vœu du chevalier",
         "gold": 2300,
         "tags": [
@@ -1021,7 +1021,7 @@
     },
     {
         "id": "3110",
-        "description": "<mainText><stats><attention>+75</attention> armure<br><attention>+400</attention> mana<br><attention>+20</attention> accélération de compétence</stats><br><br><passive>Caresse de l'hiver</passive><br>Vous réduisez de <attackSpeed>20%</attackSpeed> la <attackSpeed>vitesse d'attaque</attackSpeed> des champions ennemis proches.</mainText>",
+        "description": "<mainText><stats><attention>+75</attention> armure<br><attention>+400</attention> mana<br><attention>+20</attention> accélération de compétence</stats><br><passive>Caresse de l'hiver</passive><br>Vous réduisez de <attackSpeed>20%</attackSpeed> la <attackSpeed>vitesse d'attaque</attackSpeed> des champions ennemis proches.</mainText>",
         "name": "Cœur gelé",
         "gold": 2500,
         "tags": [
@@ -1033,7 +1033,7 @@
     },
     {
         "id": "3111",
-        "description": "<mainText><stats><attention>+20</attention> résistance magique<br><attention>+45</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> résistance magique<br><attention>+45</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br></mainText>",
         "name": "Sandales de Mercure",
         "gold": 1250,
         "tags": [
@@ -1044,7 +1044,7 @@
     },
     {
         "id": "3113",
-        "description": "<mainText><stats><attention>+30</attention> puissance<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+30</attention> puissance<br><attention>+4%</attention> de vitesse de déplacement</stats><br></mainText>",
         "name": "Feu follet éthéré",
         "gold": 900,
         "tags": [
@@ -1054,7 +1054,7 @@
     },
     {
         "id": "3114",
-        "description": "<mainText><stats><attention>+50%</attention> de régénération de base du mana<br><attention>+8%</attention> d'efficacité des soins et boucliers</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+50%</attention> de régénération de base du mana<br><attention>+8%</attention> d'efficacité des soins et boucliers</stats><br></mainText>",
         "name": "Idole interdite",
         "gold": 600,
         "tags": [
@@ -1063,7 +1063,7 @@
     },
     {
         "id": "3115",
-        "description": "<mainText><stats><attention>+80</attention> puissance<br><attention>+50%</attention> de vitesse d'attaque<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Morsure d'Icathia</passive><br>Vos attaques infligent des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+80</attention> puissance<br><attention>+50%</attention> de vitesse d'attaque<br><attention>+15</attention> accélération de compétence</stats><br><passive>Morsure d'Icathia</passive><br>Vos attaques infligent des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Dent de Nashor",
         "gold": 2900,
         "tags": [
@@ -1075,7 +1075,7 @@
     },
     {
         "id": "3116",
-        "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV</stats><br><br><passive>Couche de givre</passive><br>Vos compétences blessantes <keyword>ralentissent</keyword> les ennemis de 30% pendant 1 sec.</mainText>",
+        "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV</stats><br><passive>Couche de givre</passive><br>Vos compétences blessantes <keyword>ralentissent</keyword> les ennemis de 30% pendant 1 sec.</mainText>",
         "name": "Sceptre de Rylai",
         "gold": 2600,
         "tags": [
@@ -1086,7 +1086,7 @@
     },
     {
         "id": "3118",
-        "description": "<mainText><stats><attention>+90</attention> puissance<br><attention>+600</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Mépris</passive><br>Vous gagnez +20 accélération d'ultime.<br><br><passive>Brouillard de haine</passive><br>Lorsque vous blessez un champion avec votre ultime, vous brûlez le sol sous ses pieds pendant 3 sec, ce qui lui inflige des <magicDamage>dégâts magiques</magicDamage> par seconde et réduit sa <scaleMR>résistance magique</scaleMR>. <br></mainText>",
+        "description": "<mainText><stats><attention>+90</attention> puissance<br><attention>+600</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><passive>Mépris</passive><br>Vous gagnez +20 accélération d'ultime.<br><passive>Brouillard de haine</passive><br>Lorsque vous blessez un champion avec votre ultime, vous brûlez le sol sous ses pieds pendant 3 sec, ce qui lui inflige des <magicDamage>dégâts magiques</magicDamage> par seconde et réduit sa <scaleMR>résistance magique</scaleMR>. <br></mainText>",
         "name": "Malfaisance",
         "gold": 2700,
         "tags": [
@@ -1097,7 +1097,7 @@
     },
     {
         "id": "3119",
-        "description": "<mainText><stats><attention>+550</attention> PV<br><attention>+500</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Effroi</passive><br>Vous gagnez <scaleHealth>0 PV</scaleHealth>.<br><br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une attaque ou une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Fimbulvetr</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
+        "description": "<mainText><stats><attention>+550</attention> PV<br><attention>+500</attention> mana<br><attention>+15</attention> accélération de compétence</stats><br><passive>Effroi</passive><br>Vous gagnez <scaleHealth>0 PV</scaleHealth>.<br><passive>Flux de mana</passive> (8 sec, max 4 charges)<br>Quand vous touchez une cible avec une attaque ou une compétence, vous gagnez <scaleMana>+3 mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Fimbulvetr</rarityLegendary> à <scaleMana>+360 mana max</scaleMana>.</mainText>",
         "name": "Approche de l'hiver",
         "gold": 2400,
         "tags": [
@@ -1108,7 +1108,7 @@
     },
     {
         "id": "3123",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque</stats><br><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque</stats><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
         "name": "Marque du bourreau",
         "gold": 800,
         "tags": [
@@ -1117,7 +1117,7 @@
     },
     {
         "id": "3124",
-        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+30</attention> puissance<br><attention>+25%</attention> de vitesse d'attaque</stats><br><br><passive>Courroux</passive><br>Vos attaques infligent <magicDamage>30 pts de dégâts magiques bonus <OnHit>à l'impact</OnHit></magicDamage>.<br><br><passive>Frappe furieuse</passive><br>Vos attaques vous octroient <attackSpeed>+8% de vitesse d'attaque</attackSpeed> pendant 3 sec (effet cumulable 4 fois). <br>Une fois au max d'effets cumulés, toutes les trois attaques, vous appliquez deux fois vos effets <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+30</attention> puissance<br><attention>+25%</attention> de vitesse d'attaque</stats><br><passive>Courroux</passive><br>Vos attaques infligent <magicDamage>30 pts de dégâts magiques bonus <OnHit>à l'impact</OnHit></magicDamage>.<br><passive>Frappe furieuse</passive><br>Vos attaques vous octroient <attackSpeed>+8% de vitesse d'attaque</attackSpeed> pendant 3 sec (effet cumulable 4 fois). <br>Une fois au max d'effets cumulés, toutes les trois attaques, vous appliquez deux fois vos effets <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Lame enragée de Guinsoo",
         "gold": 3000,
         "tags": [
@@ -1129,7 +1129,7 @@
     },
     {
         "id": "3133",
-        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Marteau de Caulfield",
         "gold": 1050,
         "tags": [
@@ -1139,7 +1139,7 @@
     },
     {
         "id": "3134",
-        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+10</attention> létalité</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+10</attention> létalité</stats><br></mainText>",
         "name": "Dague dentelée",
         "gold": 1000,
         "tags": [
@@ -1149,7 +1149,7 @@
     },
     {
         "id": "3135",
-        "description": "<mainText><stats><attention>+95</attention> puissance<br><attention>+40%</attention> de pénétration magique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+95</attention> puissance<br><attention>+40%</attention> de pénétration magique</stats><br></mainText>",
         "name": "Bâton du vide",
         "gold": 3000,
         "tags": [
@@ -1159,7 +1159,7 @@
     },
     {
         "id": "3137",
-        "description": "<mainText><stats><attention>+75</attention> puissance<br><attention>+30%</attention> de pénétration magique<br><attention>+20</attention> accélération de compétence</stats><br><br><passive>La vie par la mort</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, une nova détone à l'emplacement de son corps, <healing>rendant des PV</healing>.</mainText>",
+        "description": "<mainText><stats><attention>+75</attention> puissance<br><attention>+30%</attention> de pénétration magique<br><attention>+20</attention> accélération de compétence</stats><br><passive>La vie par la mort</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, une nova détone à l'emplacement de son corps, <healing>rendant des PV</healing>.</mainText>",
         "name": "Fleur de crypte",
         "gold": 3000,
         "tags": [
@@ -1170,7 +1170,7 @@
     },
     {
         "id": "3139",
-        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+35</attention> résistance magique<br><attention>+10%</attention> de vol de vie</stats><br><br><br><br><active>PROPRIÉTÉ ACTIVE</active> <br><active>Mercure</active><br>Vous dissipez tous les contrôles de foule qui vous affectent (sauf les <keyword>projections dans les airs</keyword>) et gagnez de la vitesse de déplacement.</mainText>",
+        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+35</attention> résistance magique<br><attention>+10%</attention> de vol de vie</stats><br><br><active>PROPRIÉTÉ ACTIVE</active> <br><active>Mercure</active><br>Vous dissipez tous les contrôles de foule qui vous affectent (sauf les <keyword>projections dans les airs</keyword>) et gagnez de la vitesse de déplacement.</mainText>",
         "name": "Cimeterre mercuriel",
         "gold": 3200,
         "tags": [
@@ -1184,7 +1184,7 @@
     },
     {
         "id": "3140",
-        "description": "<mainText><stats><attention>+30</attention> résistance magique</stats><br><br><active>Mercure</active><br>Vous dissipez tous les contrôles de foule qui vous affectent (sauf les <keyword>projections dans les airs</keyword>).</mainText>",
+        "description": "<mainText><stats><attention>+30</attention> résistance magique</stats><br><active>Mercure</active><br>Vous dissipez tous les contrôles de foule qui vous affectent (sauf les <keyword>projections dans les airs</keyword>).</mainText>",
         "name": "Ceinture de mercure",
         "gold": 1300,
         "tags": [
@@ -1194,7 +1194,7 @@
     },
     {
         "id": "3142",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Hantise</passive> <br>Vous gagnez <speed>+0 vitesse de déplacement</speed> en dehors des combats.<br><br><br><active>Marche spectrale</active><br>Vous gagnez de la <speed>vitesse de déplacement</speed> et devenez <keyword>fantomatique</keyword> pendant 0 sec.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Hantise</passive> <br>Vous gagnez <speed>+0 vitesse de déplacement</speed> en dehors des combats.<br><br><active>Marche spectrale</active><br>Vous gagnez de la <speed>vitesse de déplacement</speed> et devenez <keyword>fantomatique</keyword> pendant 0 sec.</mainText>",
         "name": "Lame spectre de Youmuu",
         "gold": 2800,
         "tags": [
@@ -1206,7 +1206,7 @@
     },
     {
         "id": "3143",
-        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+75</attention> armure</stats><br><br><passive>Vigueur</passive><br>Les coups critiques vous infligent 30% de dégâts en moins.<br><br><active>Humilité</active><br><keyword>Vous ralentissez</keyword> les ennemis proches de 70% pendant 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+75</attention> armure</stats><br><passive>Vigueur</passive><br>Les coups critiques vous infligent 30% de dégâts en moins.<br><active>Humilité</active><br><keyword>Vous ralentissez</keyword> les ennemis proches de 70% pendant 2 sec.</mainText>",
         "name": "Présage de Randuin",
         "gold": 2700,
         "tags": [
@@ -1218,7 +1218,7 @@
     },
     {
         "id": "3144",
-        "description": "<mainText><stats><attention>+20%</attention> de vitesse d'attaque</stats><br><br><passive>Dans le mille</passive><br>Blesser un champion lui inflige des <magicDamage>dégâts magiques bonus</magicDamage>. <br>Les attaques réduisent ce délai de récupération de 1 sec.</mainText>",
+        "description": "<mainText><stats><attention>+20%</attention> de vitesse d'attaque</stats><br><passive>Dans le mille</passive><br>Blesser un champion lui inflige des <magicDamage>dégâts magiques bonus</magicDamage>. <br>Les attaques réduisent ce délai de récupération de 1 sec.</mainText>",
         "name": "Fronde de l'éclaireur",
         "gold": 600,
         "tags": [
@@ -1227,7 +1227,7 @@
     },
     {
         "id": "3145",
-        "description": "<mainText><stats><attention>+45</attention> puissance</stats><br><br><passive>Vibration magique</passive><br>Blesser un champion lui inflige des <magicDamage>dégâts magiques bonus</magicDamage>.</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> puissance</stats><br><passive>Vibration magique</passive><br>Blesser un champion lui inflige des <magicDamage>dégâts magiques bonus</magicDamage>.</mainText>",
         "name": "Alternateur Hextech",
         "gold": 1100,
         "tags": [
@@ -1236,7 +1236,7 @@
     },
     {
         "id": "3147",
-        "description": "<mainText><stats><attention>+30</attention> puissance<br><attention>+200</attention> PV</stats><br><br><passive>Folie</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 6%). </mainText>",
+        "description": "<mainText><stats><attention>+30</attention> puissance<br><attention>+200</attention> PV</stats><br><passive>Folie</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 6%). </mainText>",
         "name": "Déguisement hanté",
         "gold": 1300,
         "tags": [
@@ -1246,7 +1246,7 @@
     },
     {
         "id": "3152",
-        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+300</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><br><active>Supersonique</active><br>Vous vous ruez dans la direction ciblée en lançant des projectiles qui infligent des <magicDamage>dégâts magiques</magicDamage>.</mainText>",
+        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+300</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><active>Supersonique</active><br>Vous vous ruez dans la direction ciblée en lançant des projectiles qui infligent des <magicDamage>dégâts magiques</magicDamage>.</mainText>",
         "name": "Ceinture-roquette Hextech",
         "gold": 2650,
         "tags": [
@@ -1260,7 +1260,7 @@
     },
     {
         "id": "3153",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+25%</attention> de vitesse d'attaque<br><attention>+10%</attention> de vol de vie</stats><br><br><passive>Fil de brume</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> équivalents à un <physicalDamage>pourcentage</physicalDamage> des PV actuels de l'ennemi.<br><br><passive>Griffe des ombres</passive><br>Attaquer un champion 3 fois le <status>ralentit</status> de 30% pendant 1 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+25%</attention> de vitesse d'attaque<br><attention>+10%</attention> de vol de vie</stats><br><passive>Fil de brume</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> équivalents à un <physicalDamage>pourcentage</physicalDamage> des PV actuels de l'ennemi.<br><passive>Griffe des ombres</passive><br>Attaquer un champion 3 fois le <status>ralentit</status> de 30% pendant 1 sec.</mainText>",
         "name": "Lame du roi déchu",
         "gold": 3200,
         "tags": [
@@ -1273,7 +1273,7 @@
     },
     {
         "id": "3155",
-        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+25</attention> résistance magique</stats><br><br><passive>Lien vital</passive><br>Si des dégâts magiques sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier anti-dégâts magiques</shield> pendant 2.5 sec.</mainText>",
+        "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+25</attention> résistance magique</stats><br><passive>Lien vital</passive><br>Si des dégâts magiques sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier anti-dégâts magiques</shield> pendant 2.5 sec.</mainText>",
         "name": "Hexterminateur",
         "gold": 1300,
         "tags": [
@@ -1283,7 +1283,7 @@
     },
     {
         "id": "3156",
-        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+40</attention> résistance magique</stats><br><br><passive>Lien vital</passive><br>Si des dégâts magiques sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier anti-dégâts magiques</shield> pendant 3 sec et <lifeSteal>+10% d'omnivampirisme</lifeSteal> jusqu'à la fin du combat.</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+40</attention> résistance magique</stats><br><passive>Lien vital</passive><br>Si des dégâts magiques sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier anti-dégâts magiques</shield> pendant 3 sec et <lifeSteal>+10% d'omnivampirisme</lifeSteal> jusqu'à la fin du combat.</mainText>",
         "name": "Gueule de Malmortius",
         "gold": 3100,
         "tags": [
@@ -1296,7 +1296,7 @@
     },
     {
         "id": "3157",
-        "description": "<mainText><stats><attention>+105</attention> puissance<br><attention>+50</attention> armure</stats><br><br><br><br><active>Pause temporelle</active><br>Vous entrez en <keyword>stase</keyword> pendant 2.5 sec.</mainText>",
+        "description": "<mainText><stats><attention>+105</attention> puissance<br><attention>+50</attention> armure</stats><br><br><active>Pause temporelle</active><br>Vous entrez en <keyword>stase</keyword> pendant 2.5 sec.</mainText>",
         "name": "Sablier de Zhonya",
         "gold": 3250,
         "tags": [
@@ -1307,7 +1307,7 @@
     },
     {
         "id": "3158",
-        "description": "<mainText><stats><attention>+10</attention> accélération de compétence<br><attention>+45</attention> vitesse de déplacement</stats><br><br><passive>Savoir ionien</passive><br>Vous gagnez +10 accélération de sort d'invocateur.<br><br></mainText>",
+        "description": "<mainText><stats><attention>+10</attention> accélération de compétence<br><attention>+45</attention> vitesse de déplacement</stats><br><passive>Savoir ionien</passive><br>Vous gagnez +10 accélération de sort d'invocateur.<br></mainText>",
         "name": "Bottes de lucidité",
         "gold": 900,
         "tags": [
@@ -1317,7 +1317,7 @@
     },
     {
         "id": "3161",
-        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV</stats><br><br><passive>Force du dragon</passive> <br>Vous gagnez +25 accélération de compétence de base.<br><br><passive>Détermination inflexible</passive> <br>Infliger des dégâts avec vos compétences augmente vos dégâts de compétence de champion et de compétence passive de 3% pendant 6 sec (effet cumulable 4 fois).</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV</stats><br><passive>Force du dragon</passive> <br>Vous gagnez +25 accélération de compétence de base.<br><passive>Détermination inflexible</passive> <br>Infliger des dégâts avec vos compétences augmente vos dégâts de compétence de champion et de compétence passive de 3% pendant 6 sec (effet cumulable 4 fois).</mainText>",
         "name": "Lance de Shojin",
         "gold": 3100,
         "tags": [
@@ -1328,7 +1328,7 @@
     },
     {
         "id": "3165",
-        "description": "<mainText><stats><attention>+75</attention> puissance<br><attention>+350</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Hémorragie</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+75</attention> puissance<br><attention>+350</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Hémorragie</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
         "name": "Morellonomicon",
         "gold": 2850,
         "tags": [
@@ -1339,7 +1339,7 @@
     },
     {
         "id": "3170",
-        "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.<br><br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>. </mainText>",
+        "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.<br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>. </mainText>",
         "name": "Célérité martiale",
         "gold": 1500,
         "tags": [
@@ -1348,7 +1348,7 @@
     },
     {
         "id": "3171",
-        "description": "<mainText><stats><attention>+25</attention> accélération de compétence<br><attention>+50</attention> vitesse de déplacement</stats><br><br><passive>Savoir ionien</passive><br>Vous gagnez +10 accélération de sort d'invocateur.<br><br><passive>Hâte noxienne</passive><br>Renforcer ou protéger vos alliés avec des compétences, infliger des dégâts aux champions ennemis avec des compétences ou lancer un sort d'invocateur vous octroie <speed>+0 vitesse de déplacement</speed> pendant 4 sec.<br><br><rules>Hâte noxienne ne peut se déclencher qu'une fois par compétence lancée.</rules></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> accélération de compétence<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Savoir ionien</passive><br>Vous gagnez +10 accélération de sort d'invocateur.<br><passive>Hâte noxienne</passive><br>Renforcer ou protéger vos alliés avec des compétences, infliger des dégâts aux champions ennemis avec des compétences ou lancer un sort d'invocateur vous octroie <speed>+0 vitesse de déplacement</speed> pendant 4 sec.<br><rules>Hâte noxienne ne peut se déclencher qu'une fois par compétence lancée.</rules></mainText>",
         "name": "Lucidité pourpre",
         "gold": 1400,
         "tags": [
@@ -1358,7 +1358,7 @@
     },
     {
         "id": "3172",
-        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+50</attention> vitesse de déplacement</stats><br><br><passive>Allure noxienne</passive><br>Attaquer des champions vous octroie de la <speed>vitesse de déplacement</speed> <OnHit>à l'impact</OnHit> (ce bonus diminue en 2 sec).</mainText>",
+        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Allure noxienne</passive><br>Attaquer des champions vous octroie de la <speed>vitesse de déplacement</speed> <OnHit>à l'impact</OnHit> (ce bonus diminue en 2 sec).</mainText>",
         "name": "Jambières de métal",
         "gold": 1600,
         "tags": [
@@ -1368,7 +1368,7 @@
     },
     {
         "id": "3173",
-        "description": "<mainText><stats><attention>+35</attention> résistance magique<br><attention>+50</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br><br><passive>Persévérance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts magiques d'un champion, vous gagnez un <shield>bouclier</shield> <magicDamage>anti-dégâts magiques</magicDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
+        "description": "<mainText><stats><attention>+35</attention> résistance magique<br><attention>+50</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br><passive>Persévérance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts magiques d'un champion, vous gagnez un <shield>bouclier</shield> <magicDamage>anti-dégâts magiques</magicDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
         "name": "Broyeuses à chaînes",
         "gold": 1750,
         "tags": [
@@ -1380,7 +1380,7 @@
     },
     {
         "id": "3174",
-        "description": "<mainText><stats><attention>+40</attention> armure<br><attention>+50</attention> vitesse de déplacement</stats><br><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.<br><br><passive>Endurance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts physiques d'un champion, vous gagnez un <shield>bouclier</shield> <physicalDamage>anti-dégâts physiques</physicalDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> armure<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.<br><passive>Endurance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts physiques d'un champion, vous gagnez un <shield>bouclier</shield> <physicalDamage>anti-dégâts physiques</physicalDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
         "name": "Avancée blindée",
         "gold": 1700,
         "tags": [
@@ -1390,7 +1390,7 @@
     },
     {
         "id": "3175",
-        "description": "<mainText><stats><attention>+18</attention> pénétration magique<br><attention>+7%</attention> de pénétration magique<br><attention>+50</attention> vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+18</attention> pénétration magique<br><attention>+7%</attention> de pénétration magique<br><attention>+50</attention> vitesse de déplacement</stats><br></mainText>",
         "name": "Chaussures de lanceur de sorts",
         "gold": 1600,
         "tags": [
@@ -1400,7 +1400,7 @@
     },
     {
         "id": "3176",
-        "description": "<mainText><stats><attention>+55</attention> vitesse de déplacement</stats><br><br><passive>Néantin</passive><br>Vous gagnez Rappel amélioré.<br><br><passive>Synchronie noxienne</passive><br>Vous gagnez <speed>+45 vitesse de déplacement</speed> et <speed>+8% de vitesse de déplacement totale</speed> en dehors des combats.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> vitesse de déplacement</stats><br><passive>Néantin</passive><br>Vous gagnez Rappel amélioré.<br><passive>Synchronie noxienne</passive><br>Vous gagnez <speed>+45 vitesse de déplacement</speed> et <speed>+8% de vitesse de déplacement totale</speed> en dehors des combats.</mainText>",
         "name": "Semelles militaires",
         "gold": 1400,
         "tags": [
@@ -1409,7 +1409,7 @@
     },
     {
         "id": "3179",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflés ennemis, vous les révélez pendant 8 sec.<br><br><passive>Extinction des feux</passive><br>Vos attaques infligent des dégâts bonus aux balises.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflés ennemis, vous les révélez pendant 8 sec.<br><passive>Extinction des feux</passive><br>Vos attaques infligent des dégâts bonus aux balises.</mainText>",
         "name": "Glaive d'ombre",
         "gold": 2500,
         "tags": [
@@ -1422,7 +1422,7 @@
     },
     {
         "id": "3181",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+500</attention> PV<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Pilote</passive><br>Toutes les cinq attaques contre des champions ou des monstres épiques, vous infligez des <physicalDamage>dégâts physiques bonus</physicalDamage>. Ces dégâts sont augmentés contre les bâtiments.<br><br><passive>Section d'abordage</passive><br>Les super-sbires et sbires de siège alliés proches gagnent de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR>.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+500</attention> PV<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Pilote</passive><br>Toutes les cinq attaques contre des champions ou des monstres épiques, vous infligez des <physicalDamage>dégâts physiques bonus</physicalDamage>. Ces dégâts sont augmentés contre les bâtiments.<br><passive>Section d'abordage</passive><br>Les super-sbires et sbires de siège alliés proches gagnent de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR>.</mainText>",
         "name": "Brise-coques",
         "gold": 3000,
         "tags": [
@@ -1433,7 +1433,7 @@
     },
     {
         "id": "3190",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 200 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 200 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
         "name": "Médaillon de l'Iron Solari",
         "gold": 2200,
         "tags": [
@@ -1447,7 +1447,7 @@
     },
     {
         "id": "3211",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+35</attention> résistance magique<br><attention>+100%</attention> de régénération de base des PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+35</attention> résistance magique<br><attention>+100%</attention> de régénération de base des PV</stats><br></mainText>",
         "name": "Manteau de spectre",
         "gold": 1250,
         "tags": [
@@ -1458,7 +1458,7 @@
     },
     {
         "id": "3222",
-        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+100%</attention> de régénération de base du mana<br><attention>+12%</attention> d'efficacité des soins et boucliers<br><attention>+15</attention> accélération de compétence</stats><br><br><active>Purification</active><br>Vous dissipez tous les contrôles de foule qui affectent un champion allié (sauf les <keyword>projections dans les airs</keyword> et les <keyword>neutralisations</keyword>) et vous lui rendez <healing>100 - 250 PV</healing>.</mainText>",
+        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+100%</attention> de régénération de base du mana<br><attention>+12%</attention> d'efficacité des soins et boucliers<br><attention>+15</attention> accélération de compétence</stats><br><active>Purification</active><br>Vous dissipez tous les contrôles de foule qui affectent un champion allié (sauf les <keyword>projections dans les airs</keyword> et les <keyword>neutralisations</keyword>) et vous lui rendez <healing>100 - 250 PV</healing>.</mainText>",
         "name": "Bénédiction de Mikael",
         "gold": 2300,
         "tags": [
@@ -1472,7 +1472,7 @@
     },
     {
         "id": "3302",
-        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque</stats><br><br><passive>Ombre</passive><br>Vos attaques infligent <magicDamage>30 pts de dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.<br><br><passive>Juxtaposition</passive><br>Vous alternez entre des attaques <keywordMajor>lumineuses</keywordMajor> et <keywordMajor>ténébreuses</keywordMajor> contre les champions : <li>Les attaques <keywordMajor>lumineuses</keywordMajor> vous octroient de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR> pendant 5 sec. <li>Les attaques <keywordMajor>ténébreuses</keywordMajor> vous octroient +10% de <scaleArmor>pénétration d'armure</scaleArmor> et de <scaleMR>pénétration magique</scaleMR> pendant 5 sec. </mainText>",
+        "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque</stats><br><passive>Ombre</passive><br>Vos attaques infligent <magicDamage>30 pts de dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.<br><passive>Juxtaposition</passive><br>Vous alternez entre des attaques <keywordMajor>lumineuses</keywordMajor> et <keywordMajor>ténébreuses</keywordMajor> contre les champions : <li>Les attaques <keywordMajor>lumineuses</keywordMajor> vous octroient de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR> pendant 5 sec. <li>Les attaques <keywordMajor>ténébreuses</keywordMajor> vous octroient +10% de <scaleArmor>pénétration d'armure</scaleArmor> et de <scaleMR>pénétration magique</scaleMR> pendant 5 sec. </mainText>",
         "name": "Terminus",
         "gold": 3000,
         "tags": [
@@ -1485,7 +1485,7 @@
     },
     {
         "id": "3330",
-        "description": "<mainText><stats></stats><br><br>Ne peut être vendu<br><br><active>Propriété active - Relique :</active> vous posez une Effigie qui dure 0 sec et ressemble exactement à la manière dont Fiddlesticks apparaît aux ennemis. L'objet stocke une charge toutes les 0 sec, jusqu'à un maximum de 2 charges.<br><br>Les champions ennemis qui s'approchent d'une Effigie l'activent : l'Effigie feint alors une action aléatoire, après quoi elle disparaît.</mainText>",
+        "description": "<mainText><stats></stats><br>Ne peut être vendu<br><active>Propriété active - Relique :</active> vous posez une Effigie qui dure 0 sec et ressemble exactement à la manière dont Fiddlesticks apparaît aux ennemis. L'objet stocke une charge toutes les 0 sec, jusqu'à un maximum de 2 charges.<br>Les champions ennemis qui s'approchent d'une Effigie l'activent : l'Effigie feint alors une action aléatoire, après quoi elle disparaît.</mainText>",
         "name": "Effigie d'épouvantail",
         "gold": 0,
         "tags": [
@@ -1498,7 +1498,7 @@
     },
     {
         "id": "3340",
-        "description": "<mainText><stats></stats><br><br><active>Propriété active</active> (<scaleLevel>210 - 120</scaleLevel> sec, max. 2 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision pendant <scaleLevel>90 - 120</scaleLevel> sec.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>210 - 120</scaleLevel> sec, max. 2 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision pendant <scaleLevel>90 - 120</scaleLevel> sec.</mainText>",
         "name": "Balise camouflée",
         "gold": 0,
         "tags": [
@@ -1511,7 +1511,7 @@
     },
     {
         "id": "3363",
-        "description": "<mainText><stats></stats><br><br><active>Propriété active</active> (<scaleLevel>198 - 99</scaleLevel> sec)<br>Révèle une zone lointaine pendant 2 sec et pose une balise qui expire lorsqu'elle dévoile un champion ennemi.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>198 - 99</scaleLevel> sec)<br>Révèle une zone lointaine pendant 2 sec et pose une balise qui expire lorsqu'elle dévoile un champion ennemi.</mainText>",
         "name": "Altération divinatoire",
         "gold": 0,
         "tags": [
@@ -1522,7 +1522,7 @@
     },
     {
         "id": "3364",
-        "description": "<mainText><stats></stats><br><br><active>Propriété active</active> (<scaleLevel>160 - 100</scaleLevel> sec, max 2 charges)<br>Révèle les Balises camouflées et les pièges ennemis autour de vous pendant 6 sec.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>160 - 100</scaleLevel> sec, max 2 charges)<br>Révèle les Balises camouflées et les pièges ennemis autour de vous pendant 6 sec.</mainText>",
         "name": "Brouilleur oraculaire",
         "gold": 0,
         "tags": [
@@ -1533,7 +1533,7 @@
     },
     {
         "id": "3508",
-        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+25%</attention> de chances de coup critique</stats><br><br><passive>Drain d'essence</passive><br>Vos attaques vous rendent du <scaleMana>mana</scaleMana> <OnHit>à l'impact</OnHit>.</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Drain d'essence</passive><br>Vos attaques vous rendent du <scaleMana>mana</scaleMana> <OnHit>à l'impact</OnHit>.</mainText>",
         "name": "Faux spectrale",
         "gold": 2900,
         "tags": [
@@ -1547,7 +1547,7 @@
     },
     {
         "id": "3599",
-        "description": "<mainText><stats></stats><br><br><active>Propriété active - Consommation :</active> vous vous liez à un allié pour le restant de la partie. Ce pacte vous renforce tous les deux lorsque vous êtes proches.</mainText>",
+        "description": "<mainText><stats></stats><br><active>Propriété active - Consommation :</active> vous vous liez à un allié pour le restant de la partie. Ce pacte vous renforce tous les deux lorsque vous êtes proches.</mainText>",
         "name": "Lance noire de Kalista",
         "gold": 0,
         "tags": [
@@ -1556,7 +1556,7 @@
     },
     {
         "id": "3742",
-        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+55</attention> armure<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Naufrageur</passive><br>Vous déplacer vous octroie jusqu'à <speed>+20 vitesse de déplacement bonus</speed>. Votre prochaine attaque consomme cette vitesse de déplacement bonus pour infliger des <physicalDamage>dégâts physiques bonus</physicalDamage>.<br><br><passive>Insubmersible</passive><br>Réduit de 15% l'efficacité des <keyword>ralentissements</keyword>.</mainText>",
+        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+55</attention> armure<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Naufrageur</passive><br>Vous déplacer vous octroie jusqu'à <speed>+20 vitesse de déplacement bonus</speed>. Votre prochaine attaque consomme cette vitesse de déplacement bonus pour infliger des <physicalDamage>dégâts physiques bonus</physicalDamage>.<br><passive>Insubmersible</passive><br>Réduit de 15% l'efficacité des <keyword>ralentissements</keyword>.</mainText>",
         "name": "Plaque du mort",
         "gold": 2900,
         "tags": [
@@ -1568,7 +1568,7 @@
     },
     {
         "id": "3748",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+600</attention> PV</stats><br><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> à l'impact et aux ennemis derrière la cible.<br><br><active>Croissant titanesque</active><br>Vous renforcez votre prochain <passive>Fendoir</passive> et infligez des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> et des <physicalDamage>dégâts physiques bonus</physicalDamage> aux ennemis derrière la cible.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+600</attention> PV</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> à l'impact et aux ennemis derrière la cible.<br><active>Croissant titanesque</active><br>Vous renforcez votre prochain <passive>Fendoir</passive> et infligez des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> et des <physicalDamage>dégâts physiques bonus</physicalDamage> aux ennemis derrière la cible.</mainText>",
         "name": "Hydre titanesque",
         "gold": 3300,
         "tags": [
@@ -1580,7 +1580,7 @@
     },
     {
         "id": "3801",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br></mainText>",
         "name": "Bracelet cristallin",
         "gold": 800,
         "tags": [
@@ -1590,7 +1590,7 @@
     },
     {
         "id": "3802",
-        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+300</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Illumination</passive><br>Quand vous gagnez un niveau, vous récupérez <scaleMana>20% de votre mana max</scaleMana> en 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+300</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><passive>Illumination</passive><br>Quand vous gagnez un niveau, vous récupérez <scaleMana>20% de votre mana max</scaleMana> en 3 sec.</mainText>",
         "name": "Chapitre perdu",
         "gold": 1200,
         "tags": [
@@ -1602,7 +1602,7 @@
     },
     {
         "id": "3803",
-        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+375</attention> mana</stats><br><br><passive>Éternité</passive><br>Vous récupérez du <scaleMana>mana</scaleMana> équivalent à <scaleMana>10% des dégâts que vous infligent</scaleMana> les champions. <br>Lancer une compétence vous rend des <healing>PV équivalents à 25% du mana</healing> dépensé.</mainText>",
+        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+375</attention> mana</stats><br><passive>Éternité</passive><br>Vous récupérez du <scaleMana>mana</scaleMana> équivalent à <scaleMana>10% des dégâts que vous infligent</scaleMana> les champions. <br>Lancer une compétence vous rend des <healing>PV équivalents à 25% du mana</healing> dépensé.</mainText>",
         "name": "Catalyseur de l'éternité",
         "gold": 1300,
         "tags": [
@@ -1614,7 +1614,7 @@
     },
     {
         "id": "3814",
-        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+250</attention> PV</stats><br><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
+        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+250</attention> PV</stats><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
         "name": "Manteau de la nuit",
         "gold": 3000,
         "tags": [
@@ -1638,7 +1638,7 @@
     },
     {
         "id": "3869",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><br><passive>Bénédiction de la montagne</passive><br>Réduit les dégâts que vous infligent les champions pendant 2 sec après avoir subi des dégâts d'un champion. Quand l'effet prend fin, vous ralentissez les ennemis proches de 50% pendant 1.5 sec.<br><br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><passive>Bénédiction de la montagne</passive><br>Réduit les dégâts que vous infligent les champions pendant 2 sec après avoir subi des dégâts d'un champion. Quand l'effet prend fin, vous ralentissez les ennemis proches de 50% pendant 1.5 sec.<br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
         "name": "Opposition céleste",
         "gold": 400,
         "tags": [
@@ -1652,7 +1652,7 @@
     },
     {
         "id": "3870",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><br><passive>Rêve éveillé</passive><br>Soigner un allié ou lui octroyer un bouclier lui envoie les bulles pendant 3 sec. Sa prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>, et les prochains dégâts qu'il subit sont réduits.<br><br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><passive>Rêve éveillé</passive><br>Soigner un allié ou lui octroyer un bouclier lui envoie les bulles pendant 3 sec. Sa prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>, et les prochains dégâts qu'il subit sont réduits.<br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
         "name": "Rêve éveillé",
         "gold": 400,
         "tags": [
@@ -1666,7 +1666,7 @@
     },
     {
         "id": "3871",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><br><passive>Explosion du Néant</passive><br>Infliger des dégâts de compétence à un champion provoque une explosion qui inflige des <magicDamage>dégâts magiques</magicDamage>.<br><br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><passive>Explosion du Néant</passive><br>Infliger des dégâts de compétence à un champion provoque une explosion qui inflige des <magicDamage>dégâts magiques</magicDamage>.<br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
         "name": "Pique dimensionnelle de Zaz'Zak",
         "gold": 400,
         "tags": [
@@ -1680,7 +1680,7 @@
     },
     {
         "id": "3876",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><br><passive>Virée en traîneau</passive><br><keyword>Ralentir</keyword> ou <keyword>immobiliser</keyword> un champion ennemi près d'alliés vous octroie, ainsi qu'à un allié proche, des <healing>PV</healing> et <speed>+20% de vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 2.5 sec. <br><br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><passive>Virée en traîneau</passive><br><keyword>Ralentir</keyword> ou <keyword>immobiliser</keyword> un champion ennemi près d'alliés vous octroie, ainsi qu'à un allié proche, des <healing>PV</healing> et <speed>+20% de vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 2.5 sec. <br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
         "name": "Traîneau du solstice",
         "gold": 400,
         "tags": [
@@ -1694,7 +1694,7 @@
     },
     {
         "id": "3877",
-        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>. Si la cible est un champion, il subit des dégâts bonus pendant 4 sec.<br><br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
+        "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+75%</attention> de régénération de base des PV<br><attention>+75%</attention> de régénération de base du mana<br><attention>+5</attention> PO toutes les 10 sec</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit>. Si la cible est un champion, il subit des dégâts bonus pendant 4 sec.<br><active>Propriété active</active> (4 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision.</mainText>",
         "name": "Mélodie du sang",
         "gold": 400,
         "tags": [
@@ -1708,7 +1708,7 @@
     },
     {
         "id": "3916",
-        "description": "<mainText><stats><attention>+25</attention> puissance</stats><br><br><passive>Hémorragie</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+25</attention> puissance</stats><br><passive>Hémorragie</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> aux champions leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
         "name": "Orbe de l'oubli",
         "gold": 800,
         "tags": [
@@ -1717,7 +1717,7 @@
     },
     {
         "id": "4401",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+55</attention> résistance magique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Immuable</passive><br>Vous gagnez <scaleMR>+70 résistance magique</scaleMR> et <speed>+6% de vitesse de déplacement bonus</speed> après avoir subi des dégâts magiques de la part de champions 8 fois.</mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+55</attention> résistance magique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Immuable</passive><br>Vous gagnez <scaleMR>+70 résistance magique</scaleMR> et <speed>+6% de vitesse de déplacement bonus</speed> après avoir subi des dégâts magiques de la part de champions 8 fois.</mainText>",
         "name": "Force de la nature",
         "gold": 2800,
         "tags": [
@@ -1727,7 +1727,7 @@
     },
     {
         "id": "4628",
-        "description": "<mainText><stats><attention>+125</attention> puissance<br><attention>+25</attention> accélération de compétence</stats><br><br><passive>Tir hyperprécis</passive><br>Infliger des dégâts de compétence à un champion à au moins 600 unités de distance le <keywordStealth>révèle</keywordStealth> pendant 6 sec. <br><br><passive>Focalisation</passive><br>Quand <passive>Tir hyperprécis</passive> se déclenche, vous <keywordStealth>révélez</keywordStealth> tous les autres champions ennemis dans un rayon de 1400 unités de distance de votre cible pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+125</attention> puissance<br><attention>+25</attention> accélération de compétence</stats><br><passive>Tir hyperprécis</passive><br>Infliger des dégâts de compétence à un champion à au moins 600 unités de distance le <keywordStealth>révèle</keywordStealth> pendant 6 sec. <br><passive>Focalisation</passive><br>Quand <passive>Tir hyperprécis</passive> se déclenche, vous <keywordStealth>révélez</keywordStealth> tous les autres champions ennemis dans un rayon de 1400 unités de distance de votre cible pendant 3 sec.</mainText>",
         "name": "Concentration lointaine",
         "gold": 2750,
         "tags": [
@@ -1737,7 +1737,7 @@
     },
     {
         "id": "4629",
-        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+350</attention> PV<br><attention>+25</attention> accélération de compétence<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Danse des sorts</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> ou <trueDamage>bruts</trueDamage> à des champions vous octroie de la <speed>vitesse de déplacement</speed> pendant 4 sec. </mainText>",
+        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+350</attention> PV<br><attention>+25</attention> accélération de compétence<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Danse des sorts</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> ou <trueDamage>bruts</trueDamage> à des champions vous octroie de la <speed>vitesse de déplacement</speed> pendant 4 sec. </mainText>",
         "name": "Volonté cosmique",
         "gold": 3000,
         "tags": [
@@ -1749,7 +1749,7 @@
     },
     {
         "id": "4630",
-        "description": "<mainText><stats><attention>+25</attention> puissance<br><attention>+13%</attention> de pénétration magique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+25</attention> puissance<br><attention>+13%</attention> de pénétration magique</stats><br></mainText>",
         "name": "Joyau putréfiant",
         "gold": 1100,
         "tags": [
@@ -1759,7 +1759,7 @@
     },
     {
         "id": "4632",
-        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> résistance magique</stats><br><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> puissance<br><attention>+25</attention> résistance magique</stats><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
         "name": "Barrière verdoyante",
         "gold": 1600,
         "tags": [
@@ -1769,7 +1769,7 @@
     },
     {
         "id": "4633",
-        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+350</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Corruption du Néant</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 8%). Une fois le pourcentage max atteint, vous gagnez de l'<omnivamp>omnivampirisme</omnivamp>.<br><br><passive>Infusion du Néant</passive><br>Vous gagnez de la <scaleAP>puissance</scaleAP> équivalente à 2% de vos <scaleHealth>PV bonus</scaleHealth>.</mainText>",
+        "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+350</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Corruption du Néant</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 8%). Une fois le pourcentage max atteint, vous gagnez de l'<omnivamp>omnivampirisme</omnivamp>.<br><passive>Infusion du Néant</passive><br>Vous gagnez de la <scaleAP>puissance</scaleAP> équivalente à 2% de vos <scaleHealth>PV bonus</scaleHealth>.</mainText>",
         "name": "Créateur de failles",
         "gold": 3100,
         "tags": [
@@ -1781,7 +1781,7 @@
     },
     {
         "id": "4638",
-        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+10</attention> accélération de compétence<br><attention>+10</attention> armure<br><attention>+15</attention> résistance magique</stats><br><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.</mainText>",
+        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+10</attention> accélération de compétence<br><attention>+10</attention> armure<br><attention>+15</attention> résistance magique</stats><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.</mainText>",
         "name": "Pierre de balise attentive",
         "gold": 1100,
         "tags": [
@@ -1794,7 +1794,7 @@
     },
     {
         "id": "4642",
-        "description": "<mainText><stats><attention>+20</attention> puissance<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10</attention> accélération de compétence</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+20</attention> puissance<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
         "name": "Miroir en verre de Bandle",
         "gold": 900,
         "tags": [
@@ -1805,7 +1805,7 @@
     },
     {
         "id": "4643",
-        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+25</attention> armure<br><attention>+30</attention> résistance magique</stats><br><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.<br><br><passive>Contemplation</passive><br>Le nombre de Balises camouflées et de Balises de contrôle que vous pouvez poser est augmenté de 1.</mainText>",
+        "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+25</attention> armure<br><attention>+30</attention> résistance magique</stats><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.<br><passive>Contemplation</passive><br>Le nombre de Balises camouflées et de Balises de contrôle que vous pouvez poser est augmenté de 1.</mainText>",
         "name": "Pierre de balise vigilante",
         "gold": 2300,
         "tags": [
@@ -1818,7 +1818,7 @@
     },
     {
         "id": "4645",
-        "description": "<mainText><stats><attention>+110</attention> puissance<br><attention>+15</attention> pénétration magique</stats><br><br><passive>Floraicendre</passive><br>Vos <magicDamage>dégâts magiques</magicDamage> et vos <trueDamage>dégâts bruts</trueDamage> <attention>infligent des coups critiques</attention> aux ennemis qui ont moins de 40% de leurs PV, leur infligeant 20% de dégâts bonus. </mainText>",
+        "description": "<mainText><stats><attention>+110</attention> puissance<br><attention>+15</attention> pénétration magique</stats><br><passive>Floraicendre</passive><br>Vos <magicDamage>dégâts magiques</magicDamage> et vos <trueDamage>dégâts bruts</trueDamage> <attention>infligent des coups critiques</attention> aux ennemis qui ont moins de 40% de leurs PV, leur infligeant 20% de dégâts bonus. </mainText>",
         "name": "Flamme-ombre",
         "gold": 3200,
         "tags": [
@@ -1828,7 +1828,7 @@
     },
     {
         "id": "4646",
-        "description": "<mainText><stats><attention>+90</attention> puissance<br><attention>+15</attention> pénétration magique<br><attention>+6%</attention> de vitesse de déplacement</stats><br><br><passive>Dresseur d'orage</passive><br>Infliger des dégâts équivalents à 25% des PV max du champion ciblé en moins de 2.5 sec applique <passive>Rafale</passive> sur lui.<br><br><passive>Rafale</passive><br>Après 2 sec, vous infligez <magicDamage>des dégâts magiques</magicDamage>. Si la cible meurt avant que <passive>Rafale</passive> ne se déclenche, ses dégâts sont infligés aux ennemis proches.</mainText>",
+        "description": "<mainText><stats><attention>+90</attention> puissance<br><attention>+15</attention> pénétration magique<br><attention>+6%</attention> de vitesse de déplacement</stats><br><passive>Dresseur d'orage</passive><br>Infliger des dégâts équivalents à 25% des PV max du champion ciblé en moins de 2.5 sec applique <passive>Rafale</passive> sur lui.<br><passive>Rafale</passive><br>Après 2 sec, vous infligez <magicDamage>des dégâts magiques</magicDamage>. Si la cible meurt avant que <passive>Rafale</passive> ne se déclenche, ses dégâts sont infligés aux ennemis proches.</mainText>",
         "name": "Onde orageuse",
         "gold": 2800,
         "tags": [
@@ -1840,7 +1840,7 @@
     },
     {
         "id": "6333",
-        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+50</attention> armure<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Insensible à la douleur</passive><br>Un pourcentage des dégâts subis vous sont infligés en différé en 3 sec.<br><br><passive>Massacre</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous purgez les dégâts restants d'<passive>Insensible à la douleur</passive> et vous récupérez des <healing>PV</healing> en 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+50</attention> armure<br><attention>+15</attention> accélération de compétence</stats><br><passive>Insensible à la douleur</passive><br>Un pourcentage des dégâts subis vous sont infligés en différé en 3 sec.<br><passive>Massacre</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous purgez les dégâts restants d'<passive>Insensible à la douleur</passive> et vous récupérez des <healing>PV</healing> en 2 sec.</mainText>",
         "name": "Danse de la mort",
         "gold": 3300,
         "tags": [
@@ -1851,7 +1851,7 @@
     },
     {
         "id": "6609",
-        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Cisailles</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Cisailles</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
         "name": "Épée dentelée chimico-punk",
         "gold": 3100,
         "tags": [
@@ -1862,7 +1862,7 @@
     },
     {
         "id": "6610",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
         "name": "Ciel éventré",
         "gold": 3100,
         "tags": [
@@ -1873,7 +1873,7 @@
     },
     {
         "id": "6631",
-        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+25%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><br><active>Onde de choc entravante</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches et les <status>ralentissez</status> de 35%.<br>Vous gagnez <speed>+35% de vitesse de déplacement</speed> par champion touché, et ce bonus diminue en 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+25%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Onde de choc entravante</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches et les <status>ralentissez</status> de 35%.<br>Vous gagnez <speed>+35% de vitesse de déplacement</speed> par champion touché, et ce bonus diminue en 3 sec.</mainText>",
         "name": "Estropieur",
         "gold": 3300,
         "tags": [
@@ -1885,7 +1885,7 @@
     },
     {
         "id": "6653",
-        "description": "<mainText><stats><attention>+60</attention> puissance<br><attention>+300</attention> PV</stats><br><br><passive>Tourment</passive><br>Les compétences blessantes brûlent les ennemis, leur infligeant <magicDamage>2% de leurs PV max en dégâts magiques</magicDamage> chaque seconde pendant 3 sec.<br><br><passive>Souffrance</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 6%).</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> puissance<br><attention>+300</attention> PV</stats><br><passive>Tourment</passive><br>Les compétences blessantes brûlent les ennemis, leur infligeant <magicDamage>2% de leurs PV max en dégâts magiques</magicDamage> chaque seconde pendant 3 sec.<br><passive>Souffrance</passive><br>Pour chaque seconde passée en combat avec des champions ennemis, vous infligez 2% de dégâts bonus (jusqu'à 6%).</mainText>",
         "name": "Tourment de Liandry",
         "gold": 3000,
         "tags": [
@@ -1895,7 +1895,7 @@
     },
     {
         "id": "6655",
-        "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+600</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Tir</passive><br>Les compétences blessantes tirent 6 charges qui infligent des <magicDamage>dégâts magiques bonus</magicDamage> à la cible et aux ennemis proches. Les tirs restants sont redirigés vers la cible principale et lui infligent 20% des dégâts.<br></mainText>",
+        "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+600</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><passive>Tir</passive><br>Les compétences blessantes tirent 6 charges qui infligent des <magicDamage>dégâts magiques bonus</magicDamage> à la cible et aux ennemis proches. Les tirs restants sont redirigés vers la cible principale et lui infligent 20% des dégâts.<br></mainText>",
         "name": "Compagnon de Luden",
         "gold": 2750,
         "tags": [
@@ -1906,7 +1906,7 @@
     },
     {
         "id": "6660",
-        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+5</attention> accélération de compétence</stats><br><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+5</attention> accélération de compétence</stats><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec.</mainText>",
         "name": "Cendres de Bami",
         "gold": 900,
         "tags": [
@@ -1916,7 +1916,7 @@
     },
     {
         "id": "6662",
-        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+50</attention> armure<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> et crée un champ de givre pendant 2 sec qui <status>ralentit</status> les ennemis.</mainText>",
+        "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+50</attention> armure<br><attention>+15</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> et crée un champ de givre pendant 2 sec qui <status>ralentit</status> les ennemis.</mainText>",
         "name": "Gantelet givrant",
         "gold": 2900,
         "tags": [
@@ -1930,7 +1930,7 @@
     },
     {
         "id": "6664",
-        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+40</attention> résistance magique<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger chaque seconde des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec. <br><br><passive>Désolation</passive><br>Éliminer un ennemi inflige des <magicDamage>dégâts magiques</magicDamage> autour de lui.</mainText>",
+        "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+40</attention> résistance magique<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Immolation</passive><br>Subir ou infliger des dégâts vous permet d'infliger chaque seconde des <magicDamage>dégâts magiques</magicDamage> aux ennemis proches pendant 3 sec. <br><passive>Désolation</passive><br>Éliminer un ennemi inflige des <magicDamage>dégâts magiques</magicDamage> autour de lui.</mainText>",
         "name": "Rayonnement du vide",
         "gold": 2800,
         "tags": [
@@ -1943,7 +1943,7 @@
     },
     {
         "id": "6665",
-        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+45</attention> armure<br><attention>+45</attention> résistance magique</stats><br><br><passive>Vigueur de Néantin</passive><br>Après 5 sec de combat contre des champions, vous augmentez votre <scaleArmor>armure</scaleArmor> et votre <scaleMR>résistance magique</scaleMR> bonus de 30% jusqu'à la fin du combat.<br><br></mainText>",
+        "description": "<mainText><stats><attention>+350</attention> PV<br><attention>+45</attention> armure<br><attention>+45</attention> résistance magique</stats><br><passive>Vigueur de Néantin</passive><br>Après 5 sec de combat contre des champions, vous augmentez votre <scaleArmor>armure</scaleArmor> et votre <scaleMR>résistance magique</scaleMR> bonus de 30% jusqu'à la fin du combat.<br></mainText>",
         "name": "Jak'Sho, le Protéiforme",
         "gold": 3200,
         "tags": [
@@ -1954,7 +1954,7 @@
     },
     {
         "id": "6670",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+20%</attention> de chances de coup critique</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+20%</attention> de chances de coup critique</stats><br></mainText>",
         "name": "Carquois zénithien",
         "gold": 1300,
         "tags": [
@@ -1964,7 +1964,7 @@
     },
     {
         "id": "6672",
-        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+40%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Trempe</passive><br>Toutes les trois attaques, vous infligez des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> (ces dégâts sont augmentés en fonction des PV manquants de la cible).</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+40%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Trempe</passive><br>Toutes les trois attaques, vous infligez des <physicalDamage>dégâts physiques bonus</physicalDamage> <OnHit>à l'impact</OnHit> (ces dégâts sont augmentés en fonction des PV manquants de la cible).</mainText>",
         "name": "Tueur de krakens",
         "gold": 3000,
         "tags": [
@@ -1976,7 +1976,7 @@
     },
     {
         "id": "6673",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><br><passive>Lien vital</passive><br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier</shield> pendant 3 sec.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Lien vital</passive><br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez au préalable un <shield>bouclier</shield> pendant 3 sec.</mainText>",
         "name": "Arc-bouclier immortel",
         "gold": 3000,
         "tags": [
@@ -1986,7 +1986,7 @@
     },
     {
         "id": "6675",
-        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br><passive>Transcendance</passive><br>Vos attaques réduisent le délai de récupération de vos compétences de base de <attention>15%</attention> de leur délai de récupération restant.</mainText>",
+        "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Transcendance</passive><br>Vos attaques réduisent le délai de récupération de vos compétences de base de <attention>15%</attention> de leur délai de récupération restant.</mainText>",
         "name": "Tremblelame navori",
         "gold": 2650,
         "tags": [
@@ -1997,7 +1997,7 @@
     },
     {
         "id": "6676",
-        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+10</attention> létalité<br><attention>+25%</attention> de chances de coup critique</stats><br><br><passive>La vie</passive><br>Vos dégâts exécutent les champions qui ont moins de 5% de leurs PV.<br><br><passive>La bourse</passive><br>Éliminer un champion vous octroie <gold>25 PO bonus</gold>.</mainText>",
+        "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+10</attention> létalité<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>La vie</passive><br>Vos dégâts exécutent les champions qui ont moins de 5% de leurs PV.<br><passive>La bourse</passive><br>Éliminer un champion vous octroie <gold>25 PO bonus</gold>.</mainText>",
         "name": "Percepteur",
         "gold": 3000,
         "tags": [
@@ -2008,7 +2008,7 @@
     },
     {
         "id": "6690",
-        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><br></mainText>",
+        "description": "<mainText><stats><attention>+15</attention> dégâts d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br></mainText>",
         "name": "Rectrix",
         "gold": 775,
         "tags": [
@@ -2018,7 +2018,7 @@
     },
     {
         "id": "6692",
-        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Lune ascendante</passive><br>Quand vous touchez un champion avec 2 attaques ou compétences distinctes en moins de 2 sec, vous gagnez un <shield>bouclier</shield> pendant 2 sec.</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence</stats><br><passive>Lune ascendante</passive><br>Quand vous touchez un champion avec 2 attaques ou compétences distinctes en moins de 2 sec, vous gagnez un <shield>bouclier</shield> pendant 2 sec.</mainText>",
         "name": "Éclipse",
         "gold": 2900,
         "tags": [
@@ -2028,7 +2028,7 @@
     },
     {
         "id": "6694",
-        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Froid mordant</passive><br>Vos compétences blessantes <status>ralentissent</status> de 30% pendant 1 sec les ennemis qui ont moins de 50% de leurs PV.</mainText>",
+        "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+15</attention> accélération de compétence</stats><br><passive>Froid mordant</passive><br>Vos compétences blessantes <status>ralentissent</status> de 30% pendant 1 sec les ennemis qui ont moins de 50% de leurs PV.</mainText>",
         "name": "Rancune de Serylda",
         "gold": 3000,
         "tags": [
@@ -2040,7 +2040,7 @@
     },
     {
         "id": "6695",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité</stats><br><br><passive>Briseur de boucliers</passive><br>Infliger des dégâts à un champion ennemi réduit les boucliers qu'il reçoit de 0% pendant 3 sec. <br>Si l'ennemi n'était pas déjà affecté par <passive>Briseur de boucliers</passive>, vous réduisez ses boucliers actuels de 0%.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité</stats><br><passive>Briseur de boucliers</passive><br>Infliger des dégâts à un champion ennemi réduit les boucliers qu'il reçoit de 0% pendant 3 sec. <br>Si l'ennemi n'était pas déjà affecté par <passive>Briseur de boucliers</passive>, vous réduisez ses boucliers actuels de 0%.</mainText>",
         "name": "Crochet de serpent",
         "gold": 2500,
         "tags": [
@@ -2050,7 +2050,7 @@
     },
     {
         "id": "6696",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+20</attention> accélération de compétence</stats><br><br><passive>Flux</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, le délai de récupération de votre compétence ultime est réduit d'un pourcentage de son total.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+20</attention> accélération de compétence</stats><br><passive>Flux</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, le délai de récupération de votre compétence ultime est réduit d'un pourcentage de son total.</mainText>",
         "name": "Arc axiomatique",
         "gold": 2750,
         "tags": [
@@ -2061,7 +2061,7 @@
     },
     {
         "id": "6697",
-        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+15 dégâts d'attaque (+2 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
+        "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+15 dégâts d'attaque (+2 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
         "name": "Orgueil",
         "gold": 3000,
         "tags": [
@@ -2074,7 +2074,7 @@
     },
     {
         "id": "6698",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><br><active>Balayage hérétique</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> autour de vous.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Balayage hérétique</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> autour de vous.</mainText>",
         "name": "Hydre profane",
         "gold": 2850,
         "tags": [
@@ -2087,7 +2087,7 @@
     },
     {
         "id": "6699",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><br><passive>Galvanisation</passive><br>Les ruées et la furtivité <keyword>énergisent vos attaques</keyword> 75% plus vite.<br><br><passive>Firmament</passive><br>Vos <keyword>attaques énergisées</keyword> infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> et <keyword>ralentissent</keyword> pendant 0.75 sec.</mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Galvanisation</passive><br>Les ruées et la furtivité <keyword>énergisent vos attaques</keyword> 75% plus vite.<br><passive>Firmament</passive><br>Vos <keyword>attaques énergisées</keyword> infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> et <keyword>ralentissent</keyword> pendant 0.75 sec.</mainText>",
         "name": "Cyclosabre voltaïque",
         "gold": 3000,
         "tags": [
@@ -2100,7 +2100,7 @@
     },
     {
         "id": "6701",
-        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité</stats><br><br><passive>Préparation</passive><br>Si vous n'avez pas combattu de champion depuis 8 sec, vous gagnez de la <scaleLethality>létalité</scaleLethality>. Cette létalité se dissipe 3 sec après que vous avez blessé un champion.<br><br><passive>Extraction</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <speed>+200 vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 1.5 sec.<br></mainText>",
+        "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité</stats><br><passive>Préparation</passive><br>Si vous n'avez pas combattu de champion depuis 8 sec, vous gagnez de la <scaleLethality>létalité</scaleLethality>. Cette létalité se dissipe 3 sec après que vous avez blessé un champion.<br><passive>Extraction</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <speed>+200 vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 1.5 sec.<br></mainText>",
         "name": "Opportunité",
         "gold": 2700,
         "tags": [
@@ -2112,7 +2112,7 @@
     },
     {
         "id": "8010",
-        "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><br><passive>Vile décomposition</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> avec des compétences ou des compétences passives à des champions réduit leur <scaleMR>résistance magique de 7.5%</scaleMR> pendant 6 sec (jusqu'à 30%).</mainText>",
+        "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Vile décomposition</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> avec des compétences ou des compétences passives à des champions réduit leur <scaleMR>résistance magique de 7.5%</scaleMR> pendant 6 sec (jusqu'à 30%).</mainText>",
         "name": "Malédiction du sanguinaire",
         "gold": 2900,
         "tags": [

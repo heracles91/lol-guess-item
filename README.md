@@ -48,7 +48,7 @@ Pour lancer le projet localement :
 
 1.  **Cloner le dépôt :**
     ```bash
-    git clone [https://github.com/heracles91/lol-quiz.git](https://github.com/heracles91/lol-quiz.git)
+    git clone https://github.com/heracles91/lol-quiz.git
     cd lol-quiz
     ```
 

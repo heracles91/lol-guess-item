@@ -48,8 +48,8 @@ Pour lancer le projet localement :
 
 1.  **Cloner le dépôt :**
     ```bash
-    git clone https://github.com/heracles91/lol-quiz.git
-    cd lol-quiz
+    git clone https://github.com/heracles91/lol-guess-item.git
+    cd lol-guess-item
     ```
 
 2.  **Installer les dépendances :**

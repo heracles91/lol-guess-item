@@ -112,6 +112,26 @@ async function updateData() {
         processedNames.add(item.name);
     }
 
+    // EXEPTIONS
+    // Âmes synchornisées (Bottes)
+    cleanItems.push({
+        id: "3013",
+        name: "Âmes synchronisées",
+        gold: 900,
+        description: "<mainText><stats><attention>+45</attention> vitesse de déplacement</stats><br><br><passive>Néantin</passive><br>Vous gagnez Rappel amélioré.<br><br><passive>Synchronie</passive><br>Vous gagnez <speed>+45 vitesse de déplacement</speed> en dehors des combats.</mainText>",
+        tags: ["MovementSpeed"],
+        image: {
+        "full": "3013.png",
+        "sprite": "item2.png",
+        "group": "item",
+        "x": 0,
+        "y": 336,
+        "w": 48,
+        "h": 48
+      },
+      from: "3010"
+    })
+
     // Écriture du fichier JSON
     await fs.writeFile(ITEMS_FILE_PATH, JSON.stringify(cleanItems, null, 2));
     console.log(`💾 ${cleanItems.length} items sauvegardés (propres et filtrés)`);

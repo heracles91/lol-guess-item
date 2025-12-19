@@ -5,8 +5,13 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ITEMS_FILE_PATH = path.join(__dirname, '../src/data/items.json');
+const DATA_DIR = path.join(__dirname, '../src/data');
 const CONSTANTS_FILE_PATH = path.join(__dirname, '../src/utils/constants.js');
+
+const LANGUAGES = [
+    { code: 'fr_FR', file: 'items_fr.json'},
+    { code: 'en_US', file: 'items_en.json'}
+]
 
 async function updateData() {
   try {
@@ -16,125 +21,105 @@ async function updateData() {
     const latestVersion = versions[0];
     console.log(`✅ Dernier patch trouvé : ${latestVersion}`);
 
-    console.log('⬇️ Téléchargement des items...');
-    const itemsRes = await fetch(`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/fr_FR/item.json`);
-    const itemsData = await itemsRes.json();
-    
-    console.log('⚙️ Nettoyage et application des filtres stricts...');
-    
-    const rawItems = itemsData.data;
-    const cleanItems = [];
-    // Pour garantir l'unicité absolue
-    const processedIds = new Set(["3867", "3869", "3870", "3871", "3876", "3877"]);
-    const processedNames = new Set();
+    for (const lang of LANGUAGES) {
+        console.log(`⬇️ Téléchargement [${lang.code}]...`);
+        const itemsRes = await fetch(`https://ddragon.leagueoflegends.com/cdn/${latestVersion}/data/${lang.code}/item.json`);
+        const itemsData = await itemsRes.json();
 
-    for (const [id, item] of Object.entries(rawItems)) {
-        
-        // --- 1. FILTRES D'EXCLUSION ---
+        console.log(`⚙️  Traitement [${lang.code}]...`)
 
-        // Règle : Ignorer les items ayant un ID à 5 chiffres ou plus (souvent des items temporaires/test)
-        if (id.length >= 5) continue;
+        const rawItems = itemsData.data;
+        const cleanItems = [];
+        const processedIds = new Set(["3867", "3869", "3870", "3871", "3876", "3877"]);
+        const processedNames = new Set();
 
-        // Règle : Ignorer si la clé "inStore" existe (peu importe sa valeur)
-        // Note: item.inStore !== undefined vérifie l'existence de la clé
-        if (item.inStore !== undefined) continue;
+        for (const [id, item] of Object.entries(rawItems)) {
+            // --- FILTRES D'EXCLUSION ---
+            // Règle : Ignorer les items ayant un ID à 5 chiffres ou plus (souvent des items temporaires/test)
+            if (id.length >= 5) continue;
 
-        // Filtres classiques (Nom, Prix, Map, etc.)
-        if (!item.name || !item.gold) continue;
-        
-        // Map 11 = Faille de l'invocateur. Si l'item n'y est pas dispo, on vire.
-        if (item.maps && item.maps['11'] === false) continue;
+            // Règle : Ignorer si la clé "inStore" existe (peu importe sa valeur)
+            // Note: item.inStore !== undefined vérifie l'existence de la clé
+            if (item.inStore !== undefined && id != "3013") continue; // 3013 car je rajoute les bottes Âmes synchronisées
 
-        // Exclure les items d'Ornn ou spécifiques à un champion
-        if (item.requiredAlly || item.requiredChampion) continue;
+            // Filtres classiques (Nom, Prix, Map, etc.)
+            if (!item.name || !item.gold) continue;
+            
+            // Map 11 = Faille de l'invocateur. Si l'item n'y est pas dispo, on vire.
+            if (item.maps && item.maps['11'] === false) continue;
 
-        // Règle : Suppression des doublons (Sécurité supplémentaire)
-        if (processedIds.has(id)) continue;
-        if (processedNames.has(item.name)) continue;
+            // Exclure les items d'Ornn ou spécifiques à un champion
+            if (item.requiredAlly || item.requiredChampion) continue;
 
-        
-        // --- 2. NETTOYAGE DES DONNÉES ---
+            // Règle : Suppression des doublons (Sécurité supplémentaire)
+            if (processedIds.has(id)) continue;
+            if (processedNames.has(item.name)) continue;
 
-        // Règle : Nettoyage de la description
-        let cleanDescription = "";
-        if (item.description) {
-            cleanDescription = item.description
-                .replace(/<br><br>/g, '<br>') // Enlève les doubles sauts de ligne
-                .replace(/\u00A0/g, ' ');     // REMPLACE l'espace insécable (U+00A0) par un espace normal
-        }
-
-        // Règle : Gestion intelligente des Tags
-        let newTags = [...(item.tags || [])];
-
-        // A. Remplacer CooldownReduction par AbilityHaste
-        if (newTags.includes('CooldownReduction')) {
-            newTags = newTags.filter(t => t !== 'CooldownReduction'); // On enlève l'ancien
-            if (!newTags.includes('AbilityHaste')) {
-                newTags.push('AbilityHaste'); // On met le nouveau s'il n'y est pas déjà
+            // --- NETTOYAGE ---
+            // Règle : Nettoyage de la description
+            let cleanDescription = "";
+            if (item.description) {
+                cleanDescription = item.description
+                    .replace(/<br><br>/g, '<br>') // Enlève les doubles sauts de ligne
+                    .replace(/\u00A0/g, ' ');     // REMPLACE l'espace insécable (U+00A0) par un espace normal
             }
-        }
 
-        // B. Remplacer Boots & NonbootsMovement par MovementSpeed
-        const hasBoots = newTags.includes('Boots');
-        const hasNonBoots = newTags.includes('NonbootsMovement');
-        
-        if (hasBoots || hasNonBoots) {
-            // On supprime les anciens tags
-            newTags = newTags.filter(t => t !== 'Boots' && t !== 'NonbootsMovement');
-            // On ajoute le tag générique
-            if (!newTags.includes('MovementSpeed')) {
-                newTags.push('MovementSpeed');
+            // Règle : Gestion intelligente des Tags
+            let newTags = [...(item.tags || [])];
+
+            // A. Remplacer CooldownReduction par AbilityHaste
+            if (newTags.includes('CooldownReduction')) {
+                newTags = newTags.filter(t => t !== 'CooldownReduction'); // On enlève l'ancien
+                if (!newTags.includes('AbilityHaste')) {
+                    newTags.push('AbilityHaste'); // On met le nouveau s'il n'y est pas déjà
+                }
             }
-        }
 
-        // C. Remplacer SpellBlock par MagicResist
-        if (newTags.includes('SpellBlock')) {
-            newTags = newTags.filter(t => t !== 'SpellBlock'); // On enlève l'ancien
-            if (!newTags.includes('MagicResist')) {
-                newTags.push('MagicResist'); // On met le nouveau s'il n'y est pas déjà
+            // B. Remplacer Boots & NonbootsMovement par MovementSpeed
+            const hasBoots = newTags.includes('Boots');
+            const hasNonBoots = newTags.includes('NonbootsMovement');
+            
+            if (hasBoots || hasNonBoots) {
+                // On supprime les anciens tags
+                newTags = newTags.filter(t => t !== 'Boots' && t !== 'NonbootsMovement');
+                // On ajoute le tag générique
+                if (!newTags.includes('MovementSpeed')) {
+                    newTags.push('MovementSpeed');
+                }
             }
+
+            // C. Remplacer SpellBlock par MagicResist
+            if (newTags.includes('SpellBlock')) {
+                newTags = newTags.filter(t => t !== 'SpellBlock'); // On enlève l'ancien
+                if (!newTags.includes('MagicResist')) {
+                    newTags.push('MagicResist'); // On met le nouveau s'il n'y est pas déjà
+                }
+            }
+
+
+            // --- 3. AJOUT À LA LISTE FINALE ---
+            
+            cleanItems.push({
+                id: id,
+                name: item.name,
+                gold: item.gold.total, 
+                description: cleanDescription,
+                tags: newTags, // On utilise nos tags nettoyés
+                image: item.image,
+                from: item.from || []
+            });
+
+            processedIds.add(id);
+            processedNames.add(item.name);
         }
 
+        // IMPORTANT : On trie par ID pour que l'ordre soit identique en FR et EN
+        // C'est vital pour que le Daily Random tombe sur le même item
+        cleanItems.sort((a, b) => parseInt(a.id) - parseInt(b.id));
 
-        // --- 3. AJOUT À LA LISTE FINALE ---
-        
-        cleanItems.push({
-            id: id,
-            name: item.name,
-            gold: item.gold.total, 
-            description: cleanDescription,
-            tags: newTags, // On utilise nos tags nettoyés
-            image: item.image,
-            from: item.from || []
-        });
-
-        processedIds.add(id);
-        processedNames.add(item.name);
+        await fs.writeFile(path.join(DATA_DIR, lang.file), JSON.stringify(cleanItems, null, 2));
+        console.log(`💾  Sauvegardé : src/data/${lang.file} (${cleanItems.length} items)`);
     }
-
-    // EXEPTIONS
-    // Âmes synchornisées (Bottes)
-    cleanItems.push({
-        id: "3013",
-        name: "Âmes synchronisées",
-        gold: 900,
-        description: "<mainText><stats><attention>+45</attention> vitesse de déplacement</stats><br><br><passive>Néantin</passive><br>Vous gagnez Rappel amélioré.<br><br><passive>Synchronie</passive><br>Vous gagnez <speed>+45 vitesse de déplacement</speed> en dehors des combats.</mainText>",
-        tags: ["MovementSpeed"],
-        image: {
-        "full": "3013.png",
-        "sprite": "item2.png",
-        "group": "item",
-        "x": 0,
-        "y": 336,
-        "w": 48,
-        "h": 48
-      },
-      from: "3010"
-    })
-
-    // Écriture du fichier JSON
-    await fs.writeFile(ITEMS_FILE_PATH, JSON.stringify(cleanItems, null, 2));
-    console.log(`💾 ${cleanItems.length} items sauvegardés (propres et filtrés)`);
 
     // Mise à jour de la constante
     let constantsContent = await fs.readFile(CONSTANTS_FILE_PATH, 'utf-8');

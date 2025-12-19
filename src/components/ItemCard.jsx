@@ -41,7 +41,7 @@ function ItemCard({ item, revealed, isMystery }) { // <--- Ajout prop isMystery
         />
       </div>
       
-      <h2 className={`mt-4 text-xl font-bold tracking-wide text-center uppercase ${isMystery && !revealed ? 'text-purple-400 animate-pulse' : 'text-lol-blue'}`}>
+      <h2 className={`mt-4 text-xl font-bold tracking-wide text-center ${isMystery && !revealed ? 'text-purple-400 animate-pulse' : 'text-lol-blue'}`}>
         {displayName}
       </h2>
 

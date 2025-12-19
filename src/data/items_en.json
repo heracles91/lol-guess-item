@@ -1,0 +1,4596 @@
+[
+  {
+    "id": "1001",
+    "name": "Boots",
+    "gold": 300,
+    "description": "<mainText><stats><attention>25</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "1001.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1004",
+    "name": "Faerie Charm",
+    "gold": 200,
+    "description": "<mainText><stats><attention>50%</attention> Base Mana Regen</stats><br></mainText>",
+    "tags": [
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "1004.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1006",
+    "name": "Rejuvenation Bead",
+    "gold": 300,
+    "description": "<mainText><stats><attention>100%</attention> Base Health Regen</stats><br></mainText>",
+    "tags": [
+      "HealthRegen"
+    ],
+    "image": {
+      "full": "1006.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1011",
+    "name": "Giant's Belt",
+    "gold": 900,
+    "description": "<mainText><stats><attention>350</attention> Health</stats><br></mainText>",
+    "tags": [
+      "Health"
+    ],
+    "image": {
+      "full": "1011.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 144,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028"
+    ]
+  },
+  {
+    "id": "1018",
+    "name": "Cloak of Agility",
+    "gold": 600,
+    "description": "<mainText><stats><attention>15%</attention> Critical Strike Chance</stats><br></mainText>",
+    "tags": [
+      "CriticalStrike"
+    ],
+    "image": {
+      "full": "1018.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 192,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1026",
+    "name": "Blasting Wand",
+    "gold": 850,
+    "description": "<mainText><stats><attention>45</attention> Ability Power</stats><br></mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "1026.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1027",
+    "name": "Sapphire Crystal",
+    "gold": 300,
+    "description": "<mainText><stats><attention>300</attention> Mana</stats><br></mainText>",
+    "tags": [
+      "Mana"
+    ],
+    "image": {
+      "full": "1027.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1028",
+    "name": "Ruby Crystal",
+    "gold": 400,
+    "description": "<mainText><stats><attention>150</attention> Health</stats><br></mainText>",
+    "tags": [
+      "Health"
+    ],
+    "image": {
+      "full": "1028.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 336,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1029",
+    "name": "Cloth Armor",
+    "gold": 300,
+    "description": "<mainText><stats><attention>15</attention> Armor</stats><br></mainText>",
+    "tags": [
+      "Armor"
+    ],
+    "image": {
+      "full": "1029.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 384,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1031",
+    "name": "Chain Vest",
+    "gold": 800,
+    "description": "<mainText><stats><attention>40</attention> Armor</stats><br></mainText>",
+    "tags": [
+      "Armor"
+    ],
+    "image": {
+      "full": "1031.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 432,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1029"
+    ]
+  },
+  {
+    "id": "1033",
+    "name": "Null-Magic Mantle",
+    "gold": 400,
+    "description": "<mainText><stats><attention>20</attention> Magic Resist</stats><br></mainText>",
+    "tags": [
+      "MagicResist"
+    ],
+    "image": {
+      "full": "1033.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 0,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1036",
+    "name": "Long Sword",
+    "gold": 350,
+    "description": "<mainText><stats><attention>10</attention> Attack Damage</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "Lane"
+    ],
+    "image": {
+      "full": "1036.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 96,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1037",
+    "name": "Pickaxe",
+    "gold": 875,
+    "description": "<mainText><stats><attention>25</attention> Attack Damage</stats><br></mainText>",
+    "tags": [
+      "Damage"
+    ],
+    "image": {
+      "full": "1037.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 144,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1038",
+    "name": "B. F. Sword",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage</stats><br></mainText>",
+    "tags": [
+      "Damage"
+    ],
+    "image": {
+      "full": "1038.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1042",
+    "name": "Dagger",
+    "gold": 250,
+    "description": "<mainText><stats><attention>10%</attention> Attack Speed</stats><br></mainText>",
+    "tags": [
+      "AttackSpeed"
+    ],
+    "image": {
+      "full": "1042.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 336,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1043",
+    "name": "Recurve Bow",
+    "gold": 700,
+    "description": "<mainText><stats><attention>15%</attention> Attack Speed</stats><br><passive>Sting</passive><br>Attacks deal <physicalDamage>15 bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "AttackSpeed",
+      "OnHit"
+    ],
+    "image": {
+      "full": "1043.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 384,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1042"
+    ]
+  },
+  {
+    "id": "1052",
+    "name": "Amplifying Tome",
+    "gold": 400,
+    "description": "<mainText><stats><attention>20</attention> Ability Power</stats><br></mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "1052.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 432,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1053",
+    "name": "Vampiric Scepter",
+    "gold": 900,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>7%</attention> Life Steal</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal"
+    ],
+    "image": {
+      "full": "1053.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 0,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036"
+    ]
+  },
+  {
+    "id": "1054",
+    "name": "Doran's Shield",
+    "gold": 450,
+    "description": "<mainText><stats><attention>110</attention> Health</stats><br><passive>Enduring Focus</passive><br>Restore <healing>4 Health</healing> every 5 seconds. <br>After taking damage from a champion, restore <healing>Health</healing> over 8 seconds.<br><passive>Helping Hand</passive><br>Attacks deal <physicalDamage>5 bonus physical damage</physicalDamage> to minions.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Lane"
+    ],
+    "image": {
+      "full": "1054.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 48,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1055",
+    "name": "Doran's Blade",
+    "gold": 450,
+    "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>80</attention> Health</stats><br><passive>Life Draining</passive><br>Return 2.5% of damage dealt as <healing>Health</healing>. Reduced to 33.3% effectiveness for area of effect spells and pet damage.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "SpellVamp",
+      "Lane"
+    ],
+    "image": {
+      "full": "1055.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 96,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1056",
+    "name": "Doran's Ring",
+    "gold": 400,
+    "description": "<mainText><stats><attention>18</attention> Ability Power<br><attention>90</attention> Health</stats><br><passive>Drain</passive><br>Restore <scaleMana>1 Mana</scaleMana> every second, increased to <scaleMana>2 Mana</scaleMana> per second for 5 seconds after dealing damage to an enemy champion. If you can't gain Mana, <healing>heal for 45%</healing> of this value instead.<br><passive>Helping Hand</passive><br>Attacks deal <physicalDamage>5 bonus physical damage</physicalDamage> to minions.</mainText>",
+    "tags": [
+      "Health",
+      "Lane",
+      "ManaRegen",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "1056.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 144,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1057",
+    "name": "Negatron Cloak",
+    "gold": 850,
+    "description": "<mainText><stats><attention>45</attention> Magic Resist</stats><br></mainText>",
+    "tags": [
+      "MagicResist"
+    ],
+    "image": {
+      "full": "1057.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 192,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1033"
+    ]
+  },
+  {
+    "id": "1058",
+    "name": "Needlessly Large Rod",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>65</attention> Ability Power</stats><br></mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "1058.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 240,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1082",
+    "name": "Dark Seal",
+    "gold": 350,
+    "description": "<mainText><stats><attention>15</attention> Ability Power<br><attention>50</attention> Health</stats><br><passive>Glory</passive><br><keyword>Takedowns</keyword> grant <passive>Glory</passive>, up to 10. 5 <passive>Glory</passive> is lost on death.<br>Gain <scaleAP>4 Ability Power</scaleAP> per <passive>Glory</passive>.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "Lane"
+    ],
+    "image": {
+      "full": "1082.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 288,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1083",
+    "name": "Cull",
+    "gold": 450,
+    "description": "<mainText><stats><attention>7</attention> Attack Damage</stats><br><passive>Reap</passive><br>Restore <healing>3 Health</healing> <OnHit>On-Hit</OnHit>.<br>Killing minions grants <gold>1 gold</gold>, up to <gold>100</gold>. Reaching the limit grants another <gold>350 gold</gold>.<br></mainText>",
+    "tags": [
+      "Damage",
+      "OnHit",
+      "Lane"
+    ],
+    "image": {
+      "full": "1083.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 336,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1101",
+    "name": "Scorchclaw Pup",
+    "gold": 450,
+    "description": "<mainText><stats></stats><br><passive>Jungle Companions</passive><br>Summon a <font color='#DD2E2E'>Scorchclaw</font> that assists you against monsters.<br><passive>Scorchclaw's Slash</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it periodically imbues your next Attack or Ability to burn enemies and <status>Slow</status> them. Killing large monsters readies this immediately.</mainText>",
+    "tags": [
+      "Jungle"
+    ],
+    "image": {
+      "full": "1101.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 384,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1102",
+    "name": "Gustwalker Hatchling",
+    "gold": 450,
+    "description": "<mainText><stats></stats><br><passive>Jungle Companions</passive><br>Summon a <font color='#38A8E8'>Gustwalker</font> that assists you against monsters.<br><passive>Gustwalker's Gait</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it grants <speed>Move Speed</speed> upon entering brush, increased when killing large monsters.</mainText>",
+    "tags": [
+      "Jungle"
+    ],
+    "image": {
+      "full": "1102.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 432,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "1103",
+    "name": "Mosstomper Seedling",
+    "gold": 450,
+    "description": "<mainText><stats></stats><br><passive>Jungle Companions</passive><br>Summon a <font color='#1CA935'>Mosstomper</font> that assists you against monsters.<br><passive>Mosstomper's Courage</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it grants a <shield>shield</shield> that regenerates after killing large monsters or out of combat.</mainText>",
+    "tags": [
+      "Jungle"
+    ],
+    "image": {
+      "full": "1103.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 0,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2003",
+    "name": "Health Potion",
+    "gold": 50,
+    "description": "<mainText><stats></stats><br><active>Consume</active><br>Restores <healing>120 Health</healing> over 15 seconds.</mainText>",
+    "tags": [
+      "HealthRegen",
+      "Consumable",
+      "Lane",
+      "Jungle"
+    ],
+    "image": {
+      "full": "2003.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 0,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2019",
+    "name": "Steel Sigil",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>30</attention> Armor</stats><br></mainText>",
+    "tags": [
+      "Armor",
+      "Damage"
+    ],
+    "image": {
+      "full": "2019.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 144,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1029",
+      "1036",
+      "1029"
+    ]
+  },
+  {
+    "id": "2020",
+    "name": "The Brutalizer",
+    "gold": 1337,
+    "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>10</attention> Ability Haste<br><attention>5</attention> Lethality</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2020.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 192,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2022",
+      "1037"
+    ]
+  },
+  {
+    "id": "2021",
+    "name": "Tunneler",
+    "gold": 1150,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>250</attention> Health</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "Damage"
+    ],
+    "image": {
+      "full": "2021.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 240,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1028"
+    ]
+  },
+  {
+    "id": "2022",
+    "name": "Glowing Mote",
+    "gold": 250,
+    "description": "<mainText><stats><attention>5</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2022.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 288,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2031",
+    "name": "Refillable Potion",
+    "gold": 150,
+    "description": "<mainText><stats></stats><br><active>Active</active> (2 charges)<br>Restores <healing>100 Health</healing> over 12 seconds. <br>Refills upon visiting the shop.</mainText>",
+    "tags": [
+      "HealthRegen",
+      "Consumable",
+      "Active",
+      "Lane",
+      "Jungle"
+    ],
+    "image": {
+      "full": "2031.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 336,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2055",
+    "name": "Control Ward",
+    "gold": 75,
+    "description": "<mainText><stats></stats><br><active>Consume</active><br>Places a Control Ward that grants vision and reveals enemy Stealth Wards, traps and <keywordStealth>Camouflaged</keywordStealth> enemies.</mainText>",
+    "tags": [
+      "Consumable",
+      "Lane",
+      "Stealth",
+      "Vision"
+    ],
+    "image": {
+      "full": "2055.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 144,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2065",
+    "name": "Shurelya's Battlesong",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>50</attention> Ability Power<br><attention>15</attention> Ability Haste<br><attention>4%</attention> Move Speed<br><attention>125%</attention> Base Mana Regen</stats><br><active>Inspiring Speech</active><br>Grant nearby allies <speed>30% Move Speed</speed> for 4 seconds.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "ManaRegen",
+      "Active",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2065.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 240,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3113",
+      "4642"
+    ]
+  },
+  {
+    "id": "2138",
+    "name": "Elixir of Iron",
+    "gold": 500,
+    "description": "<mainText><stats></stats><br><active>Consume</active><br>Grants <scaleHealth>300 Health</scaleHealth>, 25% Tenacity and increased size for 3 minutes. While active, you leave a path behind that boosts allied champions' <speed>Move Speed by 15%</speed>.</mainText>",
+    "tags": [
+      "Health",
+      "Consumable",
+      "Tenacity",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2138.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 288,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2139",
+    "name": "Elixir of Sorcery",
+    "gold": 500,
+    "description": "<mainText><stats></stats><br><active>Consume</active><br>Grants <scaleAP>50 Ability Power</scaleAP> and <scaleMana>15% Mana Regen</scaleMana> for 3 minutes. While active, damaging a champion or turret deals <trueDamage>25 bonus true damage</trueDamage> (5s against champions).</mainText>",
+    "tags": [
+      "Consumable",
+      "ManaRegen",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "2139.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 336,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2140",
+    "name": "Elixir of Wrath",
+    "gold": 500,
+    "description": "<mainText><stats></stats><br><active>Consume</active><br>Grants <scaleAD>30 Attack Damage</scaleAD> and <lifeSteal>12% Physical Vamp</lifeSteal> against champions for 3 minutes.</mainText>",
+    "tags": [
+      "Consumable",
+      "Damage",
+      "LifeSteal",
+      "SpellVamp"
+    ],
+    "image": {
+      "full": "2140.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 384,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2141",
+    "name": "Cappa Juice",
+    "gold": 300,
+    "description": "<mainText><stats></stats><br><rules>Helps you get on a head.</rules><active>Active - Consume:</active> This juice does nothing.<br></mainText>",
+    "tags": [
+      "Damage",
+      "Consumable"
+    ],
+    "image": {
+      "full": "2141.png",
+      "sprite": "item0.png",
+      "group": "item",
+      "x": 432,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2420",
+    "name": "Seeker's Armguard",
+    "gold": 1600,
+    "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Armor</stats><br><active>Time Stop</active> (Single use)<br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+    "tags": [
+      "Armor",
+      "SpellDamage",
+      "Active"
+    ],
+    "image": {
+      "full": "2420.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 96,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1029",
+      "1052"
+    ]
+  },
+  {
+    "id": "2421",
+    "name": "Shattered Armguard",
+    "gold": 1600,
+    "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Armor</stats><br><passive>Shattered Time</passive><br>Armguard is broken, but can still be upgraded.<br><rules>After breaking one Armguard, the shopkeeper will only sell you <rarityGeneric>Shattered Armguard.</rarityGeneric></rules><br></mainText>",
+    "tags": [],
+    "image": {
+      "full": "2421.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 144,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1029",
+      "1052"
+    ]
+  },
+  {
+    "id": "2501",
+    "name": "Overlord's Bloodmail",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>550</attention> Health</stats><br><passive>Tyranny</passive><br>Gain 2.5% of your <healing>bonus Health</healing> as <scaleAD>Attack Damage</scaleAD>. <br><passive>Retribution</passive><br>Gain up to 12% increased <scaleAD>Attack Damage</scaleAD> based on your percent missing Health. </mainText>",
+    "tags": [
+      "Health",
+      "Damage"
+    ],
+    "image": {
+      "full": "2501.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 240,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2021",
+      "2021"
+    ]
+  },
+  {
+    "id": "2502",
+    "name": "Unending Despair",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><passive>Anguish</passive><br>Every 4 seconds while in combat with champions, deal <magicDamage>magic damage</magicDamage> to nearby enemy champions and <healing>heal for 250%</healing> of the damage dealt.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "2502.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 288,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3105",
+      "1011"
+    ]
+  },
+  {
+    "id": "2503",
+    "name": "Blackfire Torch",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>600</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><passive>Baleful Blaze</passive><br>Damaging Abilities deals <magicDamage>bonus magic damage</magicDamage> for 3 seconds.<br><passive>Blackfire</passive><br>For each enemy champion, epic and large monster affected by your <passive>Baleful Blaze</passive>, gain <scaleAP>4% Ability Power</scaleAP>. </mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2503.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 336,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3802",
+      "2508"
+    ]
+  },
+  {
+    "id": "2504",
+    "name": "Kaenic Rookern",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>80</attention> Magic Resist<br><attention>100%</attention> Base Health Regen</stats><br><passive>Magebane</passive><br>After not taking magic damage for 15 seconds, gain a <shield>magic shield</shield>. </mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "2504.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 384,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3211",
+      "1057"
+    ]
+  },
+  {
+    "id": "2508",
+    "name": "Fated Ashes",
+    "gold": 900,
+    "description": "<mainText><stats><attention>30</attention> Ability Power</stats><br><passive>Inflame</passive><br>Damaging Abilities deal <magicDamage>15 bonus magic damage</magicDamage> over 3 seconds.<br>Deals an additional <magicDamage>45 magic damage</magicDamage> to monsters.</mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "2508.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 432,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052"
+    ]
+  },
+  {
+    "id": "3002",
+    "name": "Trailblazer",
+    "gold": 2400,
+    "description": "<mainText><stats><attention>250</attention> Health<br><attention>40</attention> Armor<br><attention>4%</attention> Move Speed</stats><br><passive>Lead the Way</passive><br>While moving, build up to <speed>20 bonus Move Speed</speed>. <br>At max speed:<li>Create a trail that grants allied champions <speed>Move Speed equal to 15%</speed> of yours. <li>If you are Melee, your next Attack <keyword>Slows</keyword> the target by 50% for 1 second.<br></mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3002.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 48,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3066",
+      "1031"
+    ]
+  },
+  {
+    "id": "3003",
+    "name": "Archangel's Staff",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>600</attention> Mana<br><attention>25</attention> Ability Haste</stats><br><passive>Awe</passive><br>Gain Ability Power equal to <scaleMana>1% bonus Mana.</scaleMana><br><passive>Manaflow</passive> (8s, max 5 charges)<br>Landing Abilities grants <scaleMana>5 max Mana</scaleMana> (doubled vs. champions).<br>Transforms into <rarityLegendary>Seraph's Embrace</rarityLegendary> at <scaleMana>360 max Mana</scaleMana>.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3003.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 96,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3070",
+      "3802",
+      "3108"
+    ]
+  },
+  {
+    "id": "3004",
+    "name": "Manamune",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>500</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><passive>Awe</passive><br>Gain <scaleAD> bonus Attack Damage</scaleAD>.<br><passive>Manaflow</passive> (8s, max 4 charges)<br>Landing Attacks and Abilities grants <scaleMana>3 max Mana</scaleMana> (doubled vs. champions).<br>Transforms into <rarityLegendary>Muramana</rarityLegendary> at <scaleMana>360 max Mana</scaleMana>.</mainText>",
+    "tags": [
+      "Damage",
+      "Mana",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3004.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 144,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3070",
+      "3133",
+      "1036"
+    ]
+  },
+  {
+    "id": "3006",
+    "name": "Berserker's Greaves",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>25%</attention> Attack Speed<br><attention>45</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3006.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 240,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001",
+      "1042",
+      "1042"
+    ]
+  },
+  {
+    "id": "3009",
+    "name": "Boots of Swiftness",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>55</attention> Move Speed</stats><br><passive>Fleetfooted</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 25%.</mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3009.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 288,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001"
+    ]
+  },
+  {
+    "id": "3010",
+    "name": "Symbiotic Soles",
+    "gold": 900,
+    "description": "<mainText><stats><attention>40</attention> Move Speed</stats><br><passive>Synchrony</passive><br>Gain <speed>10 Move Speed</speed> when out of combat.<br><passive>Symbiosis</passive><br>After traveling 150000 units of distance, transform into <rarityLegendary>Synchronized Souls</rarityLegendary>.</mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3010.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 336,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001"
+    ]
+  },
+  {
+    "id": "3013",
+    "name": "Synchronized Souls",
+    "gold": 900,
+    "description": "<mainText><stats><attention>45</attention> Move Speed</stats><br><passive>Voidborn</passive><br>Gain Empowered Recall.<br><passive>Synchrony</passive><br>Gain <speed>45 Move Speed</speed> when out of combat.</mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3013.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 0,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3010"
+    ]
+  },
+  {
+    "id": "3020",
+    "name": "Sorcerer's Shoes",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>12</attention> Magic Penetration<br><attention>45</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "MagicPenetration",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3020.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 48,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001"
+    ]
+  },
+  {
+    "id": "3024",
+    "name": "Glacial Buckler",
+    "gold": 900,
+    "description": "<mainText><stats><attention>25</attention> Armor<br><attention>300</attention> Mana<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "Armor",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3024.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 144,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1029",
+      "1027",
+      "2022"
+    ]
+  },
+  {
+    "id": "3026",
+    "name": "Guardian Angel",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>45</attention> Armor</stats><br><passive>Rebirth</passive><br>Upon taking lethal damage, restores <healing>50% base Health</healing> and <scaleMana>100% max Mana</scaleMana> after 4 seconds of <keyword>Stasis</keyword>.</mainText>",
+    "tags": [
+      "Armor",
+      "Damage"
+    ],
+    "image": {
+      "full": "3026.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 192,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2019",
+      "1038"
+    ]
+  },
+  {
+    "id": "3031",
+    "name": "Infinity Edge",
+    "gold": 3450,
+    "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>40%</attention> Critical Strike Damage</stats><br></mainText>",
+    "tags": [
+      "CriticalStrike",
+      "Damage"
+    ],
+    "image": {
+      "full": "3031.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 240,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1038",
+      "1037",
+      "1018"
+    ]
+  },
+  {
+    "id": "3032",
+    "name": "Yun Tal Wildarrows",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "AttackSpeed"
+    ],
+    "image": {
+      "full": "3032.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 288,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1038",
+      "3144",
+      "1036"
+    ]
+  },
+  {
+    "id": "3033",
+    "name": "Mortal Reminder",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>35%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Grievous Wounds</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "3033.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 336,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3123",
+      "3035",
+      "1018"
+    ]
+  },
+  {
+    "id": "3035",
+    "name": "Last Whisper",
+    "gold": 1450,
+    "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>18%</attention> Armor Penetration</stats><br></mainText>",
+    "tags": [
+      "ArmorPenetration",
+      "Damage"
+    ],
+    "image": {
+      "full": "3035.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 384,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1036"
+    ]
+  },
+  {
+    "id": "3036",
+    "name": "Lord Dominik's Regards",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>40%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "3036.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 432,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3035",
+      "6670"
+    ]
+  },
+  {
+    "id": "3041",
+    "name": "Mejai's Soulstealer",
+    "gold": 1500,
+    "description": "<mainText><stats><attention>20</attention> Ability Power<br><attention>100</attention> Health</stats><br><passive>Glory</passive><br><keyword>Takedowns</keyword> grant <passive>Glory</passive>, up to 25. 10 <passive>Glory</passive> is lost on death.<br>Gain <scaleAP>5 Ability Power</scaleAP> per <passive>Glory</passive> and <speed>10% Move Speed</speed> at 10 or higher <passive>Glory</passive>.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3041.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 96,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1082"
+    ]
+  },
+  {
+    "id": "3044",
+    "name": "Phage",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>200</attention> Health</stats><br><passive>Rage</passive><br>Attacking grants <speed>Move Speed</speed> for 2 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3044.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 192,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "1036"
+    ]
+  },
+  {
+    "id": "3046",
+    "name": "Phantom Dancer",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>65%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>10%</attention> Move Speed</stats><br><passive>Spectral Waltz</passive><br>Become <keyword>Ghosted</keyword>.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3046.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 240,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1042",
+      "3086",
+      "1042"
+    ]
+  },
+  {
+    "id": "3047",
+    "name": "Plated Steelcaps",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>25</attention> Armor<br><attention>45</attention> Move Speed</stats><br><passive>Plating</passive><br>Reduces incoming damage from Attacks by 10%.</mainText>",
+    "tags": [
+      "Armor",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3047.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 288,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001",
+      "1029"
+    ]
+  },
+  {
+    "id": "3050",
+    "name": "Zeke's Convergence",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>300</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><passive>Frostfire Tempest</passive><br>Casting your Ultimate summons a storm around you for 5 seconds. The storm deals <magicDamage>30 magic damage</magicDamage> per second to enemy champions and <keyword>Slows</keyword> them by 30%.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3050.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 336,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1029",
+      "1033"
+    ]
+  },
+  {
+    "id": "3051",
+    "name": "Hearthbound Axe",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>20%</attention> Attack Speed</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed"
+    ],
+    "image": {
+      "full": "3051.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 384,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1042",
+      "1036"
+    ]
+  },
+  {
+    "id": "3053",
+    "name": "Sterak's Gage",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>20%</attention> Tenacity</stats><br><passive>The Claws that Catch</passive><br>Gain <scaleAD>bonus Attack Damage</scaleAD>.<br><passive>Lifeline</passive><br>Taking damage that would reduce your Health below 30% grants a <shield>decaying Shield</shield> for 4.5 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "Tenacity"
+    ],
+    "image": {
+      "full": "3053.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 432,
+      "y": 384,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "2021",
+      "1028"
+    ]
+  },
+  {
+    "id": "3057",
+    "name": "Sheen",
+    "gold": 900,
+    "description": "<mainText><stats><attention>10</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>.<br></mainText>",
+    "tags": [
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3057.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 0,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2022"
+    ]
+  },
+  {
+    "id": "3065",
+    "name": "Spirit Visage",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>50</attention> Magic Resist<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><passive>Boundless Vitality</passive><br>Heals and Shields on you are increased by 25%.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3065.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 48,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3211",
+      "3067"
+    ]
+  },
+  {
+    "id": "3066",
+    "name": "Winged Moonplate",
+    "gold": 800,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>4%</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3066.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 96,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028"
+    ]
+  },
+  {
+    "id": "3067",
+    "name": "Kindlegem",
+    "gold": 800,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3067.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 144,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "2022"
+    ]
+  },
+  {
+    "id": "3068",
+    "name": "Sunfire Aegis",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>350</attention> Health<br><attention>50</attention> Armor<br><attention>10</attention> Ability Haste</stats><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> per second to nearby enemies for 3 seconds. </mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Aura",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3068.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 192,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "6660",
+      "1031"
+    ]
+  },
+  {
+    "id": "3070",
+    "name": "Tear of the Goddess",
+    "gold": 400,
+    "description": "<mainText><stats><attention>240</attention> Mana</stats><br><passive>Manaflow</passive> (8s, max 4 charges)<br>Landing Abilities grants <scaleMana>3 max Mana</scaleMana> (doubled vs. champions), up to <scaleMana>360</scaleMana>.<br><passive>Helping Hand</passive><br>Attacks deal an additional <physicalDamage>5 physical damage</physicalDamage> to minions.</mainText>",
+    "tags": [
+      "Mana",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "3070.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 240,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "3071",
+    "name": "Black Cleaver",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><passive>Carve</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> to champions reduces their <scaleArmor>Armor by 6%</scaleArmor> for 6 seconds. (stacks 5 times).<br><passive>Fervor</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "OnHit",
+      "ArmorPenetration",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3071.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 288,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3044",
+      "3067",
+      "1037"
+    ]
+  },
+  {
+    "id": "3072",
+    "name": "Bloodthirster",
+    "gold": 3400,
+    "description": "<mainText><stats><attention>80</attention> Attack Damage<br><attention>15%</attention> Life Steal</stats><br><passive>Ichorshield</passive><br>Convert excess healing from your Lifesteal to a <shield>Shield</shield>.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal"
+    ],
+    "image": {
+      "full": "3072.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 336,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1038",
+      "1037",
+      "1053"
+    ]
+  },
+  {
+    "id": "3073",
+    "name": "Experimental Hexplate",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><passive>Hexcharged</passive><br>Gain 30 Ultimate Ability Haste.<br><passive>Overdrive</passive><br>After casting your Ultimate, gain <attackSpeed>50% Attack Speed</attackSpeed> and <speed>20% Move Speed</speed> for 8 seconds. </mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3073.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 384,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2021",
+      "3044",
+      "1042"
+    ]
+  },
+  {
+    "id": "3074",
+    "name": "Ravenous Hydra",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>12%</attention> Life Steal</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<active>Ravenous Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you. <br>Your Life Steal applies to this damage.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3074.png",
+      "sprite": "item2.png",
+      "group": "item",
+      "x": 432,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3077",
+      "1053",
+      "3133"
+    ]
+  },
+  {
+    "id": "3075",
+    "name": "Thornmail",
+    "gold": 2450,
+    "description": "<mainText><stats><attention>150</attention> Health<br><attention>75</attention> Armor</stats><br><passive>Thorns</passive><br>When struck by an Attack, deal <magicDamage>magic damage</magicDamage> to the attacker and apply 40% <keyword>Wounds</keyword> for 3 seconds if they are a champion.</mainText>",
+    "tags": [
+      "Health",
+      "Armor"
+    ],
+    "image": {
+      "full": "3075.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3076",
+      "1031",
+      "1028"
+    ]
+  },
+  {
+    "id": "3076",
+    "name": "Bramble Vest",
+    "gold": 800,
+    "description": "<mainText><stats><attention>30</attention> Armor</stats><br><passive>Thorns</passive><br>When hit by an Attack, deal <magicDamage> magic damage</magicDamage> to the attacker and apply <keyword>40% Wounds</keyword> for 3 seconds if they are a champion.</mainText>",
+    "tags": [
+      "Armor"
+    ],
+    "image": {
+      "full": "3076.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1029",
+      "1029"
+    ]
+  },
+  {
+    "id": "3077",
+    "name": "Tiamat",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>20</attention> Attack Damage</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you.</mainText>",
+    "tags": [
+      "Damage",
+      "OnHit"
+    ],
+    "image": {
+      "full": "3077.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1036"
+    ]
+  },
+  {
+    "id": "3078",
+    "name": "Trinity Force",
+    "gold": 3333,
+    "description": "<mainText><stats><attention>36</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>333</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>.<br> <br><passive>Quicken</passive><br>Attacking grants <speed>20 Move Speed</speed> for 2 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3078.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3057",
+      "3044",
+      "3051"
+    ]
+  },
+  {
+    "id": "3082",
+    "name": "Warden's Mail",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>40</attention> Armor</stats><br><passive>Rock Solid</passive><br>Reduce incoming damage from Attacks.</mainText>",
+    "tags": [
+      "Armor"
+    ],
+    "image": {
+      "full": "3082.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1029",
+      "1029"
+    ]
+  },
+  {
+    "id": "3083",
+    "name": "Warmog's Armor",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>1000</attention> Health<br><attention>100%</attention> Base Health Regen</stats><br><passive>Warmog's Heart</passive> <br>If you have 2000 bonus Health and have not taken damage within 8 seconds, restore <healing></healing> Health per second.<br><passive>Warmog's Vitality</passive><br>Gain bonus Health equal to 12% of your Item Health (<healing>0</healing>).</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen"
+    ],
+    "image": {
+      "full": "3083.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1011",
+      "1011",
+      "3801"
+    ]
+  },
+  {
+    "id": "3084",
+    "name": "Heartsteel",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>900</attention> Health<br><attention>100%</attention> Base Health Regen</stats><br><passive>Colossal Consumption</passive> (0s) per target<br>If an enemy champion is nearby for a few seconds, your next Attack against them deals <physicalDamage>70 plus 6%</physicalDamage> of your max Health as <physicalDamage>bonus physical damage</physicalDamage> and grants <scaleHealth>8%</scaleHealth> of the damage as <scaleHealth>max Health.</scaleHealth><br><passive>Goliath</passive><br>For each <scaleHealth>1000 max Health</scaleHealth>, gain 3% increased size, up to 30%. </mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen"
+    ],
+    "image": {
+      "full": "3084.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1011",
+      "3801",
+      "1011"
+    ]
+  },
+  {
+    "id": "3085",
+    "name": "Runaan's Hurricane",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Wind's Fury</passive><br>Attacks fire bolts at 2 additional enemies near the target.<br>Each bolt deals <physicalDamage>physical damage</physicalDamage> and applies <OnHit>On-Hit</OnHit> effects.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "OnHit",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3085.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "3086",
+    "name": "Zeal",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>15%</attention> Attack Speed<br><attention>15%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3086.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1018",
+      "1042"
+    ]
+  },
+  {
+    "id": "3087",
+    "name": "Statikk Shiv",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>30%</attention> Attack Speed<br><attention>4%</attention> Move Speed</stats><br><passive>Electrospark</passive><br>Attacks trigger chain lightning <OnHit>On-Hit</OnHit>, dealing <magicDamage>magic damage</magicDamage> with a cooldown.<br><passive>Electroshock</passive> <br>Takedowns within 3 seconds of damaging the target reset Electrospark's cooldown.</mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3087.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3144",
+      "6690",
+      "1037"
+    ]
+  },
+  {
+    "id": "3089",
+    "name": "Rabadon's Deathcap",
+    "gold": 3500,
+    "description": "<mainText><stats><attention>130</attention> Ability Power</stats><br><passive>Magical Opus</passive><br>Increases your total <scaleAP>Ability Power by 30%</scaleAP>.</mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "3089.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1058",
+      "1058"
+    ]
+  },
+  {
+    "id": "3091",
+    "name": "Wit's End",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>50%</attention> Attack Speed<br><attention>45</attention> Magic Resist<br><attention>20%</attention> Tenacity</stats><br><passive>Fray</passive><br>Attacks deal <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "AttackSpeed",
+      "OnHit",
+      "Tenacity",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3091.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1043",
+      "1057",
+      "1043"
+    ]
+  },
+  {
+    "id": "3094",
+    "name": "Rapid Firecannon",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>35%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Sharpshooter</passive><br>Your <keyword>Energized Attack</keyword> deals <magicDamage>40 bonus magic damage</magicDamage> and gains 35% bonus Attack Range.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3094.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "3100",
+    "name": "Lich Bane",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>4%</attention> Move Speed<br><attention>10</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3100.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3057",
+      "3113",
+      "1026"
+    ]
+  },
+  {
+    "id": "3102",
+    "name": "Banshee's Veil",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>105</attention> Ability Power<br><attention>40</attention> Magic Resist</stats><br><passive>Annul</passive><br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3102.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1058",
+      "4632"
+    ]
+  },
+  {
+    "id": "3105",
+    "name": "Aegis of the Legion",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "Armor",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3105.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1033",
+      "1029"
+    ]
+  },
+  {
+    "id": "3107",
+    "name": "Redemption",
+    "gold": 2300,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>10%</attention> Heal and Shield Power</stats><br><active>Intervention</active><br>Restore <healing>150 - 350 Health</healing> to allied units and deal <trueDamage>10% max Health true damage</trueDamage> to enemy champions after 2.5 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3107.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "3114"
+    ]
+  },
+  {
+    "id": "3108",
+    "name": "Fiendish Codex",
+    "gold": 850,
+    "description": "<mainText><stats><attention>25</attention> Ability Power<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "SpellDamage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3108.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "2022"
+    ]
+  },
+  {
+    "id": "3109",
+    "name": "Knight's Vow",
+    "gold": 2300,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>40</attention> Armor<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><passive>Sacrifice</passive><br>While near your <attention>Worthy</attention> ally, take 12% of the damage they receive and <healing>heal for 10%</healing> of the damage they deal to champions.<active>Pledge</active> (0s)<br>Designate an ally as <attention>Worthy</attention>.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Armor",
+      "Aura",
+      "Active",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3109.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1031",
+      "1006"
+    ]
+  },
+  {
+    "id": "3110",
+    "name": "Frozen Heart",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>75</attention> Armor<br><attention>400</attention> Mana<br><attention>20</attention> Ability Haste</stats><br><passive>Winter's Caress</passive><br>Reduce the <attackSpeed>Attack Speed</attackSpeed> of nearby champions by <attackSpeed>20%</attackSpeed>.</mainText>",
+    "tags": [
+      "Armor",
+      "Mana",
+      "Aura",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3110.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3082",
+      "3024"
+    ]
+  },
+  {
+    "id": "3111",
+    "name": "Mercury's Treads",
+    "gold": 1250,
+    "description": "<mainText><stats><attention>20</attention> Magic Resist<br><attention>45</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br></mainText>",
+    "tags": [
+      "Tenacity",
+      "MovementSpeed",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3111.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001",
+      "1033"
+    ]
+  },
+  {
+    "id": "3113",
+    "name": "Aether Wisp",
+    "gold": 900,
+    "description": "<mainText><stats><attention>30</attention> Ability Power<br><attention>4%</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "SpellDamage",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3113.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052"
+    ]
+  },
+  {
+    "id": "3114",
+    "name": "Forbidden Idol",
+    "gold": 600,
+    "description": "<mainText><stats><attention>50%</attention> Base Mana Regen<br><attention>8%</attention> Heal and Shield Power</stats><br></mainText>",
+    "tags": [
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "3114.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1004"
+    ]
+  },
+  {
+    "id": "3115",
+    "name": "Nashor's Tooth",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>50%</attention> Attack Speed<br><attention>15</attention> Ability Haste</stats><br><passive>Icathian Bite</passive><br>Attacks deal <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3115.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1043",
+      "1026",
+      "3108"
+    ]
+  },
+  {
+    "id": "3116",
+    "name": "Rylai's Crystal Scepter",
+    "gold": 2600,
+    "description": "<mainText><stats><attention>65</attention> Ability Power<br><attention>400</attention> Health</stats><br><passive>Rimefrost</passive><br>Damaging Abilities <keyword>Slow</keyword> enemies by 30% for 1 second.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "Slow"
+    ],
+    "image": {
+      "full": "3116.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1026",
+      "1011",
+      "1052"
+    ]
+  },
+  {
+    "id": "3118",
+    "name": "Malignance",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>600</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><passive>Scorn</passive><br>Gain 20 Ultimate Ability Haste.<br><passive>Hatefog</passive><br>Damaging a champion with your Ultimate burns the ground beneath them for 3s, dealing <magicDamage>magic damage</magicDamage> per second and reducing their <scaleMR>Magic Resist</scaleMR>. <br></mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3118.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3802",
+      "1026"
+    ]
+  },
+  {
+    "id": "3119",
+    "name": "Winter's Approach",
+    "gold": 2400,
+    "description": "<mainText><stats><attention>550</attention> Health<br><attention>500</attention> Mana<br><attention>15</attention> Ability Haste</stats><br><passive>Awe</passive><br>Gain <scaleHealth> Health</scaleHealth>.<br><passive>Manaflow</passive> (8s, max 4 charges)<br>Landing Attacks and Abilities grant <scaleMana>3 max Mana</scaleMana> (doubled vs. champions).<br>Transforms into <rarityLegendary>Fimbulwinter</rarityLegendary> at <scaleMana>360 max Mana</scaleMana>.</mainText>",
+    "tags": [
+      "Health",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3119.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3070",
+      "1011",
+      "3067"
+    ]
+  },
+  {
+    "id": "3123",
+    "name": "Executioner's Calling",
+    "gold": 800,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage</stats><br><passive>Grievous Wounds</passive><br>Dealing physical damage to champions applies <keyword>40% Wounds</keyword> for 3 seconds.</mainText>",
+    "tags": [
+      "Damage"
+    ],
+    "image": {
+      "full": "3123.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036"
+    ]
+  },
+  {
+    "id": "3124",
+    "name": "Guinsoo's Rageblade",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>30</attention> Ability Power<br><attention>25%</attention> Attack Speed</stats><br><passive>Wrath</passive><br>Attacks deal <magicDamage>30 bonus magic damage <OnHit>On-Hit</OnHit></magicDamage>.<br><passive>Seething Strike</passive><br>Attacks grant <attackSpeed>8% Attack Speed</attackSpeed> for 3 seconds. (stacks 4 times). <br>While fully stacked, every third Attack applies <OnHit>On-Hit</OnHit> effects twice.</mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit"
+    ],
+    "image": {
+      "full": "3124.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1043",
+      "1037"
+    ]
+  },
+  {
+    "id": "3133",
+    "name": "Caulfield's Warhammer",
+    "gold": 1050,
+    "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3133.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "2022",
+      "1036"
+    ]
+  },
+  {
+    "id": "3134",
+    "name": "Serrated Dirk",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>20</attention> Attack Damage<br><attention>10</attention> Lethality</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "3134.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1036"
+    ]
+  },
+  {
+    "id": "3135",
+    "name": "Void Staff",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>95</attention> Ability Power<br><attention>40%</attention> Magic Penetration</stats><br></mainText>",
+    "tags": [
+      "MagicPenetration",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "3135.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "4630",
+      "1026"
+    ]
+  },
+  {
+    "id": "3137",
+    "name": "Cryptbloom",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>75</attention> Ability Power<br><attention>30%</attention> Magic Penetration<br><attention>20</attention> Ability Haste</stats><br><passive>Life from Death</passive><br>When a champion that you damaged within 3 seconds dies, a nova spreads from their corpse that <healing>heals</healing>.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "MagicPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3137.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "4630",
+      "3108",
+      "3108"
+    ]
+  },
+  {
+    "id": "3139",
+    "name": "Mercurial Scimitar",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>35</attention> Magic Resist<br><attention>10%</attention> Life Steal</stats><br><br><active>ACTIVE</active><br><active>Quicksilver</active><br>Removes all crowd control debuffs (excluding <keyword>Airborne</keyword>) and grants Move Speed.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "Active",
+      "Tenacity",
+      "MovementSpeed",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3139.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3140",
+      "1037",
+      "1053"
+    ]
+  },
+  {
+    "id": "3140",
+    "name": "Quicksilver Sash",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>30</attention> Magic Resist</stats><br><active>Quicksilver</active><br>Remove all crowd control debuffs (excluding <keyword>Airborne</keyword>).</mainText>",
+    "tags": [
+      "Active",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3140.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1033"
+    ]
+  },
+  {
+    "id": "3142",
+    "name": "Youmuu's Ghostblade",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>4%</attention> Move Speed</stats><br><passive>Haunt</passive> <br>Gain <speed> Move Speed</speed> while out of combat.<br><active>Wraith Step</active><br>Gain <speed>Move Speed</speed> and <keyword>Ghosting</keyword> for  seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "Active",
+      "ArmorPenetration",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3142.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3134",
+      "6690",
+      "1036"
+    ]
+  },
+  {
+    "id": "3143",
+    "name": "Randuin's Omen",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>350</attention> Health<br><attention>75</attention> Armor</stats><br><passive>Resilience</passive><br>Receive 30% less damage from Critical Strikes.<br><active>Humility</active><br><keyword>Slow</keyword> nearby enemies by 70% for 2 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Active",
+      "Slow"
+    ],
+    "image": {
+      "full": "3143.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3082",
+      "1011"
+    ]
+  },
+  {
+    "id": "3144",
+    "name": "Scout's Slingshot",
+    "gold": 600,
+    "description": "<mainText><stats><attention>20%</attention> Attack Speed</stats><br><passive>Bullseye</passive><br>Damaging a champion deals <magicDamage>bonus magic damage</magicDamage>. <br>Attacks reduce this cooldown by 1 second.</mainText>",
+    "tags": [
+      "AttackSpeed"
+    ],
+    "image": {
+      "full": "3144.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1042",
+      "1042"
+    ]
+  },
+  {
+    "id": "3145",
+    "name": "Hextech Alternator",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>45</attention> Ability Power</stats><br><passive>Revved</passive><br>Damaging a champion deals <magicDamage>bonus magic damage</magicDamage>.</mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "3145.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1052"
+    ]
+  },
+  {
+    "id": "3147",
+    "name": "Haunting Guise",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>30</attention> Ability Power<br><attention>200</attention> Health</stats><br><passive>Madness</passive><br>For each second in combat with enemy champions, deal 2% bonus damage, up to 6%. </mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "3147.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1028"
+    ]
+  },
+  {
+    "id": "3152",
+    "name": "Hextech Rocketbelt",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>300</attention> Health<br><attention>20</attention> Ability Haste</stats><br><active>Supersonic</active><br>Dash in target direction, unleashing missiles that deal <magicDamage>magic damage</magicDamage>.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "Active",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3152.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3145",
+      "3108",
+      "1028"
+    ]
+  },
+  {
+    "id": "3153",
+    "name": "Blade of The Ruined King",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>10%</attention> Life Steal</stats><br><passive>Mist's Edge</passive><br>Attacks deal <physicalDamage>a percentage</physicalDamage> of enemy's current Health as <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>.<br><passive>Clawing Shadows</passive><br>Attacking a champion 3 times <status>Slows</status> them by 30% for 1 second.</mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed",
+      "LifeSteal",
+      "Slow",
+      "OnHit"
+    ],
+    "image": {
+      "full": "3153.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1053",
+      "1043",
+      "1037"
+    ]
+  },
+  {
+    "id": "3155",
+    "name": "Hexdrinker",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>25</attention> Magic Resist</stats><br><passive>Lifeline</passive><br>Taking magic damage that would reduce your Health below 30% grants a <shield>magic damage Shield</shield> for 2.5 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3155.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1033",
+      "1036"
+    ]
+  },
+  {
+    "id": "3156",
+    "name": "Maw of Malmortius",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>40</attention> Magic Resist</stats><br><passive>Lifeline</passive><br>Taking magic damage that would reduce your Health below 30% grants a <shield>magic damage Shield</shield> for 3 seconds and <lifeSteal>10% Omnivamp</lifeSteal> until end of combat.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3156.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3155",
+      "3133"
+    ]
+  },
+  {
+    "id": "3157",
+    "name": "Zhonya's Hourglass",
+    "gold": 3250,
+    "description": "<mainText><stats><attention>105</attention> Ability Power<br><attention>50</attention> Armor</stats><br><br><active>Time Stop</active><br>Enter <keyword>Stasis</keyword> for 2.5 seconds.</mainText>",
+    "tags": [
+      "Armor",
+      "SpellDamage",
+      "Active"
+    ],
+    "image": {
+      "full": "3157.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1058",
+      "2420"
+    ]
+  },
+  {
+    "id": "3158",
+    "name": "Ionian Boots of Lucidity",
+    "gold": 900,
+    "description": "<mainText><stats><attention>10</attention> Ability Haste<br><attention>45</attention> Move Speed</stats><br><passive>Ionian Insight</passive><br>Gain 10 Summoner Spell Haste.<br></mainText>",
+    "tags": [
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3158.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1001",
+      "2022"
+    ]
+  },
+  {
+    "id": "3161",
+    "name": "Spear of Shojin",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health</stats><br><passive>Dragonforce</passive> <br>Gain 25 Basic Ability Haste.<br><passive>Focused Will</passive> <br>Dealing damage with Abilities increases your Champion's Ability and Passive damage by 3% for 6 seconds. (stacks 4 times).</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3161.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "2021",
+      "1028"
+    ]
+  },
+  {
+    "id": "3165",
+    "name": "Morellonomicon",
+    "gold": 2850,
+    "description": "<mainText><stats><attention>75</attention> Ability Power<br><attention>350</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Grievous Wounds</passive><br>Dealing <magicDamage>magic damage</magicDamage> to champions applies <keyword>40% Wounds</keyword> for 3 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3165.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3916",
+      "1026",
+      "3067"
+    ]
+  },
+  {
+    "id": "3170",
+    "name": "Swiftmarch",
+    "gold": 1500,
+    "description": "<mainText><stats><attention>65</attention> Move Speed</stats><br><passive>Fleetfooted</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 25%.<br><passive>Noxian Fervor</passive><br>Gain 5% of your <speed>Move Speed</speed> as Adaptive Force. </mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3170.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3009"
+    ]
+  },
+  {
+    "id": "3171",
+    "name": "Crimson Lucidity",
+    "gold": 1400,
+    "description": "<mainText><stats><attention>25</attention> Ability Haste<br><attention>50</attention> Move Speed</stats><br><passive>Ionian Insight</passive><br>Gain 10 Summoner Spell Haste.<br><passive>Noxian Haste</passive><br>Empowering or protecting allies with abilities, dealing damage to enemy Champions with abilities, or casting a Summoner Spell grants <speed> Move Speed</speed> for 4 seconds.<br><rules>Noxian Haste can only be triggered once per Ability cast.</rules></mainText>",
+    "tags": [
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3171.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3158"
+    ]
+  },
+  {
+    "id": "3172",
+    "name": "Gunmetal Greaves",
+    "gold": 1600,
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>50</attention> Move Speed</stats><br><passive>Noxian Gait</passive><br>Attacks against Champions grant <speed>Move Speed</speed> <OnHit>On-Hit</OnHit> decaying over 2 seconds.</mainText>",
+    "tags": [
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3172.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3006"
+    ]
+  },
+  {
+    "id": "3173",
+    "name": "Chainlaced Crushers",
+    "gold": 1750,
+    "description": "<mainText><stats><attention>35</attention> Magic Resist<br><attention>50</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br><passive>Noxian Persistence</passive> (0s)<br>After taking magic damage from a Champion, gain a <shield></shield> <magicDamage>magic</magicDamage> <shield>shield</shield> for 4 seconds.</mainText>",
+    "tags": [
+      "Tenacity",
+      "MagicResist",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3173.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3111"
+    ]
+  },
+  {
+    "id": "3174",
+    "name": "Armored Advance",
+    "gold": 1700,
+    "description": "<mainText><stats><attention>40</attention> Armor<br><attention>50</attention> Move Speed</stats><br><passive>Plating</passive><br>Reduces incoming damage from Attacks by 10%.<br><passive>Noxian Endurance</passive> (0s)<br>After taking physical damage from a Champion, gain a <shield></shield> <physicalDamage>physical</physicalDamage> <shield>shield</shield> for 4 seconds.</mainText>",
+    "tags": [
+      "Armor",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3174.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3047"
+    ]
+  },
+  {
+    "id": "3175",
+    "name": "Spellslinger's Shoes",
+    "gold": 1600,
+    "description": "<mainText><stats><attention>18</attention> Magic Penetration<br><attention>7%</attention> Magic Penetration<br><attention>50</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "MagicPenetration",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3175.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3020"
+    ]
+  },
+  {
+    "id": "3176",
+    "name": "Forever Forward",
+    "gold": 1400,
+    "description": "<mainText><stats><attention>55</attention> Move Speed</stats><br><passive>Voidborn</passive><br>Gain Empowered Recall.<br><passive>Noxian Synchrony</passive><br>Gain <speed>45 Move Speed</speed> and <speed>8% total Move Speed</speed> when out of combat.</mainText>",
+    "tags": [
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3176.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3013"
+    ]
+  },
+  {
+    "id": "3179",
+    "name": "Umbral Glaive",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Blackout</passive><br>When you are near enemy Stealth Wards and traps, reveal them for 8 seconds.<br><passive>Extinguish</passive><br>Attacks do bonus damage to Wards.</mainText>",
+    "tags": [
+      "Damage",
+      "Vision",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3179.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3134",
+      "3133"
+    ]
+  },
+  {
+    "id": "3181",
+    "name": "Hullbreaker",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>500</attention> Health<br><attention>4%</attention> Move Speed</stats><br><passive>Skipper</passive><br>Every fifth Attack against champions and epic monsters deals <physicalDamage>bonus physical damage</physicalDamage>, increased against Structures.<br><passive>Boarding Party</passive><br>Nearby allied siege and super minions gain <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR>.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3181.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2021",
+      "3066",
+      "1037"
+    ]
+  },
+  {
+    "id": "3190",
+    "name": "Locket of the Iron Solari",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><active>Devotion</active><br>Grant nearby allies a <shield>200 - 360 Shield</shield> that decays over 2.5 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Aura",
+      "Active",
+      "MagicResist",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3190.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1029",
+      "1033"
+    ]
+  },
+  {
+    "id": "3211",
+    "name": "Spectre's Cowl",
+    "gold": 1250,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>35</attention> Magic Resist<br><attention>100%</attention> Base Health Regen</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "3211.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "1033",
+      "1006"
+    ]
+  },
+  {
+    "id": "3222",
+    "name": "Mikael's Blessing",
+    "gold": 2300,
+    "description": "<mainText><stats><attention>250</attention> Health<br><attention>100%</attention> Base Mana Regen<br><attention>12%</attention> Heal and Shield Power<br><attention>15</attention> Ability Haste</stats><br><active>Purify</active><br>Remove all crowd control debuffs (excluding <keyword>Airborne</keyword> and <keyword>Suppression</keyword>) from an ally champion and restore <healing>100 - 250 Health</healing>.</mainText>",
+    "tags": [
+      "Health",
+      "ManaRegen",
+      "Active",
+      "Tenacity",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3222.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 0,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "3114"
+    ]
+  },
+  {
+    "id": "3302",
+    "name": "Terminus",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>35%</attention> Attack Speed</stats><br><passive>Shadow</passive><br>Attacks deal <magicDamage>30 bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.<br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> Attacks against champions: <li><keywordMajor>Light</keywordMajor> Attacks grant <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for 5s. <li><keywordMajor>Dark</keywordMajor> Attacks grant 10% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> for 5s. </mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "MagicPenetration",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "3302.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3051",
+      "1043"
+    ]
+  },
+  {
+    "id": "3340",
+    "name": "Stealth Ward",
+    "gold": 0,
+    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>210 - 120</scaleLevel>s, max 2 charges)<br>Places an <keyword>Invisible</keyword> Stealth Ward that grants vision for <scaleLevel>90-120</scaleLevel> seconds.</mainText>",
+    "tags": [
+      "Active",
+      "Jungle",
+      "Lane",
+      "Trinket",
+      "Vision"
+    ],
+    "image": {
+      "full": "3340.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "3363",
+    "name": "Farsight Alteration",
+    "gold": 0,
+    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>198 - 99</scaleLevel>s)<br>Reveals a distant area for 2 seconds and leaves a Ward that expires upon spotting an enemy champion.</mainText>",
+    "tags": [
+      "Active",
+      "Trinket",
+      "Vision"
+    ],
+    "image": {
+      "full": "3363.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "3364",
+    "name": "Oracle Lens",
+    "gold": 0,
+    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>160 - 100</scaleLevel>s, max 2 charges)<br>Reveals enemy Stealth Wards and traps around you for 6 seconds.</mainText>",
+    "tags": [
+      "Active",
+      "Trinket",
+      "Vision"
+    ],
+    "image": {
+      "full": "3364.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "3504",
+    "name": "Ardent Censer",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>10%</attention> Heal and Shield Power<br><attention>125%</attention> Base Mana Regen<br><attention>4%</attention> Move Speed</stats><br><passive>Sanctify</passive><br>Healing or Shielding an ally enhances you both for 6 seconds, granting <attackSpeed>25% Attack Speed</attackSpeed> and <magicDamage>20 magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "AttackSpeed",
+      "SpellDamage",
+      "ManaRegen",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3504.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3113",
+      "3114"
+    ]
+  },
+  {
+    "id": "3508",
+    "name": "Essence Reaver",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Essence Drain</passive><br>Attacks grant <scaleMana>Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "ManaRegen",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3508.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "3133",
+      "1018"
+    ]
+  },
+  {
+    "id": "3742",
+    "name": "Dead Man's Plate",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>350</attention> Health<br><attention>55</attention> Armor<br><attention>4%</attention> Move Speed</stats><br><passive>Shipwrecker</passive><br>While moving, build up to <speed>20 bonus Move Speed</speed>. Your next Attack discharges built up Move Speed to deal <physicalDamage>bonus physical damage</physicalDamage>.<br><passive>Unsinkable</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 15%.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Slow",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3742.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 0,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3066",
+      "1028",
+      "1031"
+    ]
+  },
+  {
+    "id": "3748",
+    "name": "Titanic Hydra",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>600</attention> Health</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> on-hit and to enemies behind the target.<br><active>Titanic Crescent</active><br>Empower your next <passive>Cleave</passive> to deal <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit> and deal <physicalDamage>bonus physical damage</physicalDamage> to enemies behind the target.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Damage",
+      "OnHit"
+    ],
+    "image": {
+      "full": "3748.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 48,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3077",
+      "2021",
+      "1011"
+    ]
+  },
+  {
+    "id": "3801",
+    "name": "Crystalline Bracer",
+    "gold": 800,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>100%</attention> Base Health Regen</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen"
+    ],
+    "image": {
+      "full": "3801.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 96,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "1006"
+    ]
+  },
+  {
+    "id": "3802",
+    "name": "Lost Chapter",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>300</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><passive>Enlighten</passive><br>Levelling up restores <scaleMana>20% max Mana</scaleMana> over 3 seconds.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "3802.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 144,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1027",
+      "2022"
+    ]
+  },
+  {
+    "id": "3803",
+    "name": "Catalyst of Aeons",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>300</attention> Health<br><attention>375</attention> Mana</stats><br><passive>Eternity</passive><br>Restores <scaleMana>10% of the damage taken</scaleMana> from champions as <scaleMana>Mana</scaleMana>. <br>Casting an Ability <healing>heals for 25% of Mana</healing> spent.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Mana",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "3803.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "1028",
+      "1027"
+    ]
+  },
+  {
+    "id": "3814",
+    "name": "Edge of Night",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>250</attention> Health</stats><br><passive>Annul</passive><br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "3814.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 240,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3134",
+      "2021"
+    ]
+  },
+  {
+    "id": "3865",
+    "name": "World Atlas",
+    "gold": 400,
+    "description": "",
+    "tags": [
+      "Health",
+      "ManaRegen",
+      "Vision",
+      "GoldPer",
+      "Lane"
+    ],
+    "image": {
+      "full": "3865.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 384,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "3916",
+    "name": "Oblivion Orb",
+    "gold": 800,
+    "description": "<mainText><stats><attention>25</attention> Ability Power</stats><br><passive>Grievous Wounds</passive><br>Dealing <magicDamage>magic damage</magicDamage> to champions applies <keyword>40% Wounds</keyword> for 3 seconds.</mainText>",
+    "tags": [
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "3916.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 432,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052"
+    ]
+  },
+  {
+    "id": "4005",
+    "name": "Imperial Mandate",
+    "gold": 2250,
+    "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><passive>Coordinated Fire</passive> (0s) per target<br><keyword>Slowing</keyword> or <keyword>Immobilizing</keyword> an enemy champion marks them for 5 seconds. Ally champion damage detonates the mark, dealing <magicDamage>magic damage equal to 10% of current health</magicDamage>. </mainText>",
+    "tags": [
+      "SpellDamage",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "4005.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 96,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3108",
+      "4642"
+    ]
+  },
+  {
+    "id": "4401",
+    "name": "Force of Nature",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>55</attention> Magic Resist<br><attention>4%</attention> Move Speed</stats><br><passive>Steadfast</passive><br>Gain <scaleMR>70 Magic Resist</scaleMR> and <speed>6% bonus Move Speed</speed> after taking magic damage from Champions 8 times.</mainText>",
+    "tags": [
+      "Health",
+      "MovementSpeed",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "4401.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 48,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1057",
+      "1028",
+      "3066"
+    ]
+  },
+  {
+    "id": "4628",
+    "name": "Horizon Focus",
+    "gold": 2750,
+    "description": "<mainText><stats><attention>125</attention> Ability Power<br><attention>25</attention> Ability Haste</stats><br><passive>Hypershot</passive><br>Dealing Ability damage to champions at 600 range or greater <keywordStealth>Reveals</keywordStealth> them for 6 seconds. <br><passive>Focus</passive><br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1400 range of them for 3 seconds.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "4628.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 144,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3108",
+      "3108",
+      "1026"
+    ]
+  },
+  {
+    "id": "4629",
+    "name": "Cosmic Drive",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>350</attention> Health<br><attention>25</attention> Ability Haste<br><attention>4%</attention> Move Speed</stats><br><passive>Spelldance</passive><br>Dealing <magicDamage>magic</magicDamage> or <trueDamage>true damage</trueDamage> to champions grants <speed>Move Speed</speed> for 4 seconds. </mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "4629.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 192,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "3113",
+      "3108"
+    ]
+  },
+  {
+    "id": "4630",
+    "name": "Blighting Jewel",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>25</attention> Ability Power<br><attention>13%</attention> Magic Penetration</stats><br></mainText>",
+    "tags": [
+      "MagicPenetration",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "4630.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052"
+    ]
+  },
+  {
+    "id": "4632",
+    "name": "Verdant Barrier",
+    "gold": 1600,
+    "description": "<mainText><stats><attention>40</attention> Ability Power<br><attention>25</attention> Magic Resist</stats><br><passive>Annul</passive><br>Grants a Spell Shield that blocks the next enemy Ability.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "4632.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1052",
+      "1033",
+      "1052"
+    ]
+  },
+  {
+    "id": "4633",
+    "name": "Riftmaker",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>350</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Void Corruption</passive><br>For each second in combat with enemy champions, deal 2% bonus damage, up to 8%. At maximum strength, gain <omnivamp>Omnivamp</omnivamp>.<br><passive>Void Infusion</passive><br>Gain 2% of your <scaleHealth>bonus Health</scaleHealth> as <scaleAP>Ability Power</scaleAP>.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "SpellVamp",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "4633.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3147",
+      "3108"
+    ]
+  },
+  {
+    "id": "4638",
+    "name": "Watchful Wardstone",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>150</attention> Health<br><attention>10</attention> Ability Haste<br><attention>10</attention> Armor<br><attention>15</attention> Magic Resist</stats><br><passive>Arcane Cache</passive><br>This item can store up to 3 purchased Control Wards.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Vision",
+      "Active",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "4638.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 48,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "4642",
+    "name": "Bandleglass Mirror",
+    "gold": 900,
+    "description": "<mainText><stats><attention>20</attention> Ability Power<br><attention>100%</attention> Base Mana Regen<br><attention>10</attention> Ability Haste</stats><br></mainText>",
+    "tags": [
+      "SpellDamage",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "4642.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 144,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1004",
+      "1052",
+      "2022"
+    ]
+  },
+  {
+    "id": "4643",
+    "name": "Vigilant Wardstone",
+    "gold": 2300,
+    "description": "<mainText><stats><attention>250</attention> Health<br><attention>20</attention> Ability Haste<br><attention>25</attention> Armor<br><attention>30</attention> Magic Resist</stats><br><passive>Arcane Cache</passive><br>This item can store up to 3 purchased Control Wards.<br><passive>Behold</passive><br>Increase your Stealth Ward and Control Ward placement caps by 1.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Vision",
+      "Active",
+      "AbilityHaste",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "4643.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 192,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "4638"
+    ]
+  },
+  {
+    "id": "4645",
+    "name": "Shadowflame",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>110</attention> Ability Power<br><attention>15</attention> Magic Penetration</stats><br><passive>Cinderbloom</passive><br><magicDamage>Magic</magicDamage> and <trueDamage>true damage</trueDamage> <attention>Critically Strikes</attention> enemies below 40% Health, dealing 20% increased damage. </mainText>",
+    "tags": [
+      "SpellDamage",
+      "MagicPenetration"
+    ],
+    "image": {
+      "full": "4645.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 288,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3145",
+      "1058"
+    ]
+  },
+  {
+    "id": "4646",
+    "name": "Stormsurge",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>15</attention> Magic Penetration<br><attention>6%</attention> Move Speed</stats><br><passive>Stormraider</passive><br>Dealing 25% of a champion's maximum Health within 2.5s applies <passive>Squall</passive> to them.<br><passive>Squall</passive><br>After 2 seconds, deal <magicDamage>magic damage</magicDamage>. If the target dies before <passive>Squall</passive> triggers, it damages nearby enemies.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "GoldPer",
+      "MagicPenetration",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "4646.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3145",
+      "3113"
+    ]
+  },
+  {
+    "id": "6333",
+    "name": "Death's Dance",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><passive>Ignore Pain</passive><br>A percentage of damage taken is dealt to you over 3 seconds instead.<br><passive>Defy</passive><br>When a champion that you damaged within 3 seconds dies, cleanse <passive>Ignore Pain's</passive> remaining damage and restore <healing>Health</healing> over 2 seconds.</mainText>",
+    "tags": [
+      "Armor",
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6333.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 48,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2019",
+      "1037",
+      "3133"
+    ]
+  },
+  {
+    "id": "6609",
+    "name": "Chempunk Chainsword",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Hackshorn</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6609.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 96,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3123",
+      "1011",
+      "3133"
+    ]
+  },
+  {
+    "id": "6610",
+    "name": "Sundered Sky",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health<br><attention>10</attention> Ability Haste</stats><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6610.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 144,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2021",
+      "3133",
+      "1028"
+    ]
+  },
+  {
+    "id": "6616",
+    "name": "Staff of Flowing Water",
+    "gold": 2250,
+    "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>10%</attention> Heal and Shield Power<br><attention>125%</attention> Base Mana Regen<br><attention>15</attention> Ability Haste</stats><br><passive>Rapids</passive><br>Healing or Shielding an ally grants you both <magicDamage>45 Ability Power</magicDamage> for 6 seconds.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6616.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 192,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3108",
+      "3114"
+    ]
+  },
+  {
+    "id": "6617",
+    "name": "Moonstone Renewer",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>25</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><passive>Starlit Grace</passive><br>Healing or shielding an ally chains the effect to another ally (excluding yourself), <healing>healing 30%</healing> or <shield>shielding 35%</shield> of the original amount.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6617.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 240,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "4642"
+    ]
+  },
+  {
+    "id": "6620",
+    "name": "Echoes of Helia",
+    "gold": 2200,
+    "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>, up to 2. <br>Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to restore <healing>Health</healing> and deal <magicDamage>magic damage</magicDamage> to the nearest enemy champion per Shard.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6620.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 288,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "4642"
+    ]
+  },
+  {
+    "id": "6621",
+    "name": "Dawncore",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>16%</attention> Heal and Shield Power<br><attention>100%</attention> Base Mana Regen</stats><br><passive>First Light</passive><br>Gain <healing>2% Heal and Shield Power</healing> and <scaleAP>10 Ability Power</scaleAP> per 100% Base Mana Regen.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "6621.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 96,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1026",
+      "3114",
+      "3114"
+    ]
+  },
+  {
+    "id": "6631",
+    "name": "Stridebreaker",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>25%</attention> Attack Speed<br><attention>450</attention> Health</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Breaking Shockwave</active><br>Deal <physicalDamage>physical damage</physicalDamage> and <status>Slow</status> nearby enemies by 35%.<br>Gain <speed>35% decaying Move Speed</speed> per champion hit for 3 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "AttackSpeed",
+      "Slow"
+    ],
+    "image": {
+      "full": "6631.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 240,
+      "y": 144,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3077",
+      "3044",
+      "1042"
+    ]
+  },
+  {
+    "id": "6653",
+    "name": "Liandry's Torment",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>300</attention> Health</stats><br><passive>Torment</passive><br>Damaging Abilities burn enemies for <magicDamage>2% max Health magic damage</magicDamage> per second for 3 seconds.<br><passive>Suffering</passive><br>For each second in combat with enemy champions, deal 2% bonus damage, up to 6%.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage"
+    ],
+    "image": {
+      "full": "6653.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 144,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3147",
+      "2508"
+    ]
+  },
+  {
+    "id": "6655",
+    "name": "Luden's Companion",
+    "gold": 2750,
+    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>600</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><passive>Fire</passive><br>Damaging Abilities fire 6 Shots that deal <magicDamage>bonus magic damage</magicDamage> to the target and nearby enemies. Remaining Shots fire on the primary target, dealing 20% damage.<br></mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6655.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 192,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3802",
+      "3145"
+    ]
+  },
+  {
+    "id": "6657",
+    "name": "Rod of Ages",
+    "gold": 2600,
+    "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>350</attention> Health<br><attention>500</attention> Mana</stats><br><passive>Timeless</passive><br>This item gains <scaleHealth>10 Health</scaleHealth>, <scaleMana>30 Mana</scaleMana> and <scaleAP>3 Ability Power</scaleAP> every 60 seconds up to 10 times. Upon reaching max stacks, gain a level.<br><passive>Eternity</passive><br>Taking damage from champions restores <scaleMana>10%</scaleMana> of the damage as <scaleMana>Mana</scaleMana>. <br>Casting an ability <healing>heals for 25%</healing> of Mana spent.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "SpellDamage",
+      "Mana",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "6657.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 288,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1026",
+      "3803"
+    ]
+  },
+  {
+    "id": "6660",
+    "name": "Bami's Cinder",
+    "gold": 900,
+    "description": "<mainText><stats><attention>150</attention> Health<br><attention>5</attention> Ability Haste</stats><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> to nearby enemies for 3 seconds.</mainText>",
+    "tags": [
+      "Health",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6660.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1028",
+      "2022"
+    ]
+  },
+  {
+    "id": "6662",
+    "name": "Iceborn Gauntlet",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>300</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit> and creates a frost field for 2s that <status>Slows</status>.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "Slow",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6662.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 384,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3057",
+      "1028",
+      "1031"
+    ]
+  },
+  {
+    "id": "6664",
+    "name": "Hollow Radiance",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>40</attention> Magic Resist<br><attention>10</attention> Ability Haste<br><attention>100%</attention> Base Health Regen</stats><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> per second to nearby enemies for 3 seconds. <br><passive>Desolate</passive><br>Killing an enemy deals <magicDamage>magic damage</magicDamage> around them.</mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Aura",
+      "MagicResist",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6664.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 432,
+      "y": 192,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "6660",
+      "3211"
+    ]
+  },
+  {
+    "id": "6665",
+    "name": "Jak'Sho, The Protean",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>350</attention> Health<br><attention>45</attention> Armor<br><attention>45</attention> Magic Resist</stats><br><passive>Voidborn Resilience</passive><br>After 5 seconds of champion combat, increase your bonus <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> by 30% until end of combat.<br></mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "6665.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 0,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1011",
+      "1031",
+      "1057"
+    ]
+  },
+  {
+    "id": "6670",
+    "name": "Noonquiver",
+    "gold": 1300,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>20%</attention> Critical Strike Chance</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike"
+    ],
+    "image": {
+      "full": "6670.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 96,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036",
+      "1018"
+    ]
+  },
+  {
+    "id": "6672",
+    "name": "Kraken Slayer",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>40%</attention> Attack Speed<br><attention>4%</attention> Move Speed</stats><br><passive>Bring It Down</passive><br>Every third Attack deals <physicalDamage>bonus physical damage</physicalDamage> <OnHit>On-Hit</OnHit>, increased based on their missing Health.</mainText>",
+    "tags": [
+      "Damage",
+      "AttackSpeed",
+      "OnHit",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "6672.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "6690",
+      "3051",
+      "1043"
+    ]
+  },
+  {
+    "id": "6673",
+    "name": "Immortal Shieldbow",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Lifeline</passive><br>Taking damage that would reduce your Health below 30% grants a <shield>Shield</shield> for 3 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike"
+    ],
+    "image": {
+      "full": "6673.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 384,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "6670"
+    ]
+  },
+  {
+    "id": "6675",
+    "name": "Navori Flickerblade",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Transcendence</passive><br>Attacks reduce Basic Ability cooldowns by <attention>15%</attention> of their remaining cooldown.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "6675.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 432,
+      "y": 240,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1042",
+      "3086",
+      "1042"
+    ]
+  },
+  {
+    "id": "6676",
+    "name": "The Collector",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>10</attention> Lethality<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Death</passive><br>Your damage executes champions that are below 5% Health.<br><passive>Taxes</passive><br>Champion kills grant <gold>25 bonus gold</gold>.</mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "6676.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 0,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "3134",
+      "1018"
+    ]
+  },
+  {
+    "id": "6690",
+    "name": "Rectrix",
+    "gold": 775,
+    "description": "<mainText><stats><attention>15</attention> Attack Damage<br><attention>4%</attention> Move Speed</stats><br></mainText>",
+    "tags": [
+      "Damage",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "6690.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 144,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1036"
+    ]
+  },
+  {
+    "id": "6692",
+    "name": "Eclipse",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Ability Haste</stats><br><passive>Ever Rising Moon</passive><br>Hitting a champion with 2 separate Attacks or Abilities within 2 seconds grants you a <shield>Shield</shield> for 2 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6692.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 240,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3133",
+      "1037",
+      "1036"
+    ]
+  },
+  {
+    "id": "6694",
+    "name": "Serylda's Grudge",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>35%</attention> Armor Penetration<br><attention>15</attention> Ability Haste</stats><br><passive>Bitter Cold</passive><br>Damaging Abilities <status>Slow</status> enemies below 50% Health by 30% for 1 second.</mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6694.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 336,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3133",
+      "3035"
+    ]
+  },
+  {
+    "id": "6695",
+    "name": "Serpent's Fang",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality</stats><br><passive>Shield Reaver</passive><br>Damaging an enemy champion reduces Shields they gain by % for 3 seconds. <br>If they were not already affected by <passive>Shield Reaver</passive>, reduce Shields on them by %.</mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration"
+    ],
+    "image": {
+      "full": "6695.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 384,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3134",
+      "1037"
+    ]
+  },
+  {
+    "id": "6696",
+    "name": "Axiom Arc",
+    "gold": 2750,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>20</attention> Ability Haste</stats><br><passive>Flux</passive><br>When a champion that you damaged within 3 seconds dies, refund some of your Ultimate Ability's total cooldown.</mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6696.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 432,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2020",
+      "3133"
+    ]
+  },
+  {
+    "id": "6697",
+    "name": "Hubris",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Eminence</passive><br>When a champion that you damaged within 3 seconds dies, gain <physicalDamage>15 Attack Damage plus 2 per champion killed</physicalDamage> for 90 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "Active",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6697.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 0,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3134",
+      "3133"
+    ]
+  },
+  {
+    "id": "6698",
+    "name": "Profane Hydra",
+    "gold": 2850,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Heretical Cleave</active><br>Deal <physicalDamage>physical damage</physicalDamage> around you.</mainText>",
+    "tags": [
+      "Damage",
+      "Active",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6698.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 48,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3077",
+      "2020"
+    ]
+  },
+  {
+    "id": "6699",
+    "name": "Voltaic Cyclosword",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Galvanize</passive><br>Dashes and Stealth stack <keyword>Energized</keyword> 75% faster.<br><passive>Firmament</passive><br>Your <keyword>Energized Attack</keyword> deals <physicalDamage>bonus physical damage</physicalDamage> and <keyword>Slows</keyword> for 0.75 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "Active",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "6699.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 96,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2020",
+      "1036",
+      "1036"
+    ]
+  },
+  {
+    "id": "6701",
+    "name": "Opportunity",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality</stats><br><passive>Preparation</passive><br>After being out of combat with Champions for 8 seconds gain <scaleLethality>Lethality</scaleLethality>. This Lethality lasts for 3 seconds after dealing damage to champions.<br><passive>Extraction</passive><br>When a champion that you damaged within 3 seconds dies, gain <speed>200 decaying Move Speed</speed> for 1.5 seconds.<br></mainText>",
+    "tags": [
+      "Damage",
+      "Active",
+      "ArmorPenetration",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "6701.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 192,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "3134",
+      "1036"
+    ]
+  },
+  {
+    "id": "8010",
+    "name": "Bloodletter's Curse",
+    "gold": 2900,
+    "description": "<mainText><stats><attention>65</attention> Ability Power<br><attention>400</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Vile Decay</passive><br>Dealing <magicDamage>magic damage</magicDamage> with abilities or passives to champions reduces their <scaleMR>Magic Resist by 7.5%</scaleMR> for 6 seconds, up to 30%.</mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "MagicPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "8010.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 384,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3147",
+      "3108"
+    ]
+  },
+  {
+    "id": "8020",
+    "name": "Abyssal Mask",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>350</attention> Health<br><attention>45</attention> Magic Resist<br><attention>15</attention> Ability Haste</stats><br><passive>Unmake</passive><br>Nearby enemy champions take 12% more <magicDamage>magic damage</magicDamage>.</mainText>",
+    "tags": [
+      "Health",
+      "MagicResist",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "8020.png",
+      "sprite": "item5.png",
+      "group": "item",
+      "x": 432,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1057"
+    ]
+  }
+]

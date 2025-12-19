@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { hasPlayedDailyToday } from '../utils/dailyRandom'; // Importe la fonction
+import { hasPlayedDailyToday } from '../utils/dailyRandom';
 
-function HomeMenu({ onSelectMode }) {
+function HomeMenu({ onSelectMode, t }) {
   const [dailyDone, setDailyDone] = useState(false);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function HomeMenu({ onSelectMode }) {
 
       <div className="grid gap-4 w-full max-w-sm">
         
-        {/* --- NOUVEAU : BOUTON DAILY --- */}
+        {/* BOUTON DAILY */}
         <button 
           onClick={() => !dailyDone && onSelectMode('daily')}
           disabled={dailyDone}
@@ -28,42 +28,42 @@ function HomeMenu({ onSelectMode }) {
             }
           `}
         >
-          {/* Badge "Nouveau" ou "Fait" */}
           <div className="absolute top-2 right-2">
             {dailyDone ? '✅' : '🔥'}
           </div>
 
           <div className="text-xl font-bold mb-1 text-white">
-            📅 Défi Quotidien
+            {t.mode_daily}
           </div>
           <div className="text-xs text-gray-300">
-            {dailyDone ? 'Reviens demain !' : 'Un objet unique pour tous'}
+            {dailyDone ? t.daily_done : t.daily_desc}
           </div>
         </button>
-        
+
+        {/* BOUTON ATTRIBUTS */}
         <button 
           onClick={() => onSelectMode('attribute')}
           className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group"
         >
-          <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔮 Guess the Attribute</div>
-          <div className="text-xs text-gray-400 group-hover:text-gray-800">Devine les attributs</div>
+          <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔮 {t.mode_attribute}</div>
         </button>
 
+        {/* BOUTON PRIX */}
         <button 
           onClick={() => onSelectMode('price')}
           className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group"
         >
-          <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">💰 Guess the Price</div>
-          <div className="text-xs text-gray-400 group-hover:text-gray-800">Quel est le coût total ?</div>
+           <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">💰 {t.mode_price}</div>
         </button>
 
+        {/* BOUTON RECETTE */}
         <button 
-          onClick={() => onSelectMode('recipe')} // <--- On active le mode 'recipe'
+          onClick={() => onSelectMode('recipe')}
           className="bg-lol-card border border-lol-gold p-6 rounded hover:bg-lol-gold hover:text-black transition group"
         >
-          <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔨 Guess the Recipe</div>
-          <div className="text-xs text-gray-400 group-hover:text-gray-800">Trouve le composant manquant</div>
+           <div className="text-xl font-bold mb-1 group-hover:scale-105 transition-transform">🔨 {t.mode_recipe}</div>
         </button>
+
       </div>
     </div>
   );

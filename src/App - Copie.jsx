@@ -1,21 +1,20 @@
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
-
 import itemsDataRaw from './data/items.json';
-
 import { VALID_TAGS, PATCH_VERSION } from './utils/constants';
 import { supabase } from './utils/supabaseClient';
-import { getDailyItemIndex, saveDailyResult } from './utils/dailyRandom';
+import { getDailyItemIndex, saveDailyResult, getYesterdayDate } from './utils/dailyRandom';
 
+// Composants
 import Header from './components/Header';
 import ItemCard from './components/ItemCard';
 import OptionsGrid from './components/OptionsGrid';
+import SearchBar from './components/SearchBar'; // Nouveau
 import GameOver from './components/GameOver';
 import AuthModal from './components/AuthModal';
 import Leaderboard from './components/Leaderboard';
 import HomeMenu from './components/HomeMenu';
 import SettingsModal from './components/SettingsModal';
-import SearchBar from './components/SearchBar';
 
 // --- FONCTIONS UTILITAIRES ---
 
@@ -40,7 +39,7 @@ const getRandomItem = () => {
     return validItems[Math.floor(Math.random() * validItems.length)];
 };
 
-// --- APP ---
+// --- COMPOSANT PRINCIPAL ---
 
 function App() {
   // États Jeu
@@ -50,25 +49,26 @@ function App() {
   const [options, setOptions] = useState([]);
   const [userGuess, setUserGuess] = useState(null);
   const [correctAnswer, setCorrectAnswer] = useState(null);
-  const [gameMode, setGameMode] = useState('menu');
-  const [dailySelection, setDailySelection] = useState(null);
+  const [gameMode, setGameMode] = useState('menu'); // 'menu', 'attribute', 'price', 'recipe', 'daily'
+  const [dailySelection, setDailySelection] = useState(null); // Pour la barre de recherche
   
-  // États Scores & Data
+  // États Scores
   const [highScore, setHighScore] = useState(0);
-  const [allHighScores, setAllHighScores] = useState({ attribute: 0, price: 0, recipe: 0 });
+  const [allHighScores, setAllHighScores] = useState({ attribute: 0, price: 0, recipe: 0, daily: 0 });
+
+  // États Utilisateur & UI
   const [session, setSession] = useState(null);
   const [username, setUsername] = useState(null);
+  const [usernameError, setUsernameError] = useState('');
   
-  // États UI / FX
+  // États Modales & FX
   const [isMuted, setIsMuted] = useState(false);
   const [shake, setShake] = useState(false);
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showLeaderboard, setShowLeaderboard] = useState(false);
-  
-  // NOUVEAUX ÉTATS POUR LES RÉGLAGES
   const [showSettings, setShowSettings] = useState(false);
-  const [usernameError, setUsernameError] = useState('');
-  
+
+  // --- AUDIO ---
   const playSound = (type) => {
     if (isMuted) return;
     const audio = new Audio(type === 'success' ? '/sounds/success.mp3' : '/sounds/error.mp3');
@@ -80,7 +80,7 @@ function App() {
 
   useEffect(() => {
     loadLocalHighScores();
-
+    
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       if (session) fetchProfile(session.user.id);
@@ -99,11 +99,12 @@ function App() {
   }, []);
 
   const loadLocalHighScores = () => {
-    const attrScore = parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0;
-    const priceScore = parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0;
-    const recipeScore = parseInt(localStorage.getItem('lol-quiz-highscore-recipe')) || 0;
-    
-    setAllHighScores({ attribute: attrScore, price: priceScore, recipe: recipeScore });
+    setAllHighScores({
+        attribute: parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0,
+        price: parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0,
+        recipe: parseInt(localStorage.getItem('lol-quiz-highscore-recipe')) || 0,
+        daily: 0 // Le daily n'a pas vraiment de highscore classique
+    });
   };
 
   const fetchProfile = async (userId) => {
@@ -116,19 +117,26 @@ function App() {
     if (data) {
       setUsername(data.username);
       
-      const localAttr = parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0;
-      const localPrice = parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0;
-      const localRecipe = parseInt(localStorage.getItem('lol-quiz-highscore-recipe')) || 0;
-      
-      const bestAttr = Math.max(localAttr, data.score_attribute || 0);
-      const bestPrice = Math.max(localPrice, data.score_price || 0);
-      const bestRecipe = Math.max(localRecipe, data.score_recipe || 0);
+      // Sync Local vs DB (Garder le meilleur)
+      const localScores = {
+          attribute: parseInt(localStorage.getItem('lol-quiz-highscore-attribute')) || 0,
+          price: parseInt(localStorage.getItem('lol-quiz-highscore-price')) || 0,
+          recipe: parseInt(localStorage.getItem('lol-quiz-highscore-recipe')) || 0,
+      };
 
-      setAllHighScores({ attribute: bestAttr, price: bestPrice, recipe: bestRecipe });
+      const bestScores = {
+          attribute: Math.max(localScores.attribute, data.score_attribute || 0),
+          price: Math.max(localScores.price, data.score_price || 0),
+          recipe: Math.max(localScores.recipe, data.score_recipe || 0),
+          daily: 0
+      };
 
-      if (localAttr > (data.score_attribute || 0)) updateProfileScore(userId, 'attribute', localAttr);
-      if (localPrice > (data.score_price || 0)) updateProfileScore(userId, 'price', localPrice);
-      if (localRecipe > (data.score_recipe || 0)) updateProfileScore(userId, 'recipe', localRecipe);
+      setAllHighScores(bestScores);
+
+      // Mise à jour DB si local était meilleur
+      if (localScores.attribute > (data.score_attribute || 0)) updateProfileScore(userId, 'attribute', localScores.attribute);
+      if (localScores.price > (data.score_price || 0)) updateProfileScore(userId, 'price', localScores.price);
+      if (localScores.recipe > (data.score_recipe || 0)) updateProfileScore(userId, 'recipe', localScores.recipe);
 
     } else {
         await supabase.from('profiles').insert([{ id: userId, score_attribute: 0, score_price: 0, score_recipe: 0 }]);
@@ -136,16 +144,16 @@ function App() {
   };
 
   const updateProfileScore = async (userId, mode, newScore) => {
+    if (mode === 'daily') return; // On ne stocke pas le score daily dans le profil pour l'instant
     const column = `score_${mode}`;
     await supabase.from('profiles').update({ [column]: newScore, updated_at: new Date() }).eq('id', userId);
   };
 
-  // Gestion mise à jour pseudo (avec gestion d'erreur pour le modal)
   const handleSetUsername = async (newUsername) => {
     if (!newUsername || !newUsername.trim()) return;
     
     if (!session) {
-        setUsername(newUsername); // Changement local si pas connecté
+        setUsername(newUsername);
         return;
     }
 
@@ -167,47 +175,66 @@ function App() {
     } else {
         setUsername(cleanUsername);
         setUsernameError('');
+        setShowSettings(false);
     }
   };
 
-  // --- LOGIQUE JEU ---
+  // --- LOGIQUE DU JEU ---
+
+  const restartGame = () => {
+    setScore(0);
+    setLives(3);
+    nextRound();
+  };
 
   const nextRound = (specificMode = null) => {
     const effectiveMode = specificMode || gameMode;
-    const currentModeHighScore = allHighScores[effectiveMode] || 0;
-    setHighScore(currentModeHighScore);
+    
+    // GESTION DU DAILY : Si on a déjà répondu et qu'on clique sur "Voir résultat" -> Game Over
+    if (effectiveMode === 'daily' && userGuess) {
+        setLives(0); // Déclenche le Game Over
+        return;
+    }
 
-    //if (lives <= 0) { setScore(0); setLives(3); }
+    // Mise à jour du High Score affiché
+    setHighScore(allHighScores[effectiveMode] || 0);
+
     setUserGuess(null);
     setCorrectAnswer(null);
     setShake(false);
-    
-    setDailySelection(null); // Reset de la barre de recherche
+    setDailySelection(null);
 
+    // ========================
+    // ÉTAPE 1 : CHOIX DE L'ITEM
+    // ========================
     let item;
-    
+
     if (effectiveMode === 'daily') {
-      // En mode daily, on n'a PAS besoin de setOptions car on n'utilise pas OptionsGrid
-      // On s'assure juste que la bonne réponse est set
-      setCorrectAnswer(item.name); // On compare les noms ou les IDs, ici disons le nom ou l'objet complet
+       // Mode Daily : Item fixe du jour
+       const validItems = itemsDataRaw.filter(i => i.tags && i.tags.some(t => VALID_TAGS.includes(t)));
+       const dailyIndex = getDailyItemIndex(validItems.length);
+       item = validItems[dailyIndex];
+
     } else if (effectiveMode === 'price') {
-      // 1. Sélection Item
        const pricedItems = itemsDataRaw.filter(i => typeof i.gold === 'number' && i.gold > 0);
        item = pricedItems[Math.floor(Math.random() * pricedItems.length)];
-    } 
-    else if (effectiveMode === 'recipe') {
+
+    } else if (effectiveMode === 'recipe') {
        const complexItems = itemsDataRaw.filter(i => i.from && i.from.length > 0);
        item = complexItems[Math.floor(Math.random() * complexItems.length)];
-    }
-    else {
+
+    } else {
        item = getRandomItem();
     }
     
     if (!item) return;
     setCurrentItem(item);
 
-    // 2. Génération Options
-    if (effectiveMode === 'attribute' || effectiveMode === 'daily') {
+    // =============================
+    // ÉTAPE 2 : GÉNÉRATION OPTIONS
+    // =============================
+    
+    if (effectiveMode === 'attribute') {
         const itemTags = item.tags.filter(t => VALID_TAGS.includes(t));
         if (itemTags.length === 0) return nextRound(effectiveMode);
 
@@ -224,10 +251,10 @@ function App() {
         setOptions(generatePriceOptions(price));
 
     } else if (effectiveMode === 'recipe') {
+        // Smart Fakes pour la recette
         const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
         const correctComponent = itemsDataRaw.find(i => i.id === correctComponentId);
-
-        const targetPrice = correctComponent.gold; 
+        const targetPrice = correctComponent.gold;
         const targetTags = item.tags || [];
 
         let smartFakes = itemsDataRaw.filter(i => {
@@ -245,38 +272,44 @@ function App() {
         const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
         setCorrectAnswer(correctComponent);
         setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
+    
+    } else if (effectiveMode === 'daily') {
+        // En daily, pas d'options, juste la bonne réponse (Nom ou Objet)
+        setCorrectAnswer(item.name);
     }
   };
 
-  // Nouvelle fonction spécifique pour valider le Daily
+  // --- VALIDATION DES RÉPONSES ---
+
+  // Pour le mode Daily (Barre de recherche)
   const handleDailySubmit = () => {
       if (!dailySelection) return;
       
-      const isCorrect = dailySelection.id === currentItem.id;
-      setUserGuess(dailySelection); // Pour révéler la vraie carte
+      const isCorrect = dailySelection.name === currentItem.name;
+      setUserGuess(dailySelection); // Révèle la carte
 
       if (isCorrect) {
           playSound('success');
           confetti({ particleCount: 150, spread: 100, origin: { y: 0.6 }, colors: ['#C8AA6E', '#091428', '#CDFAFA'] });
           saveDailyResult(1);
           setScore(1);
-          setLives(0); // Fin du jeu (Victoire)
+          // On ne tue pas tout de suite pour laisser voir la carte révélée
       } else {
           playSound('error');
           setShake(true);
           setTimeout(() => setShake(false), 500);
           saveDailyResult(0);
           setScore(0);
-          setLives(0); // Fin du jeu (Défaite)
       }
   };
 
+  // Pour les modes classiques (Boutons)
   const handleGuess = (guess) => {
     if (userGuess) return;
     setUserGuess(guess);
 
     let isCorrect = false;
-    if (gameMode === 'attribute' || gameMode === 'daily') isCorrect = currentItem.tags.includes(guess);
+    if (gameMode === 'attribute') isCorrect = currentItem.tags.includes(guess);
     else if (gameMode === 'price') isCorrect = (guess === currentItem.gold);
     else if (gameMode === 'recipe') isCorrect = (guess.id === correctAnswer.id);
 
@@ -284,22 +317,15 @@ function App() {
       playSound('success');
       confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#C8AA6E', '#091428', '#CDFAFA'] });
 
-      if (gameMode === 'daily') {
-          // VICTOIRE DAILY
-          saveDailyResult(1); // On sauvegarde qu'il a gagné
-          // On peut afficher un écran spécial ou juste le Game Over avec un score de 1
-          setScore(1);
-          setLives(0); // On tue le joueur pour forcer l'écran de fin
-          return; // On arrête là
-      }
-
       const newScore = score + 1;
       setScore(newScore);
 
+      // Mise à jour Score et DB
       const currentRecord = allHighScores[gameMode] || 0;
       if (newScore > currentRecord) {
         setHighScore(newScore);
-        setAllHighScores({ ...allHighScores, [gameMode]: newScore });
+        const newAllHighScores = { ...allHighScores, [gameMode]: newScore };
+        setAllHighScores(newAllHighScores);
         localStorage.setItem(`lol-quiz-highscore-${gameMode}`, newScore);
         if (session) updateProfileScore(session.user.id, gameMode, newScore);
       }
@@ -307,59 +333,26 @@ function App() {
       playSound('error');
       setShake(true);
       setTimeout(() => setShake(false), 500);
-      if (gameMode === 'daily') {
-          // DÉFAITE DAILY
-          saveDailyResult(0);
-          setScore(0);
-          setLives(0); // Game Over direct
-      } else {
-        setLives(lives - 1);
-      }
-      
+      setLives(lives - 1);
     }
   };
 
-  const restartGame = () => {
-    setScore(0);
-    setLives(3);
-    // On relance un round immédiatement
-    nextRound();
-  };
+  // --- RENDER ---
 
-  const handleLogout = async () => {
-    await supabase.auth.signOut();
-    setScore(0);
-    setLives(3);
-    window.location.reload();
-  };
-
-  // --- RENDER (AFFICHAGE) ---
-  
-  // 1. BLOC MENU
+  // 1. ÉCRAN MENU
   if (gameMode === 'menu') {
     return (
       <div className="max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative">
-         
-         {/* BARRE DU HAUT (MENU) */}
          <div className="w-full flex justify-between items-center mb-8 px-2">
-            <div className="flex gap-3 items-center">
-                 <button 
-                    onClick={() => setShowLeaderboard(true)}
-                    className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider"
-                >
-                    <span className="text-lg">🏆</span>
-                </button>
-            </div>
-
+            <button onClick={() => setShowLeaderboard(true)} className="flex items-center gap-2 text-xs font-bold text-gray-400 hover:text-lol-gold transition uppercase tracking-wider">
+                <span className="text-lg">🏆</span>
+            </button>
             <div className="flex items-center gap-3">
-                {session ? (
-                    <span className="text-xs text-lol-blue font-bold">{username || "Invocateur"}</span>
+                {!session ? (
+                    <button onClick={() => setShowAuthModal(true)} className="text-[10px] text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition uppercase font-bold">Connexion</button>
                 ) : (
-                    <button onClick={() => setShowAuthModal(true)} className="text-[10px] text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition uppercase font-bold">
-                        Connexion
-                    </button>
+                    <span className="text-xs text-lol-blue font-bold">{username || "Invocateur"}</span>
                 )}
-                {/* BOUTON RÉGLAGES */}
                 <button onClick={() => setShowSettings(true)} className="text-xl text-gray-400 hover:text-white transition hover:rotate-90 duration-300">⚙️</button>
             </div>
          </div>
@@ -369,100 +362,128 @@ function App() {
              setTimeout(() => nextRound(selectedMode), 0);
          }} />
 
-         {/* LES MODALES DU MENU */}
          {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
          {showLeaderboard && <Leaderboard onClose={() => setShowLeaderboard(false)} />}
-         {showSettings && (
-            <SettingsModal 
-                onClose={() => setShowSettings(false)}
-                isMuted={isMuted}
-                toggleMute={() => setIsMuted(!isMuted)}
-                username={username}
-                onUpdateUsername={handleSetUsername}
-                usernameError={usernameError}
-            />
-         )}
+         {showSettings && <SettingsModal onClose={() => setShowSettings(false)} isMuted={isMuted} toggleMute={() => setIsMuted(!isMuted)} username={username} onUpdateUsername={handleSetUsername} usernameError={usernameError} />}
          
          <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">Compatible Patch {PATCH_VERSION}</div>
       </div>
     );
   }
 
-  // GESTION DU GAME OVER
+  // 2. ÉCRAN GAME OVER
   if (lives <= 0) {
-    return (
-        <GameOver 
-            score={score} 
-            onRestart={restartGame} 
-            gameMode={gameMode} 
-        />
-    );
+    return <GameOver score={score} onRestart={restartGame} gameMode={gameMode} />;
   }
 
-  // 2. BLOC JEU
-  if (!currentItem) return <div className="text-white p-10 flex justify-center">Chargement...</div>;
+  // 3. ÉCRAN JEU
+  if (!currentItem) return <div className="text-white p-10 flex justify-center animate-pulse">Chargement de la Faille...</div>;
+
+  // On calcule l'objet d'hier uniquement si on est en mode daily pour optimiser
+  let yesterdayItem = null;
+  if (gameMode === 'daily') {
+      const validItems = itemsDataRaw.filter(i => i.tags && i.tags.some(t => VALID_TAGS.includes(t)));
+      const yesterdayDate = getYesterdayDate();
+      const yesterdayIndex = getDailyItemIndex(validItems.length, yesterdayDate);
+      yesterdayItem = validItems[yesterdayIndex];
+  }
 
   return (
     <div className={`max-w-md mx-auto p-4 flex flex-col items-center w-full min-h-screen relative ${shake ? 'animate-shake' : ''}`}>
       
-      {/* BARRE DU HAUT (JEU) */}
-      <div className="w-full flex justify-between items-center mb-4 px-2">
+      {/* HEADER NAVIGATION */}
+      <div className="w-full flex justify-between items-center mb-6 px-2">
         <div className="flex gap-3 items-center">
-             <button 
-                onClick={() => { setGameMode('menu'); setScore(0); setLives(3); }}
-                className="text-xs text-gray-400 hover:text-white font-bold flex items-center gap-1 border border-gray-700 px-2 py-1 rounded"
-            >
-                ← MENU
-            </button>
+             <button onClick={() => { setGameMode('menu'); setScore(0); setLives(3); }} className="text-xs text-gray-400 hover:text-white font-bold flex items-center gap-1 border border-gray-700 px-2 py-1 rounded">← MENU</button>
         </div>
-
         <div className="flex items-center gap-3">
-            {session ? (
-                <span className="text-xs text-lol-blue font-bold">{username || "Invocateur"}</span>
+            {!session ? (
+                <button onClick={() => setShowAuthModal(true)} className="text-[10px] text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition uppercase font-bold">Connexion</button>
             ) : (
-                <button onClick={() => setShowAuthModal(true)} className="text-[10px] text-lol-gold border border-lol-gold px-2 py-1 rounded hover:bg-lol-gold hover:text-black transition uppercase font-bold">
-                    Connexion
-                </button>
+                <span className="text-xs text-lol-blue font-bold">{username || "Invocateur"}</span>
             )}
-            {/* BOUTON RÉGLAGES */}
             <button onClick={() => setShowSettings(true)} className="text-xl text-gray-400 hover:text-white transition hover:rotate-90 duration-300">⚙️</button>
         </div>
       </div>
 
       <Header score={score} lives={lives} highScore={highScore} />
       
+      {/* ITEM CARD (Gère l'affichage mystère pour le Daily) */}
       <ItemCard 
           item={currentItem} 
           revealed={userGuess !== null} 
-          isMystery={gameMode === 'daily'}
+          isMystery={gameMode === 'daily'} 
       />
       
-      <OptionsGrid options={options} userGuess={userGuess} correctAnswer={correctAnswer} onGuess={handleGuess} gameMode={gameMode} />
+      {/* ZONE D'INTERACTION */}
+      {gameMode === 'daily' ? (
+        // Mode Daily : Barre de recherche
+        <div className="w-full flex flex-col items-center gap-4 mb-8 max-w-md">
+            
+            {/* NOUVEAU : Affichage de la réponse d'hier */}
+            {yesterdayItem && (
+                <div className="w-full bg-lol-dark/50 border border-gray-700 rounded p-2 flex items-center justify-center gap-3 mb-2 animate-fade-in opacity-80">
+                    <span className="text-xs text-gray-400 uppercase tracking-wider">Hier c'était :</span>
+                    <img 
+                        src={`https://ddragon.leagueoflegends.com/cdn/${PATCH_VERSION}/img/item/${yesterdayItem.image.full}`}
+                        alt={yesterdayItem.name}
+                        className="w-6 h-6 rounded border border-gray-600"
+                    />
+                    <span className="text-xs text-lol-gold font-bold">{yesterdayItem.name}</span>
+                </div>
+            )}
 
-      {userGuess && (
+            {!userGuess ? (
+                <>
+                    <SearchBar items={itemsDataRaw} onSelect={(item) => setDailySelection(item)} />
+                    <button 
+                        onClick={handleDailySubmit}
+                        disabled={!dailySelection}
+                        className={`w-full py-4 font-bold text-lg rounded uppercase tracking-wider transition ${dailySelection ? 'bg-lol-gold text-lol-dark hover:brightness-110 animate-pulse' : 'bg-gray-800 text-gray-500 cursor-not-allowed'}`}
+                    >
+                        CONFIRMER
+                    </button>
+                </>
+            ) : (
+                // MODIFIÉ : Bouton Retour au Menu
+                <button 
+                  onClick={() => {
+                      setGameMode('menu');
+                      setScore(0);
+                      setLives(3);
+                  }} 
+                  className="w-full py-4 bg-gray-800 border border-gray-600 text-gray-300 font-bold text-lg rounded uppercase tracking-wider hover:bg-gray-700 hover:text-white transition"
+                >
+                  Retour au Menu
+                </button>
+            )}
+        </div>
+      ) : (
+        // Modes Classiques : Grille
+        <OptionsGrid 
+            options={options} 
+            userGuess={userGuess} 
+            correctAnswer={correctAnswer} 
+            onGuess={handleGuess} 
+            gameMode={gameMode} 
+        />
+      )}
+
+      {/* BOUTON SUIVANT (Modes Classiques uniquement) */}
+      {userGuess && gameMode !== 'daily' && (
         <button 
           onClick={() => nextRound()} 
           className="w-full py-4 bg-lol-gold text-lol-dark font-bold text-lg rounded uppercase tracking-wider hover:brightness-110 transition animate-bounce"
         >
-          Continuer
+          {gameMode === 'price' ? (userGuess === correctAnswer ? 'Continuer' : 'Suivant') : (currentItem.tags.includes(userGuess) ? 'Continuer' : 'Suivant')}
         </button>
       )}
 
-      {/* LES MODALES DU JEU */}
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-      {showSettings && (
-        <SettingsModal 
-            onClose={() => setShowSettings(false)}
-            isMuted={isMuted}
-            toggleMute={() => setIsMuted(!isMuted)}
-            username={username}
-            onUpdateUsername={handleSetUsername}
-            usernameError={usernameError}
-        />
-      )}
+      {showSettings && <SettingsModal onClose={() => setShowSettings(false)} isMuted={isMuted} toggleMute={() => setIsMuted(!isMuted)} username={username} onUpdateUsername={handleSetUsername} usernameError={usernameError} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">
-        {gameMode === 'recipe' ? 'Trouve le composant manquant' : `Compatible Patch ${PATCH_VERSION}`}
+        {gameMode === 'daily' ? 'Défi Quotidien' : `Compatible Patch ${PATCH_VERSION}`}
       </div>
     </div>
   );

@@ -256,6 +256,10 @@ function App() {
     } else if (effectiveMode === 'recipe') {
         const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
         const correctComponent = dataToUse.find(i => i.id === correctComponentId);
+        
+        const targetPrice = correctComponent.gold; // ex: 1100
+        const targetTags = item.tags || [];
+        
         // Smart fakes logic simplifiée pour l'exemple (utilise dataToUse)
         //let smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
         let smartFakes = dataToUse.filter(i => {

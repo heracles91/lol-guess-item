@@ -1,9 +1,6 @@
-import { getRankData } from '../utils/ranks';
 import RankBadge from './RankBadge';
 
 function Header({ score, lives, highScore }) {
-  // Calcul du rang actuel basé sur le RECORD (highScore)
-  const currentRank = getRankData(highScore);
 
   return (
     <div className="w-full flex justify-between items-center mb-6 text-lg font-bold border-b border-lol-gold/30 pb-4">
@@ -24,7 +21,7 @@ function Header({ score, lives, highScore }) {
 
       {/* Partie Droite : Le Rang et l'Emblème */}
       <div className="flex items-center gap-3">
-        <RankBadge score={currentRank} size='md' />
+        <RankBadge score={highScore} size='md' />
       </div>
     </div>
   );

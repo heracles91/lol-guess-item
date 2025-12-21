@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
-import { getRankData, getRankImage } from '../utils/ranks';
 import RankBadge from './RankBadge';
 
 function Leaderboard({ onClose }) {
@@ -103,7 +102,6 @@ function Leaderboard({ onClose }) {
                             players.map((player, index) => {
                                 // On récupère dynamiquement le score de la colonne active
                                 const playerScore = player[`score_${currentView}`];
-                                const rank = getRankData(playerScore);
                                 
                                 let rowClass = "border-b border-gray-800 hover:bg-white/5 transition";
                                 let textClass = "text-gray-300";
@@ -117,7 +115,7 @@ function Leaderboard({ onClose }) {
                                         <td className="p-3 font-medium truncate max-w-[120px]">{player.username}</td>
                                         <td className="p-3 text-right">
                                             <div className="flex justify-end items-center gap-2">
-                                                <RankBadge score={rank.id} size='sm' />
+                                                <RankBadge score={playerScore} size='sm' />
                                             </div>
                                         </td>
                                         <td className="p-3 text-right font-mono text-lol-gold">{playerScore}</td>

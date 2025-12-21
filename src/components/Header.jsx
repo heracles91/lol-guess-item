@@ -1,4 +1,5 @@
 import RankBadge from './RankBadge';
+import { getRankData } from '../utils/ranks';
 
 function Header({ score, lives, highScore }) {
   const currentRank = getRankData(highScore);

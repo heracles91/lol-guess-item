@@ -11,7 +11,7 @@ function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode, t }
     }
     // ---------------------------
 
-    if (gameMode === 'attribute') return TAG_DICT[option] || option;
+    if (gameMode === 'attribute') return t.tags[option] || option;
     if (gameMode === 'price') return `${option} ${t.gold_suffix}`;
     return option; // Fallback
   };

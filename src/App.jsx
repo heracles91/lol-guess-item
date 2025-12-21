@@ -259,7 +259,7 @@ function App() {
         
         const targetPrice = correctComponent.gold; // ex: 1100
         const targetTags = item.tags || [];
-        
+
         // Smart fakes logic simplifiée pour l'exemple (utilise dataToUse)
         //let smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
         let smartFakes = dataToUse.filter(i => {
@@ -269,9 +269,15 @@ function App() {
             const hasSharedTag = i.tags && i.tags.some(tag => targetTags.includes(tag));
             return hasSharedTag;
         });
+
+        if (smartFakes.length < 3) {
+            smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
+        }
+
         const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
         setCorrectAnswer(correctComponent);
         setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));
+
     } else if (effectiveMode === 'daily') {
         setCorrectAnswer(item.name);
     }

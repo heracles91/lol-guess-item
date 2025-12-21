@@ -257,7 +257,14 @@ function App() {
         const correctComponentId = item.from[Math.floor(Math.random() * item.from.length)];
         const correctComponent = dataToUse.find(i => i.id === correctComponentId);
         // Smart fakes logic simplifiée pour l'exemple (utilise dataToUse)
-        let smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
+        //let smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
+        let smartFakes = itemsDataRaw.filter(i => {
+            if (i.id === correctComponentId || item.from.includes(i.id) || i.id === item.id) return false;
+            const isPriceSimilar = Math.abs(i.gold - targetPrice) <= 400;
+            if (!isPriceSimilar) return false;
+            const hasSharedTag = i.tags && i.tags.some(tag => targetTags.includes(tag));
+            return hasSharedTag;
+        });
         const wrongComponents = smartFakes.sort(() => 0.5 - Math.random()).slice(0, 3);
         setCorrectAnswer(correctComponent);
         setOptions([correctComponent, ...wrongComponents].sort(() => 0.5 - Math.random()));

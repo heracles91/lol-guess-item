@@ -1,18 +1,18 @@
-import { TAG_DICT, PATCH_VERSION } from '../utils/constants';
+import { PATCH_VERSION } from '../utils/constants';
 
-function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode }) {
+function OptionsGrid({ options, userGuess, correctAnswer, onGuess, gameMode, t }) {
 
   const getLabel = (option) => {
     // --- SÉCURITÉ ANTI-CRASH ---
     // Si on reçoit un Objet alors qu'on n'est pas en mode Recipe, 
     // c'est qu'on est en train de changer de mode. On renvoie le nom pour éviter l'erreur #31.
     if (typeof option === 'object' && option !== null) {
-        return option.name || "Chargement...";
+        return option.name || "Loading...";
     }
     // ---------------------------
 
     if (gameMode === 'attribute') return TAG_DICT[option] || option;
-    if (gameMode === 'price') return `${option} PO`;
+    if (gameMode === 'price') return `${option} ${t.gold_suffix}`;
     return option; // Fallback
   };
 

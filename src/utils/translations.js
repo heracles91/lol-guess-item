@@ -2,7 +2,7 @@ export const TRANSLATIONS = {
     fr: {
         menu_play: "Connexion",
         menu_settings: "Paramètres",
-        mode_attribute: "Devine les Stats",
+        mode_attribute: "Trouve l'Attribut",
         mode_price: "Le Juste Prix",
         mode_recipe: "La Recette",
         mode_daily: "Défi Quotidien",
@@ -32,7 +32,31 @@ export const TRANSLATIONS = {
         sound_label: "Sons",
         pseudo_label: "Pseudo",
         save: "Sauvegarder",
-        cancel: "Annuler"
+        cancel: "Annuler",
+        tags: {
+            "AbilityHaste": "Accélération de compétence",
+            "Armor": "Armure",
+            "ArmorPenetration": "Pénétration d'armure",
+            "AttackSpeed": "Vitesse d'attaque",
+            "Aura": "Aura",
+            "CriticalStrike": "Coup critique",
+            "Damage": "Dégâts d'attaque",
+            "Health": "Points de Vie",
+            "HealthRegen": "Régénération de PV",
+            "LifeSteal": "Vol de vie",
+            "MagicPenetration": "Pénétration magique",
+            "MagicResist": "Résistance magique",
+            "Mana": "Mana",
+            "ManaRegen": "Régénération de mana",
+            "MovementSpeed": "Vitesse de déplacement",
+            "OnHit": "Effet à l'impact",
+            "Slow": "Ralentissement",
+            "SpellDamage": "Puissance",
+            "Tenacity": "Ténacité",
+            "Vision": "Vision"
+        },
+        gold_suffix: "PO",
+        playhere: "Joue ici"
     },
     en: {
         menu_play: "Login",
@@ -67,6 +91,30 @@ export const TRANSLATIONS = {
         sound_label: "Sounds",
         pseudo_label: "Username",
         save: "Save",
-        cancel: "Cancel"
+        cancel: "Cancel",
+        tags: {
+            "AbilityHaste": "Ability Haste",
+            "Armor": "Armor",
+            "ArmorPenetration": "Armor Penetration",
+            "AttackSpeed": "Attack Speed",
+            "Aura": "Aura",
+            "CriticalStrike": "Critical Strike",
+            "Damage": "Damage",
+            "Health": "Health",
+            "HealthRegen": "Health Regeneration",
+            "LifeSteal": "Life Steal",
+            "MagicPenetration": "Magic Penetration",
+            "MagicResist": "Magic Resistance",
+            "Mana": "Mana",
+            "ManaRegen": "Mana Regeneration",
+            "MovementSpeed": "Movement Speed",
+            "OnHit": "On Hit",
+            "Slow": "Slow",
+            "SpellDamage": "Spell Damage",
+            "Tenacity": "Tenacity",
+            "Vision": "Vision"
+        },
+        gold_suffix: "G",
+        playhere: "Play here"
     }
 };

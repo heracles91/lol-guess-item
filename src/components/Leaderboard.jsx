@@ -3,36 +3,45 @@ import { supabase } from '../utils/supabaseClient';
 import { getRankData, getRankImage } from '../utils/ranks';
 
 function Leaderboard({ onClose }) {
-  // État local pour gérer l'onglet actif (par défaut 'attribute')
-  const [currentView, setCurrentView] = useState('attribute'); 
-  const [players, setPlayers] = useState([]);
-  const [loading, setLoading] = useState(true);
+    // État local pour gérer l'onglet actif (par défaut 'attribute')
+    const [currentView, setCurrentView] = useState('attribute'); 
+    const [players, setPlayers] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-  // On recharge le classement à chaque fois que l'onglet change
-  useEffect(() => {
-    fetchLeaderboard();
-  }, [currentView]);
+    // On recharge le classement à chaque fois que l'onglet change
+    useEffect(() => {
+        fetchLeaderboard();
+    }, [currentView]);
 
-  const fetchLeaderboard = async () => {
-    setLoading(true);
-    // On construit le nom de la colonne dynamiquement : score_attribute ou score_price
-    const column = `score_${currentView}`;
+    const fetchLeaderboard = async () => {
+        setLoading(true);
+        // On construit le nom de la colonne dynamiquement : score_attribute ou score_price
+        const column = `score_${currentView}`;
 
-    const { data, error } = await supabase
-      .from('profiles')
-      .select(`username, ${column}`)
-      .not('username', 'is', null)
-      .gt(column, 0) // Optionnel : On ne montre que ceux qui ont un score > 0
-      .order(column, { ascending: false })
-      .limit(50);
+        const { data, error } = await supabase
+        .from('profiles')
+        .select(`username, ${column}`)
+        .not('username', 'is', null)
+        .gt(column, 0) // Optionnel : On ne montre que ceux qui ont un score > 0
+        .order(column, { ascending: false })
+        .limit(50);
 
-    if (error) {
-        console.error('Erreur leaderboard:', error);
-    } else {
-        setPlayers(data);
-    }
+        if (error) {
+            console.error('Erreur leaderboard:', error);
+        } else {
+            setPlayers(data);
+        }
     setLoading(false);
   };
+
+  const getModeTitle = (mode) => {
+    switch(mode) {
+        case 'attribute': return "Guess the Attribute";
+        case 'price': return "Guess the Price";
+        case 'recipe': return "Guess the Recipe";
+        default: return "Leaderboard";
+    }
+  }
 
   return (
     <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4 animate-fade-in backdrop-blur-sm">
@@ -121,7 +130,7 @@ function Leaderboard({ onClose }) {
         </div>
         
         <div className="p-3 text-center text-[10px] text-gray-500 border-t border-lol-gold/30 bg-[#0F1923]">
-            Mode affiché : {currentView === 'attribute' ? 'Guess the Attribute' : 'Guess the Price'}
+            Mode affiché : {getModeTitle(currentView)}
         </div>
       </div>
     </div>

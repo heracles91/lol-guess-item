@@ -11,7 +11,7 @@ function SettingsModal({ onClose, isMuted, toggleMute, username, onUpdateUsernam
         <div className="flex justify-between items-center mb-6">
           <span className="text-gray-300 font-bold">{t.lang_label}</span>
           <button onClick={toggleLanguage} className="flex gap-2 items-center bg-gray-900 border border-gray-600 px-3 py-1 rounded hover:border-lol-gold transition">
-            {language === 'fr' ? '🇫🇷 Français' : '🇬🇧 English'}
+            {language === 'fr' ? 'Français' : 'English'}
           </button>
         </div>
 

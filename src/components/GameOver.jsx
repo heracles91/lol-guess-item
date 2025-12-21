@@ -14,7 +14,7 @@ function GameOver({ score, onRestart, gameMode, t }) {
     else if (gameMode === 'attribute') modeLabel = t.mode_attribute;
     else if (gameMode === 'daily') modeLabel = t.mode_daily;
 
-    const text = `🛡️ LoL Quiz | ${modeLabel}\n🏆 ${t.score} : ${score} (${rank.name})\n🔗 Joue ici : https://lol-guess-item.vercel.app`;
+    const text = `🛡️ LoL Quiz | ${modeLabel}\n🏆 ${t.score} : ${score} (${rank.name})\n🔗 ${t.playhere} : https://lol-guess-item.vercel.app`;
 
     navigator.clipboard.writeText(text).then(() => {
       setCopied(true);

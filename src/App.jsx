@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
+
 // IMPORTS DES DEUX LANGUES
 import itemsFr from './data/items_fr.json';
 import itemsEn from './data/items_en.json';
@@ -7,7 +8,8 @@ import itemsEn from './data/items_en.json';
 import { VALID_TAGS, PATCH_VERSION } from './utils/constants';
 import { supabase } from './utils/supabaseClient';
 import { getDailyItemIndex, saveDailyResult, getYesterdayDate } from './utils/dailyRandom';
-import { TRANSLATIONS } from './utils/translations'; // IMPORT TRADUCTION
+// IMPORT TRADUCTION
+import { TRANSLATIONS } from './utils/translations';
 
 import Header from './components/Header';
 import ItemCard from './components/ItemCard';
@@ -66,6 +68,9 @@ function App() {
   const [showLeaderboard, setShowLeaderboard] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
 
+  const [timeLeft, setTimeLeft] = useState(5); // 5 secondes
+  const TIMER_DURATION = 5;
+
   // --- DONNÉES DYNAMIQUES SELON LA LANGUE ---
   const currentItemsData = language === 'fr' ? itemsFr : itemsEn;
   const t = TRANSLATIONS[language]; // Le dictionnaire actuel
@@ -96,6 +101,29 @@ function App() {
     });
     return () => subscription.unsubscribe();
   }, []);
+
+  // --- GESTION DU TIMER ---
+  useEffect(() => {
+    // Le timer ne tourne pas si :
+    // 1. On est dans le menu
+    // 2. Le joueur a déjà répondu (userGuess existe)
+    // 3. Le jeu est fini (lives <= 0)
+    // 4. On est en mode 'daily' (pas de timer)
+    // 5. L'objet n'est pas encore chargé
+    if (gameMode === 'menu' || userGuess || lives <= 0 || gameMode === 'daily' || !currentItem) return;
+
+    if (timeLeft <= 0) {
+      handleTimeout();
+      return;
+    }
+
+    const timerId = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timerId);
+
+  }, [timeLeft, userGuess, gameMode, lives, currentItem]);
 
   // Fonction pour changer la langue
   const toggleLanguage = () => {
@@ -180,6 +208,7 @@ function App() {
     setCorrectAnswer(null);
     setShake(false);
     setDailySelection(null);
+    setTimeLeft(TIMER_DURATION);
 
     let item;
     if (effectiveMode === 'daily') {
@@ -271,6 +300,16 @@ function App() {
     }
   };
 
+  const handleTimeout = () => {
+    playSound('error');
+    setShake(true);
+    setTimeout(() => setShake(false), 500);
+    
+    // On met une valeur "TIMEOUT" pour dire qu'il n'a rien répondu
+    setUserGuess('TIMEOUT'); 
+    setLives(lives - 1);
+  };
+
   // --- CALCUL OBJET HIER (DAILY) ---
   let yesterdayItem = null;
   if (gameMode === 'daily') {
@@ -349,6 +388,23 @@ function App() {
       
       <ItemCard item={currentItem} revealed={userGuess !== null} isMystery={gameMode === 'daily'} />
       
+      {/* BARRE DE TIMER */}
+      {gameMode !== 'daily' && gameMode !== 'menu' && !userGuess && (
+        <div className="w-full max-w-md mb-4 px-1">
+            <div className="flex justify-between text-xs text-gray-400 mb-1 font-bold uppercase">
+                <span>Temps restant</span>
+                <span className={`${timeLeft <= 2 ? 'text-red-500 animate-pulse' : 'text-white'}`}>{timeLeft}s</span>
+            </div>
+            <div className="w-full bg-gray-800 rounded-full h-2 overflow-hidden border border-gray-700">
+                <div 
+                    className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 2 ? 'bg-red-600' : 'bg-lol-gold'}`}
+                    style={{ width: `${(timeLeft / TIMER_DURATION) * 100}%` }}
+                ></div>
+            </div>
+        </div>
+      )}
+
+      {/* GRILLE D'OPTIONS */}
       {gameMode === 'daily' ? (
         <div className="w-full flex flex-col items-center gap-4 mb-8 max-w-md">
             {yesterdayItem && (
@@ -372,7 +428,7 @@ function App() {
             )}
         </div>
       ) : (
-        <OptionsGrid options={options} userGuess={userGuess} correctAnswer={correctAnswer} onGuess={handleGuess} gameMode={gameMode} />
+        <OptionsGrid options={options} userGuess={userGuess} correctAnswer={correctAnswer} onGuess={handleGuess} gameMode={gameMode} t={t} />
       )}
 
       {userGuess && gameMode !== 'daily' && (

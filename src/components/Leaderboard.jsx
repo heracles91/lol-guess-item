@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '../utils/supabaseClient';
 import { getRankData, getRankImage } from '../utils/ranks';
+import RankBadge from './RankBadge';
 
 function Leaderboard({ onClose }) {
     // État local pour gérer l'onglet actif (par défaut 'attribute')
@@ -116,7 +117,7 @@ function Leaderboard({ onClose }) {
                                         <td className="p-3 font-medium truncate max-w-[120px]">{player.username}</td>
                                         <td className="p-3 text-right">
                                             <div className="flex justify-end items-center gap-2">
-                                                <img src={getRankImage(rank.id)} alt={rank.name} className="w-6 h-6 object-contain scale-150" />
+                                                <RankBadge score={player.score} size='sm' />
                                             </div>
                                         </td>
                                         <td className="p-3 text-right font-mono text-lol-gold">{playerScore}</td>

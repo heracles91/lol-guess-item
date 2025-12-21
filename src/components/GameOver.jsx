@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { getRankData } from '../utils/ranks';
+import RankBadge from './RankBadge';
 
 function GameOver({ score, onRestart, gameMode, t }) {
   const [copied, setCopied] = useState(false);
@@ -25,14 +26,20 @@ function GameOver({ score, onRestart, gameMode, t }) {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-lol-dark text-lol-gold p-4 animate-fade-in w-full">
       <h1 className="text-5xl font-bold mb-2 text-red-500 tracking-widest uppercase drop-shadow-md">{t.defeat}</h1>
-      
+
       <div className="bg-lol-card border border-lol-gold p-8 rounded-lg text-center shadow-2xl mb-8 w-full max-w-sm relative">
         <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-lol-dark border border-lol-gold px-4 py-1 rounded-full text-xs uppercase tracking-widest text-gray-400">
             {t.summary}
         </div>
 
-        <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 mt-4">{t.score}</p>
-        <p className="text-6xl font-bold text-white mb-8">{score}</p>
+        <div className='absolute -top-12 left-1/2 transform -translate-x-1/2'>
+          <RankBadge score={score} size='lg' showName={true} />
+        </div>
+
+        <div className='mt-12'>
+          <p className="text-gray-400 text-sm uppercase tracking-widest mb-2 mt-4">{t.score}</p>
+          <p className="text-6xl font-bold text-white mb-8">{score}</p>
+        </div>
         
         <button 
             onClick={handleShare}

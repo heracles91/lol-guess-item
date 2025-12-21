@@ -397,7 +397,7 @@ function App() {
         </div>
       </div>
 
-      <Header score={score} lives={lives} highScore={highScore} t={t} />
+      <Header score={score} lives={lives} t={t} />
       
       <ItemCard item={currentItem} revealed={userGuess !== null} isMystery={gameMode === 'daily'} />
       

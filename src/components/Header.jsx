@@ -1,8 +1,6 @@
-import { getRankData, getRankImage } from '../utils/ranks';
+import RankBadge from './RankBadge';
 
-function Header({ score, lives, highScore }) {
-  // Calcul du rang actuel basé sur le RECORD (highScore)
-  const currentRank = getRankData(highScore);
+function Header({ score, lives }) {
 
   return (
     <div className="w-full flex justify-between items-center mb-6 text-lg font-bold border-b border-lol-gold/30 pb-4">
@@ -22,23 +20,8 @@ function Header({ score, lives, highScore }) {
       </div>
 
       {/* Partie Droite : Le Rang et l'Emblème */}
-      <div className="flex items-center gap-3 text-right">
-        {/* L'image de l'emblème */}
-        <div className="w-12 h-12 flex items-center justify-center overflow-hidden relative">
-          <img 
-              src={getRankImage(currentRank.id)} 
-              alt={currentRank.name}
-              className="w-full h-full object-contain transform scale-[2.5] drop-shadow-md"
-          />
-        </div>
-        
-        <div className="flex flex-col">
-          <span className="text-xs text-gray-500 uppercase tracking-widest">Record</span>
-          <span className={`text-sm font-bold ${currentRank.color}`}>
-            {currentRank.name}
-          </span>
-          <span className="text-xs text-lol-gold">{highScore} LP</span>
-        </div>
+      <div className="flex items-center gap-3">
+        <RankBadge score={score} size='md' />
       </div>
     </div>
   );

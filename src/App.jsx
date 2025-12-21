@@ -70,6 +70,7 @@ function App() {
 
   const [timeLeft, setTimeLeft] = useState(5); // 5 secondes
   const TIMER_DURATION = 5;
+  const [isTimerEnabled, setIsTimerEnabled] = useState(true);
 
   // --- DONNÉES DYNAMIQUES SELON LA LANGUE ---
   const currentItemsData = language === 'fr' ? itemsFr : itemsEn;
@@ -88,6 +89,12 @@ function App() {
     // Récupérer la langue sauvegardée
     const savedLang = localStorage.getItem('lol-quiz-lang');
     if (savedLang) setLanguage(savedLang);
+
+    // Charger l'état du timer
+    const savedTimer = localStorage.getItem('lol-quiz-timer');
+    if (savedTimer !== null) {
+        setIsTimerEnabled(JSON.parse(savedTimer));
+    }
 
     loadLocalHighScores();
     supabase.auth.getSession().then(({ data: { session } }) => {
@@ -110,7 +117,7 @@ function App() {
     // 3. Le jeu est fini (lives <= 0)
     // 4. On est en mode 'daily' (pas de timer)
     // 5. L'objet n'est pas encore chargé
-    if (gameMode === 'menu' || userGuess || lives <= 0 || gameMode === 'daily' || !currentItem) return;
+    if (gameMode === 'menu' || userGuess || lives <= 0 || gameMode === 'daily' || !currentItem || !isTimerEnabled) return;
 
     if (timeLeft <= 0) {
       handleTimeout();
@@ -145,6 +152,12 @@ function App() {
         recipe: parseInt(localStorage.getItem('lol-quiz-highscore-recipe')) || 0,
         daily: 0
     });
+  };
+
+  const toggleTimer = () => {
+      const newState = !isTimerEnabled;
+      setIsTimerEnabled(newState);
+      localStorage.setItem('lol-quiz-timer', JSON.stringify(newState));
   };
 
   const fetchProfile = async (userId) => {
@@ -389,7 +402,7 @@ function App() {
       <ItemCard item={currentItem} revealed={userGuess !== null} isMystery={gameMode === 'daily'} />
       
       {/* BARRE DE TIMER */}
-      {gameMode !== 'daily' && gameMode !== 'menu' && !userGuess && (
+      {isTimerEnabled && gameMode !== 'daily' && gameMode !== 'menu' && !userGuess && (
         <div className="w-full max-w-md mb-4 px-1">
             <div className="flex justify-between text-xs text-gray-400 mb-1 font-bold uppercase">
                 <span>Temps restant</span>
@@ -438,7 +451,7 @@ function App() {
       )}
 
       {showAuthModal && <AuthModal onClose={() => setShowAuthModal(false)} />}
-      {showSettings && <SettingsModal onClose={() => setShowSettings(false)} isMuted={isMuted} toggleMute={() => setIsMuted(!isMuted)} username={username} onUpdateUsername={handleSetUsername} usernameError={usernameError} language={language} toggleLanguage={toggleLanguage} t={t} />}
+      {showSettings && <SettingsModal onClose={() => setShowSettings(false)} isMuted={isMuted} toggleMute={() => setIsMuted(!isMuted)} username={username} onUpdateUsername={handleSetUsername} usernameError={usernameError} language={language} toggleLanguage={toggleLanguage} timerEnabled={isTimerEnabled} toggleTimer={toggleTimer} t={t} />}
       
       <div className="mt-auto text-xs text-gray-500 py-4 opacity-50">{t.compatible} {PATCH_VERSION}</div>
     </div>

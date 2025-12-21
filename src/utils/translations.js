@@ -56,7 +56,10 @@ export const TRANSLATIONS = {
             "Vision": "Vision"
         },
         gold_suffix: "PO",
-        playhere: "Joue ici"
+        playhere: "Joue ici",
+        timer_label: "Chrono",
+        enabled: "Activé",
+        disabled: "Désactivé"
     },
     en: {
         menu_play: "Login",
@@ -99,7 +102,7 @@ export const TRANSLATIONS = {
             "AttackSpeed": "Attack Speed",
             "Aura": "Aura",
             "CriticalStrike": "Critical Strike",
-            "Damage": "Damage",
+            "Damage": "Attack Damage",
             "Health": "Health",
             "HealthRegen": "Health Regeneration",
             "LifeSteal": "Life Steal",
@@ -110,11 +113,14 @@ export const TRANSLATIONS = {
             "MovementSpeed": "Movement Speed",
             "OnHit": "On Hit",
             "Slow": "Slow",
-            "SpellDamage": "Spell Damage",
+            "SpellDamage": "Ability Power",
             "Tenacity": "Tenacity",
             "Vision": "Vision"
         },
         gold_suffix: "G",
-        playhere: "Play here"
+        playhere: "Play here",
+        timer_label: "Timer",
+        enabled: "On",
+        disabled: "Off"
     }
 };

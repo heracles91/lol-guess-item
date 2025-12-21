@@ -258,7 +258,7 @@ function App() {
         const correctComponent = dataToUse.find(i => i.id === correctComponentId);
         // Smart fakes logic simplifiée pour l'exemple (utilise dataToUse)
         //let smartFakes = dataToUse.filter(i => i.id !== correctComponentId && !item.from.includes(i.id) && i.gold < 3000);
-        let smartFakes = itemsDataRaw.filter(i => {
+        let smartFakes = dataToUse.filter(i => {
             if (i.id === correctComponentId || item.from.includes(i.id) || i.id === item.id) return false;
             const isPriceSimilar = Math.abs(i.gold - targetPrice) <= 400;
             if (!isPriceSimilar) return false;

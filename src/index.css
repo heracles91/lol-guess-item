@@ -55,6 +55,7 @@ body {
 }
 
 .riot-description rules {
+  display: block;
   color: #888;
   font-style: italic;
 }

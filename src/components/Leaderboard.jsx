@@ -117,7 +117,7 @@ function Leaderboard({ onClose }) {
                                         <td className="p-3 font-medium truncate max-w-[120px]">{player.username}</td>
                                         <td className="p-3 text-right">
                                             <div className="flex justify-end items-center gap-2">
-                                                <RankBadge score={player.score} size='sm' />
+                                                <RankBadge score={rank.id} size='sm' />
                                             </div>
                                         </td>
                                         <td className="p-3 text-right font-mono text-lol-gold">{playerScore}</td>

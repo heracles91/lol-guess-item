@@ -20,8 +20,18 @@ function Header({ score, lives, highScore }) {
       </div>
 
       {/* Partie Droite : Le Rang et l'Emblème */}
-      <div className="flex items-center gap-3">
-        <RankBadge score={highScore} size='md' />
+      <div className="flex items-center gap-3 text-right">
+        <div className="flex items-center gap-3">
+          <RankBadge score={highScore} size='md' />
+        </div>
+        
+        <div className="flex flex-col">
+          <span className="text-xs text-gray-500 uppercase tracking-widest">Record</span>
+          <span className={`text-sm font-bold ${currentRank.color}`}>
+            {currentRank.name}
+          </span>
+          <span className="text-xs text-lol-gold">{highScore} LP</span>
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import RankBadge from './RankBadge';
 
 function Header({ score, lives, highScore }) {
+  const currentRank = getRankData(highScore);
 
   return (
     <div className="w-full flex justify-between items-center mb-6 text-lg font-bold border-b border-lol-gold/30 pb-4">

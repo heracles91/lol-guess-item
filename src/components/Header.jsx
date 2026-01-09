@@ -1,15 +1,28 @@
 import RankBadge from './RankBadge';
 import { getRankData } from '../utils/ranks';
 
-function Header({ score, lives, highScore }) {
+function Header({ score, lives, highScore, streak }) {
   const currentRank = getRankData(highScore);
 
   return (
     <div className="w-full flex justify-between items-center mb-6 text-lg font-bold border-b border-lol-gold/30 pb-4">
+
+      {/* EFFET VISUEL EN ARRIÈRE PLAN SI GROS STREAK */}
+      {streak >= 3 && (
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-orange-500/10 to-transparent animate-pulse pointer-events-none"></div>
+      )}
+      
       {/* Partie Gauche : Score actuel */}
       <div className="flex flex-col">
         <span className="text-xs text-lol-blue uppercase tracking-widest">Score</span>
         <span className="text-2xl text-white">{score}</span>
+        {/* AFFICHAGE DU STREAK */}
+            {streak >= 3 && (
+                <div className="flex items-center gap-1 text-orange-500 font-bold animate-bounce text-sm">
+                    <span>🔥</span>
+                    <span>x{streak}</span>
+                </div>
+            )}
       </div>
       
       {/* Partie Centrale : Vies */}
@@ -38,5 +51,6 @@ function Header({ score, lives, highScore }) {
     </div>
   );
 }
+
 
 export default Header;

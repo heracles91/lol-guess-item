@@ -30,7 +30,7 @@ async function updateData() {
 
         const rawItems = itemsData.data;
         const cleanItems = [];
-        const processedIds = new Set(["3867", "3869", "3870", "3871", "3876", "3877"]);
+        const processedIds = new Set(["3865", "3867", "3869", "3870", "3871", "3876", "3877"]); // Objets à ignorer mis dans le Set
         const processedNames = new Set();
 
         for (const [id, item] of Object.entries(rawItems)) {
@@ -135,5 +135,6 @@ async function updateData() {
     console.error('❌ Erreur :', error);
   }
 }
+
 
 updateData();

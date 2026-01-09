@@ -53,6 +53,7 @@ function App() {
   const [correctAnswer, setCorrectAnswer] = useState(null);
   const [gameMode, setGameMode] = useState('menu'); 
   const [dailySelection, setDailySelection] = useState(null);
+  const [streak, setStreak] = useState(0);
   
   // États Scores & User
   const [highScore, setHighScore] = useState(0);
@@ -206,6 +207,7 @@ function App() {
   const restartGame = () => {
     setScore(0);
     setLives(3);
+    setStreak(0);
     nextRound();
   };
 
@@ -312,8 +314,15 @@ function App() {
     if (isCorrect) {
       playSound('success');
       confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 }, colors: ['#C8AA6E', '#091428', '#CDFAFA'] });
-      const newScore = score + 1;
+      
+      // --- LOGIQUE BONUS & STREAK ---
+      const points = isTimerEnabled ? 2 : 1; // +2 si timer, +1 sinon
+      const newScore = score + points;
+      
       setScore(newScore);
+      setStreak(streak + 1);
+      // -----------------------------
+      
       const currentRecord = allHighScores[gameMode] || 0;
       if (newScore > currentRecord) {
         setHighScore(newScore);
@@ -327,6 +336,7 @@ function App() {
       setShake(true);
       setTimeout(() => setShake(false), 500);
       setLives(lives - 1);
+      setStreak(0); // <--- RESET STREAK SI ERREUR
     }
   };
 
@@ -334,7 +344,8 @@ function App() {
     playSound('error');
     setShake(true);
     setTimeout(() => setShake(false), 500);
-    
+
+    setStreak(0);
     // On met une valeur "TIMEOUT" pour dire qu'il n'a rien répondu
     setUserGuess('TIMEOUT'); 
     setLives(lives - 1);
@@ -414,7 +425,7 @@ function App() {
         </div>
       </div>
 
-      <Header score={score} lives={lives} highScore={highScore} />
+      <Header score={score} lives={lives} highScore={highScore} streak={streak} />
       
       <ItemCard item={currentItem} revealed={userGuess !== null} isMystery={gameMode === 'daily'} />
       

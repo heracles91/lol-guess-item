@@ -377,10 +377,11 @@
     "id": "1055",
     "name": "Lame de Doran",
     "gold": 450,
-    "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque<br><attention>+80</attention> PV</stats><br><passive>Drain vital</passive><br>Vous récupérez 2.5% des dégâts infligés en <healing>PV</healing>. La zone d'efficacité des compétences et dégâts des compagnons est réduite de 33.3%.</mainText>",
+    "description": "<mainText><stats><attention>+10</attention> dégâts d'attaque<br><attention>+80</attention> PV<br><attention>+2.5%</attention> d'omnivampirisme</stats><br></mainText>",
     "tags": [
       "Health",
       "Damage",
+      "LifeSteal",
       "SpellVamp",
       "Lane"
     ],
@@ -511,8 +512,8 @@
       "full": "1101.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -530,8 +531,8 @@
       "full": "1102.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 192,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -541,7 +542,7 @@
     "id": "1103",
     "name": "Bébé Ixamandre",
     "gold": 450,
-    "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#1CA935'>Ixamandre</font> qui vous assistera contre les monstres.<br><passive>Courage d'Ixamandre</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Quand votre compagnon a fini de grandir, il vous octroie un <shield>bouclier</shield> qui se régénère quand vous tuez des grands monstres ou en dehors des combats.</mainText>",
+    "description": "<mainText><stats></stats><br><passive>Compagnons de la jungle</passive><br>Vous invoquez un <font color='#1CA935'>compagnon de la jungle</font> qui vous assistera contre les monstres.<br><passive>Courage d'Ixamandre</passive><br>Votre compagnon grandit à mesure que vous chassez des monstres, ce qui renforce votre <spellName>Châtiment</spellName>. Une fois son évolution terminée, votre quête de la jungle sera terminée. </mainText>",
     "tags": [
       "Jungle"
     ],
@@ -549,7 +550,7 @@
       "full": "1103.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 0,
+      "x": 240,
       "y": 144,
       "w": 48,
       "h": 48
@@ -571,8 +572,8 @@
       "full": "2003.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 48,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -591,8 +592,8 @@
       "full": "2019.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -616,8 +617,8 @@
       "full": "2020.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 192,
-      "y": 288,
+      "x": 240,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -639,8 +640,8 @@
       "full": "2021.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -661,8 +662,8 @@
       "full": "2022.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 288,
-      "y": 288,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -684,8 +685,29 @@
       "full": "2031.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 384,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2051",
+    "name": "Corne du gardien",
+    "gold": 950,
+    "description": "<mainText><stats><attention>+150</attention> PV</stats><br><br><li><passive>Récupération :</passive> vous récupérez <healing>20 PV</healing> toutes les 5 sec.<li><passive>Vaillance :</passive> vous bloquez 15 pts de dégâts venant des attaques et des compétences des champions (25% d'efficacité contre les compétences de dégâts sur la durée).<br></mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Lane"
+    ],
+    "image": {
+      "full": "2051.png",
+      "sprite": "item1.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -704,10 +726,10 @@
     ],
     "image": {
       "full": "2055.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 144,
-      "y": 336,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -727,10 +749,10 @@
     ],
     "image": {
       "full": "2065.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 240,
-      "y": 336,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -752,10 +774,10 @@
     ],
     "image": {
       "full": "2138.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 288,
-      "y": 336,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -773,10 +795,10 @@
     ],
     "image": {
       "full": "2139.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -795,10 +817,10 @@
     ],
     "image": {
       "full": "2140.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -815,10 +837,10 @@
     ],
     "image": {
       "full": "2141.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -838,8 +860,8 @@
       "full": "2420.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -859,8 +881,8 @@
       "full": "2421.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 144,
-      "y": 240,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -883,8 +905,8 @@
       "full": "2501.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 240,
-      "y": 240,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -897,25 +919,25 @@
     "id": "2502",
     "name": "Désespoir infini",
     "gold": 2800,
-    "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><passive>Affliction</passive><br>Toutes les 4 sec de combat contre un champion, vous infligez des <magicDamage>dégâts magiques</magicDamage> aux champions ennemis proches et vous <healing>récupérez des PV équivalents à 250%</healing> des dégâts infligés.</mainText>",
+    "description": "<mainText><stats><attention>+400</attention> PV<br><attention>+50</attention> armure<br><attention>+15</attention> accélération de compétence</stats><br><passive>Affliction</passive><br>Toutes les 4 sec de combat contre un champion, vous infligez des <magicDamage>dégâts magiques</magicDamage> aux champions ennemis proches et vous <healing>récupérez des PV équivalents à 250%</healing> des dégâts infligés.</mainText>",
     "tags": [
       "Health",
       "Armor",
-      "AbilityHaste",
-      "MagicResist"
+      "AbilityHaste"
     ],
     "image": {
       "full": "2502.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 288,
-      "y": 240,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
     "from": [
-      "3105",
-      "1011"
+      "1031",
+      "3067",
+      "1028"
     ]
   },
   {
@@ -932,8 +954,8 @@
       "full": "2503.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -956,8 +978,8 @@
       "full": "2504.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 432,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -976,15 +998,244 @@
     ],
     "image": {
       "full": "2508.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
     "from": [
       "1052"
+    ]
+  },
+  {
+    "id": "2510",
+    "name": "Crépuscule et aube",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>+300</attention> PV<br><attention>+70</attention> puissance<br><attention>+20</attention> accélération de compétence<br><attention>+25%</attention> de vitesse d'attaque</stats><br><passive>Lame enchantée</passive> (0 sec)<br>Après l'utilisation d'une compétence, votre prochaine attaque inflige <magicDamage>0 pts de dégâts magiques</magicDamage> bonus <OnHit>à l'impact</OnHit> et applique les effets <OnHit>à l'impact</OnHit> une fois de plus.</mainText>",
+    "tags": [
+      "Health",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2510.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3057",
+      "1026",
+      "3067",
+      "1042"
+    ]
+  },
+  {
+    "id": "2512",
+    "name": "Chasseur de monstres",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Veille de nuit</passive><br>Vous gagnez 30 d'accélération d'ultime.<br><passive>Barrage d'ouverture</passive><br> Après avoir lancé votre ultime, vos prochaines 3 attaques de base gagnent <attackSpeed>50% de vitesse d'attaque</attackSpeed> et infligent un coup critique de qui inflige 75% de vos dégâts de coups critiques normaux pendant 8 sec. Si une attaque devait déjà infliger un coup critique, elle inflige <trueDamage>10% de dégâts bruts bonus</trueDamage>.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2512.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "2517",
+    "name": "Faim insatiable",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+5%</attention> d'omnivampirisme<br><attention>+20%</attention> de ténacité</stats><br><passive>Famine</passive><br>Vous gagnez 0 d'accélération de compétence.<br><passive>Festin</passive><br>Quand un champion auquel vous avez infligé des dégâts meurt dans les 3 sec, vous gagnez <omnivamp>15% d'omnivampirisme</omnivamp> pendant 8 sec. </mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "Tenacity",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2517.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3133",
+      "1037"
+    ]
+  },
+  {
+    "id": "2520",
+    "name": "Briseur de bastion",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+22</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 90 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2520.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2020",
+      "3134"
+    ]
+  },
+  {
+    "id": "2522",
+    "name": "Actualisateur",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>+90</attention> puissance<br><attention>+300</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><active>Renforts de mana</active> (0 sec)<br>Pendant 8 sec, votre mana est renforcé. Pendant que votre mana est renforcé, vos compétences coûtent 100% de mana en plus, vos dégâts, vos boucliers, et vos soins sont augmentés de 0, et le délai de récupération de vos compétences de base est réduit de 30%.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2522.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3802",
+      "1026"
+    ]
+  },
+  {
+    "id": "2523",
+    "name": "Lunettes Hextech C44",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Grossissement</passive><br>Vous infligez jusqu'à 10% de dégâts bonus avec vos attaques, en fonction de la distance entre vous et l'ennemi (vous infligez le maximum de dégâts lorsque vous êtes à une portée de 700 unités).<br><passive>Visée arcanique</passive><br>Quand un champion auquel vous avez infligé des dégâts meurt dans les 3 sec, vous gagnez 100 de portée d'attaque bonus pendant 6 sec. </mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike"
+    ],
+    "image": {
+      "full": "2523.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "6670",
+      "1036"
+    ]
+  },
+  {
+    "id": "2524",
+    "name": "Flûtes de Bandle",
+    "gold": 2000,
+    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+15</attention> accélération de compétence<br><attention>+20</attention> armure<br><attention>+20</attention> résistance magique</stats><br><passive>Fanfare</passive><br><keyword>Ralentir</keyword> ou <keyword>immobiliser</keyword> un champion ennemi vous octroie Fanfare pendant 0 sec. Fanfare vous octroie <speed>20 de vitesse de déplacement</speed>. Lorsque vous avez Fanfare, les alliés à proximité, et vous-même, gagnez <attackSpeed>0 de vitesse d'attaque</attackSpeed>.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "AttackSpeed",
+      "AbilityHaste",
+      "MovementSpeed",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "2524.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1029",
+      "1033"
+    ]
+  },
+  {
+    "id": "2525",
+    "name": "Harnais protoplasmique",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>+600</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Lien vital</passive> (0 sec)<br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez <health>0 PV max</health> pendant 5 sec, puis vous récupérez <health>0 PV</health> sur la durée. Lorsque vous récupérez des PV, vous grandissez de 15%, vous gagnez 10% de vitesse de déplacement et 25% de ténacité. </mainText>",
+    "tags": [
+      "Health",
+      "Tenacity",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2525.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1011"
+    ]
+  },
+  {
+    "id": "2526",
+    "name": "Diadème des murmures",
+    "gold": 2250,
+    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+8%</attention> d'efficacité des soins et boucliers<br><attention>+75%</attention> de régénération de base du mana<br><attention>+300</attention> mana</stats><br><passive>Harmonie</passive><br>Vous gagnez 0% d'efficacité des soins et boucliers.<br><passive>Flux de mana</passive> (8 sec, max. 5 charges)<br>Quand vous touchez une cible avec une compétence, vous gagnez <scaleMana>4 pts de mana max</scaleMana> (doublé contre les champions).<br>Cet objet se transforme en <rarityLegendary>Diadème musical</rarityLegendary> à <scaleMana>360 pts de mana max</scaleMana>.</mainText>",
+    "tags": [
+      "Health",
+      "Mana",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "2526.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3114",
+      "1028",
+      "3070"
     ]
   },
   {
@@ -999,10 +1250,10 @@
     ],
     "image": {
       "full": "3002.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 288,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1023,10 +1274,10 @@
     ],
     "image": {
       "full": "3003.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 288,
+      "x": 144,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1049,10 +1300,10 @@
     ],
     "image": {
       "full": "3004.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1073,10 +1324,10 @@
     ],
     "image": {
       "full": "3006.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1096,31 +1347,10 @@
     ],
     "image": {
       "full": "3009.png",
-      "sprite": "item2.png",
-      "group": "item",
-      "x": 288,
-      "y": 288,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "1001"
-    ]
-  },
-  {
-    "id": "3010",
-    "name": "Semelles symbiotiques",
-    "gold": 900,
-    "description": "<mainText><stats><attention>+40</attention> vitesse de déplacement</stats><br><passive>Synchronie</passive><br>Vous gagnez <speed>+10 vitesse de déplacement</speed> en dehors des combats.<br><passive>Symbiose</passive><br>Après que vous avez parcouru 150000 unités de distance, cet objet se transforme en <rarityLegendary>Âmes synchronisées</rarityLegendary>.</mainText>",
-    "tags": [
-      "MovementSpeed"
-    ],
-    "image": {
-      "full": "3010.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
       "x": 336,
-      "y": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1138,10 +1368,10 @@
     ],
     "image": {
       "full": "3013.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 48,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1160,10 +1390,10 @@
     ],
     "image": {
       "full": "3020.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 336,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1183,10 +1413,10 @@
     ],
     "image": {
       "full": "3024.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 336,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1207,10 +1437,10 @@
     ],
     "image": {
       "full": "3026.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 336,
+      "x": 240,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1222,18 +1452,18 @@
   {
     "id": "3031",
     "name": "Lame d'infini",
-    "gold": 3450,
-    "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+40%</attention> de dégâts de coup critique</stats><br></mainText>",
+    "gold": 3500,
+    "description": "<mainText><stats><attention>+75</attention> dégâts d'attaque<br><attention>+25%</attention> de chances de coup critique<br><attention>+30%</attention> de dégâts de coup critique</stats><br></mainText>",
     "tags": [
       "CriticalStrike",
       "Damage"
     ],
     "image": {
       "full": "3031.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 336,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1246,8 +1476,8 @@
   {
     "id": "3032",
     "name": "Flèches des Yun Tal",
-    "gold": 3000,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+40%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1255,10 +1485,10 @@
     ],
     "image": {
       "full": "3032.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 336,
+      "x": 336,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1271,8 +1501,8 @@
   {
     "id": "3033",
     "name": "Rappel mortel",
-    "gold": 3300,
-    "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+30%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Hémorragie</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1280,10 +1510,10 @@
     ],
     "image": {
       "full": "3033.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1304,10 +1534,10 @@
     ],
     "image": {
       "full": "3035.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 432,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1319,8 +1549,8 @@
   {
     "id": "3036",
     "name": "Salutations de Dominik",
-    "gold": 3100,
-    "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+40%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br></mainText>",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>+35</attention> dégâts d'attaque<br><attention>+35%</attention> de pénétration d'armure<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Tueur de géants</passive><br>Vous infligez jusqu'à 15% de dégâts bonus aux champions en fonction de leurs PV bonus. Bonus de dégâts maximum atteint à partir de 1500 PV bonus.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1328,10 +1558,10 @@
     ],
     "image": {
       "full": "3036.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 0,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1352,10 +1582,10 @@
     ],
     "image": {
       "full": "3041.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 384,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1375,10 +1605,10 @@
     ],
     "image": {
       "full": "3044.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 384,
+      "x": 240,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1399,10 +1629,10 @@
     ],
     "image": {
       "full": "3046.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 384,
+      "x": 288,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1423,10 +1653,10 @@
     ],
     "image": {
       "full": "3047.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 384,
+      "x": 336,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1448,10 +1678,10 @@
     ],
     "image": {
       "full": "3050.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 384,
+      "x": 384,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1472,10 +1702,10 @@
     ],
     "image": {
       "full": "3051.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 384,
+      "x": 432,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1497,10 +1727,10 @@
     ],
     "image": {
       "full": "3053.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 384,
+      "x": 0,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1521,10 +1751,10 @@
     ],
     "image": {
       "full": "3057.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 432,
+      "x": 48,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1545,10 +1775,10 @@
     ],
     "image": {
       "full": "3065.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 432,
+      "x": 96,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1568,10 +1798,10 @@
     ],
     "image": {
       "full": "3066.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 432,
+      "x": 144,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1590,10 +1820,10 @@
     ],
     "image": {
       "full": "3067.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 432,
+      "x": 192,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1615,10 +1845,10 @@
     ],
     "image": {
       "full": "3068.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 432,
+      "x": 240,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1638,10 +1868,10 @@
     ],
     "image": {
       "full": "3070.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 432,
+      "x": 288,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1662,10 +1892,10 @@
     ],
     "image": {
       "full": "3071.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 432,
+      "x": 336,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1686,10 +1916,10 @@
     ],
     "image": {
       "full": "3072.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 384,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1713,10 +1943,10 @@
     ],
     "image": {
       "full": "3073.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 432,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1739,10 +1969,10 @@
     ],
     "image": {
       "full": "3074.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1765,8 +1995,8 @@
       "full": "3075.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 0,
+      "x": 48,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1788,8 +2018,8 @@
       "full": "3076.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 0,
+      "x": 96,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1811,8 +2041,8 @@
       "full": "3077.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 0,
+      "x": 144,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1838,8 +2068,8 @@
       "full": "3078.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 0,
+      "x": 192,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1861,8 +2091,8 @@
       "full": "3082.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 0,
+      "x": 240,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1884,8 +2114,8 @@
       "full": "3083.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 288,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1908,8 +2138,8 @@
       "full": "3084.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 336,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1934,8 +2164,8 @@
       "full": "3085.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 384,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1958,8 +2188,8 @@
       "full": "3086.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1983,8 +2213,8 @@
       "full": "3087.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2006,8 +2236,8 @@
       "full": "3089.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2031,8 +2261,8 @@
       "full": "3091.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 48,
+      "x": 96,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2056,13 +2286,39 @@
       "full": "3094.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 144,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
       "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "3097",
+    "name": "Lame tempête",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Énergisant</passive><br>Vos déplacements et vos attaques permettent d'<keyword>énergiser une attaque</keyword>.<br><passive>Éclair</passive><br>Vos <keyword>attaques énergisées</keyword> appliquent <magicDamage>0 pts de dégâts magiques bonus</magicDamage> et vous octroient <speed>+45% de vitesse de déplacement</speed> pendant 1.5 sec.<br></mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3097.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1038",
+      "1018",
       "3144"
     ]
   },
@@ -2081,8 +2337,8 @@
       "full": "3100.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 288,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2105,8 +2361,8 @@
       "full": "3102.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2116,36 +2372,12 @@
     ]
   },
   {
-    "id": "3105",
-    "name": "Égide de la légion",
-    "gold": 1100,
-    "description": "<mainText><stats><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br></mainText>",
-    "tags": [
-      "Armor",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "3105.png",
-      "sprite": "item3.png",
-      "group": "item",
-      "x": 288,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "1033",
-      "1029"
-    ]
-  },
-  {
     "id": "3107",
     "name": "Rédemption",
     "gold": 2300,
-    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+15</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10%</attention> d'efficacité des soins et boucliers</stats><br><active>Intervention</active><br>Au bout de 2.5 sec, vous rendez <healing>150 - 350 PV</healing> aux unités alliées et infligez <trueDamage>10% des PV max en dégâts bruts</trueDamage> aux champions ennemis.</mainText>",
+    "description": "<mainText><stats><attention>+30</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base du mana<br><attention>+10%</attention> d'efficacité des soins et boucliers</stats><br><active>Intervention</active><br>Au bout de 2.5 sec, vous rendez <healing>150 - 350 PV</healing> aux unités alliées et infligez <trueDamage>10% des PV max en dégâts bruts</trueDamage> aux champions ennemis.</mainText>",
     "tags": [
-      "Health",
+      "SpellDamage",
       "ManaRegen",
       "AbilityHaste"
     ],
@@ -2153,13 +2385,13 @@
       "full": "3107.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 432,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
-      "3067",
+      "3108",
       "3114"
     ]
   },
@@ -2176,8 +2408,8 @@
       "full": "3108.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 48,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2203,8 +2435,8 @@
       "full": "3109.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 48,
+      "x": 48,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2229,8 +2461,8 @@
       "full": "3110.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 96,
+      "x": 96,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2253,8 +2485,8 @@
       "full": "3111.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 96,
+      "x": 144,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2262,6 +2494,28 @@
       "1001",
       "1033"
     ]
+  },
+  {
+    "id": "3112",
+    "name": "Orbe du gardien",
+    "gold": 950,
+    "description": "<mainText><stats><attention>+50</attention> puissance<br><attention>+150</attention> PV</stats><br><br><li><passive>Récupération :</passive> vous récupérez <scaleMana>10 pts de mana</scaleMana> toutes les 5 sec. Si vous ne pouvez pas récupérer de mana, vous récupérez <healing>15 PV</healing> à la place.<br></mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "Lane"
+    ],
+    "image": {
+      "full": "3112.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
   },
   {
     "id": "3113",
@@ -2276,8 +2530,8 @@
       "full": "3113.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 240,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2297,8 +2551,8 @@
       "full": "3114.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 288,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2321,8 +2575,8 @@
       "full": "3115.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 336,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2346,8 +2600,8 @@
       "full": "3116.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 384,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2371,8 +2625,8 @@
       "full": "3118.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2395,8 +2649,8 @@
       "full": "3119.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2418,8 +2672,8 @@
       "full": "3123.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 144,
+      "x": 144,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2442,8 +2696,8 @@
       "full": "3124.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 144,
+      "x": 192,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2466,8 +2720,8 @@
       "full": "3133.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 336,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2490,8 +2744,8 @@
       "full": "3134.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 144,
+      "x": 384,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2513,8 +2767,8 @@
       "full": "3135.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 144,
+      "x": 432,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2537,8 +2791,8 @@
       "full": "3137.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 144,
+      "x": 0,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2565,8 +2819,8 @@
       "full": "3139.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 48,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2589,8 +2843,8 @@
       "full": "3140.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 192,
+      "x": 96,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2613,8 +2867,8 @@
       "full": "3142.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 192,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2639,8 +2893,8 @@
       "full": "3143.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 192,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2661,8 +2915,8 @@
       "full": "3144.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 192,
+      "x": 240,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2683,13 +2937,40 @@
       "full": "3145.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
     "from": [
       "1052",
+      "1052"
+    ]
+  },
+  {
+    "id": "3146",
+    "name": "Pistolame Hextech",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>+80</attention> puissance<br><attention>+40</attention> dégâts d'attaque<br><attention>+10%</attention> d'omnivampirisme</stats><br><br><active>PROPRIÉTÉ ACTIVE</active> (0 sec)<br><active>Orbe de foudre</active><br>Envoie une décharge au champion ennemi ciblé, ce qui lui inflige 0 pts de dégâts magiques et le ralentit de 25% pendant 1.5 sec.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "SpellDamage",
+      "Active",
+      "SpellVamp"
+    ],
+    "image": {
+      "full": "3146.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1053",
+      "3145",
       "1052"
     ]
   },
@@ -2706,8 +2987,8 @@
       "full": "3147.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 192,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2732,8 +3013,8 @@
       "full": "3152.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 192,
+      "x": 432,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2757,10 +3038,10 @@
     ],
     "image": {
       "full": "3153.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2781,10 +3062,10 @@
     ],
     "image": {
       "full": "3155.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2808,10 +3089,10 @@
     ],
     "image": {
       "full": "3156.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 240,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2832,10 +3113,10 @@
     ],
     "image": {
       "full": "3157.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 240,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2855,10 +3136,10 @@
     ],
     "image": {
       "full": "3158.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2879,10 +3160,10 @@
     ],
     "image": {
       "full": "3161.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 240,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2904,10 +3185,10 @@
     ],
     "image": {
       "full": "3165.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 240,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2920,17 +3201,17 @@
   {
     "id": "3170",
     "name": "Célérité martiale",
-    "gold": 1500,
-    "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.<br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>. </mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 40% l'efficacité des <keyword>ralentissements</keyword>.<br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>.</mainText>",
     "tags": [
       "MovementSpeed"
     ],
     "image": {
       "full": "3170.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 240,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2941,18 +3222,18 @@
   {
     "id": "3171",
     "name": "Lucidité pourpre",
-    "gold": 1400,
-    "description": "<mainText><stats><attention>+25</attention> accélération de compétence<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Savoir ionien</passive><br>Vous gagnez +10 accélération de sort d'invocateur.<br><passive>Hâte noxienne</passive><br>Renforcer ou protéger vos alliés avec des compétences, infliger des dégâts aux champions ennemis avec des compétences ou lancer un sort d'invocateur vous octroie <speed>+0 vitesse de déplacement</speed> pendant 4 sec.<br><rules>Hâte noxienne ne peut se déclencher qu'une fois par compétence lancée.</rules></mainText>",
+    "gold": 900,
+    "description": "<mainText><stats><attention>+20</attention> accélération de compétence<br><attention>+45</attention> vitesse de déplacement</stats><br><passive>Savoir ionien</passive><br>Vous gagnez +20 accélération de sort d'invocateur.<br><passive>Hâte noxienne</passive><br>Renforcer ou protéger vos alliés avec des compétences, infliger des dégâts aux champions ennemis avec des compétences ou lancer un sort d'invocateur vous octroie <speed>+0 vitesse de déplacement</speed> pendant 4 sec.<br><rules>Hâte noxienne ne peut se déclencher qu'une fois par compétence lancée.</rules></mainText>",
     "tags": [
       "AbilityHaste",
       "MovementSpeed"
     ],
     "image": {
       "full": "3171.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 240,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2963,18 +3244,19 @@
   {
     "id": "3172",
     "name": "Jambières de métal",
-    "gold": 1600,
-    "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Allure noxienne</passive><br>Attaquer des champions vous octroie de la <speed>vitesse de déplacement</speed> <OnHit>à l'impact</OnHit> (ce bonus diminue en 2 sec).</mainText>",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>+40%</attention> de vitesse d'attaque<br><attention>+45</attention> vitesse de déplacement<br><attention>+5%</attention> de vol de vie</stats><br><passive>Allure noxienne</passive><br>Attaquer des champions vous octroie de la <speed>vitesse de déplacement</speed> <OnHit>à l'impact</OnHit> (ce bonus diminue en 2 sec).</mainText>",
     "tags": [
       "AttackSpeed",
+      "LifeSteal",
       "MovementSpeed"
     ],
     "image": {
       "full": "3172.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2985,8 +3267,8 @@
   {
     "id": "3173",
     "name": "Broyeuses à chaînes",
-    "gold": 1750,
-    "description": "<mainText><stats><attention>+35</attention> résistance magique<br><attention>+50</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br><passive>Persévérance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts magiques d'un champion, vous gagnez un <shield>bouclier</shield> <magicDamage>anti-dégâts magiques</magicDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
+    "gold": 1250,
+    "description": "<mainText><stats><attention>+30</attention> résistance magique<br><attention>+45</attention> vitesse de déplacement<br><attention>+30%</attention> de ténacité</stats><br><passive>Persévérance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts magiques d'un champion, vous gagnez un <shield>bouclier</shield> <magicDamage>anti-dégâts magiques</magicDamage> de <shield>0 PV</shield> pendant 5 sec.</mainText>",
     "tags": [
       "Tenacity",
       "MagicResist",
@@ -2994,10 +3276,10 @@
     ],
     "image": {
       "full": "3173.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3008,18 +3290,18 @@
   {
     "id": "3174",
     "name": "Avancée blindée",
-    "gold": 1700,
-    "description": "<mainText><stats><attention>+40</attention> armure<br><attention>+50</attention> vitesse de déplacement</stats><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.<br><passive>Endurance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts physiques d'un champion, vous gagnez un <shield>bouclier</shield> <physicalDamage>anti-dégâts physiques</physicalDamage> de <shield>0 PV</shield> pendant 4 sec.</mainText>",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>+35</attention> armure<br><attention>+45</attention> vitesse de déplacement</stats><br><passive>Placage</passive><br>Les dégâts que vous infligent les attaques sont réduits de 10%.<br><passive>Endurance noxienne</passive> (0 sec)<br>Quand vous subissez des dégâts physiques d'un champion, vous gagnez un <shield>bouclier</shield> <physicalDamage>anti-dégâts physiques</physicalDamage> de <shield>0 PV</shield> pendant 5 sec.</mainText>",
     "tags": [
       "Armor",
       "MovementSpeed"
     ],
     "image": {
       "full": "3174.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3030,18 +3312,18 @@
   {
     "id": "3175",
     "name": "Chaussures de lanceur de sorts",
-    "gold": 1600,
-    "description": "<mainText><stats><attention>+18</attention> pénétration magique<br><attention>+7%</attention> de pénétration magique<br><attention>+50</attention> vitesse de déplacement</stats><br></mainText>",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>+18</attention> pénétration magique<br><attention>+8%</attention> de pénétration magique<br><attention>+45</attention> vitesse de déplacement</stats><br></mainText>",
     "tags": [
       "MagicPenetration",
       "MovementSpeed"
     ],
     "image": {
       "full": "3175.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3050,31 +3332,32 @@
     ]
   },
   {
-    "id": "3176",
-    "name": "Semelles militaires",
-    "gold": 1400,
-    "description": "<mainText><stats><attention>+55</attention> vitesse de déplacement</stats><br><passive>Néantin</passive><br>Vous gagnez Rappel amélioré.<br><passive>Synchronie noxienne</passive><br>Vous gagnez <speed>+45 vitesse de déplacement</speed> et <speed>+8% de vitesse de déplacement totale</speed> en dehors des combats.</mainText>",
+    "id": "3177",
+    "name": "Lame du gardien",
+    "gold": 950,
+    "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+150</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br></mainText>",
     "tags": [
-      "MovementSpeed"
+      "Health",
+      "Damage",
+      "Lane",
+      "AbilityHaste"
     ],
     "image": {
-      "full": "3176.png",
-      "sprite": "item3.png",
+      "full": "3177.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
-    "from": [
-      "3013"
-    ]
+    "from": []
   },
   {
     "id": "3179",
     "name": "Glaive d'ombre",
-    "gold": 2500,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflés ennemis, vous les révélez pendant 8 sec.<br><passive>Extinction des feux</passive><br>Vos attaques infligent des dégâts bonus aux balises.</mainText>",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Traqueur nocturne</passive><br>Après être resté invisible pour les ennemis quelques secondes, votre prochaine attaque contre un champion inflige des <trueDamage>dégâts bruts</trueDamage> bonus.<br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflé ennemi, vous les révélez pendant quelques secondes. Lorsque vous révélez des balises, vos attaques leur infligent des dégâts bonus.</mainText>",
     "tags": [
       "Damage",
       "Vision",
@@ -3083,10 +3366,10 @@
     ],
     "image": {
       "full": "3179.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 240,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3107,10 +3390,10 @@
     ],
     "image": {
       "full": "3181.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 288,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3119,6 +3402,28 @@
       "3066",
       "1037"
     ]
+  },
+  {
+    "id": "3184",
+    "name": "Marteau du gardien",
+    "gold": 950,
+    "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+150</attention> PV<br><attention>+5%</attention> de vol de vie</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "LifeSteal",
+      "Lane"
+    ],
+    "image": {
+      "full": "3184.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 336,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
   },
   {
     "id": "3190",
@@ -3135,10 +3440,10 @@
     ],
     "image": {
       "full": "3190.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 288,
+      "x": 384,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3160,10 +3465,10 @@
     ],
     "image": {
       "full": "3211.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 288,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3187,10 +3492,10 @@
     ],
     "image": {
       "full": "3222.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3213,10 +3518,10 @@
     ],
     "image": {
       "full": "3302.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 432,
+      "x": 384,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -3229,7 +3534,7 @@
     "id": "3340",
     "name": "Balise camouflée",
     "gold": 0,
-    "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>210 - 120</scaleLevel> sec, max. 2 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision pendant <scaleLevel>90 - 120</scaleLevel> sec.</mainText>",
+    "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>170 - 90</scaleLevel> sec, max. 2 charges)<br>Pose une Balise camouflée <keyword>invisible</keyword> qui octroie de la vision pendant <scaleLevel>90 - 120</scaleLevel> sec.</mainText>",
     "tags": [
       "Active",
       "Jungle",
@@ -3239,10 +3544,10 @@
     ],
     "image": {
       "full": "3340.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 432,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3260,10 +3565,10 @@
     ],
     "image": {
       "full": "3363.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 144,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3273,7 +3578,7 @@
     "id": "3364",
     "name": "Brouilleur oraculaire",
     "gold": 0,
-    "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>160 - 100</scaleLevel> sec, max 2 charges)<br>Révèle les Balises camouflées et les pièges ennemis autour de vous pendant 6 sec.</mainText>",
+    "description": "<mainText><stats></stats><br><active>Propriété active</active> (<scaleLevel>160 - 100</scaleLevel> sec, max 2 charges)<br>Révèle les Balises camouflées et les pièges ennemis autour de vous pendant 8 sec.</mainText>",
     "tags": [
       "Active",
       "Trinket",
@@ -3283,8 +3588,8 @@
       "full": "3364.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 0,
+      "x": 192,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3305,8 +3610,8 @@
       "full": "3504.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3319,7 +3624,7 @@
     "id": "3508",
     "name": "Faux spectrale",
     "gold": 2900,
-    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+15</attention> accélération de compétence<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Drain d'essence</passive><br>Vos attaques vous rendent du <scaleMana>mana</scaleMana> <OnHit>à l'impact</OnHit>.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+20</attention> accélération de compétence<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Lame enchantée</passive><br> Après avoir utilisé une compétence, votre prochaine attaque inflige <physicalDamage> pts de dégâts physiques</physicalDamage> bonus, et vous octroie du <scaleMana>mana</scaleMana> <OnHit>à l'impact</OnHit>.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -3331,13 +3636,13 @@
       "full": "3508.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
-      "1037",
+      "3057",
       "3133",
       "1018"
     ]
@@ -3357,8 +3662,8 @@
       "full": "3742.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 192,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3383,8 +3688,8 @@
       "full": "3748.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 48,
+      "x": 240,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3407,8 +3712,8 @@
       "full": "3801.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 288,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3432,8 +3737,8 @@
       "full": "3802.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3458,8 +3763,8 @@
       "full": "3803.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 384,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3483,8 +3788,8 @@
       "full": "3814.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 432,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3509,8 +3814,8 @@
       "full": "3865.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 96,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -3528,8 +3833,8 @@
       "full": "3916.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -3551,8 +3856,8 @@
       "full": "4005.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 192,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -3573,10 +3878,10 @@
     ],
     "image": {
       "full": "4401.png",
-      "sprite": "item4.png",
+      "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 240,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -3589,8 +3894,8 @@
   {
     "id": "4628",
     "name": "Concentration lointaine",
-    "gold": 2750,
-    "description": "<mainText><stats><attention>+125</attention> puissance<br><attention>+25</attention> accélération de compétence</stats><br><passive>Tir hyperprécis</passive><br>Infliger des dégâts de compétence à un champion à au moins 600 unités de distance le <keywordStealth>révèle</keywordStealth> pendant 6 sec. <br><passive>Focalisation</passive><br>Quand <passive>Tir hyperprécis</passive> se déclenche, vous <keywordStealth>révélez</keywordStealth> tous les autres champions ennemis dans un rayon de 1400 unités de distance de votre cible pendant 3 sec.</mainText>",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>+75</attention> puissance<br><attention>+25</attention> accélération de compétence</stats><br><passive>Tir hyperprécis</passive><br>Infliger des dégâts de compétence à un champion à au moins 600 unités de distance le <keywordStealth>révèle</keywordStealth> pendant 6 sec. <br><passive>Focalisation</passive><br>Quand <passive>Tir hyperprécis</passive> se déclenche, vous <keywordStealth>révélez</keywordStealth> tous les autres champions ennemis dans un rayon de 1400 unités de distance de votre cible pendant 3 sec.</mainText>",
     "tags": [
       "SpellDamage",
       "AbilityHaste"
@@ -3599,15 +3904,15 @@
       "full": "4628.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 0,
+      "x": 336,
+      "y": 240,
       "w": 48,
       "h": 48
     },
     "from": [
       "3108",
       "3108",
-      "1026"
+      "1052"
     ]
   },
   {
@@ -3625,8 +3930,8 @@
       "full": "4629.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 0,
+      "x": 384,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3649,8 +3954,8 @@
       "full": "4630.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3671,8 +3976,8 @@
       "full": "4632.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3697,8 +4002,8 @@
       "full": "4633.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3706,30 +4011,6 @@
       "3147",
       "3108"
     ]
-  },
-  {
-    "id": "4638",
-    "name": "Pierre de balise attentive",
-    "gold": 1100,
-    "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+10</attention> accélération de compétence<br><attention>+10</attention> armure<br><attention>+15</attention> résistance magique</stats><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.</mainText>",
-    "tags": [
-      "Health",
-      "Armor",
-      "Vision",
-      "Active",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "4638.png",
-      "sprite": "item5.png",
-      "group": "item",
-      "x": 48,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
   },
   {
     "id": "4642",
@@ -3745,8 +4026,8 @@
       "full": "4642.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3754,32 +4035,6 @@
       "1004",
       "1052",
       "2022"
-    ]
-  },
-  {
-    "id": "4643",
-    "name": "Pierre de balise vigilante",
-    "gold": 2300,
-    "description": "<mainText><stats><attention>+250</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+25</attention> armure<br><attention>+30</attention> résistance magique</stats><br><passive>Cache arcanique</passive><br>Cet objet peut stocker jusqu'à 3 Balises de contrôle achetées.<br><passive>Contemplation</passive><br>Le nombre de Balises camouflées et de Balises de contrôle que vous pouvez poser est augmenté de 1.</mainText>",
-    "tags": [
-      "Health",
-      "Armor",
-      "Vision",
-      "Active",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "4643.png",
-      "sprite": "item5.png",
-      "group": "item",
-      "x": 192,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "4638"
     ]
   },
   {
@@ -3795,8 +4050,8 @@
       "full": "4645.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 48,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3820,8 +4075,8 @@
       "full": "4646.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 48,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3844,8 +4099,8 @@
       "full": "6333.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 96,
+      "x": 240,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3869,8 +4124,8 @@
       "full": "6609.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 96,
-      "y": 96,
+      "x": 288,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3884,7 +4139,7 @@
     "id": "6610",
     "name": "Ciel éventré",
     "gold": 3100,
-    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
+    "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -3894,8 +4149,8 @@
       "full": "6610.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 336,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3919,8 +4174,8 @@
       "full": "6616.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 384,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3944,8 +4199,8 @@
       "full": "6617.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 432,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3958,7 +4213,7 @@
     "id": "6620",
     "name": "Échos d'Helia",
     "gold": 2200,
-    "description": "<mainText><stats><attention>+35</attention> puissance<br><attention>+200</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+125%</attention> de régénération de base du mana</stats><br><passive>Siphon d'âme</passive><br>Blesser un champion vous octroie un <passive>fragment d'esprit</passive>, jusqu'à un maximum de 2. <br>Lancer un soin ou un bouclier sur un allié consomme tous les <passive>fragments d'esprit</passive> pour lui rendre des <healing>PV</healing> et infliger des <magicDamage>dégâts magiques</magicDamage> par fragment au champion ennemi le plus proche.</mainText>",
+    "description": "<mainText><stats><attention>+35</attention> puissance<br><attention>+200</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+125%</attention> de régénération de base du mana</stats><br><passive>Siphon d'âme</passive><br>Vous gagnez 35% des dégâts infligés aux champions avant mitigation sous forme de charges spirituelles. Lancer un soin ou un bouclier sur un allié consomme toutes les <passive>charges spirituelles</passive> pour lui rendre des <healing>PV</healing>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",
@@ -3969,8 +4224,8 @@
       "full": "6620.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -3992,8 +4247,8 @@
       "full": "6621.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 96,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4018,8 +4273,8 @@
       "full": "6631.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 432,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4042,8 +4297,8 @@
       "full": "6653.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 192,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4054,9 +4309,9 @@
   },
   {
     "id": "6655",
-    "name": "Compagnon de Luden",
+    "name": "Écho de Luden",
     "gold": 2750,
-    "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+600</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><passive>Tir</passive><br>Les compétences blessantes tirent 6 charges qui infligent des <magicDamage>dégâts magiques bonus</magicDamage> à la cible et aux ennemis proches. Les tirs restants sont redirigés vers la cible principale et lui infligent 20% des dégâts.<br></mainText>",
+    "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+600</attention> mana<br><attention>+10</attention> accélération de compétence</stats><br><passive>Écho</passive><br>Les compétences blessantes tirent 6 échos qui infligent <magicDamage>des dégâts magiques bonus</magicDamage> à la cible et aux ennemis proches. Les échos restants sont redirigés vers la cible principale et lui infligent 20% des dégâts.<br></mainText>",
     "tags": [
       "SpellDamage",
       "Mana",
@@ -4066,8 +4321,8 @@
       "full": "6655.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4090,10 +4345,10 @@
     ],
     "image": {
       "full": "6657.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 192,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4113,10 +4368,10 @@
     ],
     "image": {
       "full": "6660.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 192,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4139,10 +4394,10 @@
     ],
     "image": {
       "full": "6662.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4166,10 +4421,10 @@
     ],
     "image": {
       "full": "6664.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4190,10 +4445,10 @@
     ],
     "image": {
       "full": "6665.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 240,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4214,10 +4469,10 @@
     ],
     "image": {
       "full": "6670.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4239,10 +4494,10 @@
     ],
     "image": {
       "full": "6672.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4263,10 +4518,10 @@
     ],
     "image": {
       "full": "6673.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4287,10 +4542,10 @@
     ],
     "image": {
       "full": "6675.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 144,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4312,10 +4567,10 @@
     ],
     "image": {
       "full": "6676.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4336,10 +4591,10 @@
     ],
     "image": {
       "full": "6690.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 336,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4358,10 +4613,10 @@
     ],
     "image": {
       "full": "6692.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 432,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4383,10 +4638,10 @@
     ],
     "image": {
       "full": "6694.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 48,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4406,10 +4661,10 @@
     ],
     "image": {
       "full": "6695.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 288,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4430,10 +4685,10 @@
     ],
     "image": {
       "full": "6696.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 288,
+      "x": 144,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4455,10 +4710,10 @@
     ],
     "image": {
       "full": "6697.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4480,10 +4735,10 @@
     ],
     "image": {
       "full": "6698.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 48,
-      "y": 336,
+      "x": 240,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4505,10 +4760,10 @@
     ],
     "image": {
       "full": "6699.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 336,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4531,10 +4786,10 @@
     ],
     "image": {
       "full": "6701.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 336,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4557,10 +4812,10 @@
     ],
     "image": {
       "full": "8010.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 96,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -4581,10 +4836,10 @@
     ],
     "image": {
       "full": "8020.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },

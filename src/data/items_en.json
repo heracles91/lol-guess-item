@@ -377,10 +377,11 @@
     "id": "1055",
     "name": "Doran's Blade",
     "gold": 450,
-    "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>80</attention> Health</stats><br><passive>Life Draining</passive><br>Return 2.5% of damage dealt as <healing>Health</healing>. Reduced to 33.3% effectiveness for area of effect spells and pet damage.</mainText>",
+    "description": "<mainText><stats><attention>10</attention> Attack Damage<br><attention>80</attention> Health<br><attention>2.5%</attention> Omnivamp</stats><br></mainText>",
     "tags": [
       "Health",
       "Damage",
+      "LifeSteal",
       "SpellVamp",
       "Lane"
     ],
@@ -511,8 +512,8 @@
       "full": "1101.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -530,8 +531,8 @@
       "full": "1102.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 192,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -541,7 +542,7 @@
     "id": "1103",
     "name": "Mosstomper Seedling",
     "gold": 450,
-    "description": "<mainText><stats></stats><br><passive>Jungle Companions</passive><br>Summon a <font color='#1CA935'>Mosstomper</font> that assists you against monsters.<br><passive>Mosstomper's Courage</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it grants a <shield>shield</shield> that regenerates after killing large monsters or out of combat.</mainText>",
+    "description": "<mainText><stats></stats><br><passive>Jungle Companions</passive><br>Summon a <font color='#1CA935'>Jungle Pet</font> that assists you against monsters.<br><passive>Mosstomper's Courage</passive><br>The companion grows as you hunt monsters, empowering your <spellName>Smite</spellName>. When fully grown, it completes your Jungle Quest. </mainText>",
     "tags": [
       "Jungle"
     ],
@@ -549,7 +550,7 @@
       "full": "1103.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 0,
+      "x": 240,
       "y": 144,
       "w": 48,
       "h": 48
@@ -571,8 +572,8 @@
       "full": "2003.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 48,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -591,8 +592,8 @@
       "full": "2019.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -616,8 +617,8 @@
       "full": "2020.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 192,
-      "y": 288,
+      "x": 240,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -639,8 +640,8 @@
       "full": "2021.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -661,8 +662,8 @@
       "full": "2022.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 288,
-      "y": 288,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -684,8 +685,29 @@
       "full": "2031.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 384,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
+  },
+  {
+    "id": "2051",
+    "name": "Guardian's Horn",
+    "gold": 950,
+    "description": "<mainText><stats><attention>150</attention> Health</stats><br><br><li><passive>Recovery:</passive> Restores <healing>20 Health</healing> every 5 seconds.<li><passive>Undaunted:</passive> Blocks 15 damage from attacks and spells from champions (25% effectiveness vs. damage over time abilities).<br></mainText>",
+    "tags": [
+      "Health",
+      "HealthRegen",
+      "Lane"
+    ],
+    "image": {
+      "full": "2051.png",
+      "sprite": "item1.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -704,10 +726,10 @@
     ],
     "image": {
       "full": "2055.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 144,
-      "y": 336,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -727,10 +749,10 @@
     ],
     "image": {
       "full": "2065.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 240,
-      "y": 336,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -752,10 +774,10 @@
     ],
     "image": {
       "full": "2138.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 288,
-      "y": 336,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -773,10 +795,10 @@
     ],
     "image": {
       "full": "2139.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -795,10 +817,10 @@
     ],
     "image": {
       "full": "2140.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -815,10 +837,10 @@
     ],
     "image": {
       "full": "2141.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -838,8 +860,8 @@
       "full": "2420.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -859,8 +881,8 @@
       "full": "2421.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 144,
-      "y": 240,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -883,8 +905,8 @@
       "full": "2501.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 240,
-      "y": 240,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -897,25 +919,25 @@
     "id": "2502",
     "name": "Unending Despair",
     "gold": 2800,
-    "description": "<mainText><stats><attention>400</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><passive>Anguish</passive><br>Every 4 seconds while in combat with champions, deal <magicDamage>magic damage</magicDamage> to nearby enemy champions and <healing>heal for 250%</healing> of the damage dealt.</mainText>",
+    "description": "<mainText><stats><attention>400</attention> Health<br><attention>50</attention> Armor<br><attention>15</attention> Ability Haste</stats><br><passive>Anguish</passive><br>Every 4 seconds while in combat with champions, deal <magicDamage>magic damage</magicDamage> to nearby enemy champions and <healing>heal for 250%</healing> of the damage dealt.</mainText>",
     "tags": [
       "Health",
       "Armor",
-      "AbilityHaste",
-      "MagicResist"
+      "AbilityHaste"
     ],
     "image": {
       "full": "2502.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 288,
-      "y": 240,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
     "from": [
-      "3105",
-      "1011"
+      "1031",
+      "3067",
+      "1028"
     ]
   },
   {
@@ -932,8 +954,8 @@
       "full": "2503.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -956,8 +978,8 @@
       "full": "2504.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 432,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -976,15 +998,244 @@
     ],
     "image": {
       "full": "2508.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
     "from": [
       "1052"
+    ]
+  },
+  {
+    "id": "2510",
+    "name": "Dusk and Dawn",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>300</attention> Health<br><attention>70</attention> Ability Power<br><attention>20</attention> Ability Haste<br><attention>25%</attention> Attack Speed</stats><br><passive>Spellblade</passive> (0s)<br>After using an Ability, your next Attack deals <magicDamage> bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit> and applies <OnHit>On-Hit</OnHit> effects an additional time.</mainText>",
+    "tags": [
+      "Health",
+      "AttackSpeed",
+      "SpellDamage",
+      "OnHit",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2510.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 48,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3057",
+      "1026",
+      "3067",
+      "1042"
+    ]
+  },
+  {
+    "id": "2512",
+    "name": "Fiendhunter Bolts",
+    "gold": 2650,
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Night Vigil</passive><br>Gain 30 Ultimate Ability Haste.<br><passive>Opening Barrage</passive><br>After casting your Ultimate, your next 3 basic attacks gain <attackSpeed>50% Attack Speed</attackSpeed> and Critically Strike for 75% of your normal Critical Strike damage for 8 seconds. If an attack would already Critically Strike, instead it deals <trueDamage>10% bonus true damage</trueDamage>.</mainText>",
+    "tags": [
+      "CriticalStrike",
+      "AttackSpeed",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2512.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 96,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "2517",
+    "name": "Endless Hunger",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>5%</attention> Omnivamp<br><attention>20%</attention> Tenacity</stats><br><passive>Famine</passive><br>Gain  Ability Haste.<br><passive>Feast</passive><br>When a champion that you damaged within 3 seconds dies, gain <omnivamp>15% Omnivamp</omnivamp> for 8 seconds. </mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "SpellVamp",
+      "Tenacity",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2517.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 144,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3133",
+      "1037"
+    ]
+  },
+  {
+    "id": "2520",
+    "name": "Bastionbreaker",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><passive>Shaped Charge</passive> (0s)<br>Dealing Ability damage to a Champion or Epic Monster deals an additional <trueDamage> true damage</trueDamage>.<br><passive>Sabotage</passive><br>Taking down a champion within 3 seconds of damaging them grants Sabotage for 90 seconds. While you have Sabotage, your next Attack against an Epic Monster or Turret deals an additional <trueDamage> true damage</trueDamage> over 3 seconds. </mainText>",
+    "tags": [
+      "Damage",
+      "ArmorPenetration",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2520.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "2020",
+      "3134"
+    ]
+  },
+  {
+    "id": "2522",
+    "name": "Actualizer",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>90</attention> Ability Power<br><attention>300</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><active>Mana Made Real</active> (0s)<br>For 8 seconds, your mana is Empowered. While Empowered, your spells cost 100% more Mana, you gain  increased Ability damage, Shielding, and Healing, and your basic ability cooldowns progress 30% faster.</mainText>",
+    "tags": [
+      "SpellDamage",
+      "Mana",
+      "AbilityHaste"
+    ],
+    "image": {
+      "full": "2522.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3802",
+      "1026"
+    ]
+  },
+  {
+    "id": "2523",
+    "name": "Hexoptics C44",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Magnification</passive><br>Deal up to 10% increased damage with Attacks, based on how far away the enemy is (max damage at 700 range).<br><passive>Arcane Aim</passive><br>When a champion that you damaged within 3 seconds dies, gain 100 additional attack range for 6 seconds. </mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike"
+    ],
+    "image": {
+      "full": "2523.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 288,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1037",
+      "6670",
+      "1036"
+    ]
+  },
+  {
+    "id": "2524",
+    "name": "Bandlepipes",
+    "gold": 2000,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>20</attention> Armor<br><attention>20</attention> Magic Resist</stats><br><passive>Fanfare</passive><br><keyword>Slowing</keyword> or <keyword>Immobilizing</keyword> an enemy champion grants Fanfare for  seconds. Fanfare grants you <speed>20 Move Speed</speed>. While you have Fanfare, nearby allies, including yourself, gain <attackSpeed> Attack Speed</attackSpeed>.</mainText>",
+    "tags": [
+      "Health",
+      "Armor",
+      "AttackSpeed",
+      "AbilityHaste",
+      "MovementSpeed",
+      "MagicResist"
+    ],
+    "image": {
+      "full": "2524.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1029",
+      "1033"
+    ]
+  },
+  {
+    "id": "2525",
+    "name": "Protoplasm Harness",
+    "gold": 2500,
+    "description": "<mainText><stats><attention>600</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Lifeline</passive> (0s)<br>Taking damage that would reduce your Health below 30% causes you to gain <health> maximum Health</health> for 5 seconds, then heal <health> Health</health> over the duration. While regenerating Health, you gain 15% increased Size, 10% Move Speed, and 25% Tenacity. </mainText>",
+    "tags": [
+      "Health",
+      "Tenacity",
+      "AbilityHaste",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "2525.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 384,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3067",
+      "1011"
+    ]
+  },
+  {
+    "id": "2526",
+    "name": "Whispering Circlet",
+    "gold": 2250,
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>8%</attention> Heal and Shield Power<br><attention>75%</attention> Base Mana Regen<br><attention>300</attention> Mana</stats><br><passive>Harmony</passive><br>Gain % Heal and Shield Power.<br><passive>Manaflow</passive> (8s, max 5 charges)<br>Landing Abilities grants <scaleMana>4 max Mana</scaleMana> (doubled vs. champions).<br>Transforms into <rarityLegendary>Diadem of Songs</rarityLegendary> at <scaleMana>360 max Mana</scaleMana>.</mainText>",
+    "tags": [
+      "Health",
+      "Mana",
+      "ManaRegen"
+    ],
+    "image": {
+      "full": "2526.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 432,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "3114",
+      "1028",
+      "3070"
     ]
   },
   {
@@ -999,10 +1250,10 @@
     ],
     "image": {
       "full": "3002.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 288,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1023,10 +1274,10 @@
     ],
     "image": {
       "full": "3003.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 288,
+      "x": 144,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1049,10 +1300,10 @@
     ],
     "image": {
       "full": "3004.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1073,10 +1324,10 @@
     ],
     "image": {
       "full": "3006.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1096,31 +1347,10 @@
     ],
     "image": {
       "full": "3009.png",
-      "sprite": "item2.png",
-      "group": "item",
-      "x": 288,
-      "y": 288,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "1001"
-    ]
-  },
-  {
-    "id": "3010",
-    "name": "Symbiotic Soles",
-    "gold": 900,
-    "description": "<mainText><stats><attention>40</attention> Move Speed</stats><br><passive>Synchrony</passive><br>Gain <speed>10 Move Speed</speed> when out of combat.<br><passive>Symbiosis</passive><br>After traveling 150000 units of distance, transform into <rarityLegendary>Synchronized Souls</rarityLegendary>.</mainText>",
-    "tags": [
-      "MovementSpeed"
-    ],
-    "image": {
-      "full": "3010.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
       "x": 336,
-      "y": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1138,10 +1368,10 @@
     ],
     "image": {
       "full": "3013.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 48,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1160,10 +1390,10 @@
     ],
     "image": {
       "full": "3020.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 336,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1183,10 +1413,10 @@
     ],
     "image": {
       "full": "3024.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 336,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1207,10 +1437,10 @@
     ],
     "image": {
       "full": "3026.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 336,
+      "x": 240,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1222,18 +1452,18 @@
   {
     "id": "3031",
     "name": "Infinity Edge",
-    "gold": 3450,
-    "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>40%</attention> Critical Strike Damage</stats><br></mainText>",
+    "gold": 3500,
+    "description": "<mainText><stats><attention>75</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance<br><attention>30%</attention> Critical Strike Damage</stats><br></mainText>",
     "tags": [
       "CriticalStrike",
       "Damage"
     ],
     "image": {
       "full": "3031.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 336,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1246,8 +1476,8 @@
   {
     "id": "3032",
     "name": "Yun Tal Wildarrows",
-    "gold": 3000,
-    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>35%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
+    "gold": 3100,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>40%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1255,10 +1485,10 @@
     ],
     "image": {
       "full": "3032.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 336,
+      "x": 336,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1271,8 +1501,8 @@
   {
     "id": "3033",
     "name": "Mortal Reminder",
-    "gold": 3300,
-    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>35%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Grievous Wounds</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>30%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Grievous Wounds</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1280,10 +1510,10 @@
     ],
     "image": {
       "full": "3033.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1304,10 +1534,10 @@
     ],
     "image": {
       "full": "3035.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 432,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1319,8 +1549,8 @@
   {
     "id": "3036",
     "name": "Lord Dominik's Regards",
-    "gold": 3100,
-    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>40%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br></mainText>",
+    "gold": 3300,
+    "description": "<mainText><stats><attention>35</attention> Attack Damage<br><attention>35%</attention> Armor Penetration<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Giant Slayer</passive><br>Deal up to 15% bonus damage against champions based on their bonus Health. Maximum damage bonus reached at 1500 bonus Health.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -1328,10 +1558,10 @@
     ],
     "image": {
       "full": "3036.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 0,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1352,10 +1582,10 @@
     ],
     "image": {
       "full": "3041.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 384,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1375,10 +1605,10 @@
     ],
     "image": {
       "full": "3044.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 384,
+      "x": 240,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1399,10 +1629,10 @@
     ],
     "image": {
       "full": "3046.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 384,
+      "x": 288,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1423,10 +1653,10 @@
     ],
     "image": {
       "full": "3047.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 384,
+      "x": 336,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1448,10 +1678,10 @@
     ],
     "image": {
       "full": "3050.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 384,
+      "x": 384,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1472,10 +1702,10 @@
     ],
     "image": {
       "full": "3051.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 384,
+      "x": 432,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1497,10 +1727,10 @@
     ],
     "image": {
       "full": "3053.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 384,
+      "x": 0,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1521,10 +1751,10 @@
     ],
     "image": {
       "full": "3057.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 432,
+      "x": 48,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1545,10 +1775,10 @@
     ],
     "image": {
       "full": "3065.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 432,
+      "x": 96,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1568,10 +1798,10 @@
     ],
     "image": {
       "full": "3066.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 432,
+      "x": 144,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1590,10 +1820,10 @@
     ],
     "image": {
       "full": "3067.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 432,
+      "x": 192,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1615,10 +1845,10 @@
     ],
     "image": {
       "full": "3068.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 432,
+      "x": 240,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1638,10 +1868,10 @@
     ],
     "image": {
       "full": "3070.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 432,
+      "x": 288,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1662,10 +1892,10 @@
     ],
     "image": {
       "full": "3071.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 432,
+      "x": 336,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1686,10 +1916,10 @@
     ],
     "image": {
       "full": "3072.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 384,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1713,10 +1943,10 @@
     ],
     "image": {
       "full": "3073.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 432,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1739,10 +1969,10 @@
     ],
     "image": {
       "full": "3074.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1765,8 +1995,8 @@
       "full": "3075.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 0,
+      "x": 48,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1788,8 +2018,8 @@
       "full": "3076.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 0,
+      "x": 96,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1811,8 +2041,8 @@
       "full": "3077.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 0,
+      "x": 144,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1838,8 +2068,8 @@
       "full": "3078.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 0,
+      "x": 192,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1861,8 +2091,8 @@
       "full": "3082.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 0,
+      "x": 240,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1884,8 +2114,8 @@
       "full": "3083.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 288,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1908,8 +2138,8 @@
       "full": "3084.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 336,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1934,8 +2164,8 @@
       "full": "3085.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 384,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1958,8 +2188,8 @@
       "full": "3086.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1983,8 +2213,8 @@
       "full": "3087.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2006,8 +2236,8 @@
       "full": "3089.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2031,8 +2261,8 @@
       "full": "3091.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 48,
+      "x": 96,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2056,13 +2286,39 @@
       "full": "3094.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 144,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
       "3086",
+      "3144"
+    ]
+  },
+  {
+    "id": "3097",
+    "name": "Stormrazor",
+    "gold": 3200,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Energized</passive><br>Moving and Attacking generates an <keyword>Energized Attack</keyword>.<br><passive>Bolt</passive><br>Your <keyword>Energized Attack</keyword> applies <magicDamage> bonus magic damage</magicDamage> and grants <speed>45% Move Speed</speed> for 1.5s.<br></mainText>",
+    "tags": [
+      "Damage",
+      "CriticalStrike",
+      "AttackSpeed",
+      "MovementSpeed"
+    ],
+    "image": {
+      "full": "3097.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 240,
+      "y": 288,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1038",
+      "1018",
       "3144"
     ]
   },
@@ -2081,8 +2337,8 @@
       "full": "3100.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 288,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2105,8 +2361,8 @@
       "full": "3102.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2116,36 +2372,12 @@
     ]
   },
   {
-    "id": "3105",
-    "name": "Aegis of the Legion",
-    "gold": 1100,
-    "description": "<mainText><stats><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br></mainText>",
-    "tags": [
-      "Armor",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "3105.png",
-      "sprite": "item3.png",
-      "group": "item",
-      "x": 288,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "1033",
-      "1029"
-    ]
-  },
-  {
     "id": "3107",
     "name": "Redemption",
     "gold": 2300,
-    "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>10%</attention> Heal and Shield Power</stats><br><active>Intervention</active><br>Restore <healing>150 - 350 Health</healing> to allied units and deal <trueDamage>10% max Health true damage</trueDamage> to enemy champions after 2.5 seconds.</mainText>",
+    "description": "<mainText><stats><attention>30</attention> Ability Power<br><attention>15</attention> Ability Haste<br><attention>100%</attention> Base Mana Regen<br><attention>10%</attention> Heal and Shield Power</stats><br><active>Intervention</active><br>Restore <healing>150 - 350 Health</healing> to allied units and deal <trueDamage>10% max Health true damage</trueDamage> to enemy champions after 2.5 seconds.</mainText>",
     "tags": [
-      "Health",
+      "SpellDamage",
       "ManaRegen",
       "AbilityHaste"
     ],
@@ -2153,13 +2385,13 @@
       "full": "3107.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 432,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
-      "3067",
+      "3108",
       "3114"
     ]
   },
@@ -2176,8 +2408,8 @@
       "full": "3108.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 48,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2203,8 +2435,8 @@
       "full": "3109.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 48,
+      "x": 48,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2229,8 +2461,8 @@
       "full": "3110.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 96,
+      "x": 96,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2253,8 +2485,8 @@
       "full": "3111.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 96,
+      "x": 144,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2262,6 +2494,28 @@
       "1001",
       "1033"
     ]
+  },
+  {
+    "id": "3112",
+    "name": "Guardian's Orb",
+    "gold": 950,
+    "description": "<mainText><stats><attention>50</attention> Ability Power<br><attention>150</attention> Health</stats><br><br><li><passive>Recovery:</passive> Restores <scaleMana>10 Mana</scaleMana> every 5 seconds. If you can't gain mana, restores <healing>15 Health</healing> instead.<br></mainText>",
+    "tags": [
+      "Health",
+      "SpellDamage",
+      "ManaRegen",
+      "Lane"
+    ],
+    "image": {
+      "full": "3112.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 192,
+      "y": 336,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
   },
   {
     "id": "3113",
@@ -2276,8 +2530,8 @@
       "full": "3113.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 240,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2297,8 +2551,8 @@
       "full": "3114.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 288,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2321,8 +2575,8 @@
       "full": "3115.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 336,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2346,8 +2600,8 @@
       "full": "3116.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 384,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2371,8 +2625,8 @@
       "full": "3118.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2395,8 +2649,8 @@
       "full": "3119.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2418,8 +2672,8 @@
       "full": "3123.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 144,
+      "x": 144,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2442,8 +2696,8 @@
       "full": "3124.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 144,
+      "x": 192,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2466,8 +2720,8 @@
       "full": "3133.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 336,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2490,8 +2744,8 @@
       "full": "3134.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 144,
+      "x": 384,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2513,8 +2767,8 @@
       "full": "3135.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 144,
+      "x": 432,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2537,8 +2791,8 @@
       "full": "3137.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 144,
+      "x": 0,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2565,8 +2819,8 @@
       "full": "3139.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 48,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2589,8 +2843,8 @@
       "full": "3140.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
-      "y": 192,
+      "x": 96,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2613,8 +2867,8 @@
       "full": "3142.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
-      "y": 192,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2639,8 +2893,8 @@
       "full": "3143.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
-      "y": 192,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2661,8 +2915,8 @@
       "full": "3144.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
-      "y": 192,
+      "x": 240,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2683,13 +2937,40 @@
       "full": "3145.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
     "from": [
       "1052",
+      "1052"
+    ]
+  },
+  {
+    "id": "3146",
+    "name": "Hextech Gunblade",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>80</attention> Ability Power<br><attention>40</attention> Attack Damage<br><attention>10%</attention> Omnivamp</stats><br><br><active>ACTIVE</active> (0s)<br><active>Lightning Bolt</active><br>Shocks the target enemy champion, dealing  magic damage and slowing them by 25% for 1.5 seconds.</mainText>",
+    "tags": [
+      "Damage",
+      "LifeSteal",
+      "SpellDamage",
+      "Active",
+      "SpellVamp"
+    ],
+    "image": {
+      "full": "3146.png",
+      "sprite": "item3.png",
+      "group": "item",
+      "x": 336,
+      "y": 432,
+      "w": 48,
+      "h": 48
+    },
+    "from": [
+      "1053",
+      "3145",
       "1052"
     ]
   },
@@ -2706,8 +2987,8 @@
       "full": "3147.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
-      "y": 192,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2732,8 +3013,8 @@
       "full": "3152.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 192,
+      "x": 432,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2757,10 +3038,10 @@
     ],
     "image": {
       "full": "3153.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2781,10 +3062,10 @@
     ],
     "image": {
       "full": "3155.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2808,10 +3089,10 @@
     ],
     "image": {
       "full": "3156.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 240,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2832,10 +3113,10 @@
     ],
     "image": {
       "full": "3157.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 240,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2855,10 +3136,10 @@
     ],
     "image": {
       "full": "3158.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2879,10 +3160,10 @@
     ],
     "image": {
       "full": "3161.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 240,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2904,10 +3185,10 @@
     ],
     "image": {
       "full": "3165.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 240,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2920,17 +3201,17 @@
   {
     "id": "3170",
     "name": "Swiftmarch",
-    "gold": 1500,
-    "description": "<mainText><stats><attention>65</attention> Move Speed</stats><br><passive>Fleetfooted</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 25%.<br><passive>Noxian Fervor</passive><br>Gain 5% of your <speed>Move Speed</speed> as Adaptive Force. </mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>65</attention> Move Speed</stats><br><passive>Fleetfooted</passive><br>Reduce the effectiveness of <keyword>Slows</keyword> by 40%.<br><passive>Noxian Fervor</passive><br>Gain 5% of your <speed>Move Speed</speed> as Adaptive Force.</mainText>",
     "tags": [
       "MovementSpeed"
     ],
     "image": {
       "full": "3170.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 240,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2941,18 +3222,18 @@
   {
     "id": "3171",
     "name": "Crimson Lucidity",
-    "gold": 1400,
-    "description": "<mainText><stats><attention>25</attention> Ability Haste<br><attention>50</attention> Move Speed</stats><br><passive>Ionian Insight</passive><br>Gain 10 Summoner Spell Haste.<br><passive>Noxian Haste</passive><br>Empowering or protecting allies with abilities, dealing damage to enemy Champions with abilities, or casting a Summoner Spell grants <speed> Move Speed</speed> for 4 seconds.<br><rules>Noxian Haste can only be triggered once per Ability cast.</rules></mainText>",
+    "gold": 900,
+    "description": "<mainText><stats><attention>20</attention> Ability Haste<br><attention>45</attention> Move Speed</stats><br><passive>Ionian Insight</passive><br>Gain 20 Summoner Spell Haste.<br><passive>Noxian Haste</passive><br>Empowering or protecting allies with abilities, dealing damage to enemy Champions with abilities, or casting a Summoner Spell grants <speed> Move Speed</speed> for 4 seconds.<br><rules>Noxian Haste can only be triggered once per Ability cast.</rules></mainText>",
     "tags": [
       "AbilityHaste",
       "MovementSpeed"
     ],
     "image": {
       "full": "3171.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 240,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2963,18 +3244,19 @@
   {
     "id": "3172",
     "name": "Gunmetal Greaves",
-    "gold": 1600,
-    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>50</attention> Move Speed</stats><br><passive>Noxian Gait</passive><br>Attacks against Champions grant <speed>Move Speed</speed> <OnHit>On-Hit</OnHit> decaying over 2 seconds.</mainText>",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>45</attention> Move Speed<br><attention>5%</attention> Life Steal</stats><br><passive>Noxian Gait</passive><br>Attacks against Champions grant <speed>Move Speed</speed> <OnHit>On-Hit</OnHit> decaying over 2 seconds.</mainText>",
     "tags": [
       "AttackSpeed",
+      "LifeSteal",
       "MovementSpeed"
     ],
     "image": {
       "full": "3172.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2985,8 +3267,8 @@
   {
     "id": "3173",
     "name": "Chainlaced Crushers",
-    "gold": 1750,
-    "description": "<mainText><stats><attention>35</attention> Magic Resist<br><attention>50</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br><passive>Noxian Persistence</passive> (0s)<br>After taking magic damage from a Champion, gain a <shield></shield> <magicDamage>magic</magicDamage> <shield>shield</shield> for 4 seconds.</mainText>",
+    "gold": 1250,
+    "description": "<mainText><stats><attention>30</attention> Magic Resist<br><attention>45</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br><passive>Noxian Persistence</passive> (0s)<br>After taking magic damage from a Champion, gain a <shield></shield> <magicDamage>magic</magicDamage> <shield>shield</shield> for 5 seconds.</mainText>",
     "tags": [
       "Tenacity",
       "MagicResist",
@@ -2994,10 +3276,10 @@
     ],
     "image": {
       "full": "3173.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3008,18 +3290,18 @@
   {
     "id": "3174",
     "name": "Armored Advance",
-    "gold": 1700,
-    "description": "<mainText><stats><attention>40</attention> Armor<br><attention>50</attention> Move Speed</stats><br><passive>Plating</passive><br>Reduces incoming damage from Attacks by 10%.<br><passive>Noxian Endurance</passive> (0s)<br>After taking physical damage from a Champion, gain a <shield></shield> <physicalDamage>physical</physicalDamage> <shield>shield</shield> for 4 seconds.</mainText>",
+    "gold": 1200,
+    "description": "<mainText><stats><attention>35</attention> Armor<br><attention>45</attention> Move Speed</stats><br><passive>Plating</passive><br>Reduces incoming damage from Attacks by 10%.<br><passive>Noxian Endurance</passive> (0s)<br>After taking physical damage from a Champion, gain a <shield></shield> <physicalDamage>physical</physicalDamage> <shield>shield</shield> for 5 seconds.</mainText>",
     "tags": [
       "Armor",
       "MovementSpeed"
     ],
     "image": {
       "full": "3174.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3030,18 +3312,18 @@
   {
     "id": "3175",
     "name": "Spellslinger's Shoes",
-    "gold": 1600,
-    "description": "<mainText><stats><attention>18</attention> Magic Penetration<br><attention>7%</attention> Magic Penetration<br><attention>50</attention> Move Speed</stats><br></mainText>",
+    "gold": 1100,
+    "description": "<mainText><stats><attention>18</attention> Magic Penetration<br><attention>8%</attention> Magic Penetration<br><attention>45</attention> Move Speed</stats><br></mainText>",
     "tags": [
       "MagicPenetration",
       "MovementSpeed"
     ],
     "image": {
       "full": "3175.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3050,31 +3332,32 @@
     ]
   },
   {
-    "id": "3176",
-    "name": "Forever Forward",
-    "gold": 1400,
-    "description": "<mainText><stats><attention>55</attention> Move Speed</stats><br><passive>Voidborn</passive><br>Gain Empowered Recall.<br><passive>Noxian Synchrony</passive><br>Gain <speed>45 Move Speed</speed> and <speed>8% total Move Speed</speed> when out of combat.</mainText>",
+    "id": "3177",
+    "name": "Guardian's Blade",
+    "gold": 950,
+    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>150</attention> Health<br><attention>15</attention> Ability Haste</stats><br></mainText>",
     "tags": [
-      "MovementSpeed"
+      "Health",
+      "Damage",
+      "Lane",
+      "AbilityHaste"
     ],
     "image": {
-      "full": "3176.png",
-      "sprite": "item3.png",
+      "full": "3177.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
-    "from": [
-      "3013"
-    ]
+    "from": []
   },
   {
     "id": "3179",
     "name": "Umbral Glaive",
-    "gold": 2500,
-    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>15</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Blackout</passive><br>When you are near enemy Stealth Wards and traps, reveal them for 8 seconds.<br><passive>Extinguish</passive><br>Attacks do bonus damage to Wards.</mainText>",
+    "gold": 2800,
+    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><passive>Nightstalker</passive><br>After being unseen by enemies briefly, your next attack against a champion deals an additional <trueDamage>true damage</trueDamage>.<br><passive>Blackout</passive><br>When you are near enemy Stealth Wards and traps, reveal them briefly. While revealing wards, your attacks deal bonus damage to them.</mainText>",
     "tags": [
       "Damage",
       "Vision",
@@ -3083,10 +3366,10 @@
     ],
     "image": {
       "full": "3179.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 240,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3107,10 +3390,10 @@
     ],
     "image": {
       "full": "3181.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 288,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3119,6 +3402,28 @@
       "3066",
       "1037"
     ]
+  },
+  {
+    "id": "3184",
+    "name": "Guardian's Hammer",
+    "gold": 950,
+    "description": "<mainText><stats><attention>25</attention> Attack Damage<br><attention>150</attention> Health<br><attention>5%</attention> Life Steal</stats><br></mainText>",
+    "tags": [
+      "Health",
+      "Damage",
+      "LifeSteal",
+      "Lane"
+    ],
+    "image": {
+      "full": "3184.png",
+      "sprite": "item4.png",
+      "group": "item",
+      "x": 336,
+      "y": 48,
+      "w": 48,
+      "h": 48
+    },
+    "from": []
   },
   {
     "id": "3190",
@@ -3135,10 +3440,10 @@
     ],
     "image": {
       "full": "3190.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 288,
+      "x": 384,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3160,10 +3465,10 @@
     ],
     "image": {
       "full": "3211.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 288,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3187,10 +3492,10 @@
     ],
     "image": {
       "full": "3222.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3213,10 +3518,10 @@
     ],
     "image": {
       "full": "3302.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 432,
+      "x": 384,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -3229,7 +3534,7 @@
     "id": "3340",
     "name": "Stealth Ward",
     "gold": 0,
-    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>210 - 120</scaleLevel>s, max 2 charges)<br>Places an <keyword>Invisible</keyword> Stealth Ward that grants vision for <scaleLevel>90-120</scaleLevel> seconds.</mainText>",
+    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>170 - 90</scaleLevel>s, max 2 charges)<br>Places an <keyword>Invisible</keyword> Stealth Ward that grants vision for <scaleLevel>90-120</scaleLevel> seconds.</mainText>",
     "tags": [
       "Active",
       "Jungle",
@@ -3239,10 +3544,10 @@
     ],
     "image": {
       "full": "3340.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 432,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3260,10 +3565,10 @@
     ],
     "image": {
       "full": "3363.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 144,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3273,7 +3578,7 @@
     "id": "3364",
     "name": "Oracle Lens",
     "gold": 0,
-    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>160 - 100</scaleLevel>s, max 2 charges)<br>Reveals enemy Stealth Wards and traps around you for 6 seconds.</mainText>",
+    "description": "<mainText><stats></stats><br><active>Active</active> (<scaleLevel>160 - 100</scaleLevel>s, max 2 charges)<br>Reveals enemy Stealth Wards and traps around you for 8 seconds.</mainText>",
     "tags": [
       "Active",
       "Trinket",
@@ -3283,8 +3588,8 @@
       "full": "3364.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 0,
+      "x": 192,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3305,8 +3610,8 @@
       "full": "3504.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3319,7 +3624,7 @@
     "id": "3508",
     "name": "Essence Reaver",
     "gold": 2900,
-    "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>15</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Essence Drain</passive><br>Attacks grant <scaleMana>Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> and grants <scaleMana>Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -3331,13 +3636,13 @@
       "full": "3508.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
     "from": [
-      "1037",
+      "3057",
       "3133",
       "1018"
     ]
@@ -3357,8 +3662,8 @@
       "full": "3742.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 192,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3383,8 +3688,8 @@
       "full": "3748.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 48,
-      "y": 48,
+      "x": 240,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3407,8 +3712,8 @@
       "full": "3801.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 288,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3432,8 +3737,8 @@
       "full": "3802.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3458,8 +3763,8 @@
       "full": "3803.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 384,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3483,8 +3788,8 @@
       "full": "3814.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 432,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3509,8 +3814,8 @@
       "full": "3865.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 96,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -3528,8 +3833,8 @@
       "full": "3916.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 144,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -3551,8 +3856,8 @@
       "full": "4005.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
-      "y": 192,
+      "x": 288,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -3573,10 +3878,10 @@
     ],
     "image": {
       "full": "4401.png",
-      "sprite": "item4.png",
+      "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 240,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -3589,8 +3894,8 @@
   {
     "id": "4628",
     "name": "Horizon Focus",
-    "gold": 2750,
-    "description": "<mainText><stats><attention>125</attention> Ability Power<br><attention>25</attention> Ability Haste</stats><br><passive>Hypershot</passive><br>Dealing Ability damage to champions at 600 range or greater <keywordStealth>Reveals</keywordStealth> them for 6 seconds. <br><passive>Focus</passive><br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1400 range of them for 3 seconds.</mainText>",
+    "gold": 2700,
+    "description": "<mainText><stats><attention>75</attention> Ability Power<br><attention>25</attention> Ability Haste</stats><br><passive>Hypershot</passive><br>Dealing Ability damage to champions at 600 range or greater <keywordStealth>Reveals</keywordStealth> them for 6 seconds. <br><passive>Focus</passive><br>When <passive>Hypershot</passive> is triggered, <keywordStealth>Reveal</keywordStealth> all other enemy champions within 1400 range of them for 3 seconds.</mainText>",
     "tags": [
       "SpellDamage",
       "AbilityHaste"
@@ -3599,15 +3904,15 @@
       "full": "4628.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 0,
+      "x": 336,
+      "y": 240,
       "w": 48,
       "h": 48
     },
     "from": [
       "3108",
       "3108",
-      "1026"
+      "1052"
     ]
   },
   {
@@ -3625,8 +3930,8 @@
       "full": "4629.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 0,
+      "x": 384,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3649,8 +3954,8 @@
       "full": "4630.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 0,
+      "x": 432,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3671,8 +3976,8 @@
       "full": "4632.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 0,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3697,8 +4002,8 @@
       "full": "4633.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3706,30 +4011,6 @@
       "3147",
       "3108"
     ]
-  },
-  {
-    "id": "4638",
-    "name": "Watchful Wardstone",
-    "gold": 1100,
-    "description": "<mainText><stats><attention>150</attention> Health<br><attention>10</attention> Ability Haste<br><attention>10</attention> Armor<br><attention>15</attention> Magic Resist</stats><br><passive>Arcane Cache</passive><br>This item can store up to 3 purchased Control Wards.</mainText>",
-    "tags": [
-      "Health",
-      "Armor",
-      "Vision",
-      "Active",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "4638.png",
-      "sprite": "item5.png",
-      "group": "item",
-      "x": 48,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
   },
   {
     "id": "4642",
@@ -3745,8 +4026,8 @@
       "full": "4642.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 336,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3754,32 +4035,6 @@
       "1004",
       "1052",
       "2022"
-    ]
-  },
-  {
-    "id": "4643",
-    "name": "Vigilant Wardstone",
-    "gold": 2300,
-    "description": "<mainText><stats><attention>250</attention> Health<br><attention>20</attention> Ability Haste<br><attention>25</attention> Armor<br><attention>30</attention> Magic Resist</stats><br><passive>Arcane Cache</passive><br>This item can store up to 3 purchased Control Wards.<br><passive>Behold</passive><br>Increase your Stealth Ward and Control Ward placement caps by 1.</mainText>",
-    "tags": [
-      "Health",
-      "Armor",
-      "Vision",
-      "Active",
-      "AbilityHaste",
-      "MagicResist"
-    ],
-    "image": {
-      "full": "4643.png",
-      "sprite": "item5.png",
-      "group": "item",
-      "x": 192,
-      "y": 48,
-      "w": 48,
-      "h": 48
-    },
-    "from": [
-      "4638"
     ]
   },
   {
@@ -3795,8 +4050,8 @@
       "full": "4645.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 48,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3820,8 +4075,8 @@
       "full": "4646.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 48,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3844,8 +4099,8 @@
       "full": "6333.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 96,
+      "x": 240,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3869,8 +4124,8 @@
       "full": "6609.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 96,
-      "y": 96,
+      "x": 288,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3884,7 +4139,7 @@
     "id": "6610",
     "name": "Sundered Sky",
     "gold": 3100,
-    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health<br><attention>10</attention> Ability Haste</stats><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>400</attention> Health<br><attention>10</attention> Ability Haste</stats><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -3894,8 +4149,8 @@
       "full": "6610.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 336,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3919,8 +4174,8 @@
       "full": "6616.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 384,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3944,8 +4199,8 @@
       "full": "6617.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 432,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3958,7 +4213,7 @@
     "id": "6620",
     "name": "Echoes of Helia",
     "gold": 2200,
-    "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><passive>Soul Siphon</passive><br>Damaging a champion grants a <passive>Soul Shard</passive>, up to 2. <br>Healing or Shielding an ally consumes all <passive>Soul Shards</passive> to restore <healing>Health</healing> and deal <magicDamage>magic damage</magicDamage> to the nearest enemy champion per Shard.</mainText>",
+    "description": "<mainText><stats><attention>35</attention> Ability Power<br><attention>200</attention> Health<br><attention>20</attention> Ability Haste<br><attention>125%</attention> Base Mana Regen</stats><br><passive>Soul Siphon</passive><br>Gain 35% of pre-mitigation damage dealt to champions as Soul Charges. Healing or Shielding an ally consumes all <passive>Soul Charges</passive> to restore <healing>Health</healing>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",
@@ -3969,8 +4224,8 @@
       "full": "6620.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -3992,8 +4247,8 @@
       "full": "6621.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 96,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4018,8 +4273,8 @@
       "full": "6631.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 432,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4042,8 +4297,8 @@
       "full": "6653.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 192,
+      "x": 336,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4054,9 +4309,9 @@
   },
   {
     "id": "6655",
-    "name": "Luden's Companion",
+    "name": "Luden's Echo",
     "gold": 2750,
-    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>600</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><passive>Fire</passive><br>Damaging Abilities fire 6 Shots that deal <magicDamage>bonus magic damage</magicDamage> to the target and nearby enemies. Remaining Shots fire on the primary target, dealing 20% damage.<br></mainText>",
+    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>600</attention> Mana<br><attention>10</attention> Ability Haste</stats><br><passive>Echo</passive><br>Damaging Abilities fire 6 Echoes that deal <magicDamage>bonus magic damage</magicDamage> to the target and nearby enemies. Remaining Echoes fire on the primary target, dealing 20% damage.<br></mainText>",
     "tags": [
       "SpellDamage",
       "Mana",
@@ -4066,8 +4321,8 @@
       "full": "6655.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 384,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4090,10 +4345,10 @@
     ],
     "image": {
       "full": "6657.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 192,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4113,10 +4368,10 @@
     ],
     "image": {
       "full": "6660.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 192,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4139,10 +4394,10 @@
     ],
     "image": {
       "full": "6662.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4166,10 +4421,10 @@
     ],
     "image": {
       "full": "6664.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4190,10 +4445,10 @@
     ],
     "image": {
       "full": "6665.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 240,
+      "x": 192,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4214,10 +4469,10 @@
     ],
     "image": {
       "full": "6670.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 240,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4239,10 +4494,10 @@
     ],
     "image": {
       "full": "6672.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4263,10 +4518,10 @@
     ],
     "image": {
       "full": "6673.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4287,10 +4542,10 @@
     ],
     "image": {
       "full": "6675.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 144,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4312,10 +4567,10 @@
     ],
     "image": {
       "full": "6676.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 288,
+      "x": 192,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4336,10 +4591,10 @@
     ],
     "image": {
       "full": "6690.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 288,
+      "x": 336,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4358,10 +4613,10 @@
     ],
     "image": {
       "full": "6692.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 288,
+      "x": 432,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4383,10 +4638,10 @@
     ],
     "image": {
       "full": "6694.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 48,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4406,10 +4661,10 @@
     ],
     "image": {
       "full": "6695.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 288,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4430,10 +4685,10 @@
     ],
     "image": {
       "full": "6696.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 288,
+      "x": 144,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4455,10 +4710,10 @@
     ],
     "image": {
       "full": "6697.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 336,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4480,10 +4735,10 @@
     ],
     "image": {
       "full": "6698.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 48,
-      "y": 336,
+      "x": 240,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4505,10 +4760,10 @@
     ],
     "image": {
       "full": "6699.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 336,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4531,10 +4786,10 @@
     ],
     "image": {
       "full": "6701.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 336,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4557,10 +4812,10 @@
     ],
     "image": {
       "full": "8010.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 96,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -4581,10 +4836,10 @@
     ],
     "image": {
       "full": "8020.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 144,
+      "y": 144,
       "w": 48,
       "h": 48
     },

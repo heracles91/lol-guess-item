@@ -43,6 +43,7 @@ jobs:
       run: |
         git config --global user.name 'LoL Quiz Bot'
         git config --global user.email 'bot@noreply.github.com'
-        git add src/data/items.json src/utils/constants.js
+        # C'est ici que j'ai fait la modification :
+        git add src/data/items_fr.json src/data/items_en.json src/utils/constants.js
         git commit -m "🤖 Mise à jour automatique des items (Patch)"
         git push

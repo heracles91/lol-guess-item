@@ -3799,29 +3799,6 @@
     ]
   },
   {
-    "id": "3865",
-    "name": "World Atlas",
-    "gold": 400,
-    "description": "",
-    "tags": [
-      "Health",
-      "ManaRegen",
-      "Vision",
-      "GoldPer",
-      "Lane"
-    ],
-    "image": {
-      "full": "3865.png",
-      "sprite": "item4.png",
-      "group": "item",
-      "x": 96,
-      "y": 384,
-      "w": 48,
-      "h": 48
-    },
-    "from": []
-  },
-  {
     "id": "3916",
     "name": "Oblivion Orb",
     "gold": 800,

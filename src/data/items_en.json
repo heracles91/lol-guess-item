@@ -572,7 +572,7 @@
       "full": "2003.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 432,
       "w": 48,
       "h": 48
@@ -592,7 +592,7 @@
       "full": "2019.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 432,
       "w": 48,
       "h": 48
@@ -617,7 +617,7 @@
       "full": "2020.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 432,
       "w": 48,
       "h": 48
@@ -640,7 +640,7 @@
       "full": "2021.png",
       "sprite": "item0.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 432,
       "w": 48,
       "h": 48
@@ -660,10 +660,10 @@
     ],
     "image": {
       "full": "2022.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -683,10 +683,10 @@
     ],
     "image": {
       "full": "2031.png",
-      "sprite": "item0.png",
+      "sprite": "item1.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -706,7 +706,7 @@
       "full": "2051.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -728,7 +728,7 @@
       "full": "2055.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -751,7 +751,7 @@
       "full": "2065.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -776,8 +776,8 @@
       "full": "2138.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -797,8 +797,8 @@
       "full": "2139.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 384,
-      "y": 0,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -819,8 +819,8 @@
       "full": "2140.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -839,7 +839,7 @@
       "full": "2141.png",
       "sprite": "item1.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -860,7 +860,7 @@
       "full": "2420.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 432,
       "w": 48,
       "h": 48
@@ -881,7 +881,7 @@
       "full": "2421.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 432,
       "w": 48,
       "h": 48
@@ -905,7 +905,7 @@
       "full": "2501.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 432,
       "w": 48,
       "h": 48
@@ -927,10 +927,10 @@
     ],
     "image": {
       "full": "2502.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -952,10 +952,10 @@
     ],
     "image": {
       "full": "2503.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -976,10 +976,10 @@
     ],
     "image": {
       "full": "2504.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -1000,7 +1000,7 @@
       "full": "2508.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1025,7 +1025,7 @@
       "full": "2510.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1041,7 +1041,7 @@
     "id": "2512",
     "name": "Fiendhunter Bolts",
     "gold": 2650,
-    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Night Vigil</passive><br>Gain 30 Ultimate Ability Haste.<br><passive>Opening Barrage</passive><br>After casting your Ultimate, your next 3 basic attacks gain <attackSpeed>50% Attack Speed</attackSpeed> and Critically Strike for 75% of your normal Critical Strike damage for 8 seconds. If an attack would already Critically Strike, instead it deals <trueDamage>10% bonus true damage</trueDamage>.</mainText>",
+    "description": "<mainText><stats><attention>45%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Night Vigil</passive><br>Gain 30 Ultimate Ability Haste.<br><passive>Opening Barrage</passive><br>After casting your Ultimate, your next 3 basic attacks gain <attackSpeed>50% Attack Speed</attackSpeed> and Critically Strike for 80% of your normal Critical Strike damage for 8 seconds. If an attack would already Critically Strike, instead it deals <trueDamage>15% bonus true damage</trueDamage>.</mainText>",
     "tags": [
       "CriticalStrike",
       "AttackSpeed",
@@ -1052,7 +1052,7 @@
       "full": "2512.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1078,7 +1078,7 @@
       "full": "2517.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1102,7 +1102,7 @@
       "full": "2520.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1126,7 +1126,7 @@
       "full": "2522.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1140,7 +1140,7 @@
     "id": "2523",
     "name": "Hexoptics C44",
     "gold": 2800,
-    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Magnification</passive><br>Deal up to 10% increased damage with Attacks, based on how far away the enemy is (max damage at 700 range).<br><passive>Arcane Aim</passive><br>When a champion that you damaged within 3 seconds dies, gain 100 additional attack range for 6 seconds. </mainText>",
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Magnification</passive><br>Deal up to 10% increased damage with Attacks, based on how far away the enemy is (max damage at 600 range).<br><passive>Arcane Aim</passive><br>When a champion that you damaged within 3 seconds dies, gain 100 additional attack range for 6 seconds. </mainText>",
     "tags": [
       "Damage",
       "CriticalStrike"
@@ -1149,7 +1149,7 @@
       "full": "2523.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1163,7 +1163,7 @@
   {
     "id": "2524",
     "name": "Bandlepipes",
-    "gold": 2000,
+    "gold": 2300,
     "description": "<mainText><stats><attention>200</attention> Health<br><attention>15</attention> Ability Haste<br><attention>20</attention> Armor<br><attention>20</attention> Magic Resist</stats><br><passive>Fanfare</passive><br><keyword>Slowing</keyword> or <keyword>Immobilizing</keyword> an enemy champion grants Fanfare for  seconds. Fanfare grants you <speed>20 Move Speed</speed>. While you have Fanfare, nearby allies, including yourself, gain <attackSpeed> Attack Speed</attackSpeed>.</mainText>",
     "tags": [
       "Health",
@@ -1177,8 +1177,8 @@
       "full": "2524.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1203,8 +1203,8 @@
       "full": "2525.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 0,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1227,8 +1227,8 @@
       "full": "2526.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1252,7 +1252,7 @@
       "full": "3002.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1276,7 +1276,7 @@
       "full": "3003.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1302,7 +1302,7 @@
       "full": "3004.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1326,7 +1326,7 @@
       "full": "3006.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1349,8 +1349,8 @@
       "full": "3009.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1370,7 +1370,7 @@
       "full": "3013.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1392,7 +1392,7 @@
       "full": "3020.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1415,7 +1415,7 @@
       "full": "3024.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1439,7 +1439,7 @@
       "full": "3026.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1462,7 +1462,7 @@
       "full": "3031.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1487,8 +1487,8 @@
       "full": "3032.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 96,
+      "x": 0,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1512,8 +1512,8 @@
       "full": "3033.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 48,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1536,8 +1536,8 @@
       "full": "3035.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 96,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1560,7 +1560,7 @@
       "full": "3036.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1584,7 +1584,7 @@
       "full": "3041.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1607,7 +1607,7 @@
       "full": "3044.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1631,7 +1631,7 @@
       "full": "3046.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1655,8 +1655,8 @@
       "full": "3047.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 144,
+      "x": 0,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1680,8 +1680,8 @@
       "full": "3050.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 144,
+      "x": 48,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1704,8 +1704,8 @@
       "full": "3051.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 96,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1729,7 +1729,7 @@
       "full": "3053.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1753,7 +1753,7 @@
       "full": "3057.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1777,7 +1777,7 @@
       "full": "3065.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1800,7 +1800,7 @@
       "full": "3066.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1822,7 +1822,7 @@
       "full": "3067.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1847,7 +1847,7 @@
       "full": "3068.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1870,7 +1870,7 @@
       "full": "3070.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1894,8 +1894,8 @@
       "full": "3071.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 192,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1918,8 +1918,8 @@
       "full": "3072.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 48,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1945,8 +1945,8 @@
       "full": "3073.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 96,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1971,7 +1971,7 @@
       "full": "3074.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 240,
       "w": 48,
       "h": 48
@@ -1995,7 +1995,7 @@
       "full": "3075.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2018,7 +2018,7 @@
       "full": "3076.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2041,7 +2041,7 @@
       "full": "3077.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2068,7 +2068,7 @@
       "full": "3078.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2091,7 +2091,7 @@
       "full": "3082.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2114,7 +2114,7 @@
       "full": "3083.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2138,8 +2138,8 @@
       "full": "3084.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2164,8 +2164,8 @@
       "full": "3085.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2188,8 +2188,8 @@
       "full": "3086.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 96,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2213,7 +2213,7 @@
       "full": "3087.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2236,7 +2236,7 @@
       "full": "3089.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2261,7 +2261,7 @@
       "full": "3091.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2286,7 +2286,7 @@
       "full": "3094.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2311,7 +2311,7 @@
       "full": "3097.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2337,7 +2337,7 @@
       "full": "3100.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2361,8 +2361,8 @@
       "full": "3102.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2385,8 +2385,8 @@
       "full": "3107.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 288,
+      "x": 96,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -2408,7 +2408,7 @@
       "full": "3108.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2435,7 +2435,7 @@
       "full": "3109.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2461,7 +2461,7 @@
       "full": "3110.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2485,7 +2485,7 @@
       "full": "3111.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2510,7 +2510,7 @@
       "full": "3112.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2530,7 +2530,7 @@
       "full": "3113.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2551,7 +2551,7 @@
       "full": "3114.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 336,
       "w": 48,
       "h": 48
@@ -2575,8 +2575,8 @@
       "full": "3115.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2600,8 +2600,8 @@
       "full": "3116.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -2625,7 +2625,7 @@
       "full": "3118.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 384,
       "w": 48,
       "h": 48
@@ -2649,7 +2649,7 @@
       "full": "3119.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 384,
       "w": 48,
       "h": 48
@@ -2672,7 +2672,7 @@
       "full": "3123.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 384,
       "w": 48,
       "h": 48
@@ -2696,7 +2696,7 @@
       "full": "3124.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 384,
       "w": 48,
       "h": 48
@@ -2720,8 +2720,8 @@
       "full": "3133.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
-      "y": 384,
+      "x": 0,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2744,8 +2744,8 @@
       "full": "3134.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
-      "y": 384,
+      "x": 48,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2767,8 +2767,8 @@
       "full": "3135.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 384,
+      "x": 96,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -2791,7 +2791,7 @@
       "full": "3137.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2819,7 +2819,7 @@
       "full": "3139.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2843,7 +2843,7 @@
       "full": "3140.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2867,7 +2867,7 @@
       "full": "3142.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2893,7 +2893,7 @@
       "full": "3143.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2915,7 +2915,7 @@
       "full": "3144.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2937,7 +2937,7 @@
       "full": "3145.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 432,
       "w": 48,
       "h": 48
@@ -2961,10 +2961,10 @@
     ],
     "image": {
       "full": "3146.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -2985,10 +2985,10 @@
     ],
     "image": {
       "full": "3147.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -3011,10 +3011,10 @@
     ],
     "image": {
       "full": "3152.png",
-      "sprite": "item3.png",
+      "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 96,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -3040,7 +3040,7 @@
       "full": "3153.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3064,7 +3064,7 @@
       "full": "3155.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3091,7 +3091,7 @@
       "full": "3156.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3115,7 +3115,7 @@
       "full": "3157.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3138,7 +3138,7 @@
       "full": "3158.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3162,7 +3162,7 @@
       "full": "3161.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3187,7 +3187,7 @@
       "full": "3165.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3210,8 +3210,8 @@
       "full": "3170.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3232,8 +3232,8 @@
       "full": "3171.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 0,
+      "x": 48,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3255,8 +3255,8 @@
       "full": "3172.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 96,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -3278,7 +3278,7 @@
       "full": "3173.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3300,7 +3300,7 @@
       "full": "3174.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3322,7 +3322,7 @@
       "full": "3175.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3346,7 +3346,7 @@
       "full": "3177.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3368,7 +3368,7 @@
       "full": "3179.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3392,7 +3392,7 @@
       "full": "3181.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 48,
       "w": 48,
       "h": 48
@@ -3418,8 +3418,8 @@
       "full": "3184.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3442,8 +3442,8 @@
       "full": "3190.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 48,
+      "x": 48,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -3467,7 +3467,7 @@
       "full": "3211.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 96,
       "w": 48,
       "h": 48
@@ -3494,7 +3494,7 @@
       "full": "3222.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 96,
       "w": 48,
       "h": 48
@@ -3520,8 +3520,8 @@
       "full": "3302.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 192,
+      "x": 48,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -3546,7 +3546,7 @@
       "full": "3340.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 240,
       "w": 48,
       "h": 48
@@ -3567,7 +3567,7 @@
       "full": "3363.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 240,
       "w": 48,
       "h": 48
@@ -3588,7 +3588,7 @@
       "full": "3364.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 240,
       "w": 48,
       "h": 48
@@ -3610,8 +3610,8 @@
       "full": "3504.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 96,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3623,8 +3623,8 @@
   {
     "id": "3508",
     "name": "Essence Reaver",
-    "gold": 2900,
-    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> and grants <scaleMana>Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
+    "gold": 3050,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>20</attention> Ability Haste<br><attention>25%</attention> Critical Strike Chance</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <physicalDamage>bonus physical damage</physicalDamage> and grants <scaleMana>Mana</scaleMana> <OnHit>On-Hit</OnHit>.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -3636,7 +3636,7 @@
       "full": "3508.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 288,
       "w": 48,
       "h": 48
@@ -3662,7 +3662,7 @@
       "full": "3742.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 288,
       "w": 48,
       "h": 48
@@ -3688,7 +3688,7 @@
       "full": "3748.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 288,
       "w": 48,
       "h": 48
@@ -3712,7 +3712,7 @@
       "full": "3801.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 288,
       "w": 48,
       "h": 48
@@ -3737,8 +3737,8 @@
       "full": "3802.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3763,8 +3763,8 @@
       "full": "3803.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 384,
-      "y": 288,
+      "x": 48,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3788,8 +3788,8 @@
       "full": "3814.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 432,
-      "y": 288,
+      "x": 96,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -3810,7 +3810,7 @@
       "full": "3916.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 432,
       "w": 48,
       "h": 48
@@ -3833,7 +3833,7 @@
       "full": "4005.png",
       "sprite": "item4.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 432,
       "w": 48,
       "h": 48
@@ -3857,7 +3857,7 @@
       "full": "4401.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 0,
       "w": 48,
       "h": 48
@@ -3881,8 +3881,8 @@
       "full": "4628.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 240,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3907,8 +3907,8 @@
       "full": "4629.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 384,
-      "y": 240,
+      "x": 48,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3931,8 +3931,8 @@
       "full": "4630.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 96,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -3953,7 +3953,7 @@
       "full": "4632.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 288,
       "w": 48,
       "h": 48
@@ -3979,7 +3979,7 @@
       "full": "4633.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 288,
       "w": 48,
       "h": 48
@@ -4003,8 +4003,8 @@
       "full": "4642.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 288,
+      "x": 0,
+      "y": 336,
       "w": 48,
       "h": 48
     },
@@ -4027,7 +4027,7 @@
       "full": "4645.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 336,
       "w": 48,
       "h": 48
@@ -4052,7 +4052,7 @@
       "full": "4646.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 336,
       "w": 48,
       "h": 48
@@ -4076,7 +4076,7 @@
       "full": "6333.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 336,
       "w": 48,
       "h": 48
@@ -4101,7 +4101,7 @@
       "full": "6609.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 336,
       "w": 48,
       "h": 48
@@ -4126,8 +4126,8 @@
       "full": "6610.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
-      "y": 336,
+      "x": 0,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4151,8 +4151,8 @@
       "full": "6616.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 384,
-      "y": 336,
+      "x": 48,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4176,8 +4176,8 @@
       "full": "6617.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 432,
-      "y": 336,
+      "x": 96,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4201,7 +4201,7 @@
       "full": "6620.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4224,7 +4224,7 @@
       "full": "6621.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4250,8 +4250,8 @@
       "full": "6631.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 432,
-      "y": 384,
+      "x": 96,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4272,10 +4272,10 @@
     ],
     "image": {
       "full": "6653.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 432,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4296,10 +4296,10 @@
     ],
     "image": {
       "full": "6655.png",
-      "sprite": "item5.png",
+      "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 432,
+      "x": 48,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4324,7 +4324,7 @@
       "full": "6657.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 0,
+      "x": 144,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4347,7 +4347,7 @@
       "full": "6660.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4373,7 +4373,7 @@
       "full": "6662.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4400,7 +4400,7 @@
       "full": "6664.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4424,7 +4424,7 @@
       "full": "6665.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4448,7 +4448,7 @@
       "full": "6670.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4473,7 +4473,7 @@
       "full": "6672.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4497,7 +4497,7 @@
       "full": "6673.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4521,7 +4521,7 @@
       "full": "6675.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4546,7 +4546,7 @@
       "full": "6676.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4570,8 +4570,8 @@
       "full": "6690.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 336,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4592,8 +4592,8 @@
       "full": "6692.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 432,
-      "y": 48,
+      "x": 96,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4617,7 +4617,7 @@
       "full": "6694.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 48,
+      "x": 192,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4640,7 +4640,7 @@
       "full": "6695.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4664,7 +4664,7 @@
       "full": "6696.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4689,7 +4689,7 @@
       "full": "6697.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
+      "x": 336,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4714,7 +4714,7 @@
       "full": "6698.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
+      "x": 384,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4739,7 +4739,7 @@
       "full": "6699.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
+      "x": 432,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4765,8 +4765,8 @@
       "full": "6701.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 384,
-      "y": 96,
+      "x": 48,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -4791,7 +4791,7 @@
       "full": "8010.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
+      "x": 240,
       "y": 144,
       "w": 48,
       "h": 48
@@ -4815,7 +4815,7 @@
       "full": "8020.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
+      "x": 288,
       "y": 144,
       "w": 48,
       "h": 48

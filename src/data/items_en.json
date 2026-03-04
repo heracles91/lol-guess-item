@@ -3430,7 +3430,7 @@
     "id": "3190",
     "name": "Locket of the Iron Solari",
     "gold": 2200,
-    "description": "<mainText><stats><attention>200</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><active>Devotion</active><br>Grant nearby allies a <shield>200 - 360 Shield</shield> that decays over 2.5 seconds.</mainText>",
+    "description": "<mainText><stats><attention>200</attention> Health<br><attention>25</attention> Armor<br><attention>25</attention> Magic Resist<br><attention>10</attention> Ability Haste</stats><br><active>Devotion</active><br>Grant nearby allies a <shield>290 - 360 Shield</shield> that decays over 2.5 seconds.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -4678,7 +4678,7 @@
   {
     "id": "6697",
     "name": "Hubris",
-    "gold": 3000,
+    "gold": 2800,
     "description": "<mainText><stats><attention>60</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Eminence</passive><br>When a champion that you damaged within 3 seconds dies, gain <physicalDamage>15 Attack Damage plus 2 per champion killed</physicalDamage> for 90 seconds.</mainText>",
     "tags": [
       "Damage",

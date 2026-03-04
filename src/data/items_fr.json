@@ -3430,7 +3430,7 @@
     "id": "3190",
     "name": "Médaillon de l'Iron Solari",
     "gold": 2200,
-    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 200 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
+    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 290 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -4678,7 +4678,7 @@
   {
     "id": "6697",
     "name": "Orgueil",
-    "gold": 3000,
+    "gold": 2800,
     "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+15 dégâts d'attaque (+2 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
     "tags": [
       "Damage",

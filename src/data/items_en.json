@@ -1855,7 +1855,8 @@
     },
     "from": [
       "6660",
-      "1031"
+      "1031",
+      "1028"
     ]
   },
   {
@@ -4091,7 +4092,7 @@
   {
     "id": "6609",
     "name": "Chempunk Chainsword",
-    "gold": 3100,
+    "gold": 3000,
     "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health<br><attention>15</attention> Ability Haste</stats><br><passive>Hackshorn</passive><br>Dealing physical damage applies <keyword>40% Wounds</keyword> to enemy champions for 3 seconds.</mainText>",
     "tags": [
       "Health",

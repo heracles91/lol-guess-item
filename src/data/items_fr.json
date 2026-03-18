@@ -607,7 +607,7 @@
     "id": "2020",
     "name": "Brutaliseur",
     "gold": 1337,
-    "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence<br><attention>+5</attention> létalité</stats><br></mainText>",
+    "description": "<mainText><stats><attention>+25</attention> dégâts d'attaque<br><attention>+10</attention> accélération de compétence<br><attention>5</attention> létalité</stats><br></mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration",
@@ -1093,7 +1093,7 @@
     "id": "2520",
     "name": "Briseur de bastion",
     "gold": 3200,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+22</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 90 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>22</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 90 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration",
@@ -1855,7 +1855,8 @@
     },
     "from": [
       "6660",
-      "1031"
+      "1031",
+      "1028"
     ]
   },
   {
@@ -2736,7 +2737,7 @@
     "id": "3134",
     "name": "Dague dentelée",
     "gold": 1000,
-    "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>+10</attention> létalité</stats><br></mainText>",
+    "description": "<mainText><stats><attention>+20</attention> dégâts d'attaque<br><attention>10</attention> létalité</stats><br></mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration"
@@ -2857,7 +2858,7 @@
     "id": "3142",
     "name": "Lame spectre de Youmuu",
     "gold": 2800,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Hantise</passive> <br>Vous gagnez <speed>+0 vitesse de déplacement</speed> en dehors des combats.<br><br><active>Marche spectrale</active><br>Vous gagnez de la <speed>vitesse de déplacement</speed> et devenez <keyword>fantomatique</keyword> pendant 0 sec.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Hantise</passive> <br>Vous gagnez <speed>+0 vitesse de déplacement</speed> en dehors des combats.<br><br><active>Marche spectrale</active><br>Vous gagnez de la <speed>vitesse de déplacement</speed> et devenez <keyword>fantomatique</keyword> pendant 0 sec.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -3358,7 +3359,7 @@
     "id": "3179",
     "name": "Glaive d'ombre",
     "gold": 2800,
-    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Traqueur nocturne</passive><br>Après être resté invisible pour les ennemis quelques secondes, votre prochaine attaque contre un champion inflige des <trueDamage>dégâts bruts</trueDamage> bonus.<br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflé ennemi, vous les révélez pendant quelques secondes. Lorsque vous révélez des balises, vos attaques leur infligent des dégâts bonus.</mainText>",
+    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Traqueur nocturne</passive><br>Après être resté invisible pour les ennemis quelques secondes, votre prochaine attaque contre un champion inflige des <trueDamage>dégâts bruts</trueDamage> bonus.<br><passive>Black-out</passive><br>Quand vous êtes proche d'une balise ou d'un piège camouflé ennemi, vous les révélez pendant quelques secondes. Lorsque vous révélez des balises, vos attaques leur infligent des dégâts bonus.</mainText>",
     "tags": [
       "Damage",
       "Vision",
@@ -3779,7 +3780,7 @@
     "id": "3814",
     "name": "Manteau de la nuit",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+15</attention> létalité<br><attention>+250</attention> PV</stats><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>15</attention> létalité<br><attention>+250</attention> PV</stats><br><passive>Invalidation</passive><br>Vous gagnez un bouclier antisorts qui bloque la prochaine compétence ennemie.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -4091,7 +4092,7 @@
   {
     "id": "6609",
     "name": "Épée dentelée chimico-punk",
-    "gold": 3100,
+    "gold": 3000,
     "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Cisailles</passive><br>Infliger des dégâts physiques aux champions ennemis leur inflige <keyword>40% d'Hémorragie</keyword> pendant 3 sec.</mainText>",
     "tags": [
       "Health",
@@ -4537,7 +4538,7 @@
     "id": "6676",
     "name": "Percepteur",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+10</attention> létalité<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>La vie</passive><br>Vos dégâts exécutent les champions qui ont moins de 5% de leurs PV.<br><passive>La bourse</passive><br>Éliminer un champion vous octroie <gold>25 PO bonus</gold>.</mainText>",
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>10</attention> létalité<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>La vie</passive><br>Vos dégâts exécutent les champions qui ont moins de 5% de leurs PV.<br><passive>La bourse</passive><br>Éliminer un champion vous octroie <gold>25 PO bonus</gold>.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -4632,7 +4633,7 @@
     "id": "6695",
     "name": "Crochet de serpent",
     "gold": 2500,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+15</attention> létalité</stats><br><passive>Briseur de boucliers</passive><br>Infliger des dégâts à un champion ennemi réduit les boucliers qu'il reçoit de 0% pendant 3 sec. <br>Si l'ennemi n'était pas déjà affecté par <passive>Briseur de boucliers</passive>, vous réduisez ses boucliers actuels de 0%.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>15</attention> létalité</stats><br><passive>Briseur de boucliers</passive><br>Infliger des dégâts à un champion ennemi réduit les boucliers qu'il reçoit de 0% pendant 3 sec. <br>Si l'ennemi n'était pas déjà affecté par <passive>Briseur de boucliers</passive>, vous réduisez ses boucliers actuels de 0%.</mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration"
@@ -4655,7 +4656,7 @@
     "id": "6696",
     "name": "Arc axiomatique",
     "gold": 2750,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+20</attention> accélération de compétence</stats><br><passive>Flux</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, le délai de récupération de votre compétence ultime est réduit d'un pourcentage de son total.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+20</attention> accélération de compétence</stats><br><passive>Flux</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, le délai de récupération de votre compétence ultime est réduit d'un pourcentage de son total.</mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration",
@@ -4679,7 +4680,7 @@
     "id": "6697",
     "name": "Orgueil",
     "gold": 2800,
-    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+15 dégâts d'attaque (+2 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
+    "description": "<mainText><stats><attention>+60</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+15 dégâts d'attaque (+2 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -4704,7 +4705,7 @@
     "id": "6698",
     "name": "Hydre profane",
     "gold": 2850,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Balayage hérétique</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> autour de vous.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Fendoir</passive><br>Vos attaques infligent des <physicalDamage>dégâts physiques</physicalDamage> aux ennemis proches.<br><active>Balayage hérétique</active><br>Vous infligez des <physicalDamage>dégâts physiques</physicalDamage> autour de vous.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -4729,7 +4730,7 @@
     "id": "6699",
     "name": "Cyclosabre voltaïque",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Galvanisation</passive><br>Les ruées et la furtivité <keyword>énergisent vos attaques</keyword> 75% plus vite.<br><passive>Firmament</passive><br>Vos <keyword>attaques énergisées</keyword> infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> et <keyword>ralentissent</keyword> pendant 0.75 sec.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Galvanisation</passive><br>Les ruées et la furtivité <keyword>énergisent vos attaques</keyword> 75% plus vite.<br><passive>Firmament</passive><br>Vos <keyword>attaques énergisées</keyword> infligent des <physicalDamage>dégâts physiques bonus</physicalDamage> et <keyword>ralentissent</keyword> pendant 0.75 sec.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -4755,7 +4756,7 @@
     "id": "6701",
     "name": "Opportunité",
     "gold": 2700,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>+18</attention> létalité</stats><br><passive>Préparation</passive><br>Si vous n'avez pas combattu de champion depuis 8 sec, vous gagnez de la <scaleLethality>létalité</scaleLethality>. Cette létalité se dissipe 3 sec après que vous avez blessé un champion.<br><passive>Extraction</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <speed>+200 vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 1.5 sec.<br></mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité</stats><br><passive>Préparation</passive><br>Si vous n'avez pas combattu de champion depuis 8 sec, vous gagnez de la <scaleLethality>létalité</scaleLethality>. Cette létalité se dissipe 3 sec après que vous avez blessé un champion.<br><passive>Extraction</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <speed>+200 vitesse de déplacement (ce bonus diminue sur la durée)</speed> pendant 1.5 sec.<br></mainText>",
     "tags": [
       "Damage",
       "Active",

@@ -21,4 +21,4 @@ export const VALID_TAGS = [
     "Vision"
 ];
 
-export const PATCH_VERSION = "16.6.1";
+export const PATCH_VERSION = "16.7.1";

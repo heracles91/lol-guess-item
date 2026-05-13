@@ -504,7 +504,7 @@
     "id": "1086",
     "name": "Arc de Doran",
     "gold": 400,
-    "description": "<mainText><stats><attention>+6</attention> dégâts d'attaque<br><attention>+15%</attention> de vitesse d'attaque<br><attention>+1.5%</attention> d'omnivampirisme</stats><br></mainText>",
+    "description": "<mainText><stats><attention>+8</attention> dégâts d'attaque<br><attention>+15%</attention> de vitesse d'attaque<br><attention>+1.5%</attention> d'omnivampirisme</stats><br></mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -583,7 +583,7 @@
     "id": "1120",
     "name": "Casque de Doran",
     "gold": 450,
-    "description": "<mainText><stats><attention>+110</attention> PV<br><attention>+10</attention> armure<br><attention>+10</attention> résistance magique</stats><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
+    "description": "<mainText><stats><attention>+140</attention> PV<br><attention>+10</attention> armure<br><attention>+10</attention> résistance magique</stats><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -1110,7 +1110,7 @@
     "id": "2517",
     "name": "Faim insatiable",
     "gold": 3100,
-    "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+5%</attention> d'omnivampirisme<br><attention>+20%</attention> de ténacité</stats><br><passive>Famine</passive><br>Vous gagnez 0 d'accélération de compétence.<br><passive>Festin</passive><br>Quand un champion auquel vous avez infligé des dégâts meurt dans les 3 sec, vous gagnez <omnivamp>15% d'omnivampirisme</omnivamp> pendant 8 sec. </mainText>",
+    "description": "<mainText><stats><attention>+65</attention> dégâts d'attaque<br><attention>+5%</attention> d'omnivampirisme<br><attention>+20%</attention> de ténacité</stats><br><passive>Famine</passive><br>Vous gagnez de l'accélération de compétence selon vos dégâts d'attaque bonus.<br><passive>Festin</passive><br>Quand un champion auquel vous avez infligé des dégâts récemment meurt, vous gagnez de l'omnivampirisme pendant quelques secondes. </mainText>",
     "tags": [
       "Damage",
       "LifeSteal",
@@ -1361,8 +1361,8 @@
   {
     "id": "3008",
     "name": "Jambières gloutonnes",
-    "gold": 950,
-    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 1% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 6 fois.</mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",
@@ -2372,7 +2372,7 @@
     "id": "3100",
     "name": "Fléau de liche",
     "gold": 2900,
-    "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+4%</attention> de vitesse de déplacement<br><attention>+10</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
+    "description": "<mainText><stats><attention>+100</attention> puissance<br><attention>+6%</attention> de vitesse de déplacement<br><attention>+10</attention> accélération de compétence</stats><br><passive>Lame enchantée</passive><br>Après avoir utilisé une de vos compétences, votre prochaine attaque inflige des <magicDamage>dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.</mainText>",
     "tags": [
       "SpellDamage",
       "OnHit",
@@ -3247,8 +3247,8 @@
   {
     "id": "3168",
     "name": "Voie immortelle",
-    "gold": 950,
-    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 1% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 6 fois.<br><passive>Maintenant et à jamais</passive><br>Lorsque vous avez plus de la moitié de vos PV, vous infligez 5% de dégâts bonus. <br>Lorsque vous avez moins de la moitié de vos PV, vous bénéficiez de 15% de soins, de boucliers et de régénération bonus.</mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.<br><passive>Maintenant et à jamais</passive><br>Lorsque vous avez plus de la moitié de vos PV, vous infligez 5% de dégâts bonus. <br>Lorsque vous avez moins de la moitié de vos PV, vous bénéficiez de 15% de soins, de boucliers et de régénération bonus.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",
@@ -4796,7 +4796,7 @@
   {
     "id": "6699",
     "name": "Cyclosabre voltaïque",
-    "gold": 2900,
+    "gold": 3000,
     "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>10</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Galvanisation</passive><br>Infliger des dégâts à un champion ennemi avec une compétence déclenche <keyword>Énergisé</keyword> si l'effet est prêt.<br><passive>Firmament</passive><br>Votre <keyword>attaque énergisée</keyword> inflige <physicalDamage>des dégâts physiques bonus équivalents à un % des PV actuels de la cible</physicalDamage> et vous confère de la <scaleLethality>létalité bonus</scaleLethality> pendant 4 sec.</mainText>",
     "tags": [
       "Damage",

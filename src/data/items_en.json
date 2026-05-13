@@ -504,7 +504,7 @@
     "id": "1086",
     "name": "Doran's Bow",
     "gold": 400,
-    "description": "<mainText><stats><attention>6</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>1.5%</attention> Omnivamp</stats><br></mainText>",
+    "description": "<mainText><stats><attention>8</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>1.5%</attention> Omnivamp</stats><br></mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -583,7 +583,7 @@
     "id": "1120",
     "name": "Doran's Helm",
     "gold": 450,
-    "description": "<mainText><stats><attention>110</attention> Health<br><attention>10</attention> Armor<br><attention>10</attention> Magic Resist</stats><br><passive>Helping Hand</passive><br>Attacks deal <physicalDamage>5 bonus physical damage</physicalDamage> to minions.</mainText>",
+    "description": "<mainText><stats><attention>140</attention> Health<br><attention>10</attention> Armor<br><attention>10</attention> Magic Resist</stats><br><passive>Helping Hand</passive><br>Attacks deal <physicalDamage>5 bonus physical damage</physicalDamage> to minions.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -1110,7 +1110,7 @@
     "id": "2517",
     "name": "Endless Hunger",
     "gold": 3100,
-    "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>5%</attention> Omnivamp<br><attention>20%</attention> Tenacity</stats><br><passive>Famine</passive><br>Gain  Ability Haste.<br><passive>Feast</passive><br>When a champion that you damaged within 3 seconds dies, gain <omnivamp>15% Omnivamp</omnivamp> for 8 seconds. </mainText>",
+    "description": "<mainText><stats><attention>65</attention> Attack Damage<br><attention>5%</attention> Omnivamp<br><attention>20%</attention> Tenacity</stats><br><passive>Famine</passive><br>Gain Ability Haste based on your Bonus AD.<br><passive>Feast</passive><br>When a champion that you damaged recently dies, gain Omnivamp for a moderate duration. </mainText>",
     "tags": [
       "Damage",
       "LifeSteal",
@@ -1361,8 +1361,8 @@
   {
     "id": "3008",
     "name": "Gluttonous Greaves",
-    "gold": 950,
-    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 1% Omnivamp on Champion takedown, stacking up to 6 times.</mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",
@@ -2372,7 +2372,7 @@
     "id": "3100",
     "name": "Lich Bane",
     "gold": 2900,
-    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>4%</attention> Move Speed<br><attention>10</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
+    "description": "<mainText><stats><attention>100</attention> Ability Power<br><attention>6%</attention> Move Speed<br><attention>10</attention> Ability Haste</stats><br><passive>Spellblade</passive><br>After using an Ability, your next Attack deals <magicDamage>bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.</mainText>",
     "tags": [
       "SpellDamage",
       "OnHit",
@@ -3247,8 +3247,8 @@
   {
     "id": "3168",
     "name": "Immortal Path",
-    "gold": 950,
-    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 1% Omnivamp on Champion takedown, stacking up to 6 times.<br><passive>Now and Forever</passive><br>While above half Health, deal 5% increased damage. <br>While below half Health, gain 15% increased healing, shielding, and regeneration.</mainText>",
+    "gold": 1000,
+    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.<br><passive>Now and Forever</passive><br>While above half Health, deal 5% increased damage. <br>While below half Health, gain 15% increased healing, shielding, and regeneration.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",
@@ -4796,7 +4796,7 @@
   {
     "id": "6699",
     "name": "Voltaic Cyclosword",
-    "gold": 2900,
+    "gold": 3000,
     "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>10</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Galvanize</passive><br>Damaging an Enemy Champions with an ability triggers <keyword>Energized</keyword> if it is ready.<br><passive>Firmament</passive><br>Your <keyword>Energized Attack</keyword> deals <physicalDamage>% target's Current Health as bonus physical damage</physicalDamage> and grants you <scaleLethality>bonus Lethality</scaleLethality> for 4 seconds.</mainText>",
     "tags": [
       "Damage",

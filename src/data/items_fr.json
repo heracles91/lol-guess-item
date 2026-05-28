@@ -1926,7 +1926,7 @@
     "id": "3071",
     "name": "Couperet noir",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><passive>Découpage</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> à un champion réduit son armure de <scaleArmor>6%</scaleArmor> pendant 6 sec (effet cumulable 5 fois).<br><passive>Ferveur</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> vous octroie <speed>+20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
+    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><passive>Découpage</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> aux champions ennemis avec des compétences, des compétences passives et des attaques réduit leur <scaleArmor>armure de 6%</scaleArmor> pendant 6 sec. (se cumule 5 fois).<br><passive>Ferveur</passive><br>Infliger des <physicalDamage>dégâts physiques</physicalDamage> vous octroie <speed>20 vitesse de déplacement</speed> pendant 2 sec.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -1978,7 +1978,7 @@
     "id": "3073",
     "name": "Hexplaque expérimentale",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><passive>Charge Hextech</passive><br>Vous gagnez +30 accélération d'ultime.<br><passive>Surcharge</passive><br>Après avoir lancé votre compétence ultime, vous gagnez <attackSpeed>+50% de vitesse d'attaque</attackSpeed> et <speed>+20% de vitesse de déplacement</speed> pendant 8 sec. </mainText>",
+    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+450</attention> PV</stats><br><passive>Charge Hextech</passive><br>Vous gagnez 30 accélération d'ultime.<br><passive>Surcharge</passive><br>Après avoir lancé votre compétence ultime, vous gagnez <attackSpeed>0% de vitesse d'attaque</attackSpeed> et <speed>0% de vitesse de déplacement</speed> pendant 8 sec. </mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -1997,8 +1997,8 @@
     },
     "from": [
       "2021",
-      "3044",
-      "1042"
+      "1042",
+      "3044"
     ]
   },
   {
@@ -2174,7 +2174,7 @@
     "id": "3084",
     "name": "Cœuracier",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+900</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Consommation colossale</passive> (0 sec) par cible<br>Si un champion ennemi reste proche pendant quelques sec, votre prochaine attaque contre lui inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> équivalents à <physicalDamage>70 + 6%</physicalDamage> de vos PV max et vous octroie des <scaleHealth>PV max</scaleHealth> équivalents à <scaleHealth>8% des dégâts</scaleHealth>.<br><passive>Goliath</passive><br>Tous les <scaleHealth>1000 PV max</scaleHealth>, votre taille augmente de 3% (jusqu'à 30%). </mainText>",
+    "description": "<mainText><stats><attention>+900</attention> PV<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Consommation colossale</passive> (0 sec) par cible<br>Si un champion ennemi reste proche pendant quelques sec, votre prochaine attaque contre lui inflige des <physicalDamage>dégâts physiques bonus</physicalDamage> équivalents à <physicalDamage>70 + 6%</physicalDamage> de vos PV max et vous octroie des <scaleHealth>PV max</scaleHealth> équivalents à <scaleHealth>10% des dégâts</scaleHealth>.<br><passive>Goliath</passive><br>Tous les <scaleHealth>1000 PV max</scaleHealth>, votre taille augmente de 3% (jusqu'à 30%). </mainText>",
     "tags": [
       "Health",
       "HealthRegen"
@@ -2247,7 +2247,7 @@
     "id": "3087",
     "name": "Poignard de Statikk",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+45</attention> puissance<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Étincelle électrique</passive><br>Vos <keyword>attaques énergisées</keyword> lancent une chaîne d'éclairs, appliquant  effets <OnHit>à l'impact</OnHit> et infligeant des <magicDamage>dégâts magiques</magicDamage> aux cibles proches.<br><passive>Électrochoc</passive><br>Les attaques de base octroient des effets <keyword>énergisants</keyword> supplémentaires.</mainText>",
+    "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+45</attention> puissance<br><attention>+30%</attention> de vitesse d'attaque<br><attention>+4%</attention> de vitesse de déplacement</stats><br><passive>Étincelle électrique</passive><br>Vos <keyword>attaques énergisées</keyword> lancent une chaîne d'éclairs, appliquant  effets <OnHit>à l'impact</OnHit> et infligeant des <magicDamage>dégâts magiques</magicDamage> aux cibles proches.<br><passive>Électrochoc</passive><br>Les attaques de base octroient des effets <keyword>énergisants</keyword> supplémentaires.</mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -2468,7 +2468,7 @@
     "id": "3109",
     "name": "Vœu du chevalier",
     "gold": 2300,
-    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 12% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 10%</healing> des dégâts qu'il inflige aux champions.<active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
+    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+40</attention> armure<br><attention>+10</attention> accélération de compétence<br><attention>+100%</attention> de régénération de base des PV</stats><br><passive>Sacrifice</passive><br>Quand l'allié <attention>digne</attention> est proche, vous redirigez vers vous 14% des dégâts qu'il subit et vous récupérez des <healing>PV équivalents à 12%</healing> des dégâts qu'il inflige aux champions.<active>Serment</active> (0 sec)<br>Vous désignez un allié qui est <attention>digne</attention> de votre aide.</mainText>",
     "tags": [
       "Health",
       "HealthRegen",
@@ -3498,7 +3498,7 @@
     "id": "3190",
     "name": "Médaillon de l'Iron Solari",
     "gold": 2200,
-    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+25</attention> armure<br><attention>+25</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 290 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
+    "description": "<mainText><stats><attention>+200</attention> PV<br><attention>+30</attention> armure<br><attention>+30</attention> résistance magique<br><attention>+10</attention> accélération de compétence</stats><br><active>Dévotion</active><br>Vous octroyez aux alliés proches un <shield>bouclier de 290 - 360 PV</shield> qui se désagrège en 2.5 sec.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -3891,8 +3891,8 @@
   {
     "id": "4005",
     "name": "Mandat impérial",
-    "gold": 2250,
-    "description": "<mainText><stats><attention>+60</attention> puissance<br><attention>+20</attention> accélération de compétence<br><attention>+125%</attention> de régénération de base du mana</stats><br><passive>Tir coordonné</passive> (0 sec) par cible.<br><keyword>Ralentir</keyword> ou <keyword>immobiliser</keyword> un champion ennemi le marque pendant 5 sec. Les dégâts d'un champion allié font exploser la marque, infligeant des <magicDamage>dégâts magiques équivalents à 10% des PV actuels</magicDamage>. </mainText>",
+    "gold": 2400,
+    "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+150%</attention> de régénération de base du mana</stats><br><passive>Contrôle</passive><br>Vous gagnez 15 d'accélération de compétence pour vos compétences avec des effets <keyword>d'immobilisation</keyword>.<br><passive>Commande</passive><br>Lorsque vous <keyword>immobilisez</keyword> un champion ennemi, vous le marquez avec 6% de <Keyword>vulnérabilité</Keyword> pendant 4 sec.<br></mainText>",
     "tags": [
       "SpellDamage",
       "ManaRegen",
@@ -3908,7 +3908,7 @@
       "h": 48
     },
     "from": [
-      "3108",
+      "1026",
       "4642"
     ]
   },
@@ -4259,7 +4259,7 @@
     "id": "6620",
     "name": "Échos d'Helia",
     "gold": 2200,
-    "description": "<mainText><stats><attention>+35</attention> puissance<br><attention>+200</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+125%</attention> de régénération de base du mana</stats><br><passive>Siphon d'âme</passive><br>Vous gagnez 35% des dégâts infligés aux champions avant mitigation sous forme de charges spirituelles. Lancer un soin ou un bouclier sur un allié consomme toutes les <passive>charges spirituelles</passive> pour lui rendre des <healing>PV</healing>.</mainText>",
+    "description": "<mainText><stats><attention>+35</attention> puissance<br><attention>+200</attention> PV<br><attention>+20</attention> accélération de compétence<br><attention>+125%</attention> de régénération de base du mana</stats><br><passive>Siphon d'âme</passive><br>Vous gagnez 30% des dégâts infligés aux champions avant mitigation sous forme de charges spirituelles. Lancer un soin ou un bouclier sur un allié consomme toutes les <passive>charges spirituelles</passive> pour lui rendre des <healing>PV</healing>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",
@@ -4823,7 +4823,7 @@
     "id": "8010",
     "name": "Malédiction du sanguinaire",
     "gold": 2900,
-    "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Vile décomposition</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> avec des compétences ou des compétences passives à des champions réduit leur <scaleMR>résistance magique de 7.5%</scaleMR> pendant 6 sec (jusqu'à 30%).</mainText>",
+    "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+400</attention> PV<br><attention>+15</attention> accélération de compétence</stats><br><passive>Vile décomposition</passive><br>Infliger des <magicDamage>dégâts magiques</magicDamage> avec des compétences ou des compétences passives à des champions réduit leur <scaleMR>résistance magique de 7.5%</scaleMR> pendant 6 sec. (Cumulable 4 fois).</mainText>",
     "tags": [
       "Health",
       "SpellDamage",

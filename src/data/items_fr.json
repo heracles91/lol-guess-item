@@ -583,7 +583,7 @@
     "id": "1120",
     "name": "Casque de Doran",
     "gold": 450,
-    "description": "<mainText><stats><attention>+140</attention> PV<br><attention>+10</attention> armure<br><attention>+10</attention> résistance magique</stats><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
+    "description": "<mainText><stats><attention>+150</attention> PV<br><attention>+8</attention> armure<br><attention>+8</attention> résistance magique</stats><br><passive>Coup de main</passive><br>Vos attaques infligent <physicalDamage>5 pts de dégâts physiques bonus</physicalDamage> aux sbires.</mainText>",
     "tags": [
       "Health",
       "Armor",
@@ -3892,7 +3892,7 @@
     "id": "4005",
     "name": "Mandat impérial",
     "gold": 2400,
-    "description": "<mainText><stats><attention>+65</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+150%</attention> de régénération de base du mana</stats><br><passive>Contrôle</passive><br>Vous gagnez 15 d'accélération de compétence pour vos compétences avec des effets <keyword>d'immobilisation</keyword>.<br><passive>Commande</passive><br>Lorsque vous <keyword>immobilisez</keyword> un champion ennemi, vous le marquez avec 6% de <Keyword>vulnérabilité</Keyword> pendant 4 sec.<br></mainText>",
+    "description": "<mainText><stats><attention>+60</attention> puissance<br><attention>+15</attention> accélération de compétence<br><attention>+150%</attention> de régénération de base du mana</stats><br><passive>Contrôle</passive><br>Vous gagnez 20 d'accélération de compétence pour vos compétences avec des effets <keyword>d'immobilisation</keyword>.<br><passive>Commande</passive><br>Lorsque vous <keyword>immobilisez</keyword> un champion ennemi, vous le marquez avec 7% de <Keyword>vulnérabilité</Keyword> pendant 4 sec.<br></mainText>",
     "tags": [
       "SpellDamage",
       "ManaRegen",
@@ -3908,8 +3908,9 @@
       "h": 48
     },
     "from": [
-      "1026",
-      "4642"
+      "1052",
+      "4642",
+      "1052"
     ]
   },
   {

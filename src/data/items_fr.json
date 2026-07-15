@@ -1236,7 +1236,7 @@
   {
     "id": "2525",
     "name": "Harnais protoplasmique",
-    "gold": 2500,
+    "gold": 2600,
     "description": "<mainText><stats><attention>+600</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><passive>Lien vital</passive> (0 sec)<br>Si des dégâts sont censés vous laisser moins de 30% de vos PV, vous gagnez <health>0 PV max</health> pendant 5 sec, puis vous récupérez <health>0 PV</health> sur la durée. Lorsque vous récupérez des PV, vous grandissez de 15%, vous gagnez 10% de vitesse de déplacement et 25% de ténacité. </mainText>",
     "tags": [
       "Health",
@@ -3047,7 +3047,7 @@
     "id": "3152",
     "name": "Ceinture-roquette Hextech",
     "gold": 2650,
-    "description": "<mainText><stats><attention>+70</attention> puissance<br><attention>+300</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><active>Supersonique</active><br>Vous vous ruez dans la direction ciblée en lançant des projectiles qui infligent des <magicDamage>dégâts magiques</magicDamage>.</mainText>",
+    "description": "<mainText><stats><attention>+60</attention> puissance<br><attention>+350</attention> PV<br><attention>+20</attention> accélération de compétence</stats><br><active>Supersonique</active><br>Vous vous ruez dans la direction ciblée en lançant des projectiles qui infligent des <magicDamage>dégâts magiques</magicDamage>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",
@@ -3066,7 +3066,7 @@
     },
     "from": [
       "3145",
-      "3108",
+      "3067",
       "1028"
     ]
   },
@@ -3248,7 +3248,7 @@
     "id": "3168",
     "name": "Voie immortelle",
     "gold": 1000,
-    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.<br><passive>Maintenant et à jamais</passive><br>Lorsque vous avez plus de la moitié de vos PV, vous infligez 5% de dégâts bonus. <br>Lorsque vous avez moins de la moitié de vos PV, vous bénéficiez de 15% de soins, de boucliers et de régénération bonus.</mainText>",
+    "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.<br><passive>Maintenant et à jamais</passive><br>Lorsque vous avez plus de la moitié de vos PV, vous infligez 4% de dégâts bonus. <br>Lorsque vous avez moins de la moitié de vos PV, vous bénéficiez de 12% de soins, de boucliers et de régénération bonus.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",

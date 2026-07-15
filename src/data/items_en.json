@@ -1236,7 +1236,7 @@
   {
     "id": "2525",
     "name": "Protoplasm Harness",
-    "gold": 2500,
+    "gold": 2600,
     "description": "<mainText><stats><attention>600</attention> Health<br><attention>20</attention> Ability Haste</stats><br><passive>Lifeline</passive> (0s)<br>Taking damage that would reduce your Health below 30% causes you to gain <health> maximum Health</health> for 5 seconds, then heal <health> Health</health> over the duration. While regenerating Health, you gain 15% increased Size, 10% Move Speed, and 25% Tenacity. </mainText>",
     "tags": [
       "Health",
@@ -3047,7 +3047,7 @@
     "id": "3152",
     "name": "Hextech Rocketbelt",
     "gold": 2650,
-    "description": "<mainText><stats><attention>70</attention> Ability Power<br><attention>300</attention> Health<br><attention>20</attention> Ability Haste</stats><br><active>Supersonic</active><br>Dash in target direction, unleashing missiles that deal <magicDamage>magic damage</magicDamage>.</mainText>",
+    "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>350</attention> Health<br><attention>20</attention> Ability Haste</stats><br><active>Supersonic</active><br>Dash in target direction, unleashing missiles that deal <magicDamage>magic damage</magicDamage>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",
@@ -3066,7 +3066,7 @@
     },
     "from": [
       "3145",
-      "3108",
+      "3067",
       "1028"
     ]
   },
@@ -3248,7 +3248,7 @@
     "id": "3168",
     "name": "Immortal Path",
     "gold": 1000,
-    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.<br><passive>Now and Forever</passive><br>While above half Health, deal 5% increased damage. <br>While below half Health, gain 15% increased healing, shielding, and regeneration.</mainText>",
+    "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.<br><passive>Now and Forever</passive><br>While above half Health, deal 4% increased damage. <br>While below half Health, gain 12% increased healing, shielding, and regeneration.</mainText>",
     "tags": [
       "LifeSteal",
       "SpellVamp",

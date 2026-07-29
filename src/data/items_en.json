@@ -1136,7 +1136,7 @@
   {
     "id": "2520",
     "name": "Bastionbreaker",
-    "gold": 3200,
+    "gold": 3000,
     "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><passive>Shaped Charge</passive> (0s)<br>Dealing Ability damage to a Champion or Epic Monster deals an additional <trueDamage> true damage</trueDamage>.<br><passive>Sabotage</passive><br>Taking down a champion within 3 seconds of damaging them grants Sabotage for 90 seconds. While you have Sabotage, your next Attack against an Epic Monster or Turret deals an additional <trueDamage> true damage</trueDamage> over 3 seconds. </mainText>",
     "tags": [
       "Damage",
@@ -1520,8 +1520,8 @@
   {
     "id": "3032",
     "name": "Yun Tal Wildarrows",
-    "gold": 3100,
-    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>40%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>50</attention> Attack Damage<br><attention>45%</attention> Attack Speed<br><attention>0%</attention> Critical Strike Chance</stats><br><passive>Practice Makes Lethal</passive><br>On-Attack, gain Critical Strike Chance permanently up to 25%.<br><passive>Flurry</passive><br>On-Attacking an enemy champion, gain 30% Attack Speed for 6 seconds (30 second cooldown). <br>Attacks reduce this cooldown by 1 second, increased to 2 seconds for Critical Strikes.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -3577,7 +3577,7 @@
     "id": "3302",
     "name": "Terminus",
     "gold": 3000,
-    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>35%</attention> Attack Speed</stats><br><passive>Shadow</passive><br>Attacks deal <magicDamage>30 bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.<br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> Attacks against champions: <li><keywordMajor>Light</keywordMajor> Attacks grant <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for 5s. <li><keywordMajor>Dark</keywordMajor> Attacks grant 10% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> for 5s. </mainText>",
+    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>35%</attention> Attack Speed</stats><br><passive>Shadow</passive><br>Attacks deal <magicDamage> bonus magic damage</magicDamage> <OnHit>On-Hit</OnHit>.<br><passive>Juxtaposition</passive><br>Alternate between <keywordMajor>Light</keywordMajor> and <keywordMajor>Dark</keywordMajor> Attacks against champions: <li><keywordMajor>Light</keywordMajor> Attacks grant <scaleArmor>Armor</scaleArmor> and <scaleMR>Magic Resist</scaleMR> for 5s. <li><keywordMajor>Dark</keywordMajor> Attacks grant 10% <scaleArmor>Armor Penetration</scaleArmor> and <scaleMR>Magic Penetration</scaleMR> for 5s. </mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -4833,10 +4833,10 @@
     ],
     "image": {
       "full": "8010.png",
-      "sprite": "item6.png",
+      "sprite": "item8.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4857,10 +4857,10 @@
     ],
     "image": {
       "full": "8020.png",
-      "sprite": "item6.png",
+      "sprite": "item8.png",
       "group": "item",
-      "x": 240,
-      "y": 192,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },

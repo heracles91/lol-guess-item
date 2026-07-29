@@ -1136,7 +1136,7 @@
   {
     "id": "2520",
     "name": "Briseur de bastion",
-    "gold": 3200,
+    "gold": 3000,
     "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>22</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 90 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
     "tags": [
       "Damage",
@@ -1520,8 +1520,8 @@
   {
     "id": "3032",
     "name": "Flèches des Yun Tal",
-    "gold": 3100,
-    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+40%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
+    "gold": 3000,
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+45%</attention> de vitesse d'attaque<br><attention>+0%</attention> de chances de coup critique</stats><br><passive>Entraînement létal</passive><br>À l'attaque, vous gagnez définitivement des chances de coup critique (max +25%).<br><passive>Déluge</passive><br>En attaquant un champion ennemi, vous gagnez +30% de vitesse d'attaque pendant 6 sec (30 sec de récupération). <br>Vos attaques réduisent ce délai de récupération de 1 sec. Vos coups critiques réduisent ce délai de récupération de 2 sec à la place.</mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -3577,7 +3577,7 @@
     "id": "3302",
     "name": "Terminus",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque</stats><br><passive>Ombre</passive><br>Vos attaques infligent <magicDamage>30 pts de dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.<br><passive>Juxtaposition</passive><br>Vous alternez entre des attaques <keywordMajor>lumineuses</keywordMajor> et <keywordMajor>ténébreuses</keywordMajor> contre les champions : <li>Les attaques <keywordMajor>lumineuses</keywordMajor> vous octroient de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR> pendant 5 sec. <li>Les attaques <keywordMajor>ténébreuses</keywordMajor> vous octroient +10% de <scaleArmor>pénétration d'armure</scaleArmor> et de <scaleMR>pénétration magique</scaleMR> pendant 5 sec. </mainText>",
+    "description": "<mainText><stats><attention>+30</attention> dégâts d'attaque<br><attention>+35%</attention> de vitesse d'attaque</stats><br><passive>Ombre</passive><br>Vos attaques infligent <magicDamage>0 pts de dégâts magiques bonus</magicDamage> <OnHit>à l'impact</OnHit>.<br><passive>Juxtaposition</passive><br>Vous alternez entre des attaques <keywordMajor>lumineuses</keywordMajor> et <keywordMajor>ténébreuses</keywordMajor> contre les champions : <li>Les attaques <keywordMajor>lumineuses</keywordMajor> vous octroient de l'<scaleArmor>armure</scaleArmor> et de la <scaleMR>résistance magique</scaleMR> pendant 5 sec. <li>Les attaques <keywordMajor>ténébreuses</keywordMajor> vous octroient +10% de <scaleArmor>pénétration d'armure</scaleArmor> et de <scaleMR>pénétration magique</scaleMR> pendant 5 sec. </mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -4833,10 +4833,10 @@
     ],
     "image": {
       "full": "8010.png",
-      "sprite": "item6.png",
+      "sprite": "item8.png",
       "group": "item",
-      "x": 192,
-      "y": 192,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4857,10 +4857,10 @@
     ],
     "image": {
       "full": "8020.png",
-      "sprite": "item6.png",
+      "sprite": "item8.png",
       "group": "item",
-      "x": 240,
-      "y": 192,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },

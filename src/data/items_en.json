@@ -1338,7 +1338,7 @@
     "id": "3006",
     "name": "Berserker's Greaves",
     "gold": 1100,
-    "description": "<mainText><stats><attention>25%</attention> Attack Speed<br><attention>45</attention> Move Speed</stats><br></mainText>",
+    "description": "<mainText><stats><attention>30%</attention> Attack Speed<br><attention>45</attention> Move Speed</stats><br></mainText>",
     "tags": [
       "AttackSpeed",
       "MovementSpeed"
@@ -1879,7 +1879,7 @@
   {
     "id": "3068",
     "name": "Sunfire Aegis",
-    "gold": 2700,
+    "gold": 2800,
     "description": "<mainText><stats><attention>350</attention> Health<br><attention>50</attention> Armor<br><attention>10</attention> Ability Haste</stats><br><passive>Immolate</passive><br>After taking or dealing damage, deal <magicDamage>magic damage</magicDamage> per second to nearby enemies for 3 seconds. </mainText>",
     "tags": [
       "Health",
@@ -1926,7 +1926,7 @@
     "id": "3071",
     "name": "Black Cleaver",
     "gold": 3000,
-    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><passive>Carve</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> to champions reduces the target's <scaleArmor>Armor by 6%</scaleArmor> for 6 seconds. (stacks 5 times).<br><passive>Fervor</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed>20 Move Speed</speed> for 2 seconds.</mainText>",
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>400</attention> Health<br><attention>20</attention> Ability Haste</stats><br><passive>Carve</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> to champions reduces the target's <scaleArmor>Armor by 6%</scaleArmor> for 6 seconds. (stacks 5 times).<br><passive>Fervor</passive><br>Dealing <physicalDamage>physical damage</physicalDamage> grants <speed> Move Speed</speed> for 2 seconds.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -2077,7 +2077,7 @@
     "id": "3077",
     "name": "Tiamat",
     "gold": 1200,
-    "description": "<mainText><stats><attention>20</attention> Attack Damage</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you.</mainText>",
+    "description": "<mainText><stats><attention>25</attention> Attack Damage</stats><br><passive>Cleave</passive><br>Attacks deal <physicalDamage>physical damage</physicalDamage> to nearby enemies.<br><active>Crescent</active><br>Deal <physicalDamage>physical damage</physicalDamage> to enemies around you.</mainText>",
     "tags": [
       "Damage",
       "OnHit"
@@ -2198,7 +2198,7 @@
     "id": "3085",
     "name": "Runaan's Hurricane",
     "gold": 2650,
-    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>4%</attention> Move Speed</stats><br><passive>Wind's Fury</passive><br>Attacks fire bolts at 2 additional enemies near the target.<br>Each bolt deals <physicalDamage>physical damage</physicalDamage> and applies <OnHit>On-Hit</OnHit> effects.</mainText>",
+    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>25%</attention> Critical Strike Chance<br><attention>5%</attention> Move Speed</stats><br><passive>Wind's Fury</passive><br>Attacks fire bolts at 2 additional enemies near the target.<br>Each bolt deals <physicalDamage>physical damage</physicalDamage> and applies <OnHit>On-Hit</OnHit> effects.</mainText>",
     "tags": [
       "CriticalStrike",
       "AttackSpeed",
@@ -3314,7 +3314,7 @@
     "id": "3172",
     "name": "Gunmetal Greaves",
     "gold": 1100,
-    "description": "<mainText><stats><attention>40%</attention> Attack Speed<br><attention>45</attention> Move Speed<br><attention>5%</attention> Life Steal</stats><br><passive>Noxian Gait</passive><br>Attacks against Champions grant <speed>Move Speed</speed> <OnHit>On-Hit</OnHit> decaying over 2 seconds.</mainText>",
+    "description": "<mainText><stats><attention>45%</attention> Attack Speed<br><attention>45</attention> Move Speed<br><attention>5%</attention> Life Steal</stats><br></mainText>",
     "tags": [
       "AttackSpeed",
       "LifeSteal",
@@ -3337,7 +3337,7 @@
     "id": "3173",
     "name": "Chainlaced Crushers",
     "gold": 1250,
-    "description": "<mainText><stats><attention>30</attention> Magic Resist<br><attention>45</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br><passive>Noxian Persistence</passive> (0s)<br>After taking magic damage from a Champion, gain a <shield></shield> <magicDamage>magic</magicDamage> <shield>shield</shield> for 5 seconds.</mainText>",
+    "description": "<mainText><stats><attention>25</attention> Magic Resist<br><attention>45</attention> Move Speed<br><attention>30%</attention> Tenacity</stats><br><passive>Noxian Persistence</passive> (0s)<br>After taking magic damage from a Champion, gain a <shield></shield> <magicDamage>magic</magicDamage> <shield>shield</shield> for 5 seconds.</mainText>",
     "tags": [
       "Tenacity",
       "MagicResist",
@@ -3382,7 +3382,7 @@
     "id": "3175",
     "name": "Spellslinger's Shoes",
     "gold": 1100,
-    "description": "<mainText><stats><attention>18</attention> Magic Penetration<br><attention>8%</attention> Magic Penetration<br><attention>45</attention> Move Speed</stats><br></mainText>",
+    "description": "<mainText><stats><attention>20</attention> Magic Penetration<br><attention>8%</attention> Magic Penetration<br><attention>45</attention> Move Speed</stats><br></mainText>",
     "tags": [
       "MagicPenetration",
       "MovementSpeed"
@@ -4186,7 +4186,7 @@
     "id": "6610",
     "name": "Sundered Sky",
     "gold": 3100,
-    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>400</attention> Health<br><attention>10</attention> Ability Haste</stats><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
+    "description": "<mainText><stats><attention>45</attention> Attack Damage<br><attention>450</attention> Health<br><attention>10</attention> Ability Haste</stats><br><passive>Lightshield Strike</passive><br>Your first Attack against a champion <attention>Critically Strikes</attention> and <healing>restores Health</healing>.</mainText>",
     "tags": [
       "Health",
       "Damage",
@@ -4203,8 +4203,7 @@
     },
     "from": [
       "2021",
-      "3133",
-      "1028"
+      "3133"
     ]
   },
   {

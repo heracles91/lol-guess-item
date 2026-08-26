@@ -904,7 +904,7 @@
       "full": "2420.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 432,
       "w": 48,
       "h": 48
@@ -925,7 +925,7 @@
       "full": "2421.png",
       "sprite": "item2.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 432,
       "w": 48,
       "h": 48
@@ -947,10 +947,10 @@
     ],
     "image": {
       "full": "2501.png",
-      "sprite": "item2.png",
+      "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 432,
+      "x": 0,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -973,7 +973,7 @@
       "full": "2502.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 0,
       "w": 48,
       "h": 48
@@ -998,7 +998,7 @@
       "full": "2503.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1022,7 +1022,7 @@
       "full": "2504.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1044,7 +1044,7 @@
       "full": "2508.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 192,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1069,7 +1069,7 @@
       "full": "2510.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 240,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1096,7 +1096,7 @@
       "full": "2512.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 288,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1122,7 +1122,7 @@
       "full": "2517.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1147,7 +1147,7 @@
       "full": "2520.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1171,7 +1171,7 @@
       "full": "2522.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
+      "x": 432,
       "y": 0,
       "w": 48,
       "h": 48
@@ -1194,8 +1194,8 @@
       "full": "2523.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 0,
+      "x": 0,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -1222,7 +1222,7 @@
       "full": "2524.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1248,7 +1248,7 @@
       "full": "2525.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1272,7 +1272,7 @@
       "full": "2526.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1297,7 +1297,7 @@
       "full": "3003.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1323,7 +1323,7 @@
       "full": "3004.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 48,
       "w": 48,
       "h": 48
@@ -1347,8 +1347,8 @@
       "full": "3006.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 48,
+      "x": 0,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -1372,7 +1372,7 @@
       "full": "3008.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1393,7 +1393,7 @@
       "full": "3009.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1414,7 +1414,7 @@
       "full": "3013.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 288,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1436,7 +1436,7 @@
       "full": "3020.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1459,7 +1459,7 @@
       "full": "3024.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
+      "x": 432,
       "y": 96,
       "w": 48,
       "h": 48
@@ -1483,8 +1483,8 @@
       "full": "3026.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 96,
+      "x": 0,
+      "y": 144,
       "w": 48,
       "h": 48
     },
@@ -1506,7 +1506,7 @@
       "full": "3031.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1531,7 +1531,7 @@
       "full": "3032.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1556,7 +1556,7 @@
       "full": "3033.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1580,7 +1580,7 @@
       "full": "3035.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 192,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1604,7 +1604,7 @@
       "full": "3036.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 240,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1628,7 +1628,7 @@
       "full": "3041.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 144,
       "w": 48,
       "h": 48
@@ -1651,8 +1651,8 @@
       "full": "3044.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 144,
+      "x": 0,
+      "y": 192,
       "w": 48,
       "h": 48
     },
@@ -1675,7 +1675,7 @@
       "full": "3046.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1699,7 +1699,7 @@
       "full": "3047.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1724,7 +1724,7 @@
       "full": "3050.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1748,7 +1748,7 @@
       "full": "3051.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 192,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1773,7 +1773,7 @@
       "full": "3053.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 240,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1797,7 +1797,7 @@
       "full": "3057.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 288,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1821,7 +1821,7 @@
       "full": "3065.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1844,7 +1844,7 @@
       "full": "3066.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1866,7 +1866,7 @@
       "full": "3067.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
+      "x": 432,
       "y": 192,
       "w": 48,
       "h": 48
@@ -1891,8 +1891,8 @@
       "full": "3068.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 192,
+      "x": 0,
+      "y": 240,
       "w": 48,
       "h": 48
     },
@@ -1915,7 +1915,7 @@
       "full": "3070.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 240,
       "w": 48,
       "h": 48
@@ -1939,7 +1939,7 @@
       "full": "3071.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 240,
       "w": 48,
       "h": 48
@@ -1963,7 +1963,7 @@
       "full": "3072.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 240,
       "w": 48,
       "h": 48
@@ -1990,7 +1990,7 @@
       "full": "3073.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 192,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2016,7 +2016,7 @@
       "full": "3074.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 240,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2040,7 +2040,7 @@
       "full": "3075.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 288,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2063,7 +2063,7 @@
       "full": "3076.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2086,7 +2086,7 @@
       "full": "3077.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2113,7 +2113,7 @@
       "full": "3078.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 384,
+      "x": 432,
       "y": 240,
       "w": 48,
       "h": 48
@@ -2136,8 +2136,8 @@
       "full": "3082.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 432,
-      "y": 240,
+      "x": 0,
+      "y": 288,
       "w": 48,
       "h": 48
     },
@@ -2159,7 +2159,7 @@
       "full": "3083.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 0,
+      "x": 48,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2183,7 +2183,7 @@
       "full": "3084.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 48,
+      "x": 96,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2209,7 +2209,7 @@
       "full": "3085.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 96,
+      "x": 144,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2233,7 +2233,7 @@
       "full": "3086.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 144,
+      "x": 192,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2259,7 +2259,7 @@
       "full": "3087.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 192,
+      "x": 240,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2282,7 +2282,7 @@
       "full": "3089.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 240,
+      "x": 288,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2307,7 +2307,7 @@
       "full": "3091.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 288,
+      "x": 336,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2332,7 +2332,7 @@
       "full": "3094.png",
       "sprite": "item3.png",
       "group": "item",
-      "x": 336,
+      "x": 384,
       "y": 288,
       "w": 48,
       "h": 48
@@ -2343,10 +2343,10 @@
     ]
   },
   {
-    "id": "3097",
+    "id": "3095",
     "name": "Lame tempête",
     "gold": 3200,
-    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+20%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Énergisant</passive><br>Vos déplacements et vos attaques permettent d'<keyword>énergiser une attaque</keyword>.<br><passive>Éclair</passive><br>Vos <keyword>attaques énergisées</keyword> appliquent <magicDamage>0 pts de dégâts magiques bonus</magicDamage> et vous octroient <speed>+45% de vitesse de déplacement</speed> pendant 1.5 sec.<br></mainText>",
+    "description": "<mainText><stats><attention>+50</attention> dégâts d'attaque<br><attention>+25%</attention> de vitesse d'attaque<br><attention>+25%</attention> de chances de coup critique</stats><br><passive>Énergisant</passive><br>Vos déplacements et vos attaques permettent d'<keyword>énergiser une attaque</keyword>.<br><passive>Éclair</passive><br>Vos <keyword>attaques énergisées</keyword> appliquent <magicDamage>0 pts de dégâts magiques bonus</magicDamage> et vous octroient <speed>+45% de vitesse de déplacement</speed> pendant 1.5 sec.<br></mainText>",
     "tags": [
       "Damage",
       "CriticalStrike",
@@ -2354,7 +2354,7 @@
       "MovementSpeed"
     ],
     "image": {
-      "full": "3097.png",
+      "full": "3095.png",
       "sprite": "item3.png",
       "group": "item",
       "x": 432,
@@ -3271,7 +3271,7 @@
     "id": "3170",
     "name": "Célérité martiale",
     "gold": 1000,
-    "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 40% l'efficacité des <keyword>ralentissements</keyword>.<br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>.</mainText>",
+    "description": "<mainText><stats><attention>+65</attention> vitesse de déplacement</stats><br><passive>Rapidité</passive><br>Réduit de 25% l'efficacité des <keyword>ralentissements</keyword>.<br><passive>Ferveur noxienne</passive><br>Vous gagnez de la force adaptative équivalente à 5% de votre <speed>vitesse de déplacement</speed>.</mainText>",
     "tags": [
       "MovementSpeed"
     ],
@@ -4186,7 +4186,7 @@
     "id": "6610",
     "name": "Ciel éventré",
     "gold": 3100,
-    "description": "<mainText><stats><attention>+45</attention> dégâts d'attaque<br><attention>+450</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
+    "description": "<mainText><stats><attention>+40</attention> dégâts d'attaque<br><attention>+400</attention> PV<br><attention>+10</attention> accélération de compétence</stats><br><passive>Frappe des Lightshield</passive><br>Votre première attaque contre un champion lui porte un <attention>coup critique</attention> et vous <healing>rend des PV</healing>.</mainText>",
     "tags": [
       "Health",
       "Damage",

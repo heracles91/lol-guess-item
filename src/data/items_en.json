@@ -3047,7 +3047,7 @@
     "id": "3152",
     "name": "Hextech Rocketbelt",
     "gold": 2650,
-    "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>350</attention> Health<br><attention>20</attention> Ability Haste</stats><br><active>Supersonic</active><br>Dash in target direction, unleashing missiles that deal <magicDamage>magic damage</magicDamage>.</mainText>",
+    "description": "<mainText><stats><attention>60</attention> Ability Power<br><attention>350</attention> Health<br><attention>10</attention> Ability Haste</stats><br><active>Supersonic</active><br>Dash in target direction, unleashing missiles that deal <magicDamage>magic damage</magicDamage>.</mainText>",
     "tags": [
       "Health",
       "SpellDamage",

@@ -1137,7 +1137,7 @@
     "id": "2520",
     "name": "Bastionbreaker",
     "gold": 3000,
-    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>22</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><passive>Shaped Charge</passive> (0s)<br>Dealing Ability damage to a Champion or Epic Monster deals an additional <trueDamage> true damage</trueDamage>.<br><passive>Sabotage</passive><br>Taking down a champion within 3 seconds of damaging them grants Sabotage for 90 seconds. While you have Sabotage, your next Attack against an Epic Monster or Turret deals an additional <trueDamage> true damage</trueDamage> over 3 seconds. </mainText>",
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>15</attention> Ability Haste</stats><br><passive>Shaped Charge</passive> (0s)<br>Dealing Ability damage to a Champion or Epic Monster deals an additional <trueDamage> true damage</trueDamage>.<br><passive>Sabotage</passive><br>Taking down a champion within 3 seconds of damaging them grants Sabotage for 25000 seconds. While you have Sabotage, your next Attack against an Epic Monster or Turret deals an additional <trueDamage> true damage</trueDamage> over 3 seconds. </mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration",
@@ -1361,7 +1361,7 @@
   {
     "id": "3008",
     "name": "Gluttonous Greaves",
-    "gold": 1000,
+    "gold": 1100,
     "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.</mainText>",
     "tags": [
       "LifeSteal",
@@ -3247,7 +3247,7 @@
   {
     "id": "3168",
     "name": "Immortal Path",
-    "gold": 1000,
+    "gold": 1100,
     "description": "<mainText><stats><attention>45</attention> Move Speed<br><attention>4%</attention> Omnivamp</stats><br><passive>Slay</passive><br>Gain 0.6% Omnivamp on Champion takedown, stacking up to 10 times.<br><passive>Now and Forever</passive><br>While above half Health, deal 4% increased damage. <br>While below half Health, gain 12% increased healing, shielding, and regeneration.</mainText>",
     "tags": [
       "LifeSteal",
@@ -4146,7 +4146,7 @@
       "full": "6333.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
+      "x": 0,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4171,7 +4171,7 @@
       "full": "6609.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4196,7 +4196,7 @@
       "full": "6610.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4220,8 +4220,8 @@
       "full": "6616.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 0,
-      "y": 432,
+      "x": 144,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4245,8 +4245,8 @@
       "full": "6617.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 432,
+      "x": 192,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4270,8 +4270,8 @@
       "full": "6620.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 96,
-      "y": 432,
+      "x": 240,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4284,7 +4284,7 @@
     "id": "6621",
     "name": "Dawncore",
     "gold": 2500,
-    "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>16%</attention> Heal and Shield Power<br><attention>100%</attention> Base Mana Regen</stats><br><passive>First Light</passive><br>Gain <healing>2% Heal and Shield Power</healing> and <scaleAP>10 Ability Power</scaleAP> per 100% Base Mana Regen.</mainText>",
+    "description": "<mainText><stats><attention>45</attention> Ability Power<br><attention>16%</attention> Heal and Shield Power<br><attention>100%</attention> Base Mana Regen</stats><br><passive>First Light</passive><br>Gain <healing>2% Heal and Shield Power</healing> and <scaleAP>15 Ability Power</scaleAP> per 100% Base Mana Regen.</mainText>",
     "tags": [
       "SpellDamage",
       "ManaRegen"
@@ -4293,8 +4293,8 @@
       "full": "6621.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 432,
+      "x": 288,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4317,10 +4317,10 @@
     ],
     "image": {
       "full": "6631.png",
-      "sprite": "item6.png",
+      "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 0,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4343,7 +4343,7 @@
       "full": "6653.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4367,8 +4367,8 @@
       "full": "6655.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4393,8 +4393,8 @@
       "full": "6657.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4416,8 +4416,8 @@
       "full": "6660.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4442,8 +4442,8 @@
       "full": "6662.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4469,8 +4469,8 @@
       "full": "6664.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4493,8 +4493,8 @@
       "full": "6665.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 48,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4517,7 +4517,7 @@
       "full": "6670.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4542,8 +4542,8 @@
       "full": "6672.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4566,8 +4566,8 @@
       "full": "6673.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 336,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4590,8 +4590,8 @@
       "full": "6675.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 384,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4615,8 +4615,8 @@
       "full": "6676.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 432,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4639,7 +4639,7 @@
       "full": "6690.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4661,8 +4661,8 @@
       "full": "6692.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 48,
-      "y": 144,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4686,8 +4686,8 @@
       "full": "6694.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 144,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4709,8 +4709,8 @@
       "full": "6695.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 144,
+      "x": 336,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4733,8 +4733,8 @@
       "full": "6696.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4747,7 +4747,7 @@
     "id": "6697",
     "name": "Hubris",
     "gold": 2800,
-    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Eminence</passive><br>When a champion that you damaged within 3 seconds dies, gain <physicalDamage>12 Attack Damage plus 3 per champion killed</physicalDamage> for 90 seconds.</mainText>",
+    "description": "<mainText><stats><attention>55</attention> Attack Damage<br><attention>18</attention> Lethality<br><attention>10</attention> Ability Haste</stats><br><passive>Eminence</passive><br>When a champion that you damaged within 3 seconds dies, gain <physicalDamage> Attack Damage plus  per champion killed</physicalDamage> for 90 seconds.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -4758,8 +4758,8 @@
       "full": "6697.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 144,
+      "x": 432,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4783,7 +4783,7 @@
       "full": "6698.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 336,
+      "x": 0,
       "y": 144,
       "w": 48,
       "h": 48
@@ -4808,7 +4808,7 @@
       "full": "6699.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 144,
       "w": 48,
       "h": 48
@@ -4834,7 +4834,7 @@
       "full": "8010.png",
       "sprite": "item8.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4858,7 +4858,7 @@
       "full": "8020.png",
       "sprite": "item8.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48

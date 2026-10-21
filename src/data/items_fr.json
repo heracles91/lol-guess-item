@@ -1137,7 +1137,7 @@
     "id": "2520",
     "name": "Briseur de bastion",
     "gold": 3000,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>22</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 90 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+15</attention> accélération de compétence</stats><br><passive>Double dégâts</passive> (0 sec)<br>Infliger des dégâts de compétence à un champion ou un monstre épique vous permet d'infliger <trueDamage>0 pts de dégâts bruts</trueDamage> bonus.<br><passive>Sabotage</passive><br>Participer à l'élimination d'un champion dans les 3 sec après lui avoir infligé des dégâts vous confère Sabotage pendant 25000 sec. Lorsque vous disposez de Sabotage, votre prochaine attaque contre un monstre épique ou une tourelle inflige <trueDamage>0 pts de dégâts bruts</trueDamage> bonus en 3 sec. </mainText>",
     "tags": [
       "Damage",
       "ArmorPenetration",
@@ -1361,7 +1361,7 @@
   {
     "id": "3008",
     "name": "Jambières gloutonnes",
-    "gold": 1000,
+    "gold": 1100,
     "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.</mainText>",
     "tags": [
       "LifeSteal",
@@ -3247,7 +3247,7 @@
   {
     "id": "3168",
     "name": "Voie immortelle",
-    "gold": 1000,
+    "gold": 1100,
     "description": "<mainText><stats><attention>+45</attention> vitesse de déplacement<br><attention>+4%</attention> d'omnivampirisme</stats><br><passive>Carnage</passive><br>Vous gagnez 0.6% d'omnivampirisme à chaque élimination de champion, cumulable jusqu'à 10 fois.<br><passive>Maintenant et à jamais</passive><br>Lorsque vous avez plus de la moitié de vos PV, vous infligez 4% de dégâts bonus. <br>Lorsque vous avez moins de la moitié de vos PV, vous bénéficiez de 12% de soins, de boucliers et de régénération bonus.</mainText>",
     "tags": [
       "LifeSteal",
@@ -4146,7 +4146,7 @@
       "full": "6333.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 336,
+      "x": 0,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4171,7 +4171,7 @@
       "full": "6609.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4196,7 +4196,7 @@
       "full": "6610.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 384,
       "w": 48,
       "h": 48
@@ -4220,8 +4220,8 @@
       "full": "6616.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 0,
-      "y": 432,
+      "x": 144,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4245,8 +4245,8 @@
       "full": "6617.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 432,
+      "x": 192,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4270,8 +4270,8 @@
       "full": "6620.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 96,
-      "y": 432,
+      "x": 240,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4284,7 +4284,7 @@
     "id": "6621",
     "name": "Cœur de l'aube",
     "gold": 2500,
-    "description": "<mainText><stats><attention>+45</attention> puissance<br><attention>+16%</attention> d'efficacité des soins et boucliers<br><attention>+100%</attention> de régénération de base du mana</stats><br><passive>Première lumière</passive><br>Vous gagnez <healing>+2% d'efficacité des soins et boucliers</healing> et <scaleAP>+10 puissance</scaleAP> tous les 100% de régénération de base du mana.</mainText>",
+    "description": "<mainText><stats><attention>+45</attention> puissance<br><attention>+16%</attention> d'efficacité des soins et boucliers<br><attention>+100%</attention> de régénération de base du mana</stats><br><passive>Première lumière</passive><br>Vous gagnez <healing>+2% d'efficacité des soins et boucliers</healing> et <scaleAP>+15 puissance</scaleAP> tous les 100% de régénération de base du mana.</mainText>",
     "tags": [
       "SpellDamage",
       "ManaRegen"
@@ -4293,8 +4293,8 @@
       "full": "6621.png",
       "sprite": "item5.png",
       "group": "item",
-      "x": 144,
-      "y": 432,
+      "x": 288,
+      "y": 384,
       "w": 48,
       "h": 48
     },
@@ -4317,10 +4317,10 @@
     ],
     "image": {
       "full": "6631.png",
-      "sprite": "item6.png",
+      "sprite": "item5.png",
       "group": "item",
-      "x": 48,
-      "y": 0,
+      "x": 192,
+      "y": 432,
       "w": 48,
       "h": 48
     },
@@ -4343,7 +4343,7 @@
       "full": "6653.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4367,8 +4367,8 @@
       "full": "6655.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 0,
-      "y": 48,
+      "x": 144,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4393,8 +4393,8 @@
       "full": "6657.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 96,
-      "y": 48,
+      "x": 240,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4416,8 +4416,8 @@
       "full": "6660.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 48,
+      "x": 288,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4442,8 +4442,8 @@
       "full": "6662.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 48,
+      "x": 336,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4469,8 +4469,8 @@
       "full": "6664.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 48,
+      "x": 384,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4493,8 +4493,8 @@
       "full": "6665.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 48,
+      "x": 432,
+      "y": 0,
       "w": 48,
       "h": 48
     },
@@ -4517,7 +4517,7 @@
       "full": "6670.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 48,
       "w": 48,
       "h": 48
@@ -4542,8 +4542,8 @@
       "full": "6672.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 96,
+      "x": 288,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4566,8 +4566,8 @@
       "full": "6673.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 96,
+      "x": 336,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4590,8 +4590,8 @@
       "full": "6675.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 96,
+      "x": 384,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4615,8 +4615,8 @@
       "full": "6676.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 96,
+      "x": 432,
+      "y": 48,
       "w": 48,
       "h": 48
     },
@@ -4639,7 +4639,7 @@
       "full": "6690.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 96,
       "w": 48,
       "h": 48
@@ -4661,8 +4661,8 @@
       "full": "6692.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 48,
-      "y": 144,
+      "x": 192,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4686,8 +4686,8 @@
       "full": "6694.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 144,
-      "y": 144,
+      "x": 288,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4709,8 +4709,8 @@
       "full": "6695.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 192,
-      "y": 144,
+      "x": 336,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4733,8 +4733,8 @@
       "full": "6696.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 240,
-      "y": 144,
+      "x": 384,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4747,7 +4747,7 @@
     "id": "6697",
     "name": "Orgueil",
     "gold": 2800,
-    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+12 dégâts d'attaque (+3 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
+    "description": "<mainText><stats><attention>+55</attention> dégâts d'attaque<br><attention>18</attention> létalité<br><attention>+10</attention> accélération de compétence</stats><br><passive>Éminence</passive><br>Quand un champion meurt dans les 3 sec après que vous l'avez blessé, vous gagnez <physicalDamage>+0 dégâts d'attaque (+0 par champion tué</physicalDamage>) pendant 90 sec.</mainText>",
     "tags": [
       "Damage",
       "Active",
@@ -4758,8 +4758,8 @@
       "full": "6697.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 288,
-      "y": 144,
+      "x": 432,
+      "y": 96,
       "w": 48,
       "h": 48
     },
@@ -4783,7 +4783,7 @@
       "full": "6698.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 336,
+      "x": 0,
       "y": 144,
       "w": 48,
       "h": 48
@@ -4808,7 +4808,7 @@
       "full": "6699.png",
       "sprite": "item6.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 144,
       "w": 48,
       "h": 48
@@ -4834,7 +4834,7 @@
       "full": "8010.png",
       "sprite": "item8.png",
       "group": "item",
-      "x": 384,
+      "x": 48,
       "y": 0,
       "w": 48,
       "h": 48
@@ -4858,7 +4858,7 @@
       "full": "8020.png",
       "sprite": "item8.png",
       "group": "item",
-      "x": 432,
+      "x": 96,
       "y": 0,
       "w": 48,
       "h": 48

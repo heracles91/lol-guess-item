@@ -504,7 +504,7 @@
     "id": "1086",
     "name": "Doran's Bow",
     "gold": 400,
-    "description": "<mainText><stats><attention>8</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>1.5%</attention> Omnivamp</stats><br></mainText>",
+    "description": "<mainText><stats><attention>7</attention> Attack Damage<br><attention>15%</attention> Attack Speed<br><attention>1.5%</attention> Omnivamp</stats><br></mainText>",
     "tags": [
       "Damage",
       "AttackSpeed",
@@ -940,7 +940,7 @@
     "id": "2501",
     "name": "Overlord's Bloodmail",
     "gold": 3300,
-    "description": "<mainText><stats><attention>30</attention> Attack Damage<br><attention>550</attention> Health</stats><br><passive>Tyranny</passive><br>Gain 2.5% of your <healing>bonus Health</healing> as <scaleAD>Attack Damage</scaleAD>. <br><passive>Retribution</passive><br>Gain up to 12% increased <scaleAD>Attack Damage</scaleAD> based on your percent missing Health. </mainText>",
+    "description": "<mainText><stats><attention>40</attention> Attack Damage<br><attention>550</attention> Health</stats><br><passive>Tyranny</passive><br>Gain 2.5% of your <healing>bonus Health</healing> as <scaleAD>Attack Damage</scaleAD>. <br><passive>Retribution</passive><br>Gain up to 10% increased <scaleAD>Attack Damage</scaleAD> based on your percent missing Health. </mainText>",
     "tags": [
       "Health",
       "Damage"
